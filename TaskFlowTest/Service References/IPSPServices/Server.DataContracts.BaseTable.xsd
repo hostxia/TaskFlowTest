@@ -1,0 +1,1118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="BasicCaseBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="n_BusinessTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CaseID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ClientID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FirstAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FlowNum" type="xs:int" />
+      <xs:element minOccurs="0" name="n_SecondAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="s_ApplicantCodes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AppsSerial" type="xs:int" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IPType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroSerial" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BasicCaseBaseData" nillable="true" type="tns:BasicCaseBaseData" />
+  <xs:complexType name="PatentBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CertfDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_IssuedPubDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_PCTAppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_PriorityStatusDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SendCheckDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ShldSbmtDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SubmitDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_UndertakeDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_BusinessTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CaseID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CurrentProcessCodeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DepartmentID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FirstAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_PFlowNum" type="xs:int" />
+      <xs:element minOccurs="0" name="n_PatentTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_RegCountry" type="xs:int" />
+      <xs:element minOccurs="0" name="n_SecondAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_StartProcessCodeID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_AgencyToName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ApplicantsNativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseNativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseOtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CertfNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientCName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientContacts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientNativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientOtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CoopAgencyToNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Dealers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Inventors" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IssuedPubNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OldSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PCTAppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PriorityStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SerialLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TechnologyType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TotalSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_aaa" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PatentBaseData" nillable="true" type="tns:PatentBaseData" />
+  <xs:complexType name="TrademarkBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_BeginDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_NextRenewal" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_RegistrationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SendCheckDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ShldSbmtDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SubmitDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_UndertakeDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="img_MainThumbnail" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="n_BusinessTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CaseID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DepartmentID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FirstAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_MadBasicCountry" type="xs:int" />
+      <xs:element minOccurs="0" name="n_RegCountry" type="xs:int" />
+      <xs:element minOccurs="0" name="n_SecondAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_StartProcessCodeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_TFlowNum" type="xs:int" />
+      <xs:element minOccurs="0" name="s_AcceptNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AgencyToName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ApplicantsNativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseOtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientArea" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientContacts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientNativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientOtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CoopAgencyToNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Dealers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FlowDirection" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsRegOnline" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PrePubIssue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_RegistrationNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SerialLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TotalSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TrademarkClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TrademarkType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrademarkBaseData" nillable="true" type="tns:TrademarkBaseData" />
+  <xs:complexType name="DomainBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_Apply" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_NextRenewal" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SendCheckDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ShldSbmtDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SubmitDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_BusinessTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CaseID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DFlowNum" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DepartmentID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FirstAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_RegCountry" type="xs:int" />
+      <xs:element minOccurs="0" name="n_SecondAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_StartProcessCodeID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_AgencyToName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseOtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientNativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientOtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CoopAgencyToNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_DomainStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FlowDirection" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DomainBaseData" nillable="true" type="tns:DomainBaseData" />
+  <xs:complexType name="CopyRightBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SendCheckDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ShldSbmtDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SubmitDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_BusinessTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CFlowNum" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CaseID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CopyrightType" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DepartmentID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FirstAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_RegCountry" type="xs:int" />
+      <xs:element minOccurs="0" name="n_SecondAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_StartProcessCodeID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_AgencyToName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseOtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientNativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientOtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CoopAgencyToNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FlowDirection" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SerialLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TotalSerial" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CopyRightBaseData" nillable="true" type="tns:CopyRightBaseData" />
+  <xs:complexType name="OtherCaseBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SendCheckDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ShldSbmtDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SubmitDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_BusinessTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CaseID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DepartmentID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FirstAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OFlowNum" type="xs:int" />
+      <xs:element minOccurs="0" name="n_RegCountry" type="xs:int" />
+      <xs:element minOccurs="0" name="n_SecondAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="n_StartProcessCodeID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_AgencyToName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseOtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientNativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientOtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CoopAgencyToNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CustomField9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FlowDirection" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OtherCaseBaseData" nillable="true" type="tns:OtherCaseBaseData" />
+  <xs:complexType name="ClientBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_FirstCaseDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_LastCaseDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_ClientID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CopyrightCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Country" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DomainCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Language" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OtherCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_PatentCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_TMCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Addresses" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsTel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsZipCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Credit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Facebook" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstContactEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstContactFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstContactIdentity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstContactLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstContactTel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IMAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IPType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroducerFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroducerLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_NativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PatentChargerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TMChargerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Twitter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Website" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ZipCodes" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientBaseData" nillable="true" type="tns:ClientBaseData" />
+  <xs:complexType name="AgencyBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_FirstCaseFromDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_FirstCaseToDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_LastCaseFromDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_LastCaseToDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_AgencyID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CopyrightCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DomainCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OtherCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_PatentCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_PayCurrency" type="xs:int" />
+      <xs:element minOccurs="0" name="n_TMCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ToCopyrightCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ToDomainCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ToOtherCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ToPatentCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ToTMCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Addresses" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsFax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsTel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CountryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Credit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Facebook" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IMAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IPType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_NativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Twitter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_WebSite" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AgencyBaseData" nillable="true" type="tns:AgencyBaseData" />
+  <xs:complexType name="IntroducerBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_FirstCaseDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_LastCaseDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_CopyrightCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DomainCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OtherCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_PatentCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Percent" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_TMCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Addresses" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Facebook" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IMAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IPType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Initial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_JobTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_NativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Prefix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Twitter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Website" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IntroducerBaseData" nillable="true" type="tns:IntroducerBaseData" />
+  <xs:complexType name="ApplicantBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_FirstCaseFromDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_LastCaseFromDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_AppID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CopyrightCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DomainCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OtherCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_PatentCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_TMCaseCount" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Addresses" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AppCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AppType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ContactsTel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FeeMitigationNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FeeMitigationYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IDName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IDNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IMAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IPType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_NativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OtherName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Website" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplicantBaseData" nillable="true" type="tns:ApplicantBaseData" />
+  <xs:complexType name="OutFileBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_PubDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ReceiveDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SendDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SubmitDueDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_WriteDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_CaseID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CheckedOutBy" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ClientID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="n_CreatorID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FileID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_GovOfficeID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Abstact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AcceptNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AgencyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_BusinessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CodeProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Creator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Dealers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Editor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FileStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IPType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Inventors" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_NameForeign" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PubNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SecondAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SendMethod" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutFileBaseData" nillable="true" type="tns:OutFileBaseData" />
+  <xs:complexType name="InFileBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_PubDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ReceiveDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SendDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_TransmitDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_AgencyOfficeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CameFileApplicantID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CameFileClientID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CaseID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ClientID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ConfirmID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CreatorID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FileCodeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FileID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_GovOfficeID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Abstact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CodeProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Complete" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Creator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Dealers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Distribute" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Editor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FileApplicantName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FileClinetName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FileConfirmStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FilePathName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IPType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_InfileFlowNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Inventors" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsPreChange" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_NameForeign" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OFileStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Officer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OfficialNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PubNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SecondAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SendMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Urgent" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InFileBaseData" nillable="true" type="tns:InFileBaseData" />
+  <xs:complexType name="OtherFileBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_PubDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ReceiveDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SendDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_CreatorID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FileID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Abstact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CodeProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Creator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Editor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Inventors" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_NameForeign" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PubNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SecondAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SendMethod" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OtherFileBaseData" nillable="true" type="tns:OtherFileBaseData" />
+  <xs:complexType name="EmailBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_ReceiveTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SendTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_AttachCounts" type="xs:int" />
+      <xs:element minOccurs="0" name="n_EmailID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Abstact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Bc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Cc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CodeProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_EmailPath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_From" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Important" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_To" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailBaseData" nillable="true" type="tns:EmailBaseData" />
+  <xs:complexType name="TaskBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_FinishTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="g_FormerNodeGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="g_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="g_NodeID" type="ser:guid" />
+      <xs:element minOccurs="0" name="g_TaskChainGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="n_Creator" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Editor" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ExecutePositionID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ExecutorID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Finisher" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Level" type="xs:int" />
+      <xs:element minOccurs="0" name="n_MentorID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Num" type="xs:int" />
+      <xs:element minOccurs="0" name="n_UrgencyID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Checked" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CodeNodeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Mode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ReadState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_RelatedInfo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_RelatedInfo2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TaskChainName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaskBaseData" nillable="true" type="tns:TaskBaseData" />
+  <xs:complexType name="TaskChainBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="g_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="g_TaskChainGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="n_Creator" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Editor" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Num" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_RelatedInfo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_RelatedInfo2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaskChainBaseData" nillable="true" type="tns:TaskChainBaseData" />
+  <xs:complexType name="RemindBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_RemindDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="g_CodeRemindID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="g_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="n_Num" type="xs:int" />
+      <xs:element minOccurs="0" name="n_RemindCount" type="xs:int" />
+      <xs:element minOccurs="0" name="s_FileCaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_RemindPara" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_RemindType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TaskCaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TaskChainName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TaskName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TriggerID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TriggerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Valid" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RemindBaseData" nillable="true" type="tns:RemindBaseData" />
+  <xs:complexType name="RemindRecordBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_StateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="g_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="g_RemindModeID" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="n_EmployeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Num" type="xs:int" />
+      <xs:element minOccurs="0" name="s_Content" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_RemindMode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Valid" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RemindRecordBaseData" nillable="true" type="tns:RemindRecordBaseData" />
+  <xs:complexType name="DeadlineBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MainFileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dt_Deadline" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="g_CodeDeadlineID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="n_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_RelatedObjectID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AllowEdit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Classification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_RelatedObjectType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ValueRule" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeadlineBaseData" nillable="true" type="tns:DeadlineBaseData" />
+  <xs:complexType name="FeeBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargePayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargeShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_OfficialPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_OfficialShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ReceiptDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_FeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OfficialCurrency" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OfficialFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_PatentTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_BillNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CheckStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientContacts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CodeProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Creator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Dealers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Editor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_InvoiceNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OfficialDiscMark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OfficialFeeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PayMode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ReceiptNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SecondAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FeeBaseData" nillable="true" type="tns:FeeBaseData" />
+  <xs:complexType name="ChargingFeeBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargePayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargeShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargingCheckDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SubmitDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_BonusCalced" type="xs:boolean" />
+      <xs:element minOccurs="0" name="n_ChargeAFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ChargeCurrency" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ChargeOFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ChargeTFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ChargingChecker" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_PatentTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_AbroadBillNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_BonusFeeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ChargeFeeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ChargingCheckStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ChargingNotes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientContacts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CodeProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Creator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Dealers" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Editor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PayMode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChargingFeeBaseData" nillable="true" type="tns:ChargingFeeBaseData" />
+  <xs:complexType name="AnnualFeeBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AlarmDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargePayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargeShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CheckDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_IssuedPubDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_OfficialPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_OfficialShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ReceiptDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_AnnualFeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_AssignAnnualFeeHandler" type="xs:int" />
+      <xs:element minOccurs="0" name="n_AssignBillHandler" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ChargeAFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ChargeCurrency" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ChargeOFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ChargeTFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_Checker" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FeeApprovalStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OfficialCurrency" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OfficialDiscount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_OfficialFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_OfficialLateFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ReportStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="n_YearNo" type="xs:decimal" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ApprovalNotes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_BillApprovalStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_BillNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CheckStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientContacts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ElecPayer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstCaseAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstDealer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FirstInventor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FlowDirection" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IntroSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Inventors" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsOfficialDisc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OfficialDiscStyle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OfficialReceiptPath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PayMode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ReceiptNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_SecondAttorney" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AnnualFeeBaseData" nillable="true" type="tns:AnnualFeeBaseData" />
+  <xs:complexType name="DomainNameRenewalBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargePayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargeShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_OfficialPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_OfficialShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_ChargeAFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ChargeCurrency" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ChargeOFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ChargeTFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_DRenewalFeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OfficialCurrency" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OfficialDiscount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_OfficialFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsOfficialDisc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OfficialDiscStyle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OfficialReceiptPath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DomainNameRenewalBaseData" nillable="true" type="tns:DomainNameRenewalBaseData" />
+  <xs:complexType name="TrademarkRenewalBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargePayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargeShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_OfficialPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_OfficialShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_ChargeAFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ChargeCurrency" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ChargeOFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ChargeTFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_OfficialCurrency" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OfficialDiscount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_OfficialFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_TRenewalFeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsOfficialDisc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OfficialDiscStyle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_OfficialReceiptPath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrademarkRenewalBaseData" nillable="true" type="tns:TrademarkRenewalBaseData" />
+  <xs:complexType name="ABillHedgeBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_Hedge" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_CurrencyID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_BalanceAmount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientNativeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TheAgencyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TheAgencyNativeName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ABillHedgeBaseData" nillable="true" type="tns:ABillHedgeBaseData" />
+  <xs:complexType name="ABillPaymentBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_PayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ReReceiptDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_ABillPaymentCurrencyID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_BillID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CurrencyID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_OppID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_PayBillNo" type="xs:int" />
+      <xs:element minOccurs="0" name="s_PayMark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TheAgencyName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ABillPaymentBaseData" nillable="true" type="tns:ABillPaymentBaseData" />
+  <xs:complexType name="BillBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CheckDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ConfirmDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_RecentRemindDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_SendOutDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ShldPayDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_AFeeSum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_BillCurrency" type="xs:int" />
+      <xs:element minOccurs="0" name="n_BillID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Checker" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ClientID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Country" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FeeSum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_FlowNum" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OFeeSum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_OriAFeeSum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_OtherFeeSum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_RemindCount" type="xs:int" />
+      <xs:element minOccurs="0" name="n_TFeeSum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_BillNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_BillToName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_BillType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CheckStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Creator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Editor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_FilePath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Street" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BillBaseData" nillable="true" type="tns:BillBaseData" />
+  <xs:complexType name="TimeSheetBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_ChargeCurrency" type="xs:int" />
+      <xs:element minOccurs="0" name="n_Rate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_TimesheetID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CheckStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CodeProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Invoiced" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Paid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Task" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TimeSheetBaseData" nillable="true" type="tns:TimeSheetBaseData" />
+  <xs:complexType name="MonitorBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_BeginDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_MonitorDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_MonitorID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CodeProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ObjType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MonitorBaseData" nillable="true" type="tns:MonitorBaseData" />
+  <xs:complexType name="WorkItemBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_ActualValueTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ChargeTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EstimateValueTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_OfeeChargeTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="g_ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="g_TaskChainGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="g_TaskGuid" type="ser:guid" />
+      <xs:element minOccurs="0" name="n_ActualServiceValue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ActualValue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_ActualValueRecorder" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ChargeRecorder" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CodeWorkItemID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CodeWorkItemIDForUnit" type="xs:int" />
+      <xs:element minOccurs="0" name="n_EstimateValue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_EstimateValueRecorder" type="xs:int" />
+      <xs:element minOccurs="0" name="n_HasCharge" type="xs:int" />
+      <xs:element minOccurs="0" name="n_HasOfeeCharge" type="xs:int" />
+      <xs:element minOccurs="0" name="n_OfeeChargeRecorder" type="xs:int" />
+      <xs:element minOccurs="0" name="n_RelatedFileID" type="xs:int" />
+      <xs:element minOccurs="0" name="s_ActualValueNote" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_EstimateValueNote" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_RelatedCaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_TaskChainName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WorkItemBaseData" nillable="true" type="tns:WorkItemBaseData" />
+  <xs:complexType name="CameMoneyBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_ArriveDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_EditDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dt_ReceiptDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_Balance" type="xs:decimal" />
+      <xs:element minOccurs="0" name="n_CMoneyID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CurrUnitID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DeptID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_TotalMoney" type="xs:decimal" />
+      <xs:element minOccurs="0" name="s_Bank" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CMoneyNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CameMode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Payer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Receipt" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CameMoneyBaseData" nillable="true" type="tns:CameMoneyBaseData" />
+  <xs:complexType name="ArchiveBaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dt_AppDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="n_BorrowTimes" type="xs:int" />
+      <xs:element minOccurs="0" name="n_CaseID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_ClientID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_DepartmentID" type="xs:int" />
+      <xs:element minOccurs="0" name="n_FirstAttorney" type="xs:int" />
+      <xs:element minOccurs="0" name="s_AppNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_Applicants" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ArchivePosition" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ArchiveStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="s_IPType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArchiveBaseData" nillable="true" type="tns:ArchiveBaseData" />
+</xs:schema>

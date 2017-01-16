@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" />
+  <xs:complexType name="ArrayOfBasicCaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BasicCaseData" nillable="true" type="tns:BasicCaseData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBasicCaseData" nillable="true" type="tns:ArrayOfBasicCaseData" />
+  <xs:complexType name="BasicCaseData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q1:BasicCaseBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BasicCaseData" nillable="true" type="tns:BasicCaseData" />
+  <xs:complexType name="ArrayOfPatentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PatentData" nillable="true" type="tns:PatentData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPatentData" nillable="true" type="tns:ArrayOfPatentData" />
+  <xs:complexType name="PatentData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q2:PatentBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CurrentProcessName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseSubmitStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PatentData" nillable="true" type="tns:PatentData" />
+  <xs:complexType name="ArrayOfTrademarkData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrademarkData" nillable="true" type="tns:TrademarkData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrademarkData" nillable="true" type="tns:ArrayOfTrademarkData" />
+  <xs:complexType name="TrademarkData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q3:TrademarkBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CurrentProcessName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseSubmitStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrademarkData" nillable="true" type="tns:TrademarkData" />
+  <xs:complexType name="ArrayOfDomainData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DomainData" nillable="true" type="tns:DomainData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDomainData" nillable="true" type="tns:ArrayOfDomainData" />
+  <xs:complexType name="DomainData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q4:DomainBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseSubmitStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DomainData" nillable="true" type="tns:DomainData" />
+  <xs:complexType name="ArrayOfCopyRightData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CopyRightData" nillable="true" type="tns:CopyRightData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCopyRightData" nillable="true" type="tns:ArrayOfCopyRightData" />
+  <xs:complexType name="CopyRightData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q5:CopyRightBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseSubmitStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CopyRightData" nillable="true" type="tns:CopyRightData" />
+  <xs:complexType name="ArrayOfOtherCaseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OtherCaseData" nillable="true" type="tns:OtherCaseData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOtherCaseData" nillable="true" type="tns:ArrayOfOtherCaseData" />
+  <xs:complexType name="OtherCaseData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q6:OtherCaseBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseSubmitStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OtherCaseData" nillable="true" type="tns:OtherCaseData" />
+  <xs:complexType name="ArrayOfClientData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientData" nillable="true" type="tns:ClientData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientData" nillable="true" type="tns:ArrayOfClientData" />
+  <xs:complexType name="ClientData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q7:ClientBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="n_CaseCount" type="xs:int" />
+          <xs:element minOccurs="0" name="s_FirstContactName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_IntroducerName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ClientData" nillable="true" type="tns:ClientData" />
+  <xs:complexType name="ArrayOfAgencyData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AgencyData" nillable="true" type="tns:AgencyData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAgencyData" nillable="true" type="tns:ArrayOfAgencyData" />
+  <xs:complexType name="AgencyData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q8:AgencyBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="n_CaseCount" type="xs:int" />
+          <xs:element minOccurs="0" name="n_ToCaseCount" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AgencyData" nillable="true" type="tns:AgencyData" />
+  <xs:complexType name="ArrayOfIntroducerData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IntroducerData" nillable="true" type="tns:IntroducerData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIntroducerData" nillable="true" type="tns:ArrayOfIntroducerData" />
+  <xs:complexType name="IntroducerData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q9:IntroducerBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IntroducerData" nillable="true" type="tns:IntroducerData" />
+  <xs:complexType name="ArrayOfApplicantData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplicantData" nillable="true" type="tns:ApplicantData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfApplicantData" nillable="true" type="tns:ArrayOfApplicantData" />
+  <xs:complexType name="ApplicantData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q10:ApplicantBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="n_CaseCount" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ApplicantData" nillable="true" type="tns:ApplicantData" />
+  <xs:complexType name="ArrayOfOutFileData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OutFileData" nillable="true" type="tns:OutFileData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOutFileData" nillable="true" type="tns:ArrayOfOutFileData" />
+  <xs:complexType name="OutFileData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q11:OutFileBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CheckOutStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClientGov" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sFile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Attorney" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseProcess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Introducer" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OutFileData" nillable="true" type="tns:OutFileData" />
+  <xs:complexType name="ArrayOfInFileData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InFileData" nillable="true" type="tns:InFileData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInFileData" nillable="true" type="tns:ArrayOfInFileData" />
+  <xs:complexType name="InFileData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q12:InFileBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClientGov" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Distribute" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sFile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Attorney" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseProcess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FileConfirmStatusDisp" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FileRelatedApplicantName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FileRelatedClinetName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Introducer" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_PreChange" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InFileData" nillable="true" type="tns:InFileData" />
+  <xs:complexType name="ArrayOfOtherFileData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OtherFileData" nillable="true" type="tns:OtherFileData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOtherFileData" nillable="true" type="tns:ArrayOfOtherFileData" />
+  <xs:complexType name="OtherFileData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q13:OtherFileBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClientGov" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sFile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Attorney" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseProcess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Introducer" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OtherFileData" nillable="true" type="tns:OtherFileData" />
+  <xs:complexType name="ArrayOfEmailData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmailData" nillable="true" type="tns:EmailData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmailData" nillable="true" type="tns:ArrayOfEmailData" />
+  <xs:complexType name="EmailData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q14:EmailBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sEmailFile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Attachment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseProcess" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailData" nillable="true" type="tns:EmailData" />
+  <xs:complexType name="ArrayOfTaskData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaskData" nillable="true" type="tns:TaskData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaskData" nillable="true" type="tns:ArrayOfTaskData" />
+  <xs:complexType name="TaskData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q15:TaskBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskData" nillable="true" type="tns:TaskData" />
+  <xs:complexType name="ArrayOfTaskChainData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaskChainData" nillable="true" type="tns:TaskChainData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaskChainData" nillable="true" type="tns:ArrayOfTaskChainData" />
+  <xs:complexType name="TaskChainData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q16:TaskChainBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskChainData" nillable="true" type="tns:TaskChainData" />
+  <xs:complexType name="ArrayOfRemindData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RemindData" nillable="true" type="tns:RemindData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRemindData" nillable="true" type="tns:ArrayOfRemindData" />
+  <xs:complexType name="RemindData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q17:RemindBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="s_CaseSerial" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RemindData" nillable="true" type="tns:RemindData" />
+  <xs:complexType name="ArrayOfRemindRecordData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RemindRecordData" nillable="true" type="tns:RemindRecordData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRemindRecordData" nillable="true" type="tns:ArrayOfRemindRecordData" />
+  <xs:complexType name="RemindRecordData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q18:RemindRecordBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RemindRecordData" nillable="true" type="tns:RemindRecordData" />
+  <xs:complexType name="ArrayOfDeadlineData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DeadlineData" nillable="true" type="tns:DeadlineData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDeadlineData" nillable="true" type="tns:ArrayOfDeadlineData" />
+  <xs:complexType name="DeadlineData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q19:DeadlineBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeadlineData" nillable="true" type="tns:DeadlineData" />
+  <xs:complexType name="ArrayOfFeeData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FeeData" nillable="true" type="tns:FeeData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFeeData" nillable="true" type="tns:ArrayOfFeeData" />
+  <xs:complexType name="FeeData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q20:FeeBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="FeeCheckStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FeeOrder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FeePaymentStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FeeReceivedStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Attorney" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseProcess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FeePaymentStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FeeReceivedStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Introducer" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FeeData" nillable="true" type="tns:FeeData" />
+  <xs:complexType name="ArrayOfChargingFeeData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChargingFeeData" nillable="true" type="tns:ChargingFeeData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChargingFeeData" nillable="true" type="tns:ArrayOfChargingFeeData" />
+  <xs:complexType name="ChargingFeeData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q21:ChargingFeeBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Billstatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FeeOrder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FeeReceivedStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Billstatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_CaseProcess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FeeReceivedStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Introducer" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ChargingFeeData" nillable="true" type="tns:ChargingFeeData" />
+  <xs:complexType name="ArrayOfAnnualFeeData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AnnualFeeData" nillable="true" type="tns:AnnualFeeData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnnualFeeData" nillable="true" type="tns:ArrayOfAnnualFeeData" />
+  <xs:complexType name="AnnualFeeData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q22:AnnualFeeBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sConfirmProcess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sFile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sFlowDirection" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sHandlingSequence" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Billstatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_ConfirmStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FeePaymentStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FeeReceivedStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Introducer" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_NotifyStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AnnualFeeData" nillable="true" type="tns:AnnualFeeData" />
+  <xs:complexType name="ArrayOfDomainNameRenewalData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DomainNameRenewalData" nillable="true" type="tns:DomainNameRenewalData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDomainNameRenewalData" nillable="true" type="tns:ArrayOfDomainNameRenewalData" />
+  <xs:complexType name="DomainNameRenewalData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q23:DomainNameRenewalBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sFile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Billstatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_ConfirmStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FeePaymentStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FeeReceivedStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_NotifyStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DomainNameRenewalData" nillable="true" type="tns:DomainNameRenewalData" />
+  <xs:complexType name="ArrayOfTrademarkRenewalData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrademarkRenewalData" nillable="true" type="tns:TrademarkRenewalData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrademarkRenewalData" nillable="true" type="tns:ArrayOfTrademarkRenewalData" />
+  <xs:complexType name="TrademarkRenewalData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q24:TrademarkRenewalBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sFile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_Billstatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_ConfirmStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FeePaymentStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_FeeReceivedStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_NotifyStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrademarkRenewalData" nillable="true" type="tns:TrademarkRenewalData" />
+  <xs:complexType name="ArrayOfABillHedgeData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ABillHedgeData" nillable="true" type="tns:ABillHedgeData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfABillHedgeData" nillable="true" type="tns:ArrayOfABillHedgeData" />
+  <xs:complexType name="ABillHedgeData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q25:ABillHedgeBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ABillHedgeData" nillable="true" type="tns:ABillHedgeData" />
+  <xs:complexType name="ArrayOfABillPaymentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ABillPaymentData" nillable="true" type="tns:ABillPaymentData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfABillPaymentData" nillable="true" type="tns:ArrayOfABillPaymentData" />
+  <xs:complexType name="ABillPaymentData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q26:ABillPaymentBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ABillPaymentData" nillable="true" type="tns:ABillPaymentData" />
+  <xs:complexType name="ArrayOfBillData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BillData" nillable="true" type="tns:BillData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBillData" nillable="true" type="tns:ArrayOfBillData" />
+  <xs:complexType name="BillData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q27:BillBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="nAFeeSum" type="xs:decimal" />
+          <xs:element minOccurs="0" name="nOFeeSum" type="xs:decimal" />
+          <xs:element minOccurs="0" name="nOriAFeeSum" type="xs:decimal" />
+          <xs:element minOccurs="0" name="nOtherFeeSum" type="xs:decimal" />
+          <xs:element minOccurs="0" name="sFileExtension" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BillData" nillable="true" type="tns:BillData" />
+  <xs:complexType name="ArrayOfTimeSheetData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TimeSheetData" nillable="true" type="tns:TimeSheetData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTimeSheetData" nillable="true" type="tns:ArrayOfTimeSheetData" />
+  <xs:complexType name="TimeSheetData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q28:TimeSheetBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="s_CaseProcess" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="s_WorkItemEmployeeIDs" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TimeSheetData" nillable="true" type="tns:TimeSheetData" />
+  <xs:complexType name="ArrayOfMonitorData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MonitorData" nillable="true" type="tns:MonitorData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMonitorData" nillable="true" type="tns:ArrayOfMonitorData" />
+  <xs:complexType name="MonitorData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q29="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q29:MonitorBaseData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="s_CaseProcess" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MonitorData" nillable="true" type="tns:MonitorData" />
+  <xs:complexType name="ArrayOfWorkItemData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WorkItemData" nillable="true" type="tns:WorkItemData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWorkItemData" nillable="true" type="tns:ArrayOfWorkItemData" />
+  <xs:complexType name="WorkItemData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q30="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q30:WorkItemBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WorkItemData" nillable="true" type="tns:WorkItemData" />
+  <xs:complexType name="ArrayOfCameMoneyData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CameMoneyData" nillable="true" type="tns:CameMoneyData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCameMoneyData" nillable="true" type="tns:ArrayOfCameMoneyData" />
+  <xs:complexType name="CameMoneyData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q31="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q31:CameMoneyBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CameMoneyData" nillable="true" type="tns:CameMoneyData" />
+  <xs:complexType name="ArrayOfArchiveData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ArchiveData" nillable="true" type="tns:ArchiveData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfArchiveData" nillable="true" type="tns:ArrayOfArchiveData" />
+  <xs:complexType name="ArchiveData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q32="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable" base="q32:ArchiveBaseData">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ArchiveData" nillable="true" type="tns:ArchiveData" />
+</xs:schema>

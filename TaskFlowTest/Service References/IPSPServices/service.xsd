@@ -1,0 +1,2187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" />
+  <xs:element name="ByServerDeleteTaskChain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gTaskChainID" type="q1:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerDeleteTaskChainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerDeleteTaskChainResult" nillable="true" type="q2:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerRollBackNode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gNodeID" type="q3:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerRollBackNodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerRollBackNodeResult" nillable="true" type="q4:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerUpdateTaskExecutor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listTaskIDs" nillable="true" type="q5:ArrayOfguid" />
+        <xs:element minOccurs="0" name="nExecutorID" type="xs:int" />
+        <xs:element minOccurs="0" name="nExecutePositionID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerUpdateTaskExecutorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerUpdateTaskExecutorResult" nillable="true" type="q6:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualUpdateDeadline">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gCodeDeadlineID" type="q7:guid" />
+        <xs:element minOccurs="0" name="sRelatedObjectType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nRelatedObjectID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualUpdateDeadlineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerManualUpdateDeadlineResult" nillable="true" type="q8:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerAutoUpdateDeadlineByCodeBaseDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nCodeBaseDateID" type="xs:int" />
+        <xs:element minOccurs="0" name="sRelatedObjectType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nRelatedObjectID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerAutoUpdateDeadlineByCodeBaseDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerAutoUpdateDeadlineByCodeBaseDateResult" nillable="true" type="q9:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerAutoUpdateRelatedInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sRelatedObjectType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nRelatedObjectID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerAutoUpdateRelatedInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerAutoUpdateRelatedInfoResult" nillable="true" type="q10:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateClient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sClientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateClientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateClientResult" nillable="true" type="q11:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateBaseCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCaseID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateBaseCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateBaseCaseResult" nillable="true" type="q12:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdatePatentCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sPatentID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdatePatentCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdatePatentCaseResult" nillable="true" type="q13:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateTrademarkCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sTrademarkID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateTrademarkCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateTrademarkCaseResult" nillable="true" type="q14:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateFee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sFeeID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateFeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateFeeResult" nillable="true" type="q15:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateMainFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sFileID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateMainFilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateMainFilesResult" nillable="true" type="q16:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateMonitor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sMonitorID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateMonitorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateMonitorResult" nillable="true" type="q17:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateTask">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sTaskID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateTaskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateTaskResult" nillable="true" type="q18:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateTimeSheet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sTimesheetID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateTimeSheetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateTimeSheetResult" nillable="true" type="q19:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateBill">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sBillID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateBillResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateBillResult" nillable="true" type="q20:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateEmployeeName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sEmployeeID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateEmployeeNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateEmployeeNameResult" nillable="true" type="q21:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sEmailID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateEmailResult" nillable="true" type="q22:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateExpense">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sExpenseID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateExpenseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateExpenseResult" nillable="true" type="q23:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateProcess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sProcessID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateProcessResult" nillable="true" type="q24:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateIntroducer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sIntroducerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateIntroducerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateIntroducerResult" nillable="true" type="q25:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateApplicant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sAppID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateApplicantResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateApplicantResult" nillable="true" type="q26:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateAgency">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nAgencyID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOrUpdateAgencyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="InsertOrUpdateAgencyResult" nillable="true" type="q27:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClientPatentCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldClientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewClientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClientPatentCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateClientPatentCaseCountResult" nillable="true" type="q28:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClientTMCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldClientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewClientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClientTMCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateClientTMCaseCountResult" nillable="true" type="q29:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClientCopyRightCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldClientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewClientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClientCopyRightCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateClientCopyRightCaseCountResult" nillable="true" type="q30:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClientDomainCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldClientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewClientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClientDomainCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateClientDomainCaseCountResult" nillable="true" type="q31:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClientOtherCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldClientID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewClientID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateClientOtherCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateClientOtherCaseCountResult" nillable="true" type="q32:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIntroducerPatentCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldIntroducerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewIntroducerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIntroducerPatentCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateIntroducerPatentCaseCountResult" nillable="true" type="q33:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIntroducerTMCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldIntroducerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewIntroducerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIntroducerTMCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateIntroducerTMCaseCountResult" nillable="true" type="q34:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIntroducerCopyRightCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldIntroducerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewIntroducerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIntroducerCopyRightCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateIntroducerCopyRightCaseCountResult" nillable="true" type="q35:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIntroducerDomainCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldIntroducerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewIntroducerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIntroducerDomainCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateIntroducerDomainCaseCountResult" nillable="true" type="q36:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIntroducerOtherCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldIntroducerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewIntroducerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIntroducerOtherCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateIntroducerOtherCaseCountResult" nillable="true" type="q37:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencyToPatentCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldAgencyID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewAgencyID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencyToPatentCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateAgencyToPatentCaseCountResult" nillable="true" type="q38:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencyToTMCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldAgencyID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewAgencyID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencyToTMCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateAgencyToTMCaseCountResult" nillable="true" type="q39:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencyToCopyRightCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldAgencyID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewAgencyID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencyToCopyRightCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateAgencyToCopyRightCaseCountResult" nillable="true" type="q40:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencyToDomainCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldAgencyID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewAgencyID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencyToDomainCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateAgencyToDomainCaseCountResult" nillable="true" type="q41:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencyToOtherCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldAgencyID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewAgencyID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencyToOtherCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateAgencyToOtherCaseCountResult" nillable="true" type="q42:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantPatentCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nOldApplicantID" nillable="true" type="q43:ArrayOfstring" />
+        <xs:element xmlns:q44="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nNewApplicantID" nillable="true" type="q44:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantPatentCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateApplicantPatentCaseCountResult" nillable="true" type="q45:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantTMCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nOldApplicantID" nillable="true" type="q46:ArrayOfstring" />
+        <xs:element xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nNewApplicantID" nillable="true" type="q47:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantTMCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateApplicantTMCaseCountResult" nillable="true" type="q48:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantCopyRightCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nOldApplicantID" nillable="true" type="q49:ArrayOfstring" />
+        <xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nNewApplicantID" nillable="true" type="q50:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantCopyRightCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateApplicantCopyRightCaseCountResult" nillable="true" type="q51:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantDomainCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nOldApplicantID" nillable="true" type="q52:ArrayOfstring" />
+        <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nNewApplicantID" nillable="true" type="q53:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantDomainCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateApplicantDomainCaseCountResult" nillable="true" type="q54:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantOtherCaseCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nOldApplicantID" nillable="true" type="q55:ArrayOfstring" />
+        <xs:element xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nNewApplicantID" nillable="true" type="q56:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantOtherCaseCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateApplicantOtherCaseCountResult" nillable="true" type="q57:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantFirstOrLastDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nOldAppID" nillable="true" type="q58:ArrayOfstring" />
+        <xs:element xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="nNewAppID" nillable="true" type="q59:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateApplicantFirstOrLastDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateApplicantFirstOrLastDateResult" nillable="true" type="q60:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencytFirstOrLastDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nOldAgencyID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nNewAgencyID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAgencytFirstOrLastDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateAgencytFirstOrLastDateResult" nillable="true" type="q61:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAllCaseCustomFiled">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAllCaseCustomFiledResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateAllCaseCustomFiledResult" nillable="true" type="q62:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCaseCustomFiled">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCaseCustomFiledResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="UpdateCaseCustomFiledResult" nillable="true" type="q63:UpdateInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMyTaskReadState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gTaskId" type="q64:guid" />
+        <xs:element minOccurs="0" name="readState" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bytes" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="sTargetPath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UploadFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sSourcePath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DownloadFileResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sTargetPath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sTargetPath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FileExistsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBillProcedureXmlFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="billId" type="xs:int" />
+        <xs:element minOccurs="0" name="billTemplateId" type="xs:int" />
+        <xs:element minOccurs="0" name="templateFilePath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBillProcedureXmlFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetBillProcedureXmlFileResult" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="templateFilePath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerAutoGenerateImmediatelyReminds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sReminderTriggerType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sReminderTriggerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sImmediatelyRemindType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerAutoGenerateImmediatelyRemindsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerAutoGenerateImmediatelyRemindsResult" nillable="true" type="q65:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerAutoGenerateTimeReminds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sReminderTriggerType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sReminderTriggerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerAutoGenerateTimeRemindsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerAutoGenerateTimeRemindsResult" nillable="true" type="q66:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualGenerateImmediatelyRemindsForCameFileDistribute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nFileID" type="xs:int" />
+        <xs:element xmlns:q67="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listNewDistributerIDs" nillable="true" type="q67:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualGenerateImmediatelyRemindsForCameFileDistributeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerManualGenerateImmediatelyRemindsForCameFileDistributeResult" nillable="true" type="q68:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBasicCases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBasicCasesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetBasicCasesResult" nillable="true" type="q69:ArrayOfBasicCaseData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserBasicCases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserBasicCasesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserBasicCasesResult" nillable="true" type="q70:ArrayOfBasicCaseData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetPatentsResult" nillable="true" type="q71:ArrayOfPatentData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPatents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPatentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserPatentsResult" nillable="true" type="q72:ArrayOfPatentData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrademarks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrademarksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetTrademarksResult" nillable="true" type="q73:ArrayOfTrademarkData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTrademarks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTrademarksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserTrademarksResult" nillable="true" type="q74:ArrayOfTrademarkData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDomains">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDomainsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetDomainsResult" nillable="true" type="q75:ArrayOfDomainData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDomains">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDomainsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserDomainsResult" nillable="true" type="q76:ArrayOfDomainData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCopyRights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCopyRightsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetCopyRightsResult" nillable="true" type="q77:ArrayOfCopyRightData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCopyRights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCopyRightsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserCopyRightsResult" nillable="true" type="q78:ArrayOfCopyRightData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherCases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherCasesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetOtherCasesResult" nillable="true" type="q79:ArrayOfOtherCaseData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserOtherCases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserOtherCasesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserOtherCasesResult" nillable="true" type="q80:ArrayOfOtherCaseData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClients">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetClientsResult" nillable="true" type="q81:ArrayOfClientData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserClients">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserClientsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserClientsResult" nillable="true" type="q82:ArrayOfClientData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAgencys">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAgencysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetAgencysResult" nillable="true" type="q83:ArrayOfAgencyData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAgencys">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAgencysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserAgencysResult" nillable="true" type="q84:ArrayOfAgencyData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIntroducers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIntroducersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetIntroducersResult" nillable="true" type="q85:ArrayOfIntroducerData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserIntroducers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserIntroducersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserIntroducersResult" nillable="true" type="q86:ArrayOfIntroducerData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApplicants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApplicantsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetApplicantsResult" nillable="true" type="q87:ArrayOfApplicantData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserApplicants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserApplicantsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserApplicantsResult" nillable="true" type="q88:ArrayOfApplicantData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutFilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetOutFilesResult" nillable="true" type="q89:ArrayOfOutFileData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserOutFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserOutFilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserOutFilesResult" nillable="true" type="q90:ArrayOfOutFileData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInFilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetInFilesResult" nillable="true" type="q91:ArrayOfInFileData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInFilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserInFilesResult" nillable="true" type="q92:ArrayOfInFileData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOtherFilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetOtherFilesResult" nillable="true" type="q93:ArrayOfOtherFileData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserOtherFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserOtherFilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserOtherFilesResult" nillable="true" type="q94:ArrayOfOtherFileData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetEmailsResult" nillable="true" type="q95:ArrayOfEmailData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserEmails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserEmailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserEmailsResult" nillable="true" type="q96:ArrayOfEmailData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTasks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTasksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetTasksResult" nillable="true" type="q97:ArrayOfTaskData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTasks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTasksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserTasksResult" nillable="true" type="q98:ArrayOfTaskData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaskChains">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaskChainsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetTaskChainsResult" nillable="true" type="q99:ArrayOfTaskChainData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTaskChains">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTaskChainsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserTaskChainsResult" nillable="true" type="q100:ArrayOfTaskChainData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReminds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRemindsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetRemindsResult" nillable="true" type="q101:ArrayOfRemindData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserReminds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserRemindsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserRemindsResult" nillable="true" type="q102:ArrayOfRemindData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRemindRecords">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRemindRecordsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetRemindRecordsResult" nillable="true" type="q103:ArrayOfRemindRecordData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserRemindRecords">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserRemindRecordsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserRemindRecordsResult" nillable="true" type="q104:ArrayOfRemindRecordData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeadlines">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeadlinesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetDeadlinesResult" nillable="true" type="q105:ArrayOfDeadlineData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFeesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetFeesResult" nillable="true" type="q106:ArrayOfFeeData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserFees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserFeesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserFeesResult" nillable="true" type="q107:ArrayOfFeeData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChargingFees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChargingFeesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetChargingFeesResult" nillable="true" type="q108:ArrayOfChargingFeeData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserChargingFees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserChargingFeesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserChargingFeesResult" nillable="true" type="q109:ArrayOfChargingFeeData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnnualFees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnnualFeesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetAnnualFeesResult" nillable="true" type="q110:ArrayOfAnnualFeeData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAnnualFees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAnnualFeesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserAnnualFeesResult" nillable="true" type="q111:ArrayOfAnnualFeeData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDomainNameRenewal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDomainNameRenewalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetDomainNameRenewalResult" nillable="true" type="q112:ArrayOfDomainNameRenewalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDomainNameRenewal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDomainNameRenewalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserDomainNameRenewalResult" nillable="true" type="q113:ArrayOfDomainNameRenewalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrademarkRenewal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrademarkRenewalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetTrademarkRenewalResult" nillable="true" type="q114:ArrayOfTrademarkRenewalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTrademarkRenewal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTrademarkRenewalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q115="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserTrademarkRenewalResult" nillable="true" type="q115:ArrayOfTrademarkRenewalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetABillHedges">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetABillHedgesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q116="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetABillHedgesResult" nillable="true" type="q116:ArrayOfABillHedgeData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetABillPayments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetABillPaymentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetABillPaymentsResult" nillable="true" type="q117:ArrayOfABillPaymentData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBills">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBillsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetBillsResult" nillable="true" type="q118:ArrayOfBillData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTimeSheets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTimeSheetsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetTimeSheetsResult" nillable="true" type="q119:ArrayOfTimeSheetData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTimeSheets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserTimeSheetsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserTimeSheetsResult" nillable="true" type="q120:ArrayOfTimeSheetData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMonitors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMonitorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetMonitorsResult" nillable="true" type="q121:ArrayOfMonitorData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserMonitors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserMonitorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserMonitorsResult" nillable="true" type="q122:ArrayOfMonitorData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWorkItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetWorkItemsResult" nillable="true" type="q123:ArrayOfWorkItemData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserWorkItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserWorkItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserWorkItemsResult" nillable="true" type="q124:ArrayOfWorkItemData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCameMoney">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCameMoneyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetCameMoneyResult" nillable="true" type="q125:ArrayOfCameMoneyData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCameMoney">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserCameMoneyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q126="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserCameMoneyResult" nillable="true" type="q126:ArrayOfCameMoneyData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetArchiveData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sCondition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetArchiveDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q127="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetArchiveDataResult" nillable="true" type="q127:ArrayOfArchiveData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserArchiveData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sMyBagFlag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sCondtion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sOrderBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sField" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bOnlyGetTopCount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserArchiveDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q128="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData" minOccurs="0" name="GetUserArchiveDataResult" nillable="true" type="q128:ArrayOfArchiveData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sData" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConnectSuccess">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConnectSuccessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConnectSuccessResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConnectionString">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConnectionStringResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetConnectionStringResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentVersion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentVersionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCurrentVersionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientVersion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientVersionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetClientVersionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUpgradeConfigInfo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUpgradeConfigInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUpgradeConfigInfoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestLifeCycle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nEmployeeID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestLifeCycleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q129="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="RequestLifeCycleResult" nillable="true" type="q129:LifeCycleInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrademarkGoodsPatternCN">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrademarkGoodsPatternCNResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrademarkGoodsPatternCNResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrademarkGoodsPatternEN">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrademarkGoodsPatternENResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrademarkGoodsPatternENResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerUpdateTaskFlowConfig">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerUpdateTaskFlowConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q130="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerUpdateTaskFlowConfigResult" nillable="true" type="q130:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerAutoGenerateTopTaskChains">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sTriggerType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sTriggerObjectFullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="objTriggerObjectKey" nillable="true" type="xs:anyType" />
+        <xs:element minOccurs="0" name="bCanRepeat" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerAutoGenerateTopTaskChainsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q131="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerAutoGenerateTopTaskChainsResult" nillable="true" type="q131:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualGenerateTopTaskChain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q132="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gTaskChainID" type="q132:guid" />
+        <xs:element minOccurs="0" name="sRelatedObjectFullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="objRelatedObjectKey" nillable="true" type="xs:anyType" />
+        <xs:element minOccurs="0" name="bCanRepeat" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualGenerateTopTaskChainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerManualGenerateTopTaskChainResult" nillable="true" type="q133:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerIsObjectExistsSpecifiedTaskChain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sObjectFullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="objObjectKey" nillable="true" type="xs:anyType" />
+        <xs:element xmlns:q134="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gTaskChainID" type="q134:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerIsObjectExistsSpecifiedTaskChainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerIsObjectExistsSpecifiedTaskChainResult" nillable="true" type="q135:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualGenerateTaskNode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gTaskChainID" type="q136:guid" />
+        <xs:element xmlns:q137="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gCodeNodeTaskID" type="q137:guid" />
+        <xs:element minOccurs="0" name="nCreatorID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualGenerateTaskNodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q138="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerManualGenerateTaskNodeResult" nillable="true" type="q138:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualCreateTaskNodeWithoutCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gTaskChainID" type="q139:guid" />
+        <xs:element minOccurs="0" name="sTaskName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nCreatorID" type="xs:int" />
+        <xs:element minOccurs="0" name="sTaskCyclePara" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtTaskCycleBaseDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="nAdvanceDays" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualCreateTaskNodeWithoutCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q140="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerManualCreateTaskNodeWithoutCodeResult" nillable="true" type="q140:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualCreateTaskNodeInNewTaskChainWithoutCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sTaskChainName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sRelatedObjectType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nRelatedObjectID" type="xs:int" />
+        <xs:element minOccurs="0" name="sTaskName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nCreatorID" type="xs:int" />
+        <xs:element minOccurs="0" name="sTaskCyclePara" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dtTaskCycleBaseDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="nAdvanceDays" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerManualCreateTaskNodeInNewTaskChainWithoutCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerManualCreateTaskNodeInNewTaskChainWithoutCodeResult" nillable="true" type="q141:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerFinishTaskNode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q142="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gTaskNodeID" type="q142:guid" />
+        <xs:element minOccurs="0" name="nFinisherID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerFinishTaskNodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q143="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerFinishTaskNodeResult" nillable="true" type="q143:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerCloseNode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gNodeID" type="q144:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerCloseNodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerCloseNodeResult" nillable="true" type="q145:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerCloseTaskChain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q146="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gTaskChainID" type="q146:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerCloseTaskChainResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q147="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerCloseTaskChainResult" nillable="true" type="q147:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerReopenNode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q148="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gNodeID" type="q148:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerReopenNodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerReopenNodeResult" nillable="true" type="q149:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerDeleteNode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q150="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gNodeID" type="q150:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ByServerDeleteNodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q151="http://schemas.datacontract.org/2004/07/Server.DataContracts" minOccurs="0" name="ByServerDeleteNodeResult" nillable="true" type="q151:OperationInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
