@@ -25,14 +25,14 @@
     <MapFileExtensions>true</MapFileExtensions>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -111,12 +111,22 @@
     </Compile>
     <Compile Include="TaskFlowTestHelper.cs" />
     <Compile Include="TestResultInfo.cs" />
+    <Compile Include="Utils\ComboxStruct.cs" />
     <Compile Include="Utils\Enums.cs" />
+    <Compile Include="Utils\IPSXPCollections.cs" />
+    <Compile Include="Utils\TaskFlowEnum.cs" />
+    <Compile Include="Utils\TaskParameterTypeEnum.cs" />
     <Compile Include="XFrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="XFrmMain.Designer.cs">
       <DependentUpon>XFrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XFrmSearchCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XFrmSearchCase.designer.cs">
+      <DependentUpon>XFrmSearchCase.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -130,6 +140,9 @@
     </Compile>
     <EmbeddedResource Include="XFrmMain.resx">
       <DependentUpon>XFrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XFrmSearchCase.resx">
+      <DependentUpon>XFrmSearchCase.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

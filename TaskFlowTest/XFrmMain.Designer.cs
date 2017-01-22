@@ -31,12 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XFrmMain));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.xslueCameFileOfficial = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.xslueTaskChainCode = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.xlueRelatedObjectType = new DevExpress.XtraEditors.LookUpEdit();
             this.xsbExport = new DevExpress.XtraEditors.SimpleButton();
-            this.buttonEdit1 = new DevExpress.XtraEditors.ButtonEdit();
+            this.xbeCase = new DevExpress.XtraEditors.ButtonEdit();
             this.xsbTest = new DevExpress.XtraEditors.SimpleButton();
             this.xchkSimulation = new DevExpress.XtraEditors.CheckEdit();
             this.xchkCondition = new DevExpress.XtraEditors.CheckEdit();
@@ -52,12 +53,12 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -68,11 +69,12 @@
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xslueCameFileOfficial.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xslueTaskChainCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xlueRelatedObjectType.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xbeCase.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xchkSimulation.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xchkCondition.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xchkAllTaskChain.Properties)).BeginInit();
@@ -82,12 +84,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.icInfoType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
@@ -99,11 +101,11 @@
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.searchLookUpEdit1);
-            this.layoutControl1.Controls.Add(this.lookUpEdit2);
-            this.layoutControl1.Controls.Add(this.lookUpEdit1);
+            this.layoutControl1.Controls.Add(this.xslueCameFileOfficial);
+            this.layoutControl1.Controls.Add(this.xslueTaskChainCode);
+            this.layoutControl1.Controls.Add(this.xlueRelatedObjectType);
             this.layoutControl1.Controls.Add(this.xsbExport);
-            this.layoutControl1.Controls.Add(this.buttonEdit1);
+            this.layoutControl1.Controls.Add(this.xbeCase);
             this.layoutControl1.Controls.Add(this.xsbTest);
             this.layoutControl1.Controls.Add(this.xchkSimulation);
             this.layoutControl1.Controls.Add(this.xchkCondition);
@@ -117,17 +119,36 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // searchLookUpEdit1
+            // xslueCameFileOfficial
             // 
-            this.searchLookUpEdit1.Location = new System.Drawing.Point(87, 182);
-            this.searchLookUpEdit1.Name = "searchLookUpEdit1";
-            this.searchLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.xslueCameFileOfficial.Location = new System.Drawing.Point(431, 158);
+            this.xslueCameFileOfficial.Name = "xslueCameFileOfficial";
+            this.xslueCameFileOfficial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit1.Properties.NullText = " ";
-            this.searchLookUpEdit1.Properties.View = this.searchLookUpEdit1View;
-            this.searchLookUpEdit1.Size = new System.Drawing.Size(277, 20);
-            this.searchLookUpEdit1.StyleController = this.layoutControl1;
-            this.searchLookUpEdit1.TabIndex = 14;
+            this.xslueCameFileOfficial.Properties.NullText = " ";
+            this.xslueCameFileOfficial.Properties.View = this.gridView1;
+            this.xslueCameFileOfficial.Size = new System.Drawing.Size(279, 20);
+            this.xslueCameFileOfficial.StyleController = this.layoutControl1;
+            this.xslueCameFileOfficial.TabIndex = 15;
+            // 
+            // gridView1
+            // 
+            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // xslueTaskChainCode
+            // 
+            this.xslueTaskChainCode.Location = new System.Drawing.Point(87, 182);
+            this.xslueTaskChainCode.Name = "xslueTaskChainCode";
+            this.xslueTaskChainCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.xslueTaskChainCode.Properties.NullText = " ";
+            this.xslueTaskChainCode.Properties.View = this.searchLookUpEdit1View;
+            this.xslueTaskChainCode.Size = new System.Drawing.Size(277, 20);
+            this.xslueTaskChainCode.StyleController = this.layoutControl1;
+            this.xslueTaskChainCode.TabIndex = 14;
             // 
             // searchLookUpEdit1View
             // 
@@ -136,27 +157,17 @@
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
-            // lookUpEdit2
+            // xlueRelatedObjectType
             // 
-            this.lookUpEdit2.Location = new System.Drawing.Point(431, 158);
-            this.lookUpEdit2.Name = "lookUpEdit2";
-            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.xlueRelatedObjectType.Location = new System.Drawing.Point(87, 134);
+            this.xlueRelatedObjectType.Name = "xlueRelatedObjectType";
+            this.xlueRelatedObjectType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit2.Properties.NullText = " ";
-            this.lookUpEdit2.Size = new System.Drawing.Size(279, 20);
-            this.lookUpEdit2.StyleController = this.layoutControl1;
-            this.lookUpEdit2.TabIndex = 13;
-            // 
-            // lookUpEdit1
-            // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(87, 134);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.NullText = " ";
-            this.lookUpEdit1.Size = new System.Drawing.Size(623, 20);
-            this.lookUpEdit1.StyleController = this.layoutControl1;
-            this.lookUpEdit1.TabIndex = 12;
+            this.xlueRelatedObjectType.Properties.NullText = " ";
+            this.xlueRelatedObjectType.Size = new System.Drawing.Size(623, 20);
+            this.xlueRelatedObjectType.StyleController = this.layoutControl1;
+            this.xlueRelatedObjectType.TabIndex = 12;
+            this.xlueRelatedObjectType.EditValueChanged += new System.EventHandler(this.xlueRelatedObjectType_EditValueChanged);
             // 
             // xsbExport
             // 
@@ -168,16 +179,17 @@
             this.xsbExport.Text = "导出结果";
             this.xsbExport.Click += new System.EventHandler(this.xsbExport_Click);
             // 
-            // buttonEdit1
+            // xbeCase
             // 
-            this.buttonEdit1.Location = new System.Drawing.Point(87, 158);
-            this.buttonEdit1.Name = "buttonEdit1";
-            this.buttonEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.xbeCase.Location = new System.Drawing.Point(87, 158);
+            this.xbeCase.Name = "xbeCase";
+            this.xbeCase.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit1.Properties.ReadOnly = true;
-            this.buttonEdit1.Size = new System.Drawing.Size(277, 20);
-            this.buttonEdit1.StyleController = this.layoutControl1;
-            this.buttonEdit1.TabIndex = 10;
+            this.xbeCase.Properties.ReadOnly = true;
+            this.xbeCase.Size = new System.Drawing.Size(277, 20);
+            this.xbeCase.StyleController = this.layoutControl1;
+            this.xbeCase.TabIndex = 10;
+            this.xbeCase.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.xbeCase_ButtonClick);
             // 
             // xsbTest
             // 
@@ -211,7 +223,7 @@
             // 
             this.xchkAllTaskChain.Location = new System.Drawing.Point(368, 182);
             this.xchkAllTaskChain.Name = "xchkAllTaskChain";
-            this.xchkAllTaskChain.Properties.Caption = "检查所有可用任务链";
+            this.xchkAllTaskChain.Properties.Caption = "使用所有当前可用的任务链";
             this.xchkAllTaskChain.Size = new System.Drawing.Size(342, 19);
             this.xchkAllTaskChain.StyleController = this.layoutControl1;
             this.xchkAllTaskChain.TabIndex = 4;
@@ -338,30 +350,20 @@
             // 
             this.layoutControlGroup2.CustomizationFormText = "模拟执行流程";
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem10,
             this.layoutControlItem2,
             this.layoutControlItem9,
             this.layoutControlItem3,
             this.layoutControlItem6,
-            this.layoutControlItem5});
+            this.layoutControlItem5,
+            this.layoutControlItem11});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 67);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Size = new System.Drawing.Size(714, 139);
             this.layoutControlGroup2.Text = "模拟执行流程";
             // 
-            // layoutControlItem10
-            // 
-            this.layoutControlItem10.Control = this.lookUpEdit2;
-            this.layoutControlItem10.CustomizationFormText = "来文：";
-            this.layoutControlItem10.Location = new System.Drawing.Point(344, 47);
-            this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(346, 24);
-            this.layoutControlItem10.Text = "来文：";
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(60, 14);
-            // 
             // layoutControlItem2
             // 
-            this.layoutControlItem2.Control = this.searchLookUpEdit1;
+            this.layoutControlItem2.Control = this.xslueTaskChainCode;
             this.layoutControlItem2.CustomizationFormText = "任务链：";
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 71);
             this.layoutControlItem2.Name = "layoutControlItem2";
@@ -371,7 +373,7 @@
             // 
             // layoutControlItem9
             // 
-            this.layoutControlItem9.Control = this.buttonEdit1;
+            this.layoutControlItem9.Control = this.xbeCase;
             this.layoutControlItem9.CustomizationFormText = "选择案件：";
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 47);
             this.layoutControlItem9.Name = "layoutControlItem9";
@@ -393,7 +395,7 @@
             // 
             // layoutControlItem6
             // 
-            this.layoutControlItem6.Control = this.lookUpEdit1;
+            this.layoutControlItem6.Control = this.xlueRelatedObjectType;
             this.layoutControlItem6.CustomizationFormText = "关联对象：";
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 23);
             this.layoutControlItem6.Name = "layoutControlItem6";
@@ -412,6 +414,16 @@
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextToControlDistance = 0;
             this.layoutControlItem5.TextVisible = false;
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.Control = this.xslueCameFileOfficial;
+            this.layoutControlItem11.CustomizationFormText = "来文：";
+            this.layoutControlItem11.Location = new System.Drawing.Point(344, 47);
+            this.layoutControlItem11.Name = "layoutControlItem11";
+            this.layoutControlItem11.Size = new System.Drawing.Size(346, 24);
+            this.layoutControlItem11.Text = "来文：";
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(60, 14);
             // 
             // layoutControlGroup4
             // 
@@ -514,11 +526,12 @@
             this.Load += new System.EventHandler(this.XFrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xslueCameFileOfficial.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xslueTaskChainCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xlueRelatedObjectType.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xbeCase.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xchkSimulation.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xchkCondition.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xchkAllTaskChain.Properties)).EndInit();
@@ -528,12 +541,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.icInfoType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
@@ -569,19 +582,20 @@
         private DevExpress.XtraEditors.SimpleButton xsbTest;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
-        private DevExpress.XtraEditors.ButtonEdit buttonEdit1;
+        private DevExpress.XtraEditors.ButtonEdit xbeCase;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraEditors.SimpleButton xsbExport;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.LookUpEdit xlueRelatedObjectType;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit1;
+        private DevExpress.XtraEditors.SearchLookUpEdit xslueTaskChainCode;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox riicbInfoType;
         private DevExpress.Utils.ImageCollection icInfoType;
+        private DevExpress.XtraEditors.SearchLookUpEdit xslueCameFileOfficial;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
     }
 }

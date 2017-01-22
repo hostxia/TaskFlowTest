@@ -151,28 +151,33 @@ namespace TaskFlowTest
             });
             TestResultInfoSet.AddInfo("3. 完成检查：流向条件是否合法。");
         }
-        public void TestCustomCondtion()
-        {
 
-        }
         #region 模拟流程
-        public void GenerateTaskChain()
+        public void GenerateTaskChain(Guid gCodeTaskChainGuid, string sRelatedObjectTypeName, int nRelatedObjectId)
         {
-            _serviceClient = new ServiceClient();
-            //TriggerType: CaseSubmit, Case, CameFileOfficial
-            //TriggerObjectFullName: DataEntities.Case.BasicCase
-            var testCase = _unitOfWork.GetObjectByKey<BasicCase>(1);
-
+            TestResultInfoSet.AddInfo("1. 开始：分析任务链自定义条件分支......");
             var htCustomCondition = new List<List<KeyValuePair<string, string>>>();
             CodeTaskRecursion(Guid.Empty, ref htCustomCondition);
-
+            TestResultInfoSet.AddInfo("1. 完成：分析任务链自定义条件分支。");
+            TestResultInfoSet.AddInfo("2. 开始：组织任务链所有分支条件流程......");
             var result = new List<List<KeyValuePair<string, string>>>();
             GetFlowCustomCondtion(htCustomCondition[0], htCustomCondition[1], 1, htCustomCondition, ref result);
-
+            TestResultInfoSet.AddInfo("2. 完成：组织任务链所有分支条件流程。");
+            TestResultInfoSet.AddInfo("3. 开始：逐一创建任务链并完成任务......");
+            _serviceClient = new ServiceClient();
             foreach (var conditionGroup in result)
             {
-                _serviceClient.ByServerAutoGenerateTopTaskChains("Case", "DataEntities.Case.BasicCase", 1, true);
+                var operationInfo = _serviceClient.ByServerManualGenerateTopTaskChain(gCodeTaskChainGuid, sRelatedObjectTypeName, nRelatedObjectId, true);
+                if (!operationInfo.bOperationResult)
+                {
+                    TestResultInfoSet.AddError(operationInfo.sOperationMessage);
+                }
+                else
+                {
+                    FinishTask(operationInfo.sOperationMessage, conditionGroup);
+                }
             }
+            TestResultInfoSet.AddInfo("3. 完成：逐一创建任务链并完成任务。");
         }
 
         private void GetFlowCustomCondtion(List<KeyValuePair<string, string>> listValue1, List<KeyValuePair<string, string>> listValue2, int nIndex, List<List<KeyValuePair<string, string>>> htCustomCondition, ref List<List<KeyValuePair<string, string>>> result)
@@ -220,11 +225,15 @@ namespace TaskFlowTest
             }
         }
 
-        private void FinishTaskRecursion(int nCaseID)
+        private void FinishTask(string sTaskChainNum, List<KeyValuePair<string, string>> listCondition)
         {
-            var basicCase = new UnitOfWork().GetObjectByKey<BasicCase>(nCaseID);
-            var listTaskChains = basicCase.GetRelateTaskChains();
-            var listTasks = listTaskChains.SelectMany(c => c.GetListNodes().Select(n => n.GetTheOwnTask())).Where(t => t.s_State == "P" || t.s_State == "O").ToList();
+            var taskChain = new UnitOfWork().FindObject<TFTaskChain>(CriteriaOperator.Parse("n_Num = ?", sTaskChainNum));
+            if (taskChain == null)
+            {
+                TestResultInfoSet.AddError("未找到任务链！", sTaskChainNum);
+                return;
+            }
+            var listTasks = taskChain.GetListNodes().Select(n => n.GetTheOwnTask()).Where(t => t.s_State == "P" || t.s_State == "O").ToList();
             while (listTasks.Count > 0)
             {
                 foreach (var task in listTasks)
@@ -261,9 +270,10 @@ namespace TaskFlowTest
                     var operationInfo = _serviceClient.ByServerFinishTaskNode(tfNode.g_ID, 131);
                     if (!operationInfo.bOperationResult)
                     {
-                        //TODO： 输出信息
+                        TestResultInfoSet.AddError("完成任务失败！", sTaskChainNum, task.n_Num.ToString());
                         return;
                     }
+                    listTasks = taskChain.GetListNodes().Select(n => n.GetTheOwnTask()).Where(t => t.s_State == "P" || t.s_State == "O").ToList();
 
                 }
             }

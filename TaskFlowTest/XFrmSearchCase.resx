@@ -1,0 +1,2843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 18</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>我方文号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="xtePCaseSerial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 15</value>
+  </data>
+  <data name="xtePCaseSerial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xtePCaseSerial.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseSerial.Name" xml:space="preserve">
+    <value>xtePCaseSerial</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseSerial.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseSerial.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="xgridPatentCase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="xgridPatentCase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 95</value>
+  </data>
+  <data name="gridColumn13.Caption" xml:space="preserve">
+    <value>案件ID</value>
+  </data>
+  <assembly alias="DevExpress.Data.v14.1" name="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="gridColumn13.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v14.1">
+    <value>Count</value>
+  </data>
+  <data name="gridColumn13.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn13.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn3.Caption" xml:space="preserve">
+    <value>国家/地区</value>
+  </data>
+  <data name="xluePCountry.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v14.1" name="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="xluePCountry.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="xluePCountry.Columns" xml:space="preserve">
+    <value>s_Name</value>
+  </data>
+  <data name="xluePCountry.Columns1" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="xluePCountry.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn2.Caption" xml:space="preserve">
+    <value>业务类型</value>
+  </data>
+  <data name="xluePatentBusinessType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xluePatentBusinessType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="xluePatentBusinessType.Columns" xml:space="preserve">
+    <value>s_Name</value>
+  </data>
+  <data name="xluePatentBusinessType.Columns1" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="xluePatentBusinessType.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn2.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="gridColumnCaseSerial.Caption" xml:space="preserve">
+    <value>我方文号</value>
+  </data>
+  <data name="gridColumnCaseSerial.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumnCaseSerial.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumnCaseSerial.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="gridColumn1.Caption" xml:space="preserve">
+    <value>申请号</value>
+  </data>
+  <data name="gridColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridColumn1.Width" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="gridColumnCaseName.Caption" xml:space="preserve">
+    <value>案件名称</value>
+  </data>
+  <data name="gridColumnCaseName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumnCaseName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gridColumnCaseName.Width" type="System.Int32, mscorlib">
+    <value>226</value>
+  </data>
+  <data name="gridColumnClient.Caption" xml:space="preserve">
+    <value>客户名称</value>
+  </data>
+  <data name="gridColumnClient.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumnClient.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="gridColumnClient.Width" type="System.Int32, mscorlib">
+    <value>164</value>
+  </data>
+  <data name="gridColumn28.Caption" xml:space="preserve">
+    <value>客户文号</value>
+  </data>
+  <data name="gridColumn28.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn28.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="gridColumn31.Caption" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="gridColumn31.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn31.VisibleIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="xgridPatentCase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>748, 240</value>
+  </data>
+  <data name="xgridPatentCase.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;xgridPatentCase.Name" xml:space="preserve">
+    <value>xgridPatentCase</value>
+  </data>
+  <data name="&gt;&gt;xgridPatentCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xgridPatentCase.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xgridPatentCase.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="xtabSearchPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="xtabSearchPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="&gt;&gt;xtePClientCode.Name" xml:space="preserve">
+    <value>xtePClientCode</value>
+  </data>
+  <data name="&gt;&gt;xtePClientCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtePClientCode.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xtePClientCode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelControl21.Name" xml:space="preserve">
+    <value>labelControl21</value>
+  </data>
+  <data name="&gt;&gt;labelControl21.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl21.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;labelControl21.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
+    <value>labelControl2</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;xbtPatentSearch.Name" xml:space="preserve">
+    <value>xbtPatentSearch</value>
+  </data>
+  <data name="&gt;&gt;xbtPatentSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xbtPatentSearch.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xbtPatentSearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;xtePAppNo.Name" xml:space="preserve">
+    <value>xtePAppNo</value>
+  </data>
+  <data name="&gt;&gt;xtePAppNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtePAppNo.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xtePAppNo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Name" xml:space="preserve">
+    <value>labelControl4</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseName.Name" xml:space="preserve">
+    <value>xtePCaseName</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseName.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
+    <value>labelControl3</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;xtePClientSerial.Name" xml:space="preserve">
+    <value>xtePClientSerial</value>
+  </data>
+  <data name="&gt;&gt;xtePClientSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtePClientSerial.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xtePClientSerial.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="xtabPagePatent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>774, 350</value>
+  </data>
+  <data name="xtabPagePatent.Text" xml:space="preserve">
+    <value>专利案</value>
+  </data>
+  <data name="&gt;&gt;xtabPagePatent.Name" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xtabPagePatent.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtabPagePatent.Parent" xml:space="preserve">
+    <value>xtabSearchPanel</value>
+  </data>
+  <data name="&gt;&gt;xtabPagePatent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="xtabSearchPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>780, 379</value>
+  </data>
+  <data name="xtabSearchPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="xteTClientName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 68</value>
+  </data>
+  <data name="xteTClientName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xteTClientName.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;xteTClientName.Name" xml:space="preserve">
+    <value>xteTClientName</value>
+  </data>
+  <data name="&gt;&gt;xteTClientName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteTClientName.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;xteTClientName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControl22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 71</value>
+  </data>
+  <data name="labelControl22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl22.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="labelControl22.Text" xml:space="preserve">
+    <value>客户名称：</value>
+  </data>
+  <data name="&gt;&gt;labelControl22.Name" xml:space="preserve">
+    <value>labelControl22</value>
+  </data>
+  <data name="&gt;&gt;labelControl22.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl22.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;labelControl22.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 18</value>
+  </data>
+  <data name="labelControl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl5.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="labelControl5.Text" xml:space="preserve">
+    <value>客户文号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl5.Name" xml:space="preserve">
+    <value>labelControl5</value>
+  </data>
+  <data name="&gt;&gt;labelControl5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl5.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;labelControl5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xbtnTrademarkSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="xbtnTrademarkSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 11</value>
+  </data>
+  <data name="xbtnTrademarkSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 25</value>
+  </data>
+  <data name="xbtnTrademarkSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="xbtnTrademarkSearch.Text" xml:space="preserve">
+    <value>查询商标(&amp;R)</value>
+  </data>
+  <data name="&gt;&gt;xbtnTrademarkSearch.Name" xml:space="preserve">
+    <value>xbtnTrademarkSearch</value>
+  </data>
+  <data name="&gt;&gt;xbtnTrademarkSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xbtnTrademarkSearch.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;xbtnTrademarkSearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="xteTAppNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 41</value>
+  </data>
+  <data name="xteTAppNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xteTAppNo.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;xteTAppNo.Name" xml:space="preserve">
+    <value>xteTAppNo</value>
+  </data>
+  <data name="&gt;&gt;xteTAppNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteTAppNo.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;xteTAppNo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelControl6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 18</value>
+  </data>
+  <data name="labelControl6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl6.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="labelControl6.Text" xml:space="preserve">
+    <value>我方文号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl6.Name" xml:space="preserve">
+    <value>labelControl6</value>
+  </data>
+  <data name="&gt;&gt;labelControl6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl6.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;labelControl6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelControl7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 44</value>
+  </data>
+  <data name="labelControl7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 14</value>
+  </data>
+  <data name="labelControl7.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="labelControl7.Text" xml:space="preserve">
+    <value>申请号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl7.Name" xml:space="preserve">
+    <value>labelControl7</value>
+  </data>
+  <data name="&gt;&gt;labelControl7.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl7.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;labelControl7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="xteTCaseSerial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 15</value>
+  </data>
+  <data name="xteTCaseSerial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xteTCaseSerial.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;xteTCaseSerial.Name" xml:space="preserve">
+    <value>xteTCaseSerial</value>
+  </data>
+  <data name="&gt;&gt;xteTCaseSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteTCaseSerial.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;xteTCaseSerial.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="xteTCaseName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 41</value>
+  </data>
+  <data name="xteTCaseName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="xteTCaseName.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;xteTCaseName.Name" xml:space="preserve">
+    <value>xteTCaseName</value>
+  </data>
+  <data name="&gt;&gt;xteTCaseName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteTCaseName.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;xteTCaseName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="xgridTrademarkCase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="xgridTrademarkCase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 95</value>
+  </data>
+  <data name="gridColumn19.Caption" xml:space="preserve">
+    <value>案件ID</value>
+  </data>
+  <data name="gridColumn19.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v14.1">
+    <value>Count</value>
+  </data>
+  <data name="gridColumn19.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn19.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn4.Caption" xml:space="preserve">
+    <value>国家/地区</value>
+  </data>
+  <data name="xlueTCountry.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xlueTCountry.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="xlueTCountry.Columns" xml:space="preserve">
+    <value>s_Name</value>
+  </data>
+  <data name="xlueTCountry.Columns1" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="xlueTCountry.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn5.Caption" xml:space="preserve">
+    <value>业务类型</value>
+  </data>
+  <data name="xlueTrademarkBusinessType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xlueTrademarkBusinessType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="xlueTrademarkBusinessType.Columns" xml:space="preserve">
+    <value>s_Name</value>
+  </data>
+  <data name="xlueTrademarkBusinessType.Columns1" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="xlueTrademarkBusinessType.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="gridColumn6.Caption" xml:space="preserve">
+    <value>我方文号</value>
+  </data>
+  <data name="gridColumn6.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn6.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn6.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="gridColumn7.Caption" xml:space="preserve">
+    <value>申请号</value>
+  </data>
+  <data name="gridColumn7.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn7.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridColumn7.Width" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="gridColumn8.Caption" xml:space="preserve">
+    <value>案件名称</value>
+  </data>
+  <data name="gridColumn8.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn8.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gridColumn8.Width" type="System.Int32, mscorlib">
+    <value>226</value>
+  </data>
+  <data name="gridColumn9.Caption" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="gridColumn9.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn9.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="gridColumn9.Width" type="System.Int32, mscorlib">
+    <value>164</value>
+  </data>
+  <data name="gridColumn32.Caption" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="gridColumn32.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn32.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="xgridTrademarkCase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>748, 240</value>
+  </data>
+  <data name="xgridTrademarkCase.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;xgridTrademarkCase.Name" xml:space="preserve">
+    <value>xgridTrademarkCase</value>
+  </data>
+  <data name="&gt;&gt;xgridTrademarkCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xgridTrademarkCase.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;xgridTrademarkCase.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="labelControl8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 44</value>
+  </data>
+  <data name="labelControl8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl8.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="labelControl8.Text" xml:space="preserve">
+    <value>案件名称：</value>
+  </data>
+  <data name="&gt;&gt;labelControl8.Name" xml:space="preserve">
+    <value>labelControl8</value>
+  </data>
+  <data name="&gt;&gt;labelControl8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl8.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;labelControl8.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="xteTClientSerial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 15</value>
+  </data>
+  <data name="xteTClientSerial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="xteTClientSerial.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;xteTClientSerial.Name" xml:space="preserve">
+    <value>xteTClientSerial</value>
+  </data>
+  <data name="&gt;&gt;xteTClientSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteTClientSerial.Parent" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;xteTClientSerial.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="xtabPageTrademark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>774, 350</value>
+  </data>
+  <data name="xtabPageTrademark.Text" xml:space="preserve">
+    <value>商标案</value>
+  </data>
+  <data name="&gt;&gt;xtabPageTrademark.Name" xml:space="preserve">
+    <value>xtabPageTrademark</value>
+  </data>
+  <data name="&gt;&gt;xtabPageTrademark.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtabPageTrademark.Parent" xml:space="preserve">
+    <value>xtabSearchPanel</value>
+  </data>
+  <data name="&gt;&gt;xtabPageTrademark.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xteCClientName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 42</value>
+  </data>
+  <data name="xteCClientName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xteCClientName.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;xteCClientName.Name" xml:space="preserve">
+    <value>xteCClientName</value>
+  </data>
+  <data name="&gt;&gt;xteCClientName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteCClientName.Parent" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;xteCClientName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControl23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 45</value>
+  </data>
+  <data name="labelControl23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl23.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="labelControl23.Text" xml:space="preserve">
+    <value>客户名称：</value>
+  </data>
+  <data name="&gt;&gt;labelControl23.Name" xml:space="preserve">
+    <value>labelControl23</value>
+  </data>
+  <data name="&gt;&gt;labelControl23.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl23.Parent" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;labelControl23.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelControl9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 18</value>
+  </data>
+  <data name="labelControl9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl9.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="labelControl9.Text" xml:space="preserve">
+    <value>客户文号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl9.Name" xml:space="preserve">
+    <value>labelControl9</value>
+  </data>
+  <data name="&gt;&gt;labelControl9.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl9.Parent" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;labelControl9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xbtnCopyrightSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="xbtnCopyrightSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 11</value>
+  </data>
+  <data name="xbtnCopyrightSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 25</value>
+  </data>
+  <data name="xbtnCopyrightSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="xbtnCopyrightSearch.Text" xml:space="preserve">
+    <value>查询版权(&amp;R)</value>
+  </data>
+  <data name="&gt;&gt;xbtnCopyrightSearch.Name" xml:space="preserve">
+    <value>xbtnCopyrightSearch</value>
+  </data>
+  <data name="&gt;&gt;xbtnCopyrightSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xbtnCopyrightSearch.Parent" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;xbtnCopyrightSearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelControl10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 18</value>
+  </data>
+  <data name="labelControl10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl10.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="labelControl10.Text" xml:space="preserve">
+    <value>我方文号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl10.Name" xml:space="preserve">
+    <value>labelControl10</value>
+  </data>
+  <data name="&gt;&gt;labelControl10.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl10.Parent" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;labelControl10.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="xteCCaseSerial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 15</value>
+  </data>
+  <data name="xteCCaseSerial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xteCCaseSerial.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;xteCCaseSerial.Name" xml:space="preserve">
+    <value>xteCCaseSerial</value>
+  </data>
+  <data name="&gt;&gt;xteCCaseSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteCCaseSerial.Parent" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;xteCCaseSerial.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="xteCCaseName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 41</value>
+  </data>
+  <data name="xteCCaseName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="xteCCaseName.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;xteCCaseName.Name" xml:space="preserve">
+    <value>xteCCaseName</value>
+  </data>
+  <data name="&gt;&gt;xteCCaseName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteCCaseName.Parent" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;xteCCaseName.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="xgridCopyrightCase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="xgridCopyrightCase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 95</value>
+  </data>
+  <data name="gridColumn25.Caption" xml:space="preserve">
+    <value>案件ID</value>
+  </data>
+  <data name="gridColumn25.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v14.1">
+    <value>Count</value>
+  </data>
+  <data name="gridColumn25.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn25.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn10.Caption" xml:space="preserve">
+    <value>国家/地区</value>
+  </data>
+  <data name="xlueCCountry.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xlueCCountry.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="xlueCCountry.Columns" xml:space="preserve">
+    <value>s_Name</value>
+  </data>
+  <data name="xlueCCountry.Columns1" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="xlueCCountry.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn10.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn10.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn11.Caption" xml:space="preserve">
+    <value>业务类型</value>
+  </data>
+  <data name="xlueCopyrightBusinessType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xlueCopyrightBusinessType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="xlueCopyrightBusinessType.Columns" xml:space="preserve">
+    <value>s_Name</value>
+  </data>
+  <data name="xlueCopyrightBusinessType.Columns1" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="xlueCopyrightBusinessType.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn11.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn11.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn11.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="gridColumn12.Caption" xml:space="preserve">
+    <value>我方文号</value>
+  </data>
+  <data name="gridColumn12.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn12.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn12.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="gridColumn14.Caption" xml:space="preserve">
+    <value>案件名称</value>
+  </data>
+  <data name="gridColumn14.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn14.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridColumn14.Width" type="System.Int32, mscorlib">
+    <value>226</value>
+  </data>
+  <data name="gridColumn15.Caption" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="gridColumn15.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn15.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gridColumn15.Width" type="System.Int32, mscorlib">
+    <value>164</value>
+  </data>
+  <data name="xgridCopyrightCase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>748, 240</value>
+  </data>
+  <data name="xgridCopyrightCase.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;xgridCopyrightCase.Name" xml:space="preserve">
+    <value>xgridCopyrightCase</value>
+  </data>
+  <data name="&gt;&gt;xgridCopyrightCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xgridCopyrightCase.Parent" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;xgridCopyrightCase.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelControl12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 44</value>
+  </data>
+  <data name="labelControl12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl12.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="labelControl12.Text" xml:space="preserve">
+    <value>案件名称：</value>
+  </data>
+  <data name="&gt;&gt;labelControl12.Name" xml:space="preserve">
+    <value>labelControl12</value>
+  </data>
+  <data name="&gt;&gt;labelControl12.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl12.Parent" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;labelControl12.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="xteCClientSerial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 15</value>
+  </data>
+  <data name="xteCClientSerial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="xteCClientSerial.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;xteCClientSerial.Name" xml:space="preserve">
+    <value>xteCClientSerial</value>
+  </data>
+  <data name="&gt;&gt;xteCClientSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteCClientSerial.Parent" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;xteCClientSerial.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="xtabPageCopyright.Size" type="System.Drawing.Size, System.Drawing">
+    <value>774, 350</value>
+  </data>
+  <data name="xtabPageCopyright.Text" xml:space="preserve">
+    <value>版权案</value>
+  </data>
+  <data name="&gt;&gt;xtabPageCopyright.Name" xml:space="preserve">
+    <value>xtabPageCopyright</value>
+  </data>
+  <data name="&gt;&gt;xtabPageCopyright.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtabPageCopyright.Parent" xml:space="preserve">
+    <value>xtabSearchPanel</value>
+  </data>
+  <data name="&gt;&gt;xtabPageCopyright.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xteDClientName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 42</value>
+  </data>
+  <data name="xteDClientName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xteDClientName.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;xteDClientName.Name" xml:space="preserve">
+    <value>xteDClientName</value>
+  </data>
+  <data name="&gt;&gt;xteDClientName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteDClientName.Parent" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;xteDClientName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControl24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 45</value>
+  </data>
+  <data name="labelControl24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl24.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="labelControl24.Text" xml:space="preserve">
+    <value>客户名称：</value>
+  </data>
+  <data name="&gt;&gt;labelControl24.Name" xml:space="preserve">
+    <value>labelControl24</value>
+  </data>
+  <data name="&gt;&gt;labelControl24.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl24.Parent" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;labelControl24.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelControl13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 18</value>
+  </data>
+  <data name="labelControl13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl13.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="labelControl13.Text" xml:space="preserve">
+    <value>客户文号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl13.Name" xml:space="preserve">
+    <value>labelControl13</value>
+  </data>
+  <data name="&gt;&gt;labelControl13.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl13.Parent" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;labelControl13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xbtnDomainNameSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="xbtnDomainNameSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 11</value>
+  </data>
+  <data name="xbtnDomainNameSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 25</value>
+  </data>
+  <data name="xbtnDomainNameSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="xbtnDomainNameSearch.Text" xml:space="preserve">
+    <value>查询域名(&amp;R)</value>
+  </data>
+  <data name="&gt;&gt;xbtnDomainNameSearch.Name" xml:space="preserve">
+    <value>xbtnDomainNameSearch</value>
+  </data>
+  <data name="&gt;&gt;xbtnDomainNameSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xbtnDomainNameSearch.Parent" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;xbtnDomainNameSearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelControl14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 18</value>
+  </data>
+  <data name="labelControl14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl14.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="labelControl14.Text" xml:space="preserve">
+    <value>我方文号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl14.Name" xml:space="preserve">
+    <value>labelControl14</value>
+  </data>
+  <data name="&gt;&gt;labelControl14.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl14.Parent" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;labelControl14.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="xteDCaseSerial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 15</value>
+  </data>
+  <data name="xteDCaseSerial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xteDCaseSerial.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;xteDCaseSerial.Name" xml:space="preserve">
+    <value>xteDCaseSerial</value>
+  </data>
+  <data name="&gt;&gt;xteDCaseSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteDCaseSerial.Parent" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;xteDCaseSerial.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="xteDCaseName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 41</value>
+  </data>
+  <data name="xteDCaseName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="xteDCaseName.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;xteDCaseName.Name" xml:space="preserve">
+    <value>xteDCaseName</value>
+  </data>
+  <data name="&gt;&gt;xteDCaseName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteDCaseName.Parent" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;xteDCaseName.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="xgridDomainNameCase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="xgridDomainNameCase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 95</value>
+  </data>
+  <data name="gridColumn29.Caption" xml:space="preserve">
+    <value>案件ID</value>
+  </data>
+  <data name="gridColumn29.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v14.1">
+    <value>Count</value>
+  </data>
+  <data name="gridColumn29.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn29.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn16.Caption" xml:space="preserve">
+    <value>国家/地区</value>
+  </data>
+  <data name="xlueDCountry.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xlueDCountry.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="xlueDCountry.Columns" xml:space="preserve">
+    <value>s_Name</value>
+  </data>
+  <data name="xlueDCountry.Columns1" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="xlueDCountry.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn16.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn16.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn17.Caption" xml:space="preserve">
+    <value>业务类型</value>
+  </data>
+  <data name="xlueDomainNameBusinessType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xlueDomainNameBusinessType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="xlueDomainNameBusinessType.Columns" xml:space="preserve">
+    <value>s_Name</value>
+  </data>
+  <data name="xlueDomainNameBusinessType.Columns1" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="xlueDomainNameBusinessType.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn17.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn17.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn17.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="gridColumn18.Caption" xml:space="preserve">
+    <value>我方文号</value>
+  </data>
+  <data name="gridColumn18.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn18.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn18.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="gridColumn20.Caption" xml:space="preserve">
+    <value>案件名称</value>
+  </data>
+  <data name="gridColumn20.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn20.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridColumn20.Width" type="System.Int32, mscorlib">
+    <value>226</value>
+  </data>
+  <data name="gridColumn21.Caption" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="gridColumn21.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn21.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gridColumn21.Width" type="System.Int32, mscorlib">
+    <value>164</value>
+  </data>
+  <data name="xgridDomainNameCase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>748, 240</value>
+  </data>
+  <data name="xgridDomainNameCase.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;xgridDomainNameCase.Name" xml:space="preserve">
+    <value>xgridDomainNameCase</value>
+  </data>
+  <data name="&gt;&gt;xgridDomainNameCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xgridDomainNameCase.Parent" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;xgridDomainNameCase.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelControl16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 44</value>
+  </data>
+  <data name="labelControl16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl16.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="labelControl16.Text" xml:space="preserve">
+    <value>案件名称：</value>
+  </data>
+  <data name="&gt;&gt;labelControl16.Name" xml:space="preserve">
+    <value>labelControl16</value>
+  </data>
+  <data name="&gt;&gt;labelControl16.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl16.Parent" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;labelControl16.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="xteDClientSerial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 15</value>
+  </data>
+  <data name="xteDClientSerial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="xteDClientSerial.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;xteDClientSerial.Name" xml:space="preserve">
+    <value>xteDClientSerial</value>
+  </data>
+  <data name="&gt;&gt;xteDClientSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteDClientSerial.Parent" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;xteDClientSerial.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="xtabPageDomainName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>774, 350</value>
+  </data>
+  <data name="xtabPageDomainName.Text" xml:space="preserve">
+    <value>域名案</value>
+  </data>
+  <data name="&gt;&gt;xtabPageDomainName.Name" xml:space="preserve">
+    <value>xtabPageDomainName</value>
+  </data>
+  <data name="&gt;&gt;xtabPageDomainName.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtabPageDomainName.Parent" xml:space="preserve">
+    <value>xtabSearchPanel</value>
+  </data>
+  <data name="&gt;&gt;xtabPageDomainName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="xteOClientName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 42</value>
+  </data>
+  <data name="xteOClientName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xteOClientName.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;xteOClientName.Name" xml:space="preserve">
+    <value>xteOClientName</value>
+  </data>
+  <data name="&gt;&gt;xteOClientName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteOClientName.Parent" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;xteOClientName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControl25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 45</value>
+  </data>
+  <data name="labelControl25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl25.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="labelControl25.Text" xml:space="preserve">
+    <value>客户名称：</value>
+  </data>
+  <data name="&gt;&gt;labelControl25.Name" xml:space="preserve">
+    <value>labelControl25</value>
+  </data>
+  <data name="&gt;&gt;labelControl25.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl25.Parent" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;labelControl25.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelControl17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 18</value>
+  </data>
+  <data name="labelControl17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl17.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="labelControl17.Text" xml:space="preserve">
+    <value>客户文号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl17.Name" xml:space="preserve">
+    <value>labelControl17</value>
+  </data>
+  <data name="&gt;&gt;labelControl17.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl17.Parent" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;labelControl17.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xbtnOtherCaseSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="xbtnOtherCaseSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 11</value>
+  </data>
+  <data name="xbtnOtherCaseSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 25</value>
+  </data>
+  <data name="xbtnOtherCaseSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="xbtnOtherCaseSearch.Text" xml:space="preserve">
+    <value>查询法律&amp;&amp;其他案(&amp;R)</value>
+  </data>
+  <data name="&gt;&gt;xbtnOtherCaseSearch.Name" xml:space="preserve">
+    <value>xbtnOtherCaseSearch</value>
+  </data>
+  <data name="&gt;&gt;xbtnOtherCaseSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xbtnOtherCaseSearch.Parent" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;xbtnOtherCaseSearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelControl18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 18</value>
+  </data>
+  <data name="labelControl18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl18.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="labelControl18.Text" xml:space="preserve">
+    <value>我方文号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl18.Name" xml:space="preserve">
+    <value>labelControl18</value>
+  </data>
+  <data name="&gt;&gt;labelControl18.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl18.Parent" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;labelControl18.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="xteOCaseSerial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 15</value>
+  </data>
+  <data name="xteOCaseSerial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xteOCaseSerial.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;xteOCaseSerial.Name" xml:space="preserve">
+    <value>xteOCaseSerial</value>
+  </data>
+  <data name="&gt;&gt;xteOCaseSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteOCaseSerial.Parent" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;xteOCaseSerial.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="xteOCaseName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 41</value>
+  </data>
+  <data name="xteOCaseName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="xteOCaseName.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;xteOCaseName.Name" xml:space="preserve">
+    <value>xteOCaseName</value>
+  </data>
+  <data name="&gt;&gt;xteOCaseName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteOCaseName.Parent" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;xteOCaseName.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="xgridOtherCase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="xgridOtherCase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 95</value>
+  </data>
+  <data name="gridColumn30.Caption" xml:space="preserve">
+    <value>案件ID</value>
+  </data>
+  <data name="gridColumn30.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v14.1">
+    <value>Count</value>
+  </data>
+  <data name="gridColumn30.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn30.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn22.Caption" xml:space="preserve">
+    <value>国家/地区</value>
+  </data>
+  <data name="xlueOCountry.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xlueOCountry.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="xlueOCountry.Columns" xml:space="preserve">
+    <value>s_Name</value>
+  </data>
+  <data name="xlueOCountry.Columns1" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="xlueOCountry.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn22.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn22.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn23.Caption" xml:space="preserve">
+    <value>业务类型</value>
+  </data>
+  <data name="xlueOtherCaseBusinessType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xlueOtherCaseBusinessType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="xlueOtherCaseBusinessType.Columns" xml:space="preserve">
+    <value>s_Name</value>
+  </data>
+  <data name="xlueOtherCaseBusinessType.Columns1" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="xlueOtherCaseBusinessType.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridColumn23.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn23.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn23.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="gridColumn24.Caption" xml:space="preserve">
+    <value>我方文号</value>
+  </data>
+  <data name="gridColumn24.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn24.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn24.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="gridColumn26.Caption" xml:space="preserve">
+    <value>案件名称</value>
+  </data>
+  <data name="gridColumn26.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn26.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridColumn26.Width" type="System.Int32, mscorlib">
+    <value>226</value>
+  </data>
+  <data name="gridColumn27.Caption" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="gridColumn27.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn27.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gridColumn27.Width" type="System.Int32, mscorlib">
+    <value>164</value>
+  </data>
+  <data name="xgridOtherCase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>748, 240</value>
+  </data>
+  <data name="xgridOtherCase.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;xgridOtherCase.Name" xml:space="preserve">
+    <value>xgridOtherCase</value>
+  </data>
+  <data name="&gt;&gt;xgridOtherCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xgridOtherCase.Parent" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;xgridOtherCase.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelControl20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 44</value>
+  </data>
+  <data name="labelControl20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl20.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="labelControl20.Text" xml:space="preserve">
+    <value>案件名称：</value>
+  </data>
+  <data name="&gt;&gt;labelControl20.Name" xml:space="preserve">
+    <value>labelControl20</value>
+  </data>
+  <data name="&gt;&gt;labelControl20.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl20.Parent" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;labelControl20.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="xteOClientSerial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 15</value>
+  </data>
+  <data name="xteOClientSerial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="xteOClientSerial.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;xteOClientSerial.Name" xml:space="preserve">
+    <value>xteOClientSerial</value>
+  </data>
+  <data name="&gt;&gt;xteOClientSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xteOClientSerial.Parent" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;xteOClientSerial.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="xtabPageOtherCase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>774, 350</value>
+  </data>
+  <data name="xtabPageOtherCase.Text" xml:space="preserve">
+    <value>法律&amp;&amp;其他案</value>
+  </data>
+  <data name="&gt;&gt;xtabPageOtherCase.Name" xml:space="preserve">
+    <value>xtabPageOtherCase</value>
+  </data>
+  <data name="&gt;&gt;xtabPageOtherCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtabPageOtherCase.Parent" xml:space="preserve">
+    <value>xtabSearchPanel</value>
+  </data>
+  <data name="&gt;&gt;xtabPageOtherCase.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;xtabSearchPanel.Name" xml:space="preserve">
+    <value>xtabSearchPanel</value>
+  </data>
+  <data name="&gt;&gt;xtabSearchPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtabSearchPanel.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;xtabSearchPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 383</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xtePClientCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 68</value>
+  </data>
+  <data name="xtePClientCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xtePClientCode.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;xtePClientCode.Name" xml:space="preserve">
+    <value>xtePClientCode</value>
+  </data>
+  <data name="&gt;&gt;xtePClientCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtePClientCode.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xtePClientCode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControl21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 71</value>
+  </data>
+  <data name="labelControl21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl21.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="labelControl21.Text" xml:space="preserve">
+    <value>客户名称：</value>
+  </data>
+  <data name="&gt;&gt;labelControl21.Name" xml:space="preserve">
+    <value>labelControl21</value>
+  </data>
+  <data name="&gt;&gt;labelControl21.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl21.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;labelControl21.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 18</value>
+  </data>
+  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelControl2.Text" xml:space="preserve">
+    <value>客户文号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
+    <value>labelControl2</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xbtPatentSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="xbtPatentSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 11</value>
+  </data>
+  <data name="xbtPatentSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 25</value>
+  </data>
+  <data name="xbtPatentSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="xbtPatentSearch.Text" xml:space="preserve">
+    <value>查询专利(&amp;R)</value>
+  </data>
+  <data name="&gt;&gt;xbtPatentSearch.Name" xml:space="preserve">
+    <value>xbtPatentSearch</value>
+  </data>
+  <data name="&gt;&gt;xbtPatentSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xbtPatentSearch.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xbtPatentSearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="xtePAppNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 41</value>
+  </data>
+  <data name="xtePAppNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="xtePAppNo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;xtePAppNo.Name" xml:space="preserve">
+    <value>xtePAppNo</value>
+  </data>
+  <data name="&gt;&gt;xtePAppNo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtePAppNo.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xtePAppNo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 44</value>
+  </data>
+  <data name="labelControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 14</value>
+  </data>
+  <data name="labelControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="labelControl4.Text" xml:space="preserve">
+    <value>申请号：</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Name" xml:space="preserve">
+    <value>labelControl4</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="xtePCaseName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 41</value>
+  </data>
+  <data name="xtePCaseName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="xtePCaseName.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseName.Name" xml:space="preserve">
+    <value>xtePCaseName</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseName.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xtePCaseName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 44</value>
+  </data>
+  <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelControl3.Text" xml:space="preserve">
+    <value>案件名称：</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
+    <value>labelControl3</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="xtePClientSerial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 15</value>
+  </data>
+  <data name="xtePClientSerial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 20</value>
+  </data>
+  <data name="xtePClientSerial.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;xtePClientSerial.Name" xml:space="preserve">
+    <value>xtePClientSerial</value>
+  </data>
+  <data name="&gt;&gt;xtePClientSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtePClientSerial.Parent" xml:space="preserve">
+    <value>xtabPagePatent</value>
+  </data>
+  <data name="&gt;&gt;xtePClientSerial.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="xbtCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="xbtCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>677, 398</value>
+  </data>
+  <data name="xbtCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 26</value>
+  </data>
+  <data name="xbtCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="xbtCancel.Text" xml:space="preserve">
+    <value>返回(&amp;B)</value>
+  </data>
+  <data name="&gt;&gt;xbtCancel.Name" xml:space="preserve">
+    <value>xbtCancel</value>
+  </data>
+  <data name="&gt;&gt;xbtCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xbtCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xbtCancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xbtSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="xbtSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 398</value>
+  </data>
+  <data name="xbtSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 26</value>
+  </data>
+  <data name="xbtSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="xbtSelect.Text" xml:space="preserve">
+    <value>选择(&amp;S)</value>
+  </data>
+  <data name="&gt;&gt;xbtSelect.Name" xml:space="preserve">
+    <value>xbtSelect</value>
+  </data>
+  <data name="&gt;&gt;xbtSelect.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xbtSelect.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xbtSelect.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>784, 446</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAQEAAAAEAIAAoQgAAJgAAABAQAAABACAAaAQAAE5CAAAoAAAAQAAAAIAAAAABACAAAAAAAABC
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZTIALWUyAGplMgCnZTIA5GUy
+        AP9lMgD/ZTIA/2UyAP9lMgDzZTIA1WUyALZlMgCYZTIAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZTIADWUyABxlMgAqZTIAOWk2
+        BF9vPAqOdUEPvHtHFep+Sxj/f0wa/4FOG/+CTx3/gU4c9n1KGN95RhPIdEEPsXE+C54AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGUy
+        ABtlMgA4ZTIAVWUyAHJtOgiReUYUsYVRH9GRXSvxl2Qx/5pnNP+dajf/oGw6/55rOPmWYjDpjVon2YRR
+        Hsl9She8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABlMgAoZTIAVGUyAIBlMgCrcj8Mw4NQHtSVYS/mp3NA97F9Sv+1gU//uYZT/76K
+        V/+7iFX7rntI86FuO+qUYS7hiVYj2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZTIANmUyAHBlMgCqZTIA5XZDEfWOWij4pXE/+72J
+        Vv3KlmP/0Jxp/9aib//bp3T/2KRx/seTYP21gk/7o3A9+pViL/kAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlMgABZTIADWUyABllMgAkZTIAMGk2BF9uOwmQcz8NwXdE
+        EvKIVSP/nWo3/7J+TP/Hk2D/1KBt/9qmc//grHn/5rJ//+Kue//Pm2j/u4hV/6d0Qf+YZTL/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZTIAA2UyAB1lMgA4ZTIAUmUy
+        AGxuOwmOeUYUsYRQHtOOWyn2nWo3/656SP+/i1j/z5to/9qmc//grHn/5rJ//+y4hf/otIH/059s/76K
+        V/+pdkL/mGUy/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGUy
+        AAVlMgAuZTIAVmUyAH9lMgCodEEPvoVRH9KVYi/mpnI/+rN/TP+/i1j/y5dk/9ejcP/grHn/5rJ//+y4
+        hf/yv4v/7rqH/9ekcP/AjVr/qndE/5hlMv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABlMgAGZTIAPmUyAHVlMgCtZTIA5HlGFO2QXCrypnNA+L2JVv3IlGH/0Jxp/9ej
+        cP/fq3j/5rJ//+y4hf/yv4v/+MWR//PAjP/bqHT/w5Bd/6t4Rf+YZTL/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABlMgACZTIAC2UyABVlMgAeZTIALGk2BGBsOQeUcD0Lx3RADvuIVSP/nms4/7SA
+        Tf/KlmP/1KBt/9qmc//grHn/5rJ//+m2gv/rt4T/7bmG/+67h//ptoL716Rx8saTYOm1gk/gmGUy2AAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZTIAB2UyAB9lMgA2ZTIATmYzAWdvPAqMeUYTsoJP
+        HdeMWCb8nWk3/656SP+/jFn/0Z1q/9qmc//grHn/5rJ//+y4hf/ruIT/5rJ//+Ctef/ap3P/1KFu9s+c
+        aN7JlmPGxJFer5hlMpwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGUyAAtlMgAyZTIAWGUy
+        AH5mMwGidkMRuYVSINCVYS/mpHA+/bF9S/++ilj/y5dk/9ikcf/grHn/5rJ//+y4hf/yv4v/7bqH/+Ct
+        ev/ToG3/xpNg/8CNWvDHlGDKzZpmpNOgbH6YZTJfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABlMgAQZTIARWUyAHllMgCuZzQC3XxJF+WSXizup3NB9ryIVv7Gkl//zppn/9ejcP/fq3j/5rJ//+y4
+        hf/yv4v/+MWR/++8if/bqHT/x5Rg/7J/TP+seUbrvotYttCdaoHir3tNmGUyIgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABlMgACZTIAB2UyAAtlMgAQZTIAJWc0Al1pNgSVazgGzW88Cv+HUyH/nmo4/7WCT//NmWb/1KBt/9qm
+        c//grHn/5rJ//+m2gv/suYX/77yJ//K/jP/ptoL71aJv9cKPW+6ue0jomGUyz5hlMpmYZTJimGUyLAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAZTIAB2UyABdlMgAnZTIANmYzAU9tOgh8c0AOqnlGFNeBThz/lmIw/6p2
+        RP++i1j/059s/9qmc//grHn/5rJ//+y4hf/qt4P/5rJ//+Gue//dqnb/16Rw88+cad7HlGHJwI1ZtJhl
+        MpiYZTJwmGUySJhlMiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGUyAA1lMgAnZTIAQmUyAFxoNQN5cj8NnH1K
+        GL6HVCLgk2At/6RxPv+2glD/x5Rh/9mlcv/grHn/5rJ//+y4hf/yv4v/67eE/9+seP/ToG3/yJVh/8WS
+        XuvJlmLHzZpmpNGeaoCYZTJhmGUyR5hlMi6YZTIUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlMgASZTIAOGUy
+        AF1lMgCDaTYEpHhFE7uHVCHTlmMw6qVyP/+zgE3/wo5b/9Gdav/fq3j/5rJ//+y4hf/yv4v/+MWR/+y4
+        hf/YpXL/xZJf/7J/TP+zgE3iw5BcsNKfbH7ir3tMmGUyKZhlMh6YZTITmGUyCAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAZTIAF2UzAkVlMwN0ZTQFomo6C8d9TBzVkF8t5KNxPvK1gk//wY1a/8yZZv/YpHH/5LB9/+m1
+        gv/uuof/8r+L//fEkP/otYH80p9s+L2KVvWndEHxmGUyz5hlMpaYZTJdmGUyIwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGUzAxllNwpLZTsRfWU+Ga9rRiLVgVkw4JdrP+qtfU31wY5b/8qW
+        Y//Tn2z/26d0/+Swff/jsH3/4q97/+Guev/grXn/2KVy8c6baN/EkV7Nu4hUuphlMpqYZTJwmGUyRZhl
+        MhoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlNQYaZTsTUGVCIIZlSC28bFM544Vl
+        Reqed1Dxt4lc+M2aZ//Tn2z/2aVy/96reP/ksH3/3qp3/9ejcP/QnWn/yZZi/8mWYubKl2TFzJlmpc6b
+        aISYZTJmmGUySZhlMi2YZTIRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZTYJHGVA
+        HFZlSS6PZVNByW1fUfGJcVn1pYNi+MGVa/zZpXL/3Kh1/9+reP/irnv/5LB9/9ilcv/MmGX/v4tY/7J/
+        TP+5hlLbxpNgrNShbX3hrntNmGUyMZhlMiOYZTIWmGUyCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlZWUBZWVlAWVlZQFlZWUCZWVlAmVlZQJlZWUDZWVlA2Vl
+        ZQNlZWUDZWVlA2VlZQNlZWUDZWVlA2VlZQNlZWUDZWVlAmVlZQJlZWUCZWVlAmVlZQFlZWUBZWVlAWVl
+        ZQJlZWUCZWVlA2VlZSFlZWVdZWVlmWZmZtVvbGj/jX1u/6uPc//JoXn/47B+/uOwff7jsH3+47B9/uOv
+        fP7Tn2z9wY1a/K98Sfydajf7mGUyzphlMpKYZTJWmGUyGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWVlBGVlZQllZWUPZWVlFGVlZRplZWUfZWVlJWVl
+        ZSplZWUvZWVlNGVlZThlZWU9ZWVlQGVlZUBlZWVAZWVlQGVlZUBlZWU7ZWVlN2VlZTJlZWUuZWVlKWVl
+        ZSNlZWUdZWVlGGVlZR1lZWUnZWVlMWVlZTtoaGhXbm5uhHR0dLJ6enrfhYJ//5iMgP+sl4L/wKGD/9Gq
+        g/7Rp3360aR39tGgcfLRnWvvyJVi47+MWdi2g1DMrXpHwZhlMpyYZTJumGUyQZhlMhMAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGVlZQhlZWUSZWVlHWVl
+        ZSdlZWUyZWVlPWVlZUhlZWVTZWVlXGVlZWVlZWVuZWVld2VlZX1lZWV9ZWVlfWVlZX1lZWV9ZWVldGVl
+        ZWtlZWViZWVlWmVlZU9lZWVEZWVlOmVlZS9lZWU5ZWVlTGVlZWBlZWVza2trjXd3d6uDg4PKj4+P6ZqY
+        lv+km5P/rZ6Q/7ahjf+/o4n+v5199r+Xce+/kWXnv4tZ376LWMq+i1izvopXnb2KV4eYZTJqmGUyS5hl
+        MiyYZTINAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABlZWUMZWVlHGVlZStlZWU7ZWVlS2VlZVtlZWVrZWVle2VlZYplZWWWZWVlo2VlZbBlZWW6ZWVlumVl
+        ZbplZWW6ZWVluWVlZaxlZWWfZWVlkmVlZYVlZWV2ZWVlZmVlZVZlZWVGZWVlVWVlZXJlZWWPZWVlq21t
+        bcJ/f3/TkZGR46Ojo/Owr63/r6qm/66mn/+topf/rJ2O/ayUfPKsi2vnrIJZ3Kx5R9C0gU6wvYlWj8WS
+        X27OmmdMmGUyOJhlMieYZTIXmGUyBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAZWVlEGVlZSVlZWU5ZWVlTmVlZWNlZWV4ZWVljmVlZaNlZWW3ZWVlyGVl
+        ZdllZWXqZWVl92VlZfdlZWX3ZWVl92VlZfZlZWXlZWVl1GVlZcJlZWWxZWVlnGVlZYdlZWVyZWVlXWVl
+        ZXBlZWWXZWVlvWVlZeRwcHD4iIiI+qCgoPu4uLj9xcXF/7q5uf+vrq3/pKKh/5qXlP2ai3zumn9l35pz
+        TdCaaDXBqndEl7uIVWvNmWY+3qp3EphlMgaYZTIEmGUyAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAaWlpBmlpaQxpaWkTaWlpGWZmZi1oaGhEaWlpW2pqanNtbW2GcHBwl3Nz
+        c6l2dna6eXl5ynt7e9h9fX3mf39/9IGBgf+BgYH/gYGB/4GBgf+BgYH+f39/8Hx8fOJ6enrUeHh4xnV1
+        dbVycnKjb29vkmxsbIFvb2+RdXV1sHt7e8+CgoLvjIyM/5qamv+oqKj/t7e3/76+vvu3t7fusLCw4amp
+        qdSYlpXImI2CvJiDb7CYeVujmHBIl5hlMnWYZTJRmGUyLZhlMgkAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGlpaQ1paWkbaWlpKWlpaTdoaGhOa2trZ25u
+        boBwcHCZdnZ2qnx8fLeDg4PDioqKz5CQkNqVlZXkmZmZ7Z6enveioqL/oqKi/6Kiov+ioqL/oqKi/p2d
+        nfSYmJjqk5OT4Y6OjteIiIjLgYGBv3p6erN0dHSne3t7soiIiMiVlZXeo6Oj9Kurq/+tra3/sLCw/7Ky
+        sv+0tLT2s7Oz27Gxsb+wsLCkmJeWi5iQiIOYiXt6mIJtcph8YGqYZTJRmGUyOJhlMh+YZTIGAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpaWkVaWlpKmlp
+        aT9paWlVa2trb29vb4pzc3Old3d3wH9/f8+JiYnWlJSU3Z6enuOnp6fqrq6u77a2tvW9vb36w8PD/8PD
+        w//Dw8P/w8PD/8LCwv67u7v5s7Oz86ysrO6lpaXom5ub4ZCQkNqGhobUfHx8zYeHh9Obm5vfr6+v7MTE
+        xPjKysr/wMDA/7e3t/+urq7/qamp8a6ursizs7Oet7e3dJiXl0+Yk49KmI+HRZiMgECYiHg8mGUyLphl
+        MiCYZTIRmGUyAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAaWlpHGlpaTlpaWlWaWlpcm1tbZBycnKteHh4yn19feeIiIjzlpaW9aSkpPaysrL4vr6++sjI
+        yPvS0tL83Nzc/uPj4//j4+P/4+Pj/+Pj4//j4+P+2dnZ/c/Pz/zFxcX6u7u7+a2trfigoKD2kpKS9ISE
+        hPOSkpL0rq6u98rKyvrl5eX96enp/9TU1P+/v7//qqqq/5+fn+2pqam1tLS0fL6+vkSYl5cSmJaVEZiW
+        lBCYlZIPmJSQDphlMguYZTIHmGUyBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAaWlpDmpqai9ra2tPbGxsb21tbZB0dHSqfX19w4aGhtyPj4/1mpqZ/6im
+        pP+1sq//wr66/87JxP/X0cv/4NnS/+ni2v/w6N//8Ojf//Do3//w6N//8Off/+bf2P/d19D/1M7J/8vG
+        wf++urf/sa6s/6Siof+Wlpb/oaGh/7a2tv/Ly8v/4ODg/+Dg4PvKysr1tbW17p+fn+iRkZHSk5OTnJSU
+        lGWWlpYvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGtrayNtbW1Gb29vaHFxcYt0dHStf39/woyM
+        jNSZmZnmpqam+LGvrv+8t7P/xr+4/9HHvf/azsH/4dLE/+jXxv/v3Mn/9ODL//Tgy//04Mv/9ODL//Tf
+        y//t28j/5tbG/9/Rw//YzMD/zcW8/8O9tv+4tbH/rq2s/7CwsP+5ubn/wcHB/8rKyv/FxcX3tLS056Oj
+        o9eSkpLHiIiIroyMjIGQkJBUlJSUJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsbGw5b29vXXNz
+        c4J3d3emenp6y4mJidqamprlq6ur8L29vfrIxcL/0MnC/9jMwf/f0MD/5tK//+vUvf/w1br/9de4//jY
+        tv/42Lb/+Ni2//jYtv/42Lb/89a5/+7Vu//p073/5NLA/93Pwf/Vy8H/zcjC/8XEw//AwMD/vLy8/7e3
+        t/+zs7P/q6ur8p6entiSkpK/hYWFpX9/f4mFhYVli4uLQpKSkh8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAbW1tTnJycnR3d3ebfHx8woGBgeiTk5Pyqamp9r6+vvrT09P939vX/+Ta0f/p2cr/7tnD//LX
+        vf/11bX/+NOu//rRp//80KL//NCi//zQov/80KL//NCi//rSqf/31LD/9Na4//HYv//s2cX/59rM/+La
+        0//d29n/0NDQ/7+/v/+urq7/nJyc/5CQkO2IiIjKgICAp3h4eIR1dXVkfn5+SoeHhzCQkJAWAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAG5ubmN2dnaJfX19roWFhdOMjIz4n5+e/7W0sv/Lycf/4d7b/+zk
+        3f/v4tT/89/L//bcwv/52br/+tay//zUq//90aP//86e///Onv//zp7//86e//7Pnv/90aX/+9St//rX
+        tP/52rv/9dzE//Lfzf/u4tb/6+Xf/9rX1P/EwsD/rq2s/5iYmP+KiorsgoKCx3t7e6Jzc3N9bm5uXG5u
+        bkRubm4sbm5uFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwcHB5e3t7mYWFhbmQkJDZm5ub+a2r
+        qf/AvLf/08zF/+bd1P/v4tT/8t/M//XdxP/42rz/+ti2//zXs//91rD//tWs///Uqv//1Kr//9Sq///U
+        qv/+1Kr//dWt//zWsP/71rL/+te1//fZvf/03MX/8d/N/+/h1f/g187/zcbA/7q2sv+npaT/mJiY742N
+        jc+CgoKvd3d3j29vb3Bvb29Tbm5uNm5ubhkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcXFxj39/
+        f6qOjo7EnJyc36qqqvq6t7T/y8O8/9vQxP/r3M3/89/L//bdxP/4273/+ti2//zXsv/92LP//dm1//7a
+        tv//2rf//9q3///at///2rf//tq2//7Ztf/917P//Nax//zUr//61rX/99m8//XbxP/y3sv/5tbI/9bL
+        wP/Gv7j/tbOx/6ampvGXl5fXiYmJvHt7e6JxcXGFcHBwYm9vb0Bubm4eAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAHNzc6WEhIS7lpaW0KioqOW5ubn7yMO+/9XLwf/j08P/8dvF//fdwv/527z/+ti2//zW
+        sP/91q///tm0//7cuf/+3r///+DD///gw///4MP//+DD//7gw//+3Lz//tm2//7Vr//90an//NOu//rV
+        tP/42Lr/9trB/+zWwv/fz8D/0ci//8PAvf+0tLT0oqKi35CQkMl/f3+0cnJymXFxcXFwcHBKb29vIgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0dHS6iYmJyp2dnduysrLrx8fH+9TOyP/f0sX/6tbB//Xa
+        vv/62rn/+9i0//zWr//+1Kr//9Wr///Ysv//3Lr//+DC///jyP//48j//+PI///jyP//4sf//92+///Y
+        tP//0qv//82i//3Opf/80av/+9Ow//nVtv/x1Lv/5tK//9vPxP/QzMn/wMDA9qysrOaXl5fWgoKCxXR0
+        dKx0dHSAdHR0U3R0dCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdnZ2zI2NjdikpKTkurq68NHR
+        0fzd1s//5tbH/+7Xvv/317b/+9ax//zVrf/906n//tKl///Spv//1av//9ix///bt///3bv//927///d
+        u///3bv//9y7///Xsv//0ar//8uh///Gmf/+x5v//cmg//zLpP/7zan/9M+x/+zRvP/j08b/2tXQ/8rK
+        yvizs7PsnJyc4IWFhdR2dna8dXV1jHR0dFt0dHQqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHd3
+        d92QkJDlqqqq7cPDw/Xc3Nz95t7W/+zbyf/z17v/+dSu//zTqP/90qX//dGj//7QoP//0KH//9Kk///U
+        qP//1az//9ev///Xr///16///9ev///Wrv//0Kf//8qf///Fl///v4///sCS//3Clf/9xJn//Mac//fL
+        qP/x0bj/6tfI/+Td2P/U1NT7u7u786KiouuJiYnjd3d3zXZ2dph1dXVjdHR0LgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAB5eXnvlJSU87CwsPbLy8v65ubm/u/m3P/z38v/99i5//zSp//9z5///s6e//7O
+        nf/+zZz//86c///Onv//z5///9Ch///Rov//0aL//9Gi///Rov//0KL//8qb///ElP//vo3//7iG//64
+        iP/+uor//ryN//2+j//6xp//9tC1//Lbyv/t5uD/3d3d/cLCwvmnp6f1jIyM8nl5ed13d3ekdnZ2a3V1
+        dTIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAe3t7/5iYmP+1tbX/0tLS/+/v7//37eP/+ePM//vZ
+        tv/+z6D//8uX///Ll///y5f//8uX///Ll///y5f//8uX///Ll///y5f//8qX///Klv//ypb//8qW///D
+        kP//vYr//7eE//+xfv//sX7//7OA//+1gv//t4T//cGX//vQsf/438z/9u3n/+bm5v/Jycn/rKys/4+P
+        j/97e3vre3t7r3t7e3J7e3s1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fP+ZmZn/tra2/9PT
+        0//w8PD/9+3j//njzf/72bb//s+g///Klv//yZX//8eT///Fkv//xZH//8WR///Fkf//xZH//8SQ///C
+        j///wY3//7+L//+9iv//uYX//7SA//+vfP//qnf//6x5//+ue///sX7//7OA//2/lP/7zrD/+d7M//bu
+        5//n5+f/ysrK/62trf+QkJD/fHx863x8fK97e3tye3t7NQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAB+fn7/m5ub/7e3t//U1NT/8fHx//ju5P/65M3//Nm3//7PoP//ypb//8aT///DkP//wI3//76L//++
+        i///vov//76L//++iv//uof//7eE//+0gf//sX3//656//+rd///p3T//6Rx//+ndP//qnf//616//+w
+        ff/9vJL/+82u//ndy//37uj/6Ojo/8vLy/+urq7/kpKS/35+fut9fX2vfHx8cnt7ezUAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAgICA/5ycnP+5ubn/1dXV//Hx8f/47uT/+uTO//zat//+z6D//8mV///E
+        kP//v4z//7uH//+4hf//uIX//7iF//+4hf//t4T//7J///+uev//qXb//6Vx//+jcP//oW7//6Bt//+e
+        a///oW7//6Vy//+pdv//rXr//bqP//vLrf/63cr/+O7o/+np6f/MzMz/sLCw/5OTk/9/f3/rfn5+r319
+        fXJ8fHw1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIGBgf+enp7/urq6/9bW1v/y8vL/+e/l//vk
+        zv/82rf//s+g///IlP//wo7//7uI//+1gv//sn///7J///+yf///sn///7B9//+qd///pHH//55r//+Y
+        Zf//mGX//5hl//+YZf//mGX//5xp//+gbf//pXL//6l2//23jf/8yqv/+tzK//ju6P/p6en/zc3N/7Gx
+        sf+VlZX/gYGB639/f69+fn5yfHx8NQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDg4PunZ2d8re3
+        t/bR0dH66+vr/vLq4f/24s7/+du7//3Tqf/+zZ7//siZ//7DlP/+vo///7yN//++kf//wJX//8GY///C
+        mv//vZX//7iQ//+zi///rof//6uB//+ofP//pHf//6Fy//+jc///pXT//6d2//+qd//8tov/+cao//XX
+        xf/x5+H/4+Pj/cnJyfmvr6/1lZWV8YODg9yDg4OjgoKCaoKCgjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAhYWF3JycnOS0tLTty8vL9ePj4/3s5Nz/8d/O//bbwP/817L//tOq//7Ppf/+y6H//sic///H
+        nf//y6X//8+s///StP//1Ln//9G2///Osv//yq///8er///AoP//uZb//7KL//+rgP//qn3//6p8//+q
+        ev//qnj/+7SK//XDpf/w0r//6uDa/9zc3PrExMTyrKys6pWVleKEhITMhISEl4ODg2KCgoIuAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIaGhsucnJzXsbGx48bGxvDb29v85d7X/+zdzv/z3MT/+tu7//3Z
+        tf/+1rH//tSu//7Rqv//0q3//9i5///exP//49D//+fY///l1v//49T//+HS///f0P//1b///8qv//+/
+        n///tY///7KI//+wg///rX7//6t5//mziP/ywKH/6sy6/+PZ0//U1NT4v7+/7KqqquCVlZXThoaGu4WF
+        hYuEhIRag4ODKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIiIi5m5ubyq6urtrAwMDr09PT+97Y
+        0//n2s7/8NzJ//nexP/93sD//d29//7cuv/+27j//929///lzP//7dz///Tr///69///+fb///n2///5
+        9v//9/T//+ne///byP//zbP//7+d//+5k///tYv//7CC//+sev/4sof/7rye/+XHtf/b0cv/zc3N9rq6
+        uuaoqKjVlZWVxIiIiKuGhoZ/hISEU4ODgyYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAioqKpJmZ
+        mbqpqanPubm55cnJyfrV0cz/4NbM/+zczf/34s3//OPL//3ixv/94ML//t6+//7gwf/+5sz//uvY//7x
+        4///9ez///Pp///w5///7uX//+vi///g0P//1L3//8mr//+9mf/+u5X//rqT//65kf/9uI//9buY/+nA
+        p//dxbb/0snE/8TExPS0tLTepKSkyJSUlLOJiYmYiYmJcImJiUmJiYkiAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAIuLi46YmJippKSkxLGxsd++vr75y8jF/9nSy//n3NH/9ebX//vo1f/85c///ePI//7g
+        wv/+4MD//uLF//7ly//+59D//+jS///jzf//3sj//9jD///Tvf//zLL//8Wm//++m///uI///ruU//2/
+        m//8xKP/+8mq//HJsP/jxrT/1cS5/8fBvv+6urrxra2t1qCgoLuUlJShi4uLg4qKimGKioo/iYmJHQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMjIx4lpaWmJ+fn7ipqanYs7Oz+MLAvv/Szsr/4tzV//Lq
+        4f/57eD/++nX//zlzv/94sb//t/A//7fv//+3r3//t68///buf//07H//8up///Dof//u5n//7mU//+2
+        j///tIr//7KF//27k//8xaT/+8+1//rZxv/u1sf/3czC/83DvP+9ubf/sLCw7qamps6dnZ2uk5OTjoyM
+        jG+Li4tSioqKNYmJiRkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjo6OYpSUlIebm5utoaGh0qen
+        p/e4t7f/y8nI/93b2f/w7ev/+PHq//rt3//76NT//eTK//7fwP/+27j//tiw//7UqP//zqD//8OV//+4
+        iv//rX///6J1//+ldv//p3j//6p6//+se//9upL/+8qt//rax//46uH/6uPf/9jSz//FwsD/srGw/6Wl
+        peyfn5/GmZmZoZKSknyNjY1bjIyMQ4uLiyyKiooUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI+P
+        j02Tk5NzmJiYmpycnMChoaHmsLCw8cLCwvXT09P55eXl/e7q5v/x6N7/9OXV//fizP/638T/+9y8//zY
+        tP/+1av//9Cj///FmP//uo7//6+D//6mef/9qHz//Kt///uugv/6sYX/972a//TLs//w2cz/7efk/+Dg
+        4PzOzs74vLy89KqqqvCfn5/anJyctJiYmI2UlJRnj4+PR4+PjzSPj48ij4+PEAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACPj483kpKSXJaWloCZmZmlnZ2dyampqdm3t7fkxcXF79TU1Prd2tf/4tvU/+jd
+        0v/u3s//8t/L//bfyP/538T//N/B///dvP//1bT//82t///Fpf/+vp7/+76e//i9nf/1vZ3/8r2d/+zD
+        qf/nybj/4dDG/9vX1f/Pz8/3wcHB7LOzs+GlpaXVnZ2dvpubm5mZmZl1mJiYUI+PjzOPj48mj4+PGI+P
+        jwsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAj4+PIpGRkUSUlJRnl5eXiZmZmayioqLBra2t07i4
+        uOXCwsL4y8rI/9TPy//c1c7/5NvR/+vf0//w4tT/9eXV//vo1v//6tX//+XR///gzP//28f//tbD//nT
+        v//00Lz/78y4/+rJtf/iyLj/2ce9/9HHwf/JxsX/v7+/8rS0tOCqqqrNn5+fu5qamqGampp+m5ubXJub
+        mzqPj48fj4+PF4+Pjw+Pj48HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI+Pjw2QkJAtkpKSTZSU
+        lG6WlpaOnJycqaOjo8KqqqrcsbGx9bq5uf/Fw8L/0M3K/9rX0//k39r/6+Xg//Ls5f/58uv///bv///1
+        7f//8+v///Hp//7v5//36OH/8OLa/+nb1P/i1c3/183H/8zFwf/Cvrv/t7a1/66uru2np6fUoKCgupmZ
+        maGXl5eEmpqaZJycnEOfn58jj4+PDI+PjwmPj48Fj4+PAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAlJSUHJSUlDiUlJRUlJSUcZeXl42cnJyroKCgyKSkpOWtra3xuLi488TExPXPz8/32dnZ+eDg
+        4Pro6Oj88PDw/fX19f/19fX/9fX1//X19f/19fX+7e3t/ebm5vve3t761tbW+MzMzPbAwMD0tbW18qqq
+        qvCjo6Pcn5+fv5ubm6GXl5eElJSUaJSUlEuUlJQvlJSUEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAJSUlBSUlJQplJSUPpSUlFOWlpZtmpqaiJ2dnaOhoaG+p6enzbCw
+        sNS4uLjbwMDA4sjIyOnNzc3v09PT9NjY2Prd3d3/3d3d/93d3f/d3d3/3Nzc/tfX1/jR0dHzy8vL7cbG
+        xue+vr7gtra22a2trdGlpaXKoaGhtZ+fn5qdnZ1/m5ubZJSUlEyUlJQ4lJSUI5SUlA4AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUlJQNlJSUGpSUlCiUlJQ1lpaWTJiY
+        mGWbm5t+nZ2dl6Kioqinp6e1ra2twbKyss63t7fZurq6476+vu3BwcH3xMTE/8TExP/ExMT/xMTE/8TE
+        xP7AwMD0vb296rm5ueC1tbXWsLCwyqurq72lpaWxoKCgpJ6eno+fn592n5+fXZ+fn0SUlJQxlJSUJJSU
+        lBaUlJQJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlJSUBpSU
+        lAyUlJQSlJSUGJWVlSuXl5dCmJiYWZqamnCcnJyEn5+flaGhoaejo6O5paWlyaenp9epqanmqqqq9Kur
+        q/+rq6v/q6ur/6urq/+rq6v+qqqq76ioqOGnp6fTpaWlxaOjo7OgoKCinp6ekJubm36cnJxpnp6eUqCg
+        oDujo6MklJSUFpSUlBCUlJQKlJSUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACYmJgRmJiYJpiYmDuYmJhRmJiYZpiYmHyYmJiSmJiYqJiY
+        mLyYmJjOmJiY4JiYmPGYmJj/mJiY/5iYmP+YmJj/mJiY/ZiYmOyYmJjamJiYyJiYmLeYmJihmJiYi5iY
+        mHWYmJhfmJiYSpiYmDWYmJgfmJiYCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////+AA///////+AAD///////4AAP///////gAA///////+
+        AAD//////8AAAP//////wAAA///////AAAD//////8AAAP/////8AAAA//////wAAAD//////AAAAP//
+        ///8AAAA/////8AAAAH/////wAAAAf/////AAAAB/////8AAAAH/////wAAAH//////AAAAf/////8AA
+        AB//////wAAAH/8AAAAAAAH/+AAAAAAAAf/4AAAAAAAB//gAAAAAAAH/+AAAAAAAA/+AAAAAAAAf/4AA
+        AAAAAB//gAAAAAAAH/+AAAAAAAA//wAAAAAAP///AAAAAAA///8AAAAAAD///wAAAAAAP///AAAAAAA/
+        //8AAAAAAD///wAAAAAAP///AAAAAAA///8AAAAAAD///wAAAAAAP///AAAAAAA///8AAAAAAD///wAA
+        AAAAP///AAAAAAA///8AAAAAAD///wAAAAAAP///AAAAAAA///8AAAAAAD///wAAAAAAP///AAAAAAA/
+        //8AAAAAAD///wAAAAAAP///AAAAAAA///8AAAAAAD///wAAAAAAP///AAAAAAA///8AAAAAAD///wAA
+        AAAAP///AAAAAAA///+AAAAAA////4AAAAAD////gAAAAAP///+AAAAAA/////gAAAA/////KAAAABAA
+        AAAgAAAAAQAgAAAAAABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlMgD/ZTIA/2UyAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlMgD/zJhl/+Wxfv+YZTL/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlMgD/zJhl/+Wxfv//zJj/mGUy/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlMgD/zJhl/+Wxfv//zJj/mGUy/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlMgC/sX5L/+Wxfv//zJj/mGUy/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWVl/+Wxfv/lsX7/mGUy/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAZWVlWWVlZbVlZWX/ZWVl/2VlZbVlZWVZZWVl/8zMzP+YmJj/mGUyvwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAaWlpgoKCgv/BwcH/7u7u/+7u7v/BwcH/goKC//////+YmJj/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAbm5uWYaGhv/o6Oj/+NzA///MmP//zJj/+NzA/+jo6P+Ghob/bm5uWQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAHR0dLXIyMj/+d3A///Uqf//5cz//+XM///PpP/52bz/yMjI/3R0dLUAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAB7e3v/9fX1///MmP//zJj//8yY///MmP//sX7//7iF//X19f97e3v/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAgoKC//j4+P//zJj//7J///+yf///mGX//5hl//+reP/4+Pj/goKC/wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAImJibXV1dX//eHF///duv/////////////Anv//q3j/1dXV/4mJ
+        ibUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACPj49ZpKSk//f39//+4sX//8yY//+YZf//q3j/9/f3/6Sk
+        pP+Pj49ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJSUlIKoqKj/3Nzc////////////3Nzc/6io
+        qP+UlJSCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmJiYWZiYmLWYmJj/mJiY/5iY
+        mLWYmJhZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+AAA//AAAP/gAAD/wQAA/4MAAP+H
+        AADADwAAgD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIB/AADA/wAA
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>选择案件</value>
+  </data>
+  <data name="&gt;&gt;xgridViewPatentCase.Name" xml:space="preserve">
+    <value>xgridViewPatentCase</value>
+  </data>
+  <data name="&gt;&gt;xgridViewPatentCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn13.Name" xml:space="preserve">
+    <value>gridColumn13</value>
+  </data>
+  <data name="&gt;&gt;gridColumn13.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
+    <value>gridColumn3</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xluePCountry.Name" xml:space="preserve">
+    <value>xluePCountry</value>
+  </data>
+  <data name="&gt;&gt;xluePCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
+    <value>gridColumn2</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xluePatentBusinessType.Name" xml:space="preserve">
+    <value>xluePatentBusinessType</value>
+  </data>
+  <data name="&gt;&gt;xluePatentBusinessType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumnCaseSerial.Name" xml:space="preserve">
+    <value>gridColumnCaseSerial</value>
+  </data>
+  <data name="&gt;&gt;gridColumnCaseSerial.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Name" xml:space="preserve">
+    <value>gridColumn1</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumnCaseName.Name" xml:space="preserve">
+    <value>gridColumnCaseName</value>
+  </data>
+  <data name="&gt;&gt;gridColumnCaseName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumnClient.Name" xml:space="preserve">
+    <value>gridColumnClient</value>
+  </data>
+  <data name="&gt;&gt;gridColumnClient.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn28.Name" xml:space="preserve">
+    <value>gridColumn28</value>
+  </data>
+  <data name="&gt;&gt;gridColumn28.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn31.Name" xml:space="preserve">
+    <value>gridColumn31</value>
+  </data>
+  <data name="&gt;&gt;gridColumn31.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xgridViewTrademarkCase.Name" xml:space="preserve">
+    <value>xgridViewTrademarkCase</value>
+  </data>
+  <data name="&gt;&gt;xgridViewTrademarkCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn19.Name" xml:space="preserve">
+    <value>gridColumn19</value>
+  </data>
+  <data name="&gt;&gt;gridColumn19.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
+    <value>gridColumn4</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xlueTCountry.Name" xml:space="preserve">
+    <value>xlueTCountry</value>
+  </data>
+  <data name="&gt;&gt;xlueTCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Name" xml:space="preserve">
+    <value>gridColumn5</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xlueTrademarkBusinessType.Name" xml:space="preserve">
+    <value>xlueTrademarkBusinessType</value>
+  </data>
+  <data name="&gt;&gt;xlueTrademarkBusinessType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Name" xml:space="preserve">
+    <value>gridColumn6</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn7.Name" xml:space="preserve">
+    <value>gridColumn7</value>
+  </data>
+  <data name="&gt;&gt;gridColumn7.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn8.Name" xml:space="preserve">
+    <value>gridColumn8</value>
+  </data>
+  <data name="&gt;&gt;gridColumn8.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn9.Name" xml:space="preserve">
+    <value>gridColumn9</value>
+  </data>
+  <data name="&gt;&gt;gridColumn9.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn32.Name" xml:space="preserve">
+    <value>gridColumn32</value>
+  </data>
+  <data name="&gt;&gt;gridColumn32.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xgridViewCopyrightCase.Name" xml:space="preserve">
+    <value>xgridViewCopyrightCase</value>
+  </data>
+  <data name="&gt;&gt;xgridViewCopyrightCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn25.Name" xml:space="preserve">
+    <value>gridColumn25</value>
+  </data>
+  <data name="&gt;&gt;gridColumn25.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn10.Name" xml:space="preserve">
+    <value>gridColumn10</value>
+  </data>
+  <data name="&gt;&gt;gridColumn10.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xlueCCountry.Name" xml:space="preserve">
+    <value>xlueCCountry</value>
+  </data>
+  <data name="&gt;&gt;xlueCCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn11.Name" xml:space="preserve">
+    <value>gridColumn11</value>
+  </data>
+  <data name="&gt;&gt;gridColumn11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xlueCopyrightBusinessType.Name" xml:space="preserve">
+    <value>xlueCopyrightBusinessType</value>
+  </data>
+  <data name="&gt;&gt;xlueCopyrightBusinessType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn12.Name" xml:space="preserve">
+    <value>gridColumn12</value>
+  </data>
+  <data name="&gt;&gt;gridColumn12.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn14.Name" xml:space="preserve">
+    <value>gridColumn14</value>
+  </data>
+  <data name="&gt;&gt;gridColumn14.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn15.Name" xml:space="preserve">
+    <value>gridColumn15</value>
+  </data>
+  <data name="&gt;&gt;gridColumn15.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xgridViewDomainNameCase.Name" xml:space="preserve">
+    <value>xgridViewDomainNameCase</value>
+  </data>
+  <data name="&gt;&gt;xgridViewDomainNameCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn29.Name" xml:space="preserve">
+    <value>gridColumn29</value>
+  </data>
+  <data name="&gt;&gt;gridColumn29.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn16.Name" xml:space="preserve">
+    <value>gridColumn16</value>
+  </data>
+  <data name="&gt;&gt;gridColumn16.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xlueDCountry.Name" xml:space="preserve">
+    <value>xlueDCountry</value>
+  </data>
+  <data name="&gt;&gt;xlueDCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn17.Name" xml:space="preserve">
+    <value>gridColumn17</value>
+  </data>
+  <data name="&gt;&gt;gridColumn17.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xlueDomainNameBusinessType.Name" xml:space="preserve">
+    <value>xlueDomainNameBusinessType</value>
+  </data>
+  <data name="&gt;&gt;xlueDomainNameBusinessType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn18.Name" xml:space="preserve">
+    <value>gridColumn18</value>
+  </data>
+  <data name="&gt;&gt;gridColumn18.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn20.Name" xml:space="preserve">
+    <value>gridColumn20</value>
+  </data>
+  <data name="&gt;&gt;gridColumn20.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn21.Name" xml:space="preserve">
+    <value>gridColumn21</value>
+  </data>
+  <data name="&gt;&gt;gridColumn21.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xgridViewOtherCase.Name" xml:space="preserve">
+    <value>xgridViewOtherCase</value>
+  </data>
+  <data name="&gt;&gt;xgridViewOtherCase.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn30.Name" xml:space="preserve">
+    <value>gridColumn30</value>
+  </data>
+  <data name="&gt;&gt;gridColumn30.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn22.Name" xml:space="preserve">
+    <value>gridColumn22</value>
+  </data>
+  <data name="&gt;&gt;gridColumn22.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xlueOCountry.Name" xml:space="preserve">
+    <value>xlueOCountry</value>
+  </data>
+  <data name="&gt;&gt;xlueOCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn23.Name" xml:space="preserve">
+    <value>gridColumn23</value>
+  </data>
+  <data name="&gt;&gt;gridColumn23.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xlueOtherCaseBusinessType.Name" xml:space="preserve">
+    <value>xlueOtherCaseBusinessType</value>
+  </data>
+  <data name="&gt;&gt;xlueOtherCaseBusinessType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn24.Name" xml:space="preserve">
+    <value>gridColumn24</value>
+  </data>
+  <data name="&gt;&gt;gridColumn24.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn26.Name" xml:space="preserve">
+    <value>gridColumn26</value>
+  </data>
+  <data name="&gt;&gt;gridColumn26.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridColumn27.Name" xml:space="preserve">
+    <value>gridColumn27</value>
+  </data>
+  <data name="&gt;&gt;gridColumn27.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>XFrmSearchCase</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>
