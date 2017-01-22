@@ -8,27 +8,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TaskFlowTest.IPSPServices {
-    using System.Runtime.Serialization;
-    using System;
-    
-    
+using System;
+using System.Runtime.Serialization;
+
+namespace TaskFlowTest.Service_References.IPSPServices {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="OperationInfo", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts")]
-    [System.SerializableAttribute()]
+    [DataContract(Name="OperationInfo", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts")]
+    [Serializable()]
     public partial class OperationInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private bool bOperationResultField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sOperationMessageField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sOperationReturnObjectField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -41,7 +40,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public bool bOperationResult {
             get {
                 return this.bOperationResultField;
@@ -54,7 +53,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sOperationMessage {
             get {
                 return this.sOperationMessageField;
@@ -67,7 +66,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sOperationReturnObject {
             get {
                 return this.sOperationReturnObjectField;
@@ -92,23 +91,23 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="UpdateInfo", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts")]
-    [System.SerializableAttribute()]
+    [DataContract(Name="UpdateInfo", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts")]
+    [Serializable()]
     public partial class UpdateInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string EleIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string EleNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string EleTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string ErrorCodeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -121,7 +120,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string EleID {
             get {
                 return this.EleIDField;
@@ -134,7 +133,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string EleName {
             get {
                 return this.EleNameField;
@@ -147,7 +146,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string EleType {
             get {
                 return this.EleTypeField;
@@ -160,7 +159,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string ErrorCode {
             get {
                 return this.ErrorCodeField;
@@ -185,70 +184,70 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="BasicCaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class BasicCaseData : TaskFlowTest.IPSPServices.BasicCaseBaseData {
+    [DataContract(Name="BasicCaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class BasicCaseData : BasicCaseBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="BasicCaseBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BasicCaseData))]
+    [DataContract(Name="BasicCaseBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(BasicCaseData))]
     public partial class BasicCaseBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_BusinessTypeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ClientIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FlowNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantCodesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int s_AppsSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientCodeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IPTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroSerialField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -261,7 +260,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_BusinessTypeID {
             get {
                 return this.n_BusinessTypeIDField;
@@ -274,7 +273,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseID {
             get {
                 return this.n_CaseIDField;
@@ -287,7 +286,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ClientID {
             get {
                 return this.n_ClientIDField;
@@ -300,7 +299,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FirstAttorney {
             get {
                 return this.n_FirstAttorneyField;
@@ -313,7 +312,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FlowNum {
             get {
                 return this.n_FlowNumField;
@@ -326,7 +325,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_SecondAttorney {
             get {
                 return this.n_SecondAttorneyField;
@@ -339,7 +338,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ApplicantCodes {
             get {
                 return this.s_ApplicantCodesField;
@@ -352,7 +351,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -365,7 +364,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int s_AppsSerial {
             get {
                 return this.s_AppsSerialField;
@@ -378,7 +377,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -391,7 +390,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -404,7 +403,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseStatus {
             get {
                 return this.s_CaseStatusField;
@@ -417,7 +416,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientCode {
             get {
                 return this.s_ClientCodeField;
@@ -430,7 +429,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -443,7 +442,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientSerial {
             get {
                 return this.s_ClientSerialField;
@@ -456,7 +455,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IPType {
             get {
                 return this.s_IPTypeField;
@@ -469,7 +468,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroSerial {
             get {
                 return this.s_IntroSerialField;
@@ -494,20 +493,20 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="PatentData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class PatentData : TaskFlowTest.IPSPServices.PatentBaseData {
+    [DataContract(Name="PatentData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class PatentData : PatentBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string CurrentProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSubmitStatusField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string CurrentProcessName {
             get {
                 return this.CurrentProcessNameField;
@@ -520,7 +519,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string Name {
             get {
                 return this.NameField;
@@ -533,7 +532,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSubmitStatus {
             get {
                 return this.s_CaseSubmitStatusField;
@@ -549,198 +548,198 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="PatentBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.PatentData))]
+    [DataContract(Name="PatentBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(PatentData))]
     public partial class PatentBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CertfDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_IssuedPubDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_PCTAppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_PriorityStatusDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SendCheckDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ShldSbmtDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_StartDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SubmitDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_UndertakeDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_BusinessTypeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CurrentProcessCodeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DepartmentIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_PFlowNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_PatentTypeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_RegCountryField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_StartProcessCodeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AgencyToNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsNativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AreaField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseOtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CertfNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientCNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientContactsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientOtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientPhoneField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CoopAgencyToNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField1Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField10Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField2Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField3Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField4Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField5Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField6Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField7Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField8Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField9Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DealersField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_InventorsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IssuedPubNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OldSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PCTAppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PriorityStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SerialLocationField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TechnologyTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TotalSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_aaaField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -753,7 +752,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -766,7 +765,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CertfDate {
             get {
                 return this.dt_CertfDateField;
@@ -779,7 +778,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -792,7 +791,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -805,7 +804,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_IssuedPubDate {
             get {
                 return this.dt_IssuedPubDateField;
@@ -818,7 +817,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_PCTAppDate {
             get {
                 return this.dt_PCTAppDateField;
@@ -831,7 +830,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_PriorityStatusDate {
             get {
                 return this.dt_PriorityStatusDateField;
@@ -844,7 +843,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SendCheckDate {
             get {
                 return this.dt_SendCheckDateField;
@@ -857,7 +856,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ShldSbmtDate {
             get {
                 return this.dt_ShldSbmtDateField;
@@ -870,7 +869,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_StartDate {
             get {
                 return this.dt_StartDateField;
@@ -883,7 +882,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SubmitDate {
             get {
                 return this.dt_SubmitDateField;
@@ -896,7 +895,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_UndertakeDate {
             get {
                 return this.dt_UndertakeDateField;
@@ -909,7 +908,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_BusinessTypeID {
             get {
                 return this.n_BusinessTypeIDField;
@@ -922,7 +921,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseID {
             get {
                 return this.n_CaseIDField;
@@ -935,7 +934,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CurrentProcessCodeID {
             get {
                 return this.n_CurrentProcessCodeIDField;
@@ -948,7 +947,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DepartmentID {
             get {
                 return this.n_DepartmentIDField;
@@ -961,7 +960,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FirstAttorney {
             get {
                 return this.n_FirstAttorneyField;
@@ -974,7 +973,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_PFlowNum {
             get {
                 return this.n_PFlowNumField;
@@ -987,7 +986,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_PatentTypeID {
             get {
                 return this.n_PatentTypeIDField;
@@ -1000,7 +999,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_RegCountry {
             get {
                 return this.n_RegCountryField;
@@ -1013,7 +1012,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_SecondAttorney {
             get {
                 return this.n_SecondAttorneyField;
@@ -1026,7 +1025,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_StartProcessCodeID {
             get {
                 return this.n_StartProcessCodeIDField;
@@ -1039,7 +1038,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AgencyToName {
             get {
                 return this.s_AgencyToNameField;
@@ -1052,7 +1051,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -1065,7 +1064,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -1078,7 +1077,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ApplicantsNativeName {
             get {
                 return this.s_ApplicantsNativeNameField;
@@ -1091,7 +1090,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Area {
             get {
                 return this.s_AreaField;
@@ -1104,7 +1103,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -1117,7 +1116,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseNativeName {
             get {
                 return this.s_CaseNativeNameField;
@@ -1130,7 +1129,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseOtherName {
             get {
                 return this.s_CaseOtherNameField;
@@ -1143,7 +1142,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -1156,7 +1155,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseStatus {
             get {
                 return this.s_CaseStatusField;
@@ -1169,7 +1168,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CertfNo {
             get {
                 return this.s_CertfNoField;
@@ -1182,7 +1181,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientCName {
             get {
                 return this.s_ClientCNameField;
@@ -1195,7 +1194,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientContacts {
             get {
                 return this.s_ClientContactsField;
@@ -1208,7 +1207,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -1221,7 +1220,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientNativeName {
             get {
                 return this.s_ClientNativeNameField;
@@ -1234,7 +1233,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientOtherName {
             get {
                 return this.s_ClientOtherNameField;
@@ -1247,7 +1246,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientPhone {
             get {
                 return this.s_ClientPhoneField;
@@ -1260,7 +1259,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientSerial {
             get {
                 return this.s_ClientSerialField;
@@ -1273,7 +1272,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CoopAgencyToNo {
             get {
                 return this.s_CoopAgencyToNoField;
@@ -1286,7 +1285,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField1 {
             get {
                 return this.s_CustomField1Field;
@@ -1299,7 +1298,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField10 {
             get {
                 return this.s_CustomField10Field;
@@ -1312,7 +1311,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField2 {
             get {
                 return this.s_CustomField2Field;
@@ -1325,7 +1324,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField3 {
             get {
                 return this.s_CustomField3Field;
@@ -1338,7 +1337,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField4 {
             get {
                 return this.s_CustomField4Field;
@@ -1351,7 +1350,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField5 {
             get {
                 return this.s_CustomField5Field;
@@ -1364,7 +1363,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField6 {
             get {
                 return this.s_CustomField6Field;
@@ -1377,7 +1376,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField7 {
             get {
                 return this.s_CustomField7Field;
@@ -1390,7 +1389,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField8 {
             get {
                 return this.s_CustomField8Field;
@@ -1403,7 +1402,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField9 {
             get {
                 return this.s_CustomField9Field;
@@ -1416,7 +1415,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Dealers {
             get {
                 return this.s_DealersField;
@@ -1429,7 +1428,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroSerial {
             get {
                 return this.s_IntroSerialField;
@@ -1442,7 +1441,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Inventors {
             get {
                 return this.s_InventorsField;
@@ -1455,7 +1454,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IssuedPubNo {
             get {
                 return this.s_IssuedPubNoField;
@@ -1468,7 +1467,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OldSerial {
             get {
                 return this.s_OldSerialField;
@@ -1481,7 +1480,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PCTAppNo {
             get {
                 return this.s_PCTAppNoField;
@@ -1494,7 +1493,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PriorityStatus {
             get {
                 return this.s_PriorityStatusField;
@@ -1507,7 +1506,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SerialLocation {
             get {
                 return this.s_SerialLocationField;
@@ -1520,7 +1519,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TechnologyType {
             get {
                 return this.s_TechnologyTypeField;
@@ -1533,7 +1532,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TotalSerial {
             get {
                 return this.s_TotalSerialField;
@@ -1546,7 +1545,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_aaa {
             get {
                 return this.s_aaaField;
@@ -1571,20 +1570,20 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TrademarkData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class TrademarkData : TaskFlowTest.IPSPServices.TrademarkBaseData {
+    [DataContract(Name="TrademarkData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class TrademarkData : TrademarkBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string CurrentProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSubmitStatusField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string CurrentProcessName {
             get {
                 return this.CurrentProcessNameField;
@@ -1597,7 +1596,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string Name {
             get {
                 return this.NameField;
@@ -1610,7 +1609,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSubmitStatus {
             get {
                 return this.s_CaseSubmitStatusField;
@@ -1626,189 +1625,189 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TrademarkBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkData))]
+    [DataContract(Name="TrademarkBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(TrademarkData))]
     public partial class TrademarkBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_BeginDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EndDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_NextRenewalField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_RegistrationDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SendCheckDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ShldSbmtDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SubmitDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_UndertakeDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private byte[] img_MainThumbnailField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_BusinessTypeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DepartmentIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_MadBasicCountryField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_RegCountryField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_StartProcessCodeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_TFlowNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AcceptNOField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AgencyToNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsNativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseOtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientAreaField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientContactsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientOtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientPhoneField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CoopAgencyToNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField1Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField10Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField2Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField3Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField4Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField5Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField6Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField7Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField8Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField9Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DealersField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FlowDirectionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsRegOnlineField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PrePubIssueField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_RegistrationNOField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SerialLocationField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TotalSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TrademarkClassField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TrademarkTypeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -1821,7 +1820,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -1834,7 +1833,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_BeginDate {
             get {
                 return this.dt_BeginDateField;
@@ -1847,7 +1846,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -1860,7 +1859,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -1873,7 +1872,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EndDate {
             get {
                 return this.dt_EndDateField;
@@ -1886,7 +1885,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_NextRenewal {
             get {
                 return this.dt_NextRenewalField;
@@ -1899,7 +1898,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_RegistrationDate {
             get {
                 return this.dt_RegistrationDateField;
@@ -1912,7 +1911,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SendCheckDate {
             get {
                 return this.dt_SendCheckDateField;
@@ -1925,7 +1924,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ShldSbmtDate {
             get {
                 return this.dt_ShldSbmtDateField;
@@ -1938,7 +1937,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SubmitDate {
             get {
                 return this.dt_SubmitDateField;
@@ -1951,7 +1950,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_UndertakeDate {
             get {
                 return this.dt_UndertakeDateField;
@@ -1964,7 +1963,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public byte[] img_MainThumbnail {
             get {
                 return this.img_MainThumbnailField;
@@ -1977,7 +1976,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_BusinessTypeID {
             get {
                 return this.n_BusinessTypeIDField;
@@ -1990,7 +1989,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseID {
             get {
                 return this.n_CaseIDField;
@@ -2003,7 +2002,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DepartmentID {
             get {
                 return this.n_DepartmentIDField;
@@ -2016,7 +2015,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FirstAttorney {
             get {
                 return this.n_FirstAttorneyField;
@@ -2029,7 +2028,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_MadBasicCountry {
             get {
                 return this.n_MadBasicCountryField;
@@ -2042,7 +2041,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_RegCountry {
             get {
                 return this.n_RegCountryField;
@@ -2055,7 +2054,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_SecondAttorney {
             get {
                 return this.n_SecondAttorneyField;
@@ -2068,7 +2067,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_StartProcessCodeID {
             get {
                 return this.n_StartProcessCodeIDField;
@@ -2081,7 +2080,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_TFlowNum {
             get {
                 return this.n_TFlowNumField;
@@ -2094,7 +2093,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AcceptNO {
             get {
                 return this.s_AcceptNOField;
@@ -2107,7 +2106,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AgencyToName {
             get {
                 return this.s_AgencyToNameField;
@@ -2120,7 +2119,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -2133,7 +2132,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -2146,7 +2145,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ApplicantsNativeName {
             get {
                 return this.s_ApplicantsNativeNameField;
@@ -2159,7 +2158,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -2172,7 +2171,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseOtherName {
             get {
                 return this.s_CaseOtherNameField;
@@ -2185,7 +2184,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -2198,7 +2197,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseStatus {
             get {
                 return this.s_CaseStatusField;
@@ -2211,7 +2210,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientArea {
             get {
                 return this.s_ClientAreaField;
@@ -2224,7 +2223,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientContacts {
             get {
                 return this.s_ClientContactsField;
@@ -2237,7 +2236,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -2250,7 +2249,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientNativeName {
             get {
                 return this.s_ClientNativeNameField;
@@ -2263,7 +2262,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientOtherName {
             get {
                 return this.s_ClientOtherNameField;
@@ -2276,7 +2275,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientPhone {
             get {
                 return this.s_ClientPhoneField;
@@ -2289,7 +2288,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientSerial {
             get {
                 return this.s_ClientSerialField;
@@ -2302,7 +2301,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CoopAgencyToNo {
             get {
                 return this.s_CoopAgencyToNoField;
@@ -2315,7 +2314,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField1 {
             get {
                 return this.s_CustomField1Field;
@@ -2328,7 +2327,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField10 {
             get {
                 return this.s_CustomField10Field;
@@ -2341,7 +2340,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField2 {
             get {
                 return this.s_CustomField2Field;
@@ -2354,7 +2353,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField3 {
             get {
                 return this.s_CustomField3Field;
@@ -2367,7 +2366,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField4 {
             get {
                 return this.s_CustomField4Field;
@@ -2380,7 +2379,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField5 {
             get {
                 return this.s_CustomField5Field;
@@ -2393,7 +2392,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField6 {
             get {
                 return this.s_CustomField6Field;
@@ -2406,7 +2405,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField7 {
             get {
                 return this.s_CustomField7Field;
@@ -2419,7 +2418,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField8 {
             get {
                 return this.s_CustomField8Field;
@@ -2432,7 +2431,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField9 {
             get {
                 return this.s_CustomField9Field;
@@ -2445,7 +2444,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Dealers {
             get {
                 return this.s_DealersField;
@@ -2458,7 +2457,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FlowDirection {
             get {
                 return this.s_FlowDirectionField;
@@ -2471,7 +2470,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroSerial {
             get {
                 return this.s_IntroSerialField;
@@ -2484,7 +2483,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsRegOnline {
             get {
                 return this.s_IsRegOnlineField;
@@ -2497,7 +2496,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PrePubIssue {
             get {
                 return this.s_PrePubIssueField;
@@ -2510,7 +2509,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -2523,7 +2522,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_RegistrationNO {
             get {
                 return this.s_RegistrationNOField;
@@ -2536,7 +2535,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SerialLocation {
             get {
                 return this.s_SerialLocationField;
@@ -2549,7 +2548,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TotalSerial {
             get {
                 return this.s_TotalSerialField;
@@ -2562,7 +2561,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TrademarkClass {
             get {
                 return this.s_TrademarkClassField;
@@ -2575,7 +2574,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TrademarkType {
             get {
                 return this.s_TrademarkTypeField;
@@ -2600,17 +2599,17 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DomainData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class DomainData : TaskFlowTest.IPSPServices.DomainBaseData {
+    [DataContract(Name="DomainData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class DomainData : DomainBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSubmitStatusField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string Name {
             get {
                 return this.NameField;
@@ -2623,7 +2622,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSubmitStatus {
             get {
                 return this.s_CaseSubmitStatusField;
@@ -2639,138 +2638,138 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DomainBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainData))]
+    [DataContract(Name="DomainBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(DomainData))]
     public partial class DomainBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ApplyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_NextRenewalField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SendCheckDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ShldSbmtDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SubmitDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_BusinessTypeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DFlowNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DepartmentIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_RegCountryField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_StartProcessCodeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AgencyToNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseOtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientOtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientPhoneField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsFirstNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsLastNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CoopAgencyToNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField1Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField10Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField2Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField3Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField4Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField5Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField6Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField7Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField8Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField9Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DomainStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FlowDirectionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -2783,7 +2782,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_Apply {
             get {
                 return this.dt_ApplyField;
@@ -2796,7 +2795,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -2809,7 +2808,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -2822,7 +2821,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_NextRenewal {
             get {
                 return this.dt_NextRenewalField;
@@ -2835,7 +2834,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SendCheckDate {
             get {
                 return this.dt_SendCheckDateField;
@@ -2848,7 +2847,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ShldSbmtDate {
             get {
                 return this.dt_ShldSbmtDateField;
@@ -2861,7 +2860,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SubmitDate {
             get {
                 return this.dt_SubmitDateField;
@@ -2874,7 +2873,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_BusinessTypeID {
             get {
                 return this.n_BusinessTypeIDField;
@@ -2887,7 +2886,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseID {
             get {
                 return this.n_CaseIDField;
@@ -2900,7 +2899,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DFlowNum {
             get {
                 return this.n_DFlowNumField;
@@ -2913,7 +2912,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DepartmentID {
             get {
                 return this.n_DepartmentIDField;
@@ -2926,7 +2925,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FirstAttorney {
             get {
                 return this.n_FirstAttorneyField;
@@ -2939,7 +2938,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_RegCountry {
             get {
                 return this.n_RegCountryField;
@@ -2952,7 +2951,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_SecondAttorney {
             get {
                 return this.n_SecondAttorneyField;
@@ -2965,7 +2964,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_StartProcessCodeID {
             get {
                 return this.n_StartProcessCodeIDField;
@@ -2978,7 +2977,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AgencyToName {
             get {
                 return this.s_AgencyToNameField;
@@ -2991,7 +2990,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -3004,7 +3003,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseOtherName {
             get {
                 return this.s_CaseOtherNameField;
@@ -3017,7 +3016,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -3030,7 +3029,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseStatus {
             get {
                 return this.s_CaseStatusField;
@@ -3043,7 +3042,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -3056,7 +3055,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientNativeName {
             get {
                 return this.s_ClientNativeNameField;
@@ -3069,7 +3068,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientOtherName {
             get {
                 return this.s_ClientOtherNameField;
@@ -3082,7 +3081,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientPhone {
             get {
                 return this.s_ClientPhoneField;
@@ -3095,7 +3094,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientSerial {
             get {
                 return this.s_ClientSerialField;
@@ -3108,7 +3107,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsFirstName {
             get {
                 return this.s_ContactsFirstNameField;
@@ -3121,7 +3120,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsLastName {
             get {
                 return this.s_ContactsLastNameField;
@@ -3134,7 +3133,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CoopAgencyToNo {
             get {
                 return this.s_CoopAgencyToNoField;
@@ -3147,7 +3146,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField1 {
             get {
                 return this.s_CustomField1Field;
@@ -3160,7 +3159,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField10 {
             get {
                 return this.s_CustomField10Field;
@@ -3173,7 +3172,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField2 {
             get {
                 return this.s_CustomField2Field;
@@ -3186,7 +3185,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField3 {
             get {
                 return this.s_CustomField3Field;
@@ -3199,7 +3198,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField4 {
             get {
                 return this.s_CustomField4Field;
@@ -3212,7 +3211,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField5 {
             get {
                 return this.s_CustomField5Field;
@@ -3225,7 +3224,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField6 {
             get {
                 return this.s_CustomField6Field;
@@ -3238,7 +3237,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField7 {
             get {
                 return this.s_CustomField7Field;
@@ -3251,7 +3250,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField8 {
             get {
                 return this.s_CustomField8Field;
@@ -3264,7 +3263,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField9 {
             get {
                 return this.s_CustomField9Field;
@@ -3277,7 +3276,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_DomainStatus {
             get {
                 return this.s_DomainStatusField;
@@ -3290,7 +3289,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FlowDirection {
             get {
                 return this.s_FlowDirectionField;
@@ -3303,7 +3302,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroSerial {
             get {
                 return this.s_IntroSerialField;
@@ -3316,7 +3315,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -3341,17 +3340,17 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CopyRightData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class CopyRightData : TaskFlowTest.IPSPServices.CopyRightBaseData {
+    [DataContract(Name="CopyRightData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class CopyRightData : CopyRightBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSubmitStatusField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string Name {
             get {
                 return this.NameField;
@@ -3364,7 +3363,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSubmitStatus {
             get {
                 return this.s_CaseSubmitStatusField;
@@ -3380,138 +3379,138 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CopyRightBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CopyRightData))]
+    [DataContract(Name="CopyRightBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(CopyRightData))]
     public partial class CopyRightBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SendCheckDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ShldSbmtDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SubmitDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_BusinessTypeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CFlowNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CopyrightTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DepartmentIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_RegCountryField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_StartProcessCodeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AgencyToNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseOtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientOtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientPhoneField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsFirstNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsLastNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CoopAgencyToNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField1Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField10Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField2Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField3Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField4Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField5Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField6Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField7Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField8Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField9Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FlowDirectionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SerialLocationField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TotalSerialField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -3524,7 +3523,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -3537,7 +3536,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -3550,7 +3549,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SendCheckDate {
             get {
                 return this.dt_SendCheckDateField;
@@ -3563,7 +3562,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ShldSbmtDate {
             get {
                 return this.dt_ShldSbmtDateField;
@@ -3576,7 +3575,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SubmitDate {
             get {
                 return this.dt_SubmitDateField;
@@ -3589,7 +3588,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_BusinessTypeID {
             get {
                 return this.n_BusinessTypeIDField;
@@ -3602,7 +3601,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CFlowNum {
             get {
                 return this.n_CFlowNumField;
@@ -3615,7 +3614,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseID {
             get {
                 return this.n_CaseIDField;
@@ -3628,7 +3627,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CopyrightType {
             get {
                 return this.n_CopyrightTypeField;
@@ -3641,7 +3640,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DepartmentID {
             get {
                 return this.n_DepartmentIDField;
@@ -3654,7 +3653,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FirstAttorney {
             get {
                 return this.n_FirstAttorneyField;
@@ -3667,7 +3666,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_RegCountry {
             get {
                 return this.n_RegCountryField;
@@ -3680,7 +3679,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_SecondAttorney {
             get {
                 return this.n_SecondAttorneyField;
@@ -3693,7 +3692,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_StartProcessCodeID {
             get {
                 return this.n_StartProcessCodeIDField;
@@ -3706,7 +3705,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AgencyToName {
             get {
                 return this.s_AgencyToNameField;
@@ -3719,7 +3718,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -3732,7 +3731,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseOtherName {
             get {
                 return this.s_CaseOtherNameField;
@@ -3745,7 +3744,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -3758,7 +3757,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseStatus {
             get {
                 return this.s_CaseStatusField;
@@ -3771,7 +3770,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -3784,7 +3783,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientNativeName {
             get {
                 return this.s_ClientNativeNameField;
@@ -3797,7 +3796,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientOtherName {
             get {
                 return this.s_ClientOtherNameField;
@@ -3810,7 +3809,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientPhone {
             get {
                 return this.s_ClientPhoneField;
@@ -3823,7 +3822,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientSerial {
             get {
                 return this.s_ClientSerialField;
@@ -3836,7 +3835,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsFirstName {
             get {
                 return this.s_ContactsFirstNameField;
@@ -3849,7 +3848,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsLastName {
             get {
                 return this.s_ContactsLastNameField;
@@ -3862,7 +3861,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CoopAgencyToNo {
             get {
                 return this.s_CoopAgencyToNoField;
@@ -3875,7 +3874,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField1 {
             get {
                 return this.s_CustomField1Field;
@@ -3888,7 +3887,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField10 {
             get {
                 return this.s_CustomField10Field;
@@ -3901,7 +3900,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField2 {
             get {
                 return this.s_CustomField2Field;
@@ -3914,7 +3913,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField3 {
             get {
                 return this.s_CustomField3Field;
@@ -3927,7 +3926,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField4 {
             get {
                 return this.s_CustomField4Field;
@@ -3940,7 +3939,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField5 {
             get {
                 return this.s_CustomField5Field;
@@ -3953,7 +3952,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField6 {
             get {
                 return this.s_CustomField6Field;
@@ -3966,7 +3965,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField7 {
             get {
                 return this.s_CustomField7Field;
@@ -3979,7 +3978,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField8 {
             get {
                 return this.s_CustomField8Field;
@@ -3992,7 +3991,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField9 {
             get {
                 return this.s_CustomField9Field;
@@ -4005,7 +4004,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FlowDirection {
             get {
                 return this.s_FlowDirectionField;
@@ -4018,7 +4017,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroSerial {
             get {
                 return this.s_IntroSerialField;
@@ -4031,7 +4030,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -4044,7 +4043,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SerialLocation {
             get {
                 return this.s_SerialLocationField;
@@ -4057,7 +4056,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TotalSerial {
             get {
                 return this.s_TotalSerialField;
@@ -4082,17 +4081,17 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="OtherCaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class OtherCaseData : TaskFlowTest.IPSPServices.OtherCaseBaseData {
+    [DataContract(Name="OtherCaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class OtherCaseData : OtherCaseBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSubmitStatusField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string Name {
             get {
                 return this.NameField;
@@ -4105,7 +4104,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSubmitStatus {
             get {
                 return this.s_CaseSubmitStatusField;
@@ -4121,129 +4120,129 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="OtherCaseBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherCaseData))]
+    [DataContract(Name="OtherCaseBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(OtherCaseData))]
     public partial class OtherCaseBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SendCheckDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ShldSbmtDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SubmitDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_BusinessTypeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DepartmentIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_OFlowNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_RegCountryField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_StartProcessCodeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AgencyToNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseOtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientOtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientPhoneField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsFirstNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsLastNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CoopAgencyToNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField1Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField10Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField2Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField3Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField4Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField5Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField6Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField7Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField8Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CustomField9Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FlowDirectionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -4256,7 +4255,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -4269,7 +4268,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -4282,7 +4281,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SendCheckDate {
             get {
                 return this.dt_SendCheckDateField;
@@ -4295,7 +4294,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ShldSbmtDate {
             get {
                 return this.dt_ShldSbmtDateField;
@@ -4308,7 +4307,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SubmitDate {
             get {
                 return this.dt_SubmitDateField;
@@ -4321,7 +4320,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_BusinessTypeID {
             get {
                 return this.n_BusinessTypeIDField;
@@ -4334,7 +4333,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseID {
             get {
                 return this.n_CaseIDField;
@@ -4347,7 +4346,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DepartmentID {
             get {
                 return this.n_DepartmentIDField;
@@ -4360,7 +4359,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FirstAttorney {
             get {
                 return this.n_FirstAttorneyField;
@@ -4373,7 +4372,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_OFlowNum {
             get {
                 return this.n_OFlowNumField;
@@ -4386,7 +4385,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_RegCountry {
             get {
                 return this.n_RegCountryField;
@@ -4399,7 +4398,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_SecondAttorney {
             get {
                 return this.n_SecondAttorneyField;
@@ -4412,7 +4411,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_StartProcessCodeID {
             get {
                 return this.n_StartProcessCodeIDField;
@@ -4425,7 +4424,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AgencyToName {
             get {
                 return this.s_AgencyToNameField;
@@ -4438,7 +4437,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -4451,7 +4450,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseOtherName {
             get {
                 return this.s_CaseOtherNameField;
@@ -4464,7 +4463,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -4477,7 +4476,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseStatus {
             get {
                 return this.s_CaseStatusField;
@@ -4490,7 +4489,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -4503,7 +4502,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientNativeName {
             get {
                 return this.s_ClientNativeNameField;
@@ -4516,7 +4515,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientOtherName {
             get {
                 return this.s_ClientOtherNameField;
@@ -4529,7 +4528,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientPhone {
             get {
                 return this.s_ClientPhoneField;
@@ -4542,7 +4541,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientSerial {
             get {
                 return this.s_ClientSerialField;
@@ -4555,7 +4554,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsFirstName {
             get {
                 return this.s_ContactsFirstNameField;
@@ -4568,7 +4567,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsLastName {
             get {
                 return this.s_ContactsLastNameField;
@@ -4581,7 +4580,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CoopAgencyToNo {
             get {
                 return this.s_CoopAgencyToNoField;
@@ -4594,7 +4593,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField1 {
             get {
                 return this.s_CustomField1Field;
@@ -4607,7 +4606,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField10 {
             get {
                 return this.s_CustomField10Field;
@@ -4620,7 +4619,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField2 {
             get {
                 return this.s_CustomField2Field;
@@ -4633,7 +4632,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField3 {
             get {
                 return this.s_CustomField3Field;
@@ -4646,7 +4645,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField4 {
             get {
                 return this.s_CustomField4Field;
@@ -4659,7 +4658,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField5 {
             get {
                 return this.s_CustomField5Field;
@@ -4672,7 +4671,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField6 {
             get {
                 return this.s_CustomField6Field;
@@ -4685,7 +4684,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField7 {
             get {
                 return this.s_CustomField7Field;
@@ -4698,7 +4697,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField8 {
             get {
                 return this.s_CustomField8Field;
@@ -4711,7 +4710,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CustomField9 {
             get {
                 return this.s_CustomField9Field;
@@ -4724,7 +4723,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FlowDirection {
             get {
                 return this.s_FlowDirectionField;
@@ -4737,7 +4736,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroSerial {
             get {
                 return this.s_IntroSerialField;
@@ -4750,7 +4749,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -4775,20 +4774,20 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ClientData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class ClientData : TaskFlowTest.IPSPServices.ClientBaseData {
+    [DataContract(Name="ClientData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class ClientData : ClientBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstContactNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroducerNameField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseCount {
             get {
                 return this.n_CaseCountField;
@@ -4801,7 +4800,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstContactName {
             get {
                 return this.s_FirstContactNameField;
@@ -4814,7 +4813,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroducerName {
             get {
                 return this.s_IntroducerNameField;
@@ -4830,153 +4829,153 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ClientBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ClientData))]
+    [DataContract(Name="ClientBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(ClientData))]
     public partial class ClientBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_FirstCaseDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_LastCaseDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ClientIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CopyrightCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CountryField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DomainCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_LanguageField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_OtherCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_PatentCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_TMCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AddressesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AreaField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientCodeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsAddressField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsFirstNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsLastNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsTelField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsZipCodeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CreditField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EmailField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FacebookField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FaxField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstContactEmailField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstContactFirstNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstContactIdentityField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstContactLastNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstContactTelField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IMAddressField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IPTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroducerFirstNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroducerLastNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_MobileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PatentChargerNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PhoneField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SourceField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TMChargerNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TwitterField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_WebsiteField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ZipCodesField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -4989,7 +4988,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -5002,7 +5001,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -5015,7 +5014,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_FirstCaseDate {
             get {
                 return this.dt_FirstCaseDateField;
@@ -5028,7 +5027,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_LastCaseDate {
             get {
                 return this.dt_LastCaseDateField;
@@ -5041,7 +5040,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ClientID {
             get {
                 return this.n_ClientIDField;
@@ -5054,7 +5053,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CopyrightCaseCount {
             get {
                 return this.n_CopyrightCaseCountField;
@@ -5067,7 +5066,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Country {
             get {
                 return this.n_CountryField;
@@ -5080,7 +5079,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DomainCaseCount {
             get {
                 return this.n_DomainCaseCountField;
@@ -5093,7 +5092,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Language {
             get {
                 return this.n_LanguageField;
@@ -5106,7 +5105,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_OtherCaseCount {
             get {
                 return this.n_OtherCaseCountField;
@@ -5119,7 +5118,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_PatentCaseCount {
             get {
                 return this.n_PatentCaseCountField;
@@ -5132,7 +5131,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_TMCaseCount {
             get {
                 return this.n_TMCaseCountField;
@@ -5145,7 +5144,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Addresses {
             get {
                 return this.s_AddressesField;
@@ -5158,7 +5157,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Area {
             get {
                 return this.s_AreaField;
@@ -5171,7 +5170,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientCode {
             get {
                 return this.s_ClientCodeField;
@@ -5184,7 +5183,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsAddress {
             get {
                 return this.s_ContactsAddressField;
@@ -5197,7 +5196,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsFirstName {
             get {
                 return this.s_ContactsFirstNameField;
@@ -5210,7 +5209,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsLastName {
             get {
                 return this.s_ContactsLastNameField;
@@ -5223,7 +5222,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsTel {
             get {
                 return this.s_ContactsTelField;
@@ -5236,7 +5235,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsZipCode {
             get {
                 return this.s_ContactsZipCodeField;
@@ -5249,7 +5248,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Credit {
             get {
                 return this.s_CreditField;
@@ -5262,7 +5261,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Email {
             get {
                 return this.s_EmailField;
@@ -5275,7 +5274,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Facebook {
             get {
                 return this.s_FacebookField;
@@ -5288,7 +5287,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Fax {
             get {
                 return this.s_FaxField;
@@ -5301,7 +5300,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstContactEmail {
             get {
                 return this.s_FirstContactEmailField;
@@ -5314,7 +5313,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstContactFirstName {
             get {
                 return this.s_FirstContactFirstNameField;
@@ -5327,7 +5326,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstContactIdentity {
             get {
                 return this.s_FirstContactIdentityField;
@@ -5340,7 +5339,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstContactLastName {
             get {
                 return this.s_FirstContactLastNameField;
@@ -5353,7 +5352,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstContactTel {
             get {
                 return this.s_FirstContactTelField;
@@ -5366,7 +5365,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IMAddress {
             get {
                 return this.s_IMAddressField;
@@ -5379,7 +5378,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IPType {
             get {
                 return this.s_IPTypeField;
@@ -5392,7 +5391,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroducerFirstName {
             get {
                 return this.s_IntroducerFirstNameField;
@@ -5405,7 +5404,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroducerLastName {
             get {
                 return this.s_IntroducerLastNameField;
@@ -5418,7 +5417,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -5431,7 +5430,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Mobile {
             get {
                 return this.s_MobileField;
@@ -5444,7 +5443,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Name {
             get {
                 return this.s_NameField;
@@ -5457,7 +5456,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_NativeName {
             get {
                 return this.s_NativeNameField;
@@ -5470,7 +5469,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -5483,7 +5482,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OtherName {
             get {
                 return this.s_OtherNameField;
@@ -5496,7 +5495,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PatentChargerName {
             get {
                 return this.s_PatentChargerNameField;
@@ -5509,7 +5508,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Phone {
             get {
                 return this.s_PhoneField;
@@ -5522,7 +5521,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Source {
             get {
                 return this.s_SourceField;
@@ -5535,7 +5534,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TMChargerName {
             get {
                 return this.s_TMChargerNameField;
@@ -5548,7 +5547,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Twitter {
             get {
                 return this.s_TwitterField;
@@ -5561,7 +5560,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Type {
             get {
                 return this.s_TypeField;
@@ -5574,7 +5573,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Website {
             get {
                 return this.s_WebsiteField;
@@ -5587,7 +5586,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ZipCodes {
             get {
                 return this.s_ZipCodesField;
@@ -5612,17 +5611,17 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="AgencyData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class AgencyData : TaskFlowTest.IPSPServices.AgencyBaseData {
+    [DataContract(Name="AgencyData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class AgencyData : AgencyBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ToCaseCountField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseCount {
             get {
                 return this.n_CaseCountField;
@@ -5635,7 +5634,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ToCaseCount {
             get {
                 return this.n_ToCaseCountField;
@@ -5651,132 +5650,132 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="AgencyBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AgencyData))]
+    [DataContract(Name="AgencyBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(AgencyData))]
     public partial class AgencyBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_FirstCaseFromDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_FirstCaseToDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_LastCaseFromDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_LastCaseToDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_AgencyIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CopyrightCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DomainCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_OtherCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_PatentCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_PayCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_TMCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ToCopyrightCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ToDomainCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ToOtherCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ToPatentCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ToTMCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AddressesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsEmailField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsFaxField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsFirstNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsLastNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsTelField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CountryNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CreditField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EmailField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FacebookField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FaxField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstAddressField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IMAddressField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IPTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_MobileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PhoneField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TwitterField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_WebSiteField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -5789,7 +5788,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -5802,7 +5801,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -5815,7 +5814,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_FirstCaseFromDate {
             get {
                 return this.dt_FirstCaseFromDateField;
@@ -5828,7 +5827,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_FirstCaseToDate {
             get {
                 return this.dt_FirstCaseToDateField;
@@ -5841,7 +5840,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_LastCaseFromDate {
             get {
                 return this.dt_LastCaseFromDateField;
@@ -5854,7 +5853,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_LastCaseToDate {
             get {
                 return this.dt_LastCaseToDateField;
@@ -5867,7 +5866,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_AgencyID {
             get {
                 return this.n_AgencyIDField;
@@ -5880,7 +5879,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CopyrightCaseCount {
             get {
                 return this.n_CopyrightCaseCountField;
@@ -5893,7 +5892,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DomainCaseCount {
             get {
                 return this.n_DomainCaseCountField;
@@ -5906,7 +5905,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_OtherCaseCount {
             get {
                 return this.n_OtherCaseCountField;
@@ -5919,7 +5918,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_PatentCaseCount {
             get {
                 return this.n_PatentCaseCountField;
@@ -5932,7 +5931,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_PayCurrency {
             get {
                 return this.n_PayCurrencyField;
@@ -5945,7 +5944,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_TMCaseCount {
             get {
                 return this.n_TMCaseCountField;
@@ -5958,7 +5957,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ToCopyrightCaseCount {
             get {
                 return this.n_ToCopyrightCaseCountField;
@@ -5971,7 +5970,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ToDomainCaseCount {
             get {
                 return this.n_ToDomainCaseCountField;
@@ -5984,7 +5983,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ToOtherCaseCount {
             get {
                 return this.n_ToOtherCaseCountField;
@@ -5997,7 +5996,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ToPatentCaseCount {
             get {
                 return this.n_ToPatentCaseCountField;
@@ -6010,7 +6009,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ToTMCaseCount {
             get {
                 return this.n_ToTMCaseCountField;
@@ -6023,7 +6022,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Addresses {
             get {
                 return this.s_AddressesField;
@@ -6036,7 +6035,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsEmail {
             get {
                 return this.s_ContactsEmailField;
@@ -6049,7 +6048,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsFax {
             get {
                 return this.s_ContactsFaxField;
@@ -6062,7 +6061,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsFirstName {
             get {
                 return this.s_ContactsFirstNameField;
@@ -6075,7 +6074,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsLastName {
             get {
                 return this.s_ContactsLastNameField;
@@ -6088,7 +6087,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsTel {
             get {
                 return this.s_ContactsTelField;
@@ -6101,7 +6100,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CountryName {
             get {
                 return this.s_CountryNameField;
@@ -6114,7 +6113,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Credit {
             get {
                 return this.s_CreditField;
@@ -6127,7 +6126,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Email {
             get {
                 return this.s_EmailField;
@@ -6140,7 +6139,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Facebook {
             get {
                 return this.s_FacebookField;
@@ -6153,7 +6152,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Fax {
             get {
                 return this.s_FaxField;
@@ -6166,7 +6165,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstAddress {
             get {
                 return this.s_FirstAddressField;
@@ -6179,7 +6178,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IMAddress {
             get {
                 return this.s_IMAddressField;
@@ -6192,7 +6191,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IPType {
             get {
                 return this.s_IPTypeField;
@@ -6205,7 +6204,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Mobile {
             get {
                 return this.s_MobileField;
@@ -6218,7 +6217,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Name {
             get {
                 return this.s_NameField;
@@ -6231,7 +6230,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_NativeName {
             get {
                 return this.s_NativeNameField;
@@ -6244,7 +6243,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -6257,7 +6256,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OtherName {
             get {
                 return this.s_OtherNameField;
@@ -6270,7 +6269,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Phone {
             get {
                 return this.s_PhoneField;
@@ -6283,7 +6282,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Twitter {
             get {
                 return this.s_TwitterField;
@@ -6296,7 +6295,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_WebSite {
             get {
                 return this.s_WebSiteField;
@@ -6321,112 +6320,112 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="IntroducerData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class IntroducerData : TaskFlowTest.IPSPServices.IntroducerBaseData {
+    [DataContract(Name="IntroducerData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class IntroducerData : IntroducerBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="IntroducerBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.IntroducerData))]
+    [DataContract(Name="IntroducerBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(IntroducerData))]
     public partial class IntroducerBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_FirstCaseDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_LastCaseDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CopyrightCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DomainCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_IDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_OtherCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_PatentCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_PercentField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_TMCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AddressesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsAddressField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EmailField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FacebookField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FaxField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstAddressField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IMAddressField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IPTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_InitialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroCodeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_JobTitleField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_LastNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_MobileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PhoneField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PrefixField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TwitterField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_WebsiteField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -6439,7 +6438,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -6452,7 +6451,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -6465,7 +6464,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_FirstCaseDate {
             get {
                 return this.dt_FirstCaseDateField;
@@ -6478,7 +6477,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_LastCaseDate {
             get {
                 return this.dt_LastCaseDateField;
@@ -6491,7 +6490,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CopyrightCaseCount {
             get {
                 return this.n_CopyrightCaseCountField;
@@ -6504,7 +6503,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DomainCaseCount {
             get {
                 return this.n_DomainCaseCountField;
@@ -6517,7 +6516,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ID {
             get {
                 return this.n_IDField;
@@ -6530,7 +6529,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_OtherCaseCount {
             get {
                 return this.n_OtherCaseCountField;
@@ -6543,7 +6542,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_PatentCaseCount {
             get {
                 return this.n_PatentCaseCountField;
@@ -6556,7 +6555,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_Percent {
             get {
                 return this.n_PercentField;
@@ -6569,7 +6568,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_TMCaseCount {
             get {
                 return this.n_TMCaseCountField;
@@ -6582,7 +6581,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Addresses {
             get {
                 return this.s_AddressesField;
@@ -6595,7 +6594,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsAddress {
             get {
                 return this.s_ContactsAddressField;
@@ -6608,7 +6607,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Email {
             get {
                 return this.s_EmailField;
@@ -6621,7 +6620,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Facebook {
             get {
                 return this.s_FacebookField;
@@ -6634,7 +6633,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Fax {
             get {
                 return this.s_FaxField;
@@ -6647,7 +6646,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstAddress {
             get {
                 return this.s_FirstAddressField;
@@ -6660,7 +6659,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstName {
             get {
                 return this.s_FirstNameField;
@@ -6673,7 +6672,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IMAddress {
             get {
                 return this.s_IMAddressField;
@@ -6686,7 +6685,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IPType {
             get {
                 return this.s_IPTypeField;
@@ -6699,7 +6698,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Initial {
             get {
                 return this.s_InitialField;
@@ -6712,7 +6711,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroCode {
             get {
                 return this.s_IntroCodeField;
@@ -6725,7 +6724,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_JobTitle {
             get {
                 return this.s_JobTitleField;
@@ -6738,7 +6737,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_LastName {
             get {
                 return this.s_LastNameField;
@@ -6751,7 +6750,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Mobile {
             get {
                 return this.s_MobileField;
@@ -6764,7 +6763,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_NativeName {
             get {
                 return this.s_NativeNameField;
@@ -6777,7 +6776,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -6790,7 +6789,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Phone {
             get {
                 return this.s_PhoneField;
@@ -6803,7 +6802,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Prefix {
             get {
                 return this.s_PrefixField;
@@ -6816,7 +6815,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Twitter {
             get {
                 return this.s_TwitterField;
@@ -6829,7 +6828,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Website {
             get {
                 return this.s_WebsiteField;
@@ -6854,14 +6853,14 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ApplicantData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class ApplicantData : TaskFlowTest.IPSPServices.ApplicantBaseData {
+    [DataContract(Name="ApplicantData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class ApplicantData : ApplicantBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseCountField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseCount {
             get {
                 return this.n_CaseCountField;
@@ -6877,105 +6876,105 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ApplicantBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ApplicantData))]
+    [DataContract(Name="ApplicantBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(ApplicantData))]
     public partial class ApplicantBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_FirstCaseFromDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_LastCaseFromDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_AppIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CopyrightCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DomainCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_OtherCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_PatentCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_TMCaseCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AddressesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppCodeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsFirstNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsLastNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContactsTelField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EmailField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FaxField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeeMitigationNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeeMitigationYearField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstAddressField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IDNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IDNumberField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IMAddressField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IPTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_MobileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OtherNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PhoneField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_WebsiteField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -6988,7 +6987,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -7001,7 +7000,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -7014,7 +7013,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_FirstCaseFromDate {
             get {
                 return this.dt_FirstCaseFromDateField;
@@ -7027,7 +7026,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_LastCaseFromDate {
             get {
                 return this.dt_LastCaseFromDateField;
@@ -7040,7 +7039,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_AppID {
             get {
                 return this.n_AppIDField;
@@ -7053,7 +7052,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CopyrightCaseCount {
             get {
                 return this.n_CopyrightCaseCountField;
@@ -7066,7 +7065,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DomainCaseCount {
             get {
                 return this.n_DomainCaseCountField;
@@ -7079,7 +7078,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_OtherCaseCount {
             get {
                 return this.n_OtherCaseCountField;
@@ -7092,7 +7091,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_PatentCaseCount {
             get {
                 return this.n_PatentCaseCountField;
@@ -7105,7 +7104,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_TMCaseCount {
             get {
                 return this.n_TMCaseCountField;
@@ -7118,7 +7117,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Addresses {
             get {
                 return this.s_AddressesField;
@@ -7131,7 +7130,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppCode {
             get {
                 return this.s_AppCodeField;
@@ -7144,7 +7143,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppType {
             get {
                 return this.s_AppTypeField;
@@ -7157,7 +7156,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsFirstName {
             get {
                 return this.s_ContactsFirstNameField;
@@ -7170,7 +7169,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsLastName {
             get {
                 return this.s_ContactsLastNameField;
@@ -7183,7 +7182,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ContactsTel {
             get {
                 return this.s_ContactsTelField;
@@ -7196,7 +7195,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Email {
             get {
                 return this.s_EmailField;
@@ -7209,7 +7208,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Fax {
             get {
                 return this.s_FaxField;
@@ -7222,7 +7221,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeeMitigationNum {
             get {
                 return this.s_FeeMitigationNumField;
@@ -7235,7 +7234,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeeMitigationYear {
             get {
                 return this.s_FeeMitigationYearField;
@@ -7248,7 +7247,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstAddress {
             get {
                 return this.s_FirstAddressField;
@@ -7261,7 +7260,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IDName {
             get {
                 return this.s_IDNameField;
@@ -7274,7 +7273,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IDNumber {
             get {
                 return this.s_IDNumberField;
@@ -7287,7 +7286,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IMAddress {
             get {
                 return this.s_IMAddressField;
@@ -7300,7 +7299,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IPType {
             get {
                 return this.s_IPTypeField;
@@ -7313,7 +7312,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Mobile {
             get {
                 return this.s_MobileField;
@@ -7326,7 +7325,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Name {
             get {
                 return this.s_NameField;
@@ -7339,7 +7338,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_NativeName {
             get {
                 return this.s_NativeNameField;
@@ -7352,7 +7351,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OtherName {
             get {
                 return this.s_OtherNameField;
@@ -7365,7 +7364,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Phone {
             get {
                 return this.s_PhoneField;
@@ -7378,7 +7377,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Website {
             get {
                 return this.s_WebsiteField;
@@ -7403,29 +7402,29 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="OutFileData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class OutFileData : TaskFlowTest.IPSPServices.OutFileBaseData {
+    [DataContract(Name="OutFileData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class OutFileData : OutFileBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string CheckOutStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string ClientGovField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sFileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseProcessField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroducerField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string CheckOutStatus {
             get {
                 return this.CheckOutStatusField;
@@ -7438,7 +7437,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string ClientGov {
             get {
                 return this.ClientGovField;
@@ -7451,7 +7450,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sFile {
             get {
                 return this.sFileField;
@@ -7464,7 +7463,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Attorney {
             get {
                 return this.s_AttorneyField;
@@ -7477,7 +7476,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseProcess {
             get {
                 return this.s_CaseProcessField;
@@ -7490,7 +7489,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Introducer {
             get {
                 return this.s_IntroducerField;
@@ -7506,132 +7505,132 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="OutFileBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OutFileData))]
+    [DataContract(Name="OutFileBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(OutFileData))]
     public partial class OutFileBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_PubDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ReceiveDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SendDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SubmitDueDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_WriteDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CheckedOutByField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string n_ClientIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CreatorIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FileIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_GovOfficeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AbstactField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AcceptNOField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AgencyNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BusinessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CodeProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CreatorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DealersField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EditorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FileStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IPTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_InventorsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameForeignField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PubNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SendMethodField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -7644,7 +7643,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -7657,7 +7656,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -7670,7 +7669,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -7683,7 +7682,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_PubDate {
             get {
                 return this.dt_PubDateField;
@@ -7696,7 +7695,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ReceiveDate {
             get {
                 return this.dt_ReceiveDateField;
@@ -7709,7 +7708,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SendDate {
             get {
                 return this.dt_SendDateField;
@@ -7722,7 +7721,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SubmitDueDate {
             get {
                 return this.dt_SubmitDueDateField;
@@ -7735,7 +7734,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_WriteDate {
             get {
                 return this.dt_WriteDateField;
@@ -7748,7 +7747,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseID {
             get {
                 return this.n_CaseIDField;
@@ -7761,7 +7760,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CheckedOutBy {
             get {
                 return this.n_CheckedOutByField;
@@ -7774,7 +7773,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string n_ClientID {
             get {
                 return this.n_ClientIDField;
@@ -7787,7 +7786,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CreatorID {
             get {
                 return this.n_CreatorIDField;
@@ -7800,7 +7799,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FileID {
             get {
                 return this.n_FileIDField;
@@ -7813,7 +7812,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_GovOfficeID {
             get {
                 return this.n_GovOfficeIDField;
@@ -7826,7 +7825,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Abstact {
             get {
                 return this.s_AbstactField;
@@ -7839,7 +7838,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AcceptNO {
             get {
                 return this.s_AcceptNOField;
@@ -7852,7 +7851,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AgencyName {
             get {
                 return this.s_AgencyNameField;
@@ -7865,7 +7864,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -7878,7 +7877,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -7891,7 +7890,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_BusinessName {
             get {
                 return this.s_BusinessNameField;
@@ -7904,7 +7903,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseClientName {
             get {
                 return this.s_CaseClientNameField;
@@ -7917,7 +7916,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -7930,7 +7929,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -7943,7 +7942,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -7956,7 +7955,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientType {
             get {
                 return this.s_ClientTypeField;
@@ -7969,7 +7968,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CodeProcessName {
             get {
                 return this.s_CodeProcessNameField;
@@ -7982,7 +7981,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Creator {
             get {
                 return this.s_CreatorField;
@@ -7995,7 +7994,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Dealers {
             get {
                 return this.s_DealersField;
@@ -8008,7 +8007,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Editor {
             get {
                 return this.s_EditorField;
@@ -8021,7 +8020,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FileStatus {
             get {
                 return this.s_FileStatusField;
@@ -8034,7 +8033,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstAttorney {
             get {
                 return this.s_FirstAttorneyField;
@@ -8047,7 +8046,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IPType {
             get {
                 return this.s_IPTypeField;
@@ -8060,7 +8059,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Inventors {
             get {
                 return this.s_InventorsField;
@@ -8073,7 +8072,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -8086,7 +8085,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Name {
             get {
                 return this.s_NameField;
@@ -8099,7 +8098,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_NameForeign {
             get {
                 return this.s_NameForeignField;
@@ -8112,7 +8111,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -8125,7 +8124,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PubNo {
             get {
                 return this.s_PubNoField;
@@ -8138,7 +8137,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SecondAttorney {
             get {
                 return this.s_SecondAttorneyField;
@@ -8151,7 +8150,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SendMethod {
             get {
                 return this.s_SendMethodField;
@@ -8176,41 +8175,41 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="InFileData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class InFileData : TaskFlowTest.IPSPServices.InFileBaseData {
+    [DataContract(Name="InFileData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class InFileData : InFileBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string ClientGovField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string DistributeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sFileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseProcessField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FileConfirmStatusDispField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FileRelatedApplicantNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FileRelatedClinetNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroducerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PreChangeField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string ClientGov {
             get {
                 return this.ClientGovField;
@@ -8223,7 +8222,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string Distribute {
             get {
                 return this.DistributeField;
@@ -8236,7 +8235,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sFile {
             get {
                 return this.sFileField;
@@ -8249,7 +8248,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Attorney {
             get {
                 return this.s_AttorneyField;
@@ -8262,7 +8261,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseProcess {
             get {
                 return this.s_CaseProcessField;
@@ -8275,7 +8274,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FileConfirmStatusDisp {
             get {
                 return this.s_FileConfirmStatusDispField;
@@ -8288,7 +8287,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FileRelatedApplicantName {
             get {
                 return this.s_FileRelatedApplicantNameField;
@@ -8301,7 +8300,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FileRelatedClinetName {
             get {
                 return this.s_FileRelatedClinetNameField;
@@ -8314,7 +8313,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Introducer {
             get {
                 return this.s_IntroducerField;
@@ -8327,7 +8326,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PreChange {
             get {
                 return this.s_PreChangeField;
@@ -8343,174 +8342,174 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="InFileBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.InFileData))]
+    [DataContract(Name="InFileBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(InFileData))]
     public partial class InFileBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_PubDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ReceiveDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SendDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_TransmitDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_AgencyOfficeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CameFileApplicantIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CameFileClientIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ClientIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ConfirmIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CreatorIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FileCodeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FileIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_GovOfficeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AbstactField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientCodeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CodeProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CompleteField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CreatorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DealersField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DistributeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EditorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FileApplicantNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FileClinetNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FileConfirmStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FilePathNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IPTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_InfileFlowNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_InventorsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsPreChangeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameForeignField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OFileStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OfficerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OfficialNOField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PubNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SendMethodField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_UrgentField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -8523,7 +8522,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -8536,7 +8535,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -8549,7 +8548,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -8562,7 +8561,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_PubDate {
             get {
                 return this.dt_PubDateField;
@@ -8575,7 +8574,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ReceiveDate {
             get {
                 return this.dt_ReceiveDateField;
@@ -8588,7 +8587,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SendDate {
             get {
                 return this.dt_SendDateField;
@@ -8601,7 +8600,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_TransmitDate {
             get {
                 return this.dt_TransmitDateField;
@@ -8614,7 +8613,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_AgencyOfficeID {
             get {
                 return this.n_AgencyOfficeIDField;
@@ -8627,7 +8626,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CameFileApplicantID {
             get {
                 return this.n_CameFileApplicantIDField;
@@ -8640,7 +8639,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CameFileClientID {
             get {
                 return this.n_CameFileClientIDField;
@@ -8653,7 +8652,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseID {
             get {
                 return this.n_CaseIDField;
@@ -8666,7 +8665,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ClientID {
             get {
                 return this.n_ClientIDField;
@@ -8679,7 +8678,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ConfirmID {
             get {
                 return this.n_ConfirmIDField;
@@ -8692,7 +8691,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CreatorID {
             get {
                 return this.n_CreatorIDField;
@@ -8705,7 +8704,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FileCodeID {
             get {
                 return this.n_FileCodeIDField;
@@ -8718,7 +8717,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FileID {
             get {
                 return this.n_FileIDField;
@@ -8731,7 +8730,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_GovOfficeID {
             get {
                 return this.n_GovOfficeIDField;
@@ -8744,7 +8743,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Abstact {
             get {
                 return this.s_AbstactField;
@@ -8757,7 +8756,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -8770,7 +8769,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -8783,7 +8782,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseClientName {
             get {
                 return this.s_CaseClientNameField;
@@ -8796,7 +8795,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -8809,7 +8808,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -8822,7 +8821,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseStatus {
             get {
                 return this.s_CaseStatusField;
@@ -8835,7 +8834,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientCode {
             get {
                 return this.s_ClientCodeField;
@@ -8848,7 +8847,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -8861,7 +8860,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientSerial {
             get {
                 return this.s_ClientSerialField;
@@ -8874,7 +8873,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientType {
             get {
                 return this.s_ClientTypeField;
@@ -8887,7 +8886,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CodeProcessName {
             get {
                 return this.s_CodeProcessNameField;
@@ -8900,7 +8899,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Complete {
             get {
                 return this.s_CompleteField;
@@ -8913,7 +8912,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Creator {
             get {
                 return this.s_CreatorField;
@@ -8926,7 +8925,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Dealers {
             get {
                 return this.s_DealersField;
@@ -8939,7 +8938,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Distribute {
             get {
                 return this.s_DistributeField;
@@ -8952,7 +8951,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Editor {
             get {
                 return this.s_EditorField;
@@ -8965,7 +8964,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FileApplicantName {
             get {
                 return this.s_FileApplicantNameField;
@@ -8978,7 +8977,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FileClinetName {
             get {
                 return this.s_FileClinetNameField;
@@ -8991,7 +8990,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FileConfirmStatus {
             get {
                 return this.s_FileConfirmStatusField;
@@ -9004,7 +9003,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FilePathName {
             get {
                 return this.s_FilePathNameField;
@@ -9017,7 +9016,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstAttorney {
             get {
                 return this.s_FirstAttorneyField;
@@ -9030,7 +9029,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IPType {
             get {
                 return this.s_IPTypeField;
@@ -9043,7 +9042,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_InfileFlowNum {
             get {
                 return this.s_InfileFlowNumField;
@@ -9056,7 +9055,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Inventors {
             get {
                 return this.s_InventorsField;
@@ -9069,7 +9068,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -9082,7 +9081,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsPreChange {
             get {
                 return this.s_IsPreChangeField;
@@ -9095,7 +9094,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Name {
             get {
                 return this.s_NameField;
@@ -9108,7 +9107,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_NameForeign {
             get {
                 return this.s_NameForeignField;
@@ -9121,7 +9120,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OFileStatus {
             get {
                 return this.s_OFileStatusField;
@@ -9134,7 +9133,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Officer {
             get {
                 return this.s_OfficerField;
@@ -9147,7 +9146,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OfficialNO {
             get {
                 return this.s_OfficialNOField;
@@ -9160,7 +9159,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -9173,7 +9172,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PubNo {
             get {
                 return this.s_PubNoField;
@@ -9186,7 +9185,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SecondAttorney {
             get {
                 return this.s_SecondAttorneyField;
@@ -9199,7 +9198,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SendMethod {
             get {
                 return this.s_SendMethodField;
@@ -9212,7 +9211,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Urgent {
             get {
                 return this.s_UrgentField;
@@ -9237,26 +9236,26 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="OtherFileData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class OtherFileData : TaskFlowTest.IPSPServices.OtherFileBaseData {
+    [DataContract(Name="OtherFileData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class OtherFileData : OtherFileBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string ClientGovField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sFileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseProcessField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroducerField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string ClientGov {
             get {
                 return this.ClientGovField;
@@ -9269,7 +9268,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sFile {
             get {
                 return this.sFileField;
@@ -9282,7 +9281,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Attorney {
             get {
                 return this.s_AttorneyField;
@@ -9295,7 +9294,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseProcess {
             get {
                 return this.s_CaseProcessField;
@@ -9308,7 +9307,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Introducer {
             get {
                 return this.s_IntroducerField;
@@ -9324,90 +9323,90 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="OtherFileBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherFileData))]
+    [DataContract(Name="OtherFileBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(OtherFileData))]
     public partial class OtherFileBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_PubDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ReceiveDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SendDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CreatorIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FileIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AbstactField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CodeProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CreatorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EditorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_InventorsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameForeignField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PubNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SendMethodField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -9420,7 +9419,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -9433,7 +9432,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -9446,7 +9445,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -9459,7 +9458,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_PubDate {
             get {
                 return this.dt_PubDateField;
@@ -9472,7 +9471,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ReceiveDate {
             get {
                 return this.dt_ReceiveDateField;
@@ -9485,7 +9484,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SendDate {
             get {
                 return this.dt_SendDateField;
@@ -9498,7 +9497,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CreatorID {
             get {
                 return this.n_CreatorIDField;
@@ -9511,7 +9510,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FileID {
             get {
                 return this.n_FileIDField;
@@ -9524,7 +9523,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Abstact {
             get {
                 return this.s_AbstactField;
@@ -9537,7 +9536,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -9550,7 +9549,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -9563,7 +9562,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -9576,7 +9575,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -9589,7 +9588,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -9602,7 +9601,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CodeProcessName {
             get {
                 return this.s_CodeProcessNameField;
@@ -9615,7 +9614,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Creator {
             get {
                 return this.s_CreatorField;
@@ -9628,7 +9627,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Editor {
             get {
                 return this.s_EditorField;
@@ -9641,7 +9640,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstAttorney {
             get {
                 return this.s_FirstAttorneyField;
@@ -9654,7 +9653,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Inventors {
             get {
                 return this.s_InventorsField;
@@ -9667,7 +9666,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -9680,7 +9679,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Name {
             get {
                 return this.s_NameField;
@@ -9693,7 +9692,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_NameForeign {
             get {
                 return this.s_NameForeignField;
@@ -9706,7 +9705,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -9719,7 +9718,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PubNo {
             get {
                 return this.s_PubNoField;
@@ -9732,7 +9731,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SecondAttorney {
             get {
                 return this.s_SecondAttorneyField;
@@ -9745,7 +9744,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SendMethod {
             get {
                 return this.s_SendMethodField;
@@ -9770,20 +9769,20 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="EmailData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class EmailData : TaskFlowTest.IPSPServices.EmailBaseData {
+    [DataContract(Name="EmailData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class EmailData : EmailBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sEmailFileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AttachmentField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseProcessField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sEmailFile {
             get {
                 return this.sEmailFileField;
@@ -9796,7 +9795,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Attachment {
             get {
                 return this.s_AttachmentField;
@@ -9809,7 +9808,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseProcess {
             get {
                 return this.s_CaseProcessField;
@@ -9825,63 +9824,63 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="EmailBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.EmailData))]
+    [DataContract(Name="EmailBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(EmailData))]
     public partial class EmailBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ReceiveTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SendTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_AttachCountsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_EmailIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AbstactField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BcField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CcField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CodeProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EmailPathField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FromField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IOField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ImportantField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SubjectField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ToField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -9894,7 +9893,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ReceiveTime {
             get {
                 return this.dt_ReceiveTimeField;
@@ -9907,7 +9906,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SendTime {
             get {
                 return this.dt_SendTimeField;
@@ -9920,7 +9919,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_AttachCounts {
             get {
                 return this.n_AttachCountsField;
@@ -9933,7 +9932,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_EmailID {
             get {
                 return this.n_EmailIDField;
@@ -9946,7 +9945,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Abstact {
             get {
                 return this.s_AbstactField;
@@ -9959,7 +9958,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Bc {
             get {
                 return this.s_BcField;
@@ -9972,7 +9971,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -9985,7 +9984,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -9998,7 +9997,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Cc {
             get {
                 return this.s_CcField;
@@ -10011,7 +10010,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CodeProcessName {
             get {
                 return this.s_CodeProcessNameField;
@@ -10024,7 +10023,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_EmailPath {
             get {
                 return this.s_EmailPathField;
@@ -10037,7 +10036,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_From {
             get {
                 return this.s_FromField;
@@ -10050,7 +10049,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IO {
             get {
                 return this.s_IOField;
@@ -10063,7 +10062,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Important {
             get {
                 return this.s_ImportantField;
@@ -10076,7 +10075,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -10089,7 +10088,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Subject {
             get {
                 return this.s_SubjectField;
@@ -10102,7 +10101,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_To {
             get {
                 return this.s_ToField;
@@ -10127,121 +10126,121 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TaskData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class TaskData : TaskFlowTest.IPSPServices.TaskBaseData {
+    [DataContract(Name="TaskData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class TaskData : TaskBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TaskBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskData))]
+    [DataContract(Name="TaskBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(TaskData))]
     public partial class TaskBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EndDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_FinishTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_StartDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Guid g_FormerNodeGuidField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Guid g_IDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Guid g_NodeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Guid g_TaskChainGuidField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CreatorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_EditorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ExecutePositionIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ExecutorIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FinisherField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_LevelField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_MentorIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_NumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_UrgencyIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CheckedField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CodeNodeCodeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DescriptionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ModeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ReadStateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_RelatedInfo1Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_RelatedInfo2Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TaskChainNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TypeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -10254,7 +10253,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateTime {
             get {
                 return this.dt_CreateTimeField;
@@ -10267,7 +10266,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditTime {
             get {
                 return this.dt_EditTimeField;
@@ -10280,7 +10279,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EndDate {
             get {
                 return this.dt_EndDateField;
@@ -10293,7 +10292,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_FinishTime {
             get {
                 return this.dt_FinishTimeField;
@@ -10306,7 +10305,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_StartDate {
             get {
                 return this.dt_StartDateField;
@@ -10319,7 +10318,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Guid g_FormerNodeGuid {
             get {
                 return this.g_FormerNodeGuidField;
@@ -10332,7 +10331,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Guid g_ID {
             get {
                 return this.g_IDField;
@@ -10345,7 +10344,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Guid g_NodeID {
             get {
                 return this.g_NodeIDField;
@@ -10358,7 +10357,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Guid g_TaskChainGuid {
             get {
                 return this.g_TaskChainGuidField;
@@ -10371,7 +10370,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Creator {
             get {
                 return this.n_CreatorField;
@@ -10384,7 +10383,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Editor {
             get {
                 return this.n_EditorField;
@@ -10397,7 +10396,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ExecutePositionID {
             get {
                 return this.n_ExecutePositionIDField;
@@ -10410,7 +10409,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ExecutorID {
             get {
                 return this.n_ExecutorIDField;
@@ -10423,7 +10422,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Finisher {
             get {
                 return this.n_FinisherField;
@@ -10436,7 +10435,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Level {
             get {
                 return this.n_LevelField;
@@ -10449,7 +10448,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_MentorID {
             get {
                 return this.n_MentorIDField;
@@ -10462,7 +10461,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Num {
             get {
                 return this.n_NumField;
@@ -10475,7 +10474,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_UrgencyID {
             get {
                 return this.n_UrgencyIDField;
@@ -10488,7 +10487,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -10501,7 +10500,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -10514,7 +10513,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -10527,7 +10526,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Checked {
             get {
                 return this.s_CheckedField;
@@ -10540,7 +10539,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CodeNodeCode {
             get {
                 return this.s_CodeNodeCodeField;
@@ -10553,7 +10552,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Description {
             get {
                 return this.s_DescriptionField;
@@ -10566,7 +10565,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroSerial {
             get {
                 return this.s_IntroSerialField;
@@ -10579,7 +10578,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Mode {
             get {
                 return this.s_ModeField;
@@ -10592,7 +10591,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Name {
             get {
                 return this.s_NameField;
@@ -10605,7 +10604,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -10618,7 +10617,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ReadState {
             get {
                 return this.s_ReadStateField;
@@ -10631,7 +10630,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_RelatedInfo1 {
             get {
                 return this.s_RelatedInfo1Field;
@@ -10644,7 +10643,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_RelatedInfo2 {
             get {
                 return this.s_RelatedInfo2Field;
@@ -10657,7 +10656,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_State {
             get {
                 return this.s_StateField;
@@ -10670,7 +10669,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TaskChainName {
             get {
                 return this.s_TaskChainNameField;
@@ -10683,7 +10682,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Type {
             get {
                 return this.s_TypeField;
@@ -10708,61 +10707,61 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TaskChainData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class TaskChainData : TaskFlowTest.IPSPServices.TaskChainBaseData {
+    [DataContract(Name="TaskChainData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class TaskChainData : TaskChainBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TaskChainBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskChainData))]
+    [DataContract(Name="TaskChainBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(TaskChainData))]
     public partial class TaskChainBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Guid g_IDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string g_TaskChainGuidField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CreatorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_EditorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_NumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_RelatedInfo1Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_RelatedInfo2Field;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StateField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -10775,7 +10774,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateTime {
             get {
                 return this.dt_CreateTimeField;
@@ -10788,7 +10787,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditTime {
             get {
                 return this.dt_EditTimeField;
@@ -10801,7 +10800,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Guid g_ID {
             get {
                 return this.g_IDField;
@@ -10814,7 +10813,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string g_TaskChainGuid {
             get {
                 return this.g_TaskChainGuidField;
@@ -10827,7 +10826,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Creator {
             get {
                 return this.n_CreatorField;
@@ -10840,7 +10839,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Editor {
             get {
                 return this.n_EditorField;
@@ -10853,7 +10852,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Num {
             get {
                 return this.n_NumField;
@@ -10866,7 +10865,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -10879,7 +10878,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -10892,7 +10891,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -10905,7 +10904,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Name {
             get {
                 return this.s_NameField;
@@ -10918,7 +10917,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_RelatedInfo1 {
             get {
                 return this.s_RelatedInfo1Field;
@@ -10931,7 +10930,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_RelatedInfo2 {
             get {
                 return this.s_RelatedInfo2Field;
@@ -10944,7 +10943,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_State {
             get {
                 return this.s_StateField;
@@ -10969,14 +10968,14 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="RemindData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class RemindData : TaskFlowTest.IPSPServices.RemindBaseData {
+    [DataContract(Name="RemindData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class RemindData : RemindBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -10992,57 +10991,57 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="RemindBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindData))]
+    [DataContract(Name="RemindBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(RemindData))]
     public partial class RemindBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_RemindDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string g_CodeRemindIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Guid g_IDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_NumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_RemindCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FileCaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_RemindParaField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_RemindTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TaskCaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TaskChainNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TaskNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TriggerIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TriggerTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ValidField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -11055,7 +11054,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_RemindDate {
             get {
                 return this.dt_RemindDateField;
@@ -11068,7 +11067,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string g_CodeRemindID {
             get {
                 return this.g_CodeRemindIDField;
@@ -11081,7 +11080,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Guid g_ID {
             get {
                 return this.g_IDField;
@@ -11094,7 +11093,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Num {
             get {
                 return this.n_NumField;
@@ -11107,7 +11106,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_RemindCount {
             get {
                 return this.n_RemindCountField;
@@ -11120,7 +11119,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FileCaseSerial {
             get {
                 return this.s_FileCaseSerialField;
@@ -11133,7 +11132,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_RemindPara {
             get {
                 return this.s_RemindParaField;
@@ -11146,7 +11145,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_RemindType {
             get {
                 return this.s_RemindTypeField;
@@ -11159,7 +11158,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_State {
             get {
                 return this.s_StateField;
@@ -11172,7 +11171,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TaskCaseSerial {
             get {
                 return this.s_TaskCaseSerialField;
@@ -11185,7 +11184,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TaskChainName {
             get {
                 return this.s_TaskChainNameField;
@@ -11198,7 +11197,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TaskName {
             get {
                 return this.s_TaskNameField;
@@ -11211,7 +11210,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TriggerID {
             get {
                 return this.s_TriggerIDField;
@@ -11224,7 +11223,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TriggerType {
             get {
                 return this.s_TriggerTypeField;
@@ -11237,7 +11236,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Valid {
             get {
                 return this.s_ValidField;
@@ -11262,52 +11261,52 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="RemindRecordData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class RemindRecordData : TaskFlowTest.IPSPServices.RemindRecordBaseData {
+    [DataContract(Name="RemindRecordData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class RemindRecordData : RemindRecordBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="RemindRecordBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindRecordData))]
+    [DataContract(Name="RemindRecordBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(RemindRecordData))]
     public partial class RemindRecordBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_StateTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Guid g_IDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Nullable<System.Guid> g_RemindModeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_EmployeeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_NumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ContentField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_RemindModeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TitleField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ValidField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -11320,7 +11319,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateTime {
             get {
                 return this.dt_CreateTimeField;
@@ -11333,7 +11332,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_StateTime {
             get {
                 return this.dt_StateTimeField;
@@ -11346,7 +11345,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Guid g_ID {
             get {
                 return this.g_IDField;
@@ -11359,7 +11358,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Nullable<System.Guid> g_RemindModeID {
             get {
                 return this.g_RemindModeIDField;
@@ -11372,7 +11371,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_EmployeeID {
             get {
                 return this.n_EmployeeIDField;
@@ -11385,7 +11384,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Num {
             get {
                 return this.n_NumField;
@@ -11398,7 +11397,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Content {
             get {
                 return this.s_ContentField;
@@ -11411,7 +11410,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_RemindMode {
             get {
                 return this.s_RemindModeField;
@@ -11424,7 +11423,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_State {
             get {
                 return this.s_StateField;
@@ -11437,7 +11436,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Title {
             get {
                 return this.s_TitleField;
@@ -11450,7 +11449,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Valid {
             get {
                 return this.s_ValidField;
@@ -11475,58 +11474,58 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DeadlineData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class DeadlineData : TaskFlowTest.IPSPServices.DeadlineBaseData {
+    [DataContract(Name="DeadlineData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class DeadlineData : DeadlineBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DeadlineBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DeadlineData))]
+    [DataContract(Name="DeadlineBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(DeadlineData))]
     public partial class DeadlineBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string MainFileNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_DeadlineField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string g_CodeDeadlineIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_IDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string n_RelatedObjectIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AllowEditField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClassificationField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DescriptionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_RelatedObjectTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ValueRuleField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -11539,7 +11538,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string MainFileName {
             get {
                 return this.MainFileNameField;
@@ -11552,7 +11551,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_Deadline {
             get {
                 return this.dt_DeadlineField;
@@ -11565,7 +11564,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string g_CodeDeadlineID {
             get {
                 return this.g_CodeDeadlineIDField;
@@ -11578,7 +11577,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ID {
             get {
                 return this.n_IDField;
@@ -11591,7 +11590,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string n_RelatedObjectID {
             get {
                 return this.n_RelatedObjectIDField;
@@ -11604,7 +11603,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AllowEdit {
             get {
                 return this.s_AllowEditField;
@@ -11617,7 +11616,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -11630,7 +11629,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Classification {
             get {
                 return this.s_ClassificationField;
@@ -11643,7 +11642,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Description {
             get {
                 return this.s_DescriptionField;
@@ -11656,7 +11655,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Name {
             get {
                 return this.s_NameField;
@@ -11669,7 +11668,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_RelatedObjectType {
             get {
                 return this.s_RelatedObjectTypeField;
@@ -11682,7 +11681,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Type {
             get {
                 return this.s_TypeField;
@@ -11695,7 +11694,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ValueRule {
             get {
                 return this.s_ValueRuleField;
@@ -11720,38 +11719,38 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="FeeData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class FeeData : TaskFlowTest.IPSPServices.FeeBaseData {
+    [DataContract(Name="FeeData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class FeeData : FeeBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string FeeCheckStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string FeeOrderField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string FeePaymentStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string FeeReceivedStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseProcessField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeePaymentStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeeReceivedStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroducerField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string FeeCheckStatus {
             get {
                 return this.FeeCheckStatusField;
@@ -11764,7 +11763,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string FeeOrder {
             get {
                 return this.FeeOrderField;
@@ -11777,7 +11776,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string FeePaymentStatus {
             get {
                 return this.FeePaymentStatusField;
@@ -11790,7 +11789,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string FeeReceivedStatus {
             get {
                 return this.FeeReceivedStatusField;
@@ -11803,7 +11802,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Attorney {
             get {
                 return this.s_AttorneyField;
@@ -11816,7 +11815,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseProcess {
             get {
                 return this.s_CaseProcessField;
@@ -11829,7 +11828,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeePaymentStatus {
             get {
                 return this.s_FeePaymentStatusField;
@@ -11842,7 +11841,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeeReceivedStatus {
             get {
                 return this.s_FeeReceivedStatusField;
@@ -11855,7 +11854,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Introducer {
             get {
                 return this.s_IntroducerField;
@@ -11871,117 +11870,117 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="FeeBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.FeeData))]
+    [DataContract(Name="FeeBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(FeeData))]
     public partial class FeeBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargePayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargeShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_OfficialPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_OfficialShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ReceiptDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FeeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_OfficialCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OfficialFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_PatentTypeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BillNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CheckStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientContactsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CodeProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CreatorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DealersField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EditorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_InvoiceNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OfficialDiscMarkField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OfficialFeeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PayModeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ReceiptNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StatusField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -11994,7 +11993,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -12007,7 +12006,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargePayDate {
             get {
                 return this.dt_ChargePayDateField;
@@ -12020,7 +12019,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargeShldPayDate {
             get {
                 return this.dt_ChargeShldPayDateField;
@@ -12033,7 +12032,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -12046,7 +12045,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -12059,7 +12058,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_OfficialPayDate {
             get {
                 return this.dt_OfficialPayDateField;
@@ -12072,7 +12071,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_OfficialShldPayDate {
             get {
                 return this.dt_OfficialShldPayDateField;
@@ -12085,7 +12084,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ReceiptDate {
             get {
                 return this.dt_ReceiptDateField;
@@ -12098,7 +12097,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FeeID {
             get {
                 return this.n_FeeIDField;
@@ -12111,7 +12110,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_OfficialCurrency {
             get {
                 return this.n_OfficialCurrencyField;
@@ -12124,7 +12123,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OfficialFee {
             get {
                 return this.n_OfficialFeeField;
@@ -12137,7 +12136,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_PatentTypeID {
             get {
                 return this.n_PatentTypeIDField;
@@ -12150,7 +12149,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -12163,7 +12162,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -12176,7 +12175,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_BillNum {
             get {
                 return this.s_BillNumField;
@@ -12189,7 +12188,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -12202,7 +12201,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -12215,7 +12214,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CheckStatus {
             get {
                 return this.s_CheckStatusField;
@@ -12228,7 +12227,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientContacts {
             get {
                 return this.s_ClientContactsField;
@@ -12241,7 +12240,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -12254,7 +12253,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CodeProcessName {
             get {
                 return this.s_CodeProcessNameField;
@@ -12267,7 +12266,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Creator {
             get {
                 return this.s_CreatorField;
@@ -12280,7 +12279,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Dealers {
             get {
                 return this.s_DealersField;
@@ -12293,7 +12292,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Editor {
             get {
                 return this.s_EditorField;
@@ -12306,7 +12305,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstAttorney {
             get {
                 return this.s_FirstAttorneyField;
@@ -12319,7 +12318,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_InvoiceNum {
             get {
                 return this.s_InvoiceNumField;
@@ -12332,7 +12331,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -12345,7 +12344,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -12358,7 +12357,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OfficialDiscMark {
             get {
                 return this.s_OfficialDiscMarkField;
@@ -12371,7 +12370,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OfficialFeeName {
             get {
                 return this.s_OfficialFeeNameField;
@@ -12384,7 +12383,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PayMode {
             get {
                 return this.s_PayModeField;
@@ -12397,7 +12396,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -12410,7 +12409,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ReceiptNo {
             get {
                 return this.s_ReceiptNoField;
@@ -12423,7 +12422,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SecondAttorney {
             get {
                 return this.s_SecondAttorneyField;
@@ -12436,7 +12435,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Status {
             get {
                 return this.s_StatusField;
@@ -12461,32 +12460,32 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ChargingFeeData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class ChargingFeeData : TaskFlowTest.IPSPServices.ChargingFeeBaseData {
+    [DataContract(Name="ChargingFeeData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class ChargingFeeData : ChargingFeeBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string BillstatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string FeeOrderField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string FeeReceivedStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BillstatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseProcessField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeeReceivedStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroducerField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string Billstatus {
             get {
                 return this.BillstatusField;
@@ -12499,7 +12498,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string FeeOrder {
             get {
                 return this.FeeOrderField;
@@ -12512,7 +12511,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string FeeReceivedStatus {
             get {
                 return this.FeeReceivedStatusField;
@@ -12525,7 +12524,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Billstatus {
             get {
                 return this.s_BillstatusField;
@@ -12538,7 +12537,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseProcess {
             get {
                 return this.s_CaseProcessField;
@@ -12551,7 +12550,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeeReceivedStatus {
             get {
                 return this.s_FeeReceivedStatusField;
@@ -12564,7 +12563,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Introducer {
             get {
                 return this.s_IntroducerField;
@@ -12580,117 +12579,117 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ChargingFeeBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ChargingFeeData))]
+    [DataContract(Name="ChargingFeeBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(ChargingFeeData))]
     public partial class ChargingFeeBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargePayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargeShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargingCheckDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SubmitDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private bool n_BonusCalcedField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeAFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeOFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeTFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ChargingCheckerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FeeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_PatentTypeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AbroadBillNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BonusFeeTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ChargeFeeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ChargingCheckStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ChargingNotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientContactsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CodeProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CreatorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DealersField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EditorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PayModeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StatusField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -12703,7 +12702,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -12716,7 +12715,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargePayDate {
             get {
                 return this.dt_ChargePayDateField;
@@ -12729,7 +12728,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargeShldPayDate {
             get {
                 return this.dt_ChargeShldPayDateField;
@@ -12742,7 +12741,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargingCheckDate {
             get {
                 return this.dt_ChargingCheckDateField;
@@ -12755,7 +12754,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -12768,7 +12767,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -12781,7 +12780,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SubmitDate {
             get {
                 return this.dt_SubmitDateField;
@@ -12794,7 +12793,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public bool n_BonusCalced {
             get {
                 return this.n_BonusCalcedField;
@@ -12807,7 +12806,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeAFee {
             get {
                 return this.n_ChargeAFeeField;
@@ -12820,7 +12819,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeCurrency {
             get {
                 return this.n_ChargeCurrencyField;
@@ -12833,7 +12832,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeOFee {
             get {
                 return this.n_ChargeOFeeField;
@@ -12846,7 +12845,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeTFee {
             get {
                 return this.n_ChargeTFeeField;
@@ -12859,7 +12858,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ChargingChecker {
             get {
                 return this.n_ChargingCheckerField;
@@ -12872,7 +12871,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FeeID {
             get {
                 return this.n_FeeIDField;
@@ -12885,7 +12884,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_PatentTypeID {
             get {
                 return this.n_PatentTypeIDField;
@@ -12898,7 +12897,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AbroadBillNo {
             get {
                 return this.s_AbroadBillNoField;
@@ -12911,7 +12910,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -12924,7 +12923,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -12937,7 +12936,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_BonusFeeType {
             get {
                 return this.s_BonusFeeTypeField;
@@ -12950,7 +12949,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -12963,7 +12962,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -12976,7 +12975,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ChargeFeeName {
             get {
                 return this.s_ChargeFeeNameField;
@@ -12989,7 +12988,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ChargingCheckStatus {
             get {
                 return this.s_ChargingCheckStatusField;
@@ -13002,7 +13001,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ChargingNotes {
             get {
                 return this.s_ChargingNotesField;
@@ -13015,7 +13014,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientContacts {
             get {
                 return this.s_ClientContactsField;
@@ -13028,7 +13027,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -13041,7 +13040,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CodeProcessName {
             get {
                 return this.s_CodeProcessNameField;
@@ -13054,7 +13053,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Creator {
             get {
                 return this.s_CreatorField;
@@ -13067,7 +13066,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Dealers {
             get {
                 return this.s_DealersField;
@@ -13080,7 +13079,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Editor {
             get {
                 return this.s_EditorField;
@@ -13093,7 +13092,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -13106,7 +13105,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -13119,7 +13118,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PayMode {
             get {
                 return this.s_PayModeField;
@@ -13132,7 +13131,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -13145,7 +13144,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Status {
             get {
                 return this.s_StatusField;
@@ -13170,41 +13169,41 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="AnnualFeeData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class AnnualFeeData : TaskFlowTest.IPSPServices.AnnualFeeBaseData {
+    [DataContract(Name="AnnualFeeData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class AnnualFeeData : AnnualFeeBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sConfirmProcessField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sFileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sFlowDirectionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sHandlingSequenceField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BillstatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ConfirmStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeePaymentStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeeReceivedStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroducerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotifyStatusField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sConfirmProcess {
             get {
                 return this.sConfirmProcessField;
@@ -13217,7 +13216,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sFile {
             get {
                 return this.sFileField;
@@ -13230,7 +13229,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sFlowDirection {
             get {
                 return this.sFlowDirectionField;
@@ -13243,7 +13242,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sHandlingSequence {
             get {
                 return this.sHandlingSequenceField;
@@ -13256,7 +13255,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Billstatus {
             get {
                 return this.s_BillstatusField;
@@ -13269,7 +13268,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ConfirmStatus {
             get {
                 return this.s_ConfirmStatusField;
@@ -13282,7 +13281,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeePaymentStatus {
             get {
                 return this.s_FeePaymentStatusField;
@@ -13295,7 +13294,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeeReceivedStatus {
             get {
                 return this.s_FeeReceivedStatusField;
@@ -13308,7 +13307,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Introducer {
             get {
                 return this.s_IntroducerField;
@@ -13321,7 +13320,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_NotifyStatus {
             get {
                 return this.s_NotifyStatusField;
@@ -13337,177 +13336,177 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="AnnualFeeBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AnnualFeeData))]
+    [DataContract(Name="AnnualFeeBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(AnnualFeeData))]
     public partial class AnnualFeeBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AlarmDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargePayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargeShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CheckDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_IssuedPubDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_OfficialPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_OfficialShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ReceiptDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_AnnualFeeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_AssignAnnualFeeHandlerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_AssignBillHandlerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeAFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ChargeCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeOFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeTFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CheckerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FeeApprovalStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_OfficialCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OfficialDiscountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OfficialFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OfficialLateFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ReportStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_YearNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApprovalNotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BillApprovalStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BillNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CheckStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientCodeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientContactsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ElecPayerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstCaseAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstDealerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FirstInventorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FlowDirectionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IntroSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_InventorsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsOfficialDiscField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OfficialDiscStyleField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OfficialReceiptPathField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PayModeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ReceiptNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_SecondAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StatusField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -13520,7 +13519,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AlarmDate {
             get {
                 return this.dt_AlarmDateField;
@@ -13533,7 +13532,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -13546,7 +13545,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargePayDate {
             get {
                 return this.dt_ChargePayDateField;
@@ -13559,7 +13558,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargeShldPayDate {
             get {
                 return this.dt_ChargeShldPayDateField;
@@ -13572,7 +13571,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CheckDate {
             get {
                 return this.dt_CheckDateField;
@@ -13585,7 +13584,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -13598,7 +13597,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -13611,7 +13610,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_IssuedPubDate {
             get {
                 return this.dt_IssuedPubDateField;
@@ -13624,7 +13623,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_OfficialPayDate {
             get {
                 return this.dt_OfficialPayDateField;
@@ -13637,7 +13636,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_OfficialShldPayDate {
             get {
                 return this.dt_OfficialShldPayDateField;
@@ -13650,7 +13649,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ReceiptDate {
             get {
                 return this.dt_ReceiptDateField;
@@ -13663,7 +13662,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_AnnualFeeID {
             get {
                 return this.n_AnnualFeeIDField;
@@ -13676,7 +13675,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_AssignAnnualFeeHandler {
             get {
                 return this.n_AssignAnnualFeeHandlerField;
@@ -13689,7 +13688,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_AssignBillHandler {
             get {
                 return this.n_AssignBillHandlerField;
@@ -13702,7 +13701,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeAFee {
             get {
                 return this.n_ChargeAFeeField;
@@ -13715,7 +13714,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ChargeCurrency {
             get {
                 return this.n_ChargeCurrencyField;
@@ -13728,7 +13727,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeOFee {
             get {
                 return this.n_ChargeOFeeField;
@@ -13741,7 +13740,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeTFee {
             get {
                 return this.n_ChargeTFeeField;
@@ -13754,7 +13753,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Checker {
             get {
                 return this.n_CheckerField;
@@ -13767,7 +13766,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FeeApprovalStatus {
             get {
                 return this.n_FeeApprovalStatusField;
@@ -13780,7 +13779,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_OfficialCurrency {
             get {
                 return this.n_OfficialCurrencyField;
@@ -13793,7 +13792,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OfficialDiscount {
             get {
                 return this.n_OfficialDiscountField;
@@ -13806,7 +13805,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OfficialFee {
             get {
                 return this.n_OfficialFeeField;
@@ -13819,7 +13818,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OfficialLateFee {
             get {
                 return this.n_OfficialLateFeeField;
@@ -13832,7 +13831,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ReportStatus {
             get {
                 return this.n_ReportStatusField;
@@ -13845,7 +13844,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_YearNo {
             get {
                 return this.n_YearNoField;
@@ -13858,7 +13857,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -13871,7 +13870,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -13884,7 +13883,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ApprovalNotes {
             get {
                 return this.s_ApprovalNotesField;
@@ -13897,7 +13896,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_BillApprovalStatus {
             get {
                 return this.s_BillApprovalStatusField;
@@ -13910,7 +13909,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_BillNum {
             get {
                 return this.s_BillNumField;
@@ -13923,7 +13922,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -13936,7 +13935,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -13949,7 +13948,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CheckStatus {
             get {
                 return this.s_CheckStatusField;
@@ -13962,7 +13961,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientCode {
             get {
                 return this.s_ClientCodeField;
@@ -13975,7 +13974,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientContacts {
             get {
                 return this.s_ClientContactsField;
@@ -13988,7 +13987,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -14001,7 +14000,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientSerial {
             get {
                 return this.s_ClientSerialField;
@@ -14014,7 +14013,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ElecPayer {
             get {
                 return this.s_ElecPayerField;
@@ -14027,7 +14026,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstAttorney {
             get {
                 return this.s_FirstAttorneyField;
@@ -14040,7 +14039,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstCaseAttorney {
             get {
                 return this.s_FirstCaseAttorneyField;
@@ -14053,7 +14052,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstDealer {
             get {
                 return this.s_FirstDealerField;
@@ -14066,7 +14065,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FirstInventor {
             get {
                 return this.s_FirstInventorField;
@@ -14079,7 +14078,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FlowDirection {
             get {
                 return this.s_FlowDirectionField;
@@ -14092,7 +14091,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IntroSerial {
             get {
                 return this.s_IntroSerialField;
@@ -14105,7 +14104,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Inventors {
             get {
                 return this.s_InventorsField;
@@ -14118,7 +14117,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -14131,7 +14130,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsOfficialDisc {
             get {
                 return this.s_IsOfficialDiscField;
@@ -14144,7 +14143,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -14157,7 +14156,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OfficialDiscStyle {
             get {
                 return this.s_OfficialDiscStyleField;
@@ -14170,7 +14169,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OfficialReceiptPath {
             get {
                 return this.s_OfficialReceiptPathField;
@@ -14183,7 +14182,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PayMode {
             get {
                 return this.s_PayModeField;
@@ -14196,7 +14195,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ReceiptNo {
             get {
                 return this.s_ReceiptNoField;
@@ -14209,7 +14208,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_SecondAttorney {
             get {
                 return this.s_SecondAttorneyField;
@@ -14222,7 +14221,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Status {
             get {
                 return this.s_StatusField;
@@ -14247,29 +14246,29 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DomainNameRenewalData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class DomainNameRenewalData : TaskFlowTest.IPSPServices.DomainNameRenewalBaseData {
+    [DataContract(Name="DomainNameRenewalData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class DomainNameRenewalData : DomainNameRenewalBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sFileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BillstatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ConfirmStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeePaymentStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeeReceivedStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotifyStatusField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sFile {
             get {
                 return this.sFileField;
@@ -14282,7 +14281,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Billstatus {
             get {
                 return this.s_BillstatusField;
@@ -14295,7 +14294,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ConfirmStatus {
             get {
                 return this.s_ConfirmStatusField;
@@ -14308,7 +14307,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeePaymentStatus {
             get {
                 return this.s_FeePaymentStatusField;
@@ -14321,7 +14320,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeeReceivedStatus {
             get {
                 return this.s_FeeReceivedStatusField;
@@ -14334,7 +14333,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_NotifyStatus {
             get {
                 return this.s_NotifyStatusField;
@@ -14350,87 +14349,87 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DomainNameRenewalBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainNameRenewalData))]
+    [DataContract(Name="DomainNameRenewalBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(DomainNameRenewalData))]
     public partial class DomainNameRenewalBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargePayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargeShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_OfficialPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_OfficialShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeAFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ChargeCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeOFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeTFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DRenewalFeeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_OfficialCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OfficialDiscountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OfficialFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsOfficialDiscField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OfficialDiscStyleField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OfficialReceiptPathField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StatusField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -14443,7 +14442,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -14456,7 +14455,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargePayDate {
             get {
                 return this.dt_ChargePayDateField;
@@ -14469,7 +14468,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargeShldPayDate {
             get {
                 return this.dt_ChargeShldPayDateField;
@@ -14482,7 +14481,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -14495,7 +14494,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -14508,7 +14507,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_OfficialPayDate {
             get {
                 return this.dt_OfficialPayDateField;
@@ -14521,7 +14520,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_OfficialShldPayDate {
             get {
                 return this.dt_OfficialShldPayDateField;
@@ -14534,7 +14533,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeAFee {
             get {
                 return this.n_ChargeAFeeField;
@@ -14547,7 +14546,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ChargeCurrency {
             get {
                 return this.n_ChargeCurrencyField;
@@ -14560,7 +14559,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeOFee {
             get {
                 return this.n_ChargeOFeeField;
@@ -14573,7 +14572,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeTFee {
             get {
                 return this.n_ChargeTFeeField;
@@ -14586,7 +14585,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DRenewalFeeID {
             get {
                 return this.n_DRenewalFeeIDField;
@@ -14599,7 +14598,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_OfficialCurrency {
             get {
                 return this.n_OfficialCurrencyField;
@@ -14612,7 +14611,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OfficialDiscount {
             get {
                 return this.n_OfficialDiscountField;
@@ -14625,7 +14624,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OfficialFee {
             get {
                 return this.n_OfficialFeeField;
@@ -14638,7 +14637,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -14651,7 +14650,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -14664,7 +14663,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -14677,7 +14676,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -14690,7 +14689,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -14703,7 +14702,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsOfficialDisc {
             get {
                 return this.s_IsOfficialDiscField;
@@ -14716,7 +14715,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -14729,7 +14728,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OfficialDiscStyle {
             get {
                 return this.s_OfficialDiscStyleField;
@@ -14742,7 +14741,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OfficialReceiptPath {
             get {
                 return this.s_OfficialReceiptPathField;
@@ -14755,7 +14754,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Status {
             get {
                 return this.s_StatusField;
@@ -14780,29 +14779,29 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TrademarkRenewalData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class TrademarkRenewalData : TaskFlowTest.IPSPServices.TrademarkRenewalBaseData {
+    [DataContract(Name="TrademarkRenewalData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class TrademarkRenewalData : TrademarkRenewalBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sFileField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BillstatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ConfirmStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeePaymentStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FeeReceivedStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotifyStatusField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sFile {
             get {
                 return this.sFileField;
@@ -14815,7 +14814,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Billstatus {
             get {
                 return this.s_BillstatusField;
@@ -14828,7 +14827,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ConfirmStatus {
             get {
                 return this.s_ConfirmStatusField;
@@ -14841,7 +14840,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeePaymentStatus {
             get {
                 return this.s_FeePaymentStatusField;
@@ -14854,7 +14853,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FeeReceivedStatus {
             get {
                 return this.s_FeeReceivedStatusField;
@@ -14867,7 +14866,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_NotifyStatus {
             get {
                 return this.s_NotifyStatusField;
@@ -14883,87 +14882,87 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TrademarkRenewalBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkRenewalData))]
+    [DataContract(Name="TrademarkRenewalBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(TrademarkRenewalData))]
     public partial class TrademarkRenewalBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargePayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ChargeShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_OfficialPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_OfficialShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeAFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ChargeCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeOFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ChargeTFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_OfficialCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OfficialDiscountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OfficialFeeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_TRenewalFeeIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsOfficialDiscField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OfficialDiscStyleField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OfficialReceiptPathField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StatusField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -14976,7 +14975,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -14989,7 +14988,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargePayDate {
             get {
                 return this.dt_ChargePayDateField;
@@ -15002,7 +15001,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ChargeShldPayDate {
             get {
                 return this.dt_ChargeShldPayDateField;
@@ -15015,7 +15014,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -15028,7 +15027,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -15041,7 +15040,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_OfficialPayDate {
             get {
                 return this.dt_OfficialPayDateField;
@@ -15054,7 +15053,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_OfficialShldPayDate {
             get {
                 return this.dt_OfficialShldPayDateField;
@@ -15067,7 +15066,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeAFee {
             get {
                 return this.n_ChargeAFeeField;
@@ -15080,7 +15079,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ChargeCurrency {
             get {
                 return this.n_ChargeCurrencyField;
@@ -15093,7 +15092,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeOFee {
             get {
                 return this.n_ChargeOFeeField;
@@ -15106,7 +15105,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ChargeTFee {
             get {
                 return this.n_ChargeTFeeField;
@@ -15119,7 +15118,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_OfficialCurrency {
             get {
                 return this.n_OfficialCurrencyField;
@@ -15132,7 +15131,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OfficialDiscount {
             get {
                 return this.n_OfficialDiscountField;
@@ -15145,7 +15144,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OfficialFee {
             get {
                 return this.n_OfficialFeeField;
@@ -15158,7 +15157,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_TRenewalFeeID {
             get {
                 return this.n_TRenewalFeeIDField;
@@ -15171,7 +15170,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -15184,7 +15183,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -15197,7 +15196,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -15210,7 +15209,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -15223,7 +15222,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -15236,7 +15235,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsOfficialDisc {
             get {
                 return this.s_IsOfficialDiscField;
@@ -15249,7 +15248,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -15262,7 +15261,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OfficialDiscStyle {
             get {
                 return this.s_OfficialDiscStyleField;
@@ -15275,7 +15274,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OfficialReceiptPath {
             get {
                 return this.s_OfficialReceiptPathField;
@@ -15288,7 +15287,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Status {
             get {
                 return this.s_StatusField;
@@ -15313,46 +15312,46 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ABillHedgeData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class ABillHedgeData : TaskFlowTest.IPSPServices.ABillHedgeBaseData {
+    [DataContract(Name="ABillHedgeData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class ABillHedgeData : ABillHedgeBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ABillHedgeBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillHedgeData))]
+    [DataContract(Name="ABillHedgeBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(ABillHedgeData))]
     public partial class ABillHedgeBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_HedgeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_AmountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CurrencyIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_IDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BalanceAmountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNativeNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TheAgencyNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TheAgencyNativeNameField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -15365,7 +15364,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_Hedge {
             get {
                 return this.dt_HedgeField;
@@ -15378,7 +15377,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_Amount {
             get {
                 return this.n_AmountField;
@@ -15391,7 +15390,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CurrencyID {
             get {
                 return this.n_CurrencyIDField;
@@ -15404,7 +15403,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ID {
             get {
                 return this.n_IDField;
@@ -15417,7 +15416,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_BalanceAmount {
             get {
                 return this.s_BalanceAmountField;
@@ -15430,7 +15429,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -15443,7 +15442,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientNativeName {
             get {
                 return this.s_ClientNativeNameField;
@@ -15456,7 +15455,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TheAgencyName {
             get {
                 return this.s_TheAgencyNameField;
@@ -15469,7 +15468,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TheAgencyNativeName {
             get {
                 return this.s_TheAgencyNativeNameField;
@@ -15494,49 +15493,49 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ABillPaymentData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class ABillPaymentData : TaskFlowTest.IPSPServices.ABillPaymentBaseData {
+    [DataContract(Name="ABillPaymentData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class ABillPaymentData : ABillPaymentBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ABillPaymentBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillPaymentData))]
+    [DataContract(Name="ABillPaymentBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(ABillPaymentData))]
     public partial class ABillPaymentBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_PayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ReReceiptDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ABillPaymentCurrencyIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_BillIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CurrencyIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_OppIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int s_PayBillNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PayMarkField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TheAgencyNameField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -15549,7 +15548,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_PayDate {
             get {
                 return this.dt_PayDateField;
@@ -15562,7 +15561,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ReReceiptDate {
             get {
                 return this.dt_ReReceiptDateField;
@@ -15575,7 +15574,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ShldPayDate {
             get {
                 return this.dt_ShldPayDateField;
@@ -15588,7 +15587,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ABillPaymentCurrencyID {
             get {
                 return this.n_ABillPaymentCurrencyIDField;
@@ -15601,7 +15600,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_BillID {
             get {
                 return this.n_BillIDField;
@@ -15614,7 +15613,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CurrencyID {
             get {
                 return this.n_CurrencyIDField;
@@ -15627,7 +15626,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_OppID {
             get {
                 return this.s_OppIDField;
@@ -15640,7 +15639,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int s_PayBillNo {
             get {
                 return this.s_PayBillNoField;
@@ -15653,7 +15652,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_PayMark {
             get {
                 return this.s_PayMarkField;
@@ -15666,7 +15665,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TheAgencyName {
             get {
                 return this.s_TheAgencyNameField;
@@ -15691,26 +15690,26 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="BillData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class BillData : TaskFlowTest.IPSPServices.BillBaseData {
+    [DataContract(Name="BillData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class BillData : BillBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal nAFeeSumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal nOFeeSumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal nOriAFeeSumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal nOtherFeeSumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sFileExtensionField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal nAFeeSum {
             get {
                 return this.nAFeeSumField;
@@ -15723,7 +15722,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal nOFeeSum {
             get {
                 return this.nOFeeSumField;
@@ -15736,7 +15735,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal nOriAFeeSum {
             get {
                 return this.nOriAFeeSumField;
@@ -15749,7 +15748,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal nOtherFeeSum {
             get {
                 return this.nOtherFeeSumField;
@@ -15762,7 +15761,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sFileExtension {
             get {
                 return this.sFileExtensionField;
@@ -15778,126 +15777,126 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="BillBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BillData))]
+    [DataContract(Name="BillBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(BillData))]
     public partial class BillBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CheckDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ConfirmDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_RecentRemindDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_SendOutDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ShldPayDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_AFeeSumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_BillCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_BillIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CheckerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ClientIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CountryField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_FeeSumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FlowNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OFeeSumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OriAFeeSumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_OtherFeeSumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_RemindCountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_TFeeSumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BillNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BillToNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BillTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CheckStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CityField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CreatorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EditorField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FilePathField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_FlagField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ReasonField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StreetField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ZipCodeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -15910,7 +15909,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CheckDate {
             get {
                 return this.dt_CheckDateField;
@@ -15923,7 +15922,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ConfirmDate {
             get {
                 return this.dt_ConfirmDateField;
@@ -15936,7 +15935,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -15949,7 +15948,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -15962,7 +15961,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_RecentRemindDate {
             get {
                 return this.dt_RecentRemindDateField;
@@ -15975,7 +15974,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_SendOutDate {
             get {
                 return this.dt_SendOutDateField;
@@ -15988,7 +15987,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ShldPayDate {
             get {
                 return this.dt_ShldPayDateField;
@@ -16001,7 +16000,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_AFeeSum {
             get {
                 return this.n_AFeeSumField;
@@ -16014,7 +16013,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_BillCurrency {
             get {
                 return this.n_BillCurrencyField;
@@ -16027,7 +16026,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_BillID {
             get {
                 return this.n_BillIDField;
@@ -16040,7 +16039,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Checker {
             get {
                 return this.n_CheckerField;
@@ -16053,7 +16052,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ClientID {
             get {
                 return this.n_ClientIDField;
@@ -16066,7 +16065,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_Country {
             get {
                 return this.n_CountryField;
@@ -16079,7 +16078,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_FeeSum {
             get {
                 return this.n_FeeSumField;
@@ -16092,7 +16091,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FlowNum {
             get {
                 return this.n_FlowNumField;
@@ -16105,7 +16104,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OFeeSum {
             get {
                 return this.n_OFeeSumField;
@@ -16118,7 +16117,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OriAFeeSum {
             get {
                 return this.n_OriAFeeSumField;
@@ -16131,7 +16130,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_OtherFeeSum {
             get {
                 return this.n_OtherFeeSumField;
@@ -16144,7 +16143,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_RemindCount {
             get {
                 return this.n_RemindCountField;
@@ -16157,7 +16156,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_TFeeSum {
             get {
                 return this.n_TFeeSumField;
@@ -16170,7 +16169,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -16183,7 +16182,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_BillNum {
             get {
                 return this.s_BillNumField;
@@ -16196,7 +16195,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_BillToName {
             get {
                 return this.s_BillToNameField;
@@ -16209,7 +16208,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_BillType {
             get {
                 return this.s_BillTypeField;
@@ -16222,7 +16221,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -16235,7 +16234,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CheckStatus {
             get {
                 return this.s_CheckStatusField;
@@ -16248,7 +16247,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_City {
             get {
                 return this.s_CityField;
@@ -16261,7 +16260,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -16274,7 +16273,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Creator {
             get {
                 return this.s_CreatorField;
@@ -16287,7 +16286,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Editor {
             get {
                 return this.s_EditorField;
@@ -16300,7 +16299,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_FilePath {
             get {
                 return this.s_FilePathField;
@@ -16313,7 +16312,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Flag {
             get {
                 return this.s_FlagField;
@@ -16326,7 +16325,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -16339,7 +16338,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Reason {
             get {
                 return this.s_ReasonField;
@@ -16352,7 +16351,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_State {
             get {
                 return this.s_StateField;
@@ -16365,7 +16364,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Status {
             get {
                 return this.s_StatusField;
@@ -16378,7 +16377,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Street {
             get {
                 return this.s_StreetField;
@@ -16391,7 +16390,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ZipCode {
             get {
                 return this.s_ZipCodeField;
@@ -16416,17 +16415,17 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TimeSheetData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class TimeSheetData : TaskFlowTest.IPSPServices.TimeSheetBaseData {
+    [DataContract(Name="TimeSheetData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class TimeSheetData : TimeSheetBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseProcessField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_WorkItemEmployeeIDsField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseProcess {
             get {
                 return this.s_CaseProcessField;
@@ -16439,7 +16438,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_WorkItemEmployeeIDs {
             get {
                 return this.s_WorkItemEmployeeIDsField;
@@ -16455,63 +16454,63 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TimeSheetBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TimeSheetData))]
+    [DataContract(Name="TimeSheetBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(TimeSheetData))]
     public partial class TimeSheetBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ChargeCurrencyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_RateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_TimesheetIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CheckStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CodeProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_InvoicedField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NotesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PaidField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TaskField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -16524,7 +16523,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -16537,7 +16536,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -16550,7 +16549,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ChargeCurrency {
             get {
                 return this.n_ChargeCurrencyField;
@@ -16563,7 +16562,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_Rate {
             get {
                 return this.n_RateField;
@@ -16576,7 +16575,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_TimesheetID {
             get {
                 return this.n_TimesheetIDField;
@@ -16589,7 +16588,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -16602,7 +16601,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -16615,7 +16614,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CheckStatus {
             get {
                 return this.s_CheckStatusField;
@@ -16628,7 +16627,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -16641,7 +16640,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CodeProcessName {
             get {
                 return this.s_CodeProcessNameField;
@@ -16654,7 +16653,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Invoiced {
             get {
                 return this.s_InvoicedField;
@@ -16667,7 +16666,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -16680,7 +16679,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Notes {
             get {
                 return this.s_NotesField;
@@ -16693,7 +16692,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Paid {
             get {
                 return this.s_PaidField;
@@ -16706,7 +16705,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -16719,7 +16718,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Status {
             get {
                 return this.s_StatusField;
@@ -16732,7 +16731,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Task {
             get {
                 return this.s_TaskField;
@@ -16757,14 +16756,14 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="MonitorData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class MonitorData : TaskFlowTest.IPSPServices.MonitorBaseData {
+    [DataContract(Name="MonitorData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class MonitorData : MonitorBaseData {
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseProcessField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseProcess {
             get {
                 return this.s_CaseProcessField;
@@ -16780,54 +16779,54 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="MonitorBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.MonitorData))]
+    [DataContract(Name="MonitorBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(MonitorData))]
     public partial class MonitorBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_BeginDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_MonitorDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_MonitorIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CodeProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IsActiveField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ObjTypeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ProcessNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_StatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TitleField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -16840,7 +16839,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_BeginDate {
             get {
                 return this.dt_BeginDateField;
@@ -16853,7 +16852,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -16866,7 +16865,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -16879,7 +16878,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_MonitorDate {
             get {
                 return this.dt_MonitorDateField;
@@ -16892,7 +16891,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_MonitorID {
             get {
                 return this.n_MonitorIDField;
@@ -16905,7 +16904,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -16918,7 +16917,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -16931,7 +16930,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -16944,7 +16943,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CodeProcessName {
             get {
                 return this.s_CodeProcessNameField;
@@ -16957,7 +16956,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IsActive {
             get {
                 return this.s_IsActiveField;
@@ -16970,7 +16969,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ObjType {
             get {
                 return this.s_ObjTypeField;
@@ -16983,7 +16982,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ProcessName {
             get {
                 return this.s_ProcessNameField;
@@ -16996,7 +16995,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Status {
             get {
                 return this.s_StatusField;
@@ -17009,7 +17008,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Title {
             get {
                 return this.s_TitleField;
@@ -17034,94 +17033,94 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="WorkItemData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class WorkItemData : TaskFlowTest.IPSPServices.WorkItemBaseData {
+    [DataContract(Name="WorkItemData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class WorkItemData : WorkItemBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="WorkItemBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.WorkItemData))]
+    [DataContract(Name="WorkItemBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(WorkItemData))]
     public partial class WorkItemBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Nullable<System.DateTime> dt_ActualValueTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Nullable<System.DateTime> dt_ChargeTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EstimateValueTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Nullable<System.DateTime> dt_OfeeChargeTimeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Guid g_IDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Guid g_TaskChainGuidField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.Guid g_TaskGuidField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ActualServiceValueField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_ActualValueField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ActualValueRecorderField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ChargeRecorderField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CodeWorkItemIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CodeWorkItemIDForUnitField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_EstimateValueField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_EstimateValueRecorderField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_HasChargeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_HasOfeeChargeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_OfeeChargeRecorderField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_RelatedFileIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ActualValueNoteField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_DescriptionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_EstimateValueNoteField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NoteField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_RelatedCaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_TaskChainNameField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -17134,7 +17133,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Nullable<System.DateTime> dt_ActualValueTime {
             get {
                 return this.dt_ActualValueTimeField;
@@ -17147,7 +17146,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Nullable<System.DateTime> dt_ChargeTime {
             get {
                 return this.dt_ChargeTimeField;
@@ -17160,7 +17159,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EstimateValueTime {
             get {
                 return this.dt_EstimateValueTimeField;
@@ -17173,7 +17172,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Nullable<System.DateTime> dt_OfeeChargeTime {
             get {
                 return this.dt_OfeeChargeTimeField;
@@ -17186,7 +17185,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Guid g_ID {
             get {
                 return this.g_IDField;
@@ -17199,7 +17198,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Guid g_TaskChainGuid {
             get {
                 return this.g_TaskChainGuidField;
@@ -17212,7 +17211,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.Guid g_TaskGuid {
             get {
                 return this.g_TaskGuidField;
@@ -17225,7 +17224,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ActualServiceValue {
             get {
                 return this.n_ActualServiceValueField;
@@ -17238,7 +17237,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_ActualValue {
             get {
                 return this.n_ActualValueField;
@@ -17251,7 +17250,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ActualValueRecorder {
             get {
                 return this.n_ActualValueRecorderField;
@@ -17264,7 +17263,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ChargeRecorder {
             get {
                 return this.n_ChargeRecorderField;
@@ -17277,7 +17276,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CodeWorkItemID {
             get {
                 return this.n_CodeWorkItemIDField;
@@ -17290,7 +17289,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CodeWorkItemIDForUnit {
             get {
                 return this.n_CodeWorkItemIDForUnitField;
@@ -17303,7 +17302,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_EstimateValue {
             get {
                 return this.n_EstimateValueField;
@@ -17316,7 +17315,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_EstimateValueRecorder {
             get {
                 return this.n_EstimateValueRecorderField;
@@ -17329,7 +17328,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_HasCharge {
             get {
                 return this.n_HasChargeField;
@@ -17342,7 +17341,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_HasOfeeCharge {
             get {
                 return this.n_HasOfeeChargeField;
@@ -17355,7 +17354,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_OfeeChargeRecorder {
             get {
                 return this.n_OfeeChargeRecorderField;
@@ -17368,7 +17367,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_RelatedFileID {
             get {
                 return this.n_RelatedFileIDField;
@@ -17381,7 +17380,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ActualValueNote {
             get {
                 return this.s_ActualValueNoteField;
@@ -17394,7 +17393,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Description {
             get {
                 return this.s_DescriptionField;
@@ -17407,7 +17406,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_EstimateValueNote {
             get {
                 return this.s_EstimateValueNoteField;
@@ -17420,7 +17419,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Note {
             get {
                 return this.s_NoteField;
@@ -17433,7 +17432,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_RelatedCaseSerial {
             get {
                 return this.s_RelatedCaseSerialField;
@@ -17446,7 +17445,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_TaskChainName {
             get {
                 return this.s_TaskChainNameField;
@@ -17471,73 +17470,73 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CameMoneyData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class CameMoneyData : TaskFlowTest.IPSPServices.CameMoneyBaseData {
+    [DataContract(Name="CameMoneyData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class CameMoneyData : CameMoneyBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CameMoneyBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CameMoneyData))]
+    [DataContract(Name="CameMoneyBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(CameMoneyData))]
     public partial class CameMoneyBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ArriveDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_CreateDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_EditDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_ReceiptDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_AmountField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_BalanceField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CMoneyIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CurrUnitIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DeptIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private decimal n_TotalMoneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_BankField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CMoneyNumField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CameModeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientCodeField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_NoteField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_PayerField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ReceiptField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -17550,7 +17549,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ArriveDate {
             get {
                 return this.dt_ArriveDateField;
@@ -17563,7 +17562,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_CreateDate {
             get {
                 return this.dt_CreateDateField;
@@ -17576,7 +17575,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_EditDate {
             get {
                 return this.dt_EditDateField;
@@ -17589,7 +17588,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_ReceiptDate {
             get {
                 return this.dt_ReceiptDateField;
@@ -17602,7 +17601,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_Amount {
             get {
                 return this.n_AmountField;
@@ -17615,7 +17614,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_Balance {
             get {
                 return this.n_BalanceField;
@@ -17628,7 +17627,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CMoneyID {
             get {
                 return this.n_CMoneyIDField;
@@ -17641,7 +17640,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CurrUnitID {
             get {
                 return this.n_CurrUnitIDField;
@@ -17654,7 +17653,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DeptID {
             get {
                 return this.n_DeptIDField;
@@ -17667,7 +17666,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public decimal n_TotalMoney {
             get {
                 return this.n_TotalMoneyField;
@@ -17680,7 +17679,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Bank {
             get {
                 return this.s_BankField;
@@ -17693,7 +17692,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CMoneyNum {
             get {
                 return this.s_CMoneyNumField;
@@ -17706,7 +17705,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CameMode {
             get {
                 return this.s_CameModeField;
@@ -17719,7 +17718,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientCode {
             get {
                 return this.s_ClientCodeField;
@@ -17732,7 +17731,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -17745,7 +17744,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Note {
             get {
                 return this.s_NoteField;
@@ -17758,7 +17757,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Payer {
             get {
                 return this.s_PayerField;
@@ -17771,7 +17770,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Receipt {
             get {
                 return this.s_ReceiptField;
@@ -17796,61 +17795,61 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ArchiveData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
-    [System.SerializableAttribute()]
-    public partial class ArchiveData : TaskFlowTest.IPSPServices.ArchiveBaseData {
+    [DataContract(Name="ArchiveData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.SearchData")]
+    [Serializable()]
+    public partial class ArchiveData : ArchiveBaseData {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ArchiveBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ArchiveData))]
+    [DataContract(Name="ArchiveBaseData", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts.BaseTable")]
+    [Serializable()]
+    [KnownType(typeof(ArchiveData))]
     public partial class ArchiveBaseData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private System.DateTime dt_AppDateField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_BorrowTimesField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_CaseIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_ClientIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_DepartmentIDField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private int n_FirstAttorneyField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_AppNoField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ApplicantsField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ArchivePositionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ArchiveStatusField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_CaseSerialField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_ClientNameField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string s_IPTypeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -17863,7 +17862,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public System.DateTime dt_AppDate {
             get {
                 return this.dt_AppDateField;
@@ -17876,7 +17875,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_BorrowTimes {
             get {
                 return this.n_BorrowTimesField;
@@ -17889,7 +17888,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_CaseID {
             get {
                 return this.n_CaseIDField;
@@ -17902,7 +17901,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_ClientID {
             get {
                 return this.n_ClientIDField;
@@ -17915,7 +17914,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_DepartmentID {
             get {
                 return this.n_DepartmentIDField;
@@ -17928,7 +17927,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public int n_FirstAttorney {
             get {
                 return this.n_FirstAttorneyField;
@@ -17941,7 +17940,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_AppNo {
             get {
                 return this.s_AppNoField;
@@ -17954,7 +17953,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_Applicants {
             get {
                 return this.s_ApplicantsField;
@@ -17967,7 +17966,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ArchivePosition {
             get {
                 return this.s_ArchivePositionField;
@@ -17980,7 +17979,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ArchiveStatus {
             get {
                 return this.s_ArchiveStatusField;
@@ -17993,7 +17992,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseName {
             get {
                 return this.s_CaseNameField;
@@ -18006,7 +18005,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_CaseSerial {
             get {
                 return this.s_CaseSerialField;
@@ -18019,7 +18018,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_ClientName {
             get {
                 return this.s_ClientNameField;
@@ -18032,7 +18031,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string s_IPType {
             get {
                 return this.s_IPTypeField;
@@ -18057,14 +18056,14 @@ namespace TaskFlowTest.IPSPServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="LifeCycleInfo", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts")]
-    [System.SerializableAttribute()]
+    [DataContract(Name="LifeCycleInfo", Namespace="http://schemas.datacontract.org/2004/07/Server.DataContracts")]
+    [Serializable()]
     public partial class LifeCycleInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
+        [NonSerialized()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        [OptionalField()]
         private string sClientVersionField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -18077,7 +18076,7 @@ namespace TaskFlowTest.IPSPServices {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
+        [DataMember()]
         public string sClientVersion {
             get {
                 return this.sClientVersionField;
@@ -18105,286 +18104,286 @@ namespace TaskFlowTest.IPSPServices {
     public interface IService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerDeleteTaskChain", ReplyAction="http://tempuri.org/IService/ByServerDeleteTaskChainResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerDeleteTaskChain(System.Guid gTaskChainID);
+        OperationInfo ByServerDeleteTaskChain(System.Guid gTaskChainID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerDeleteTaskChain", ReplyAction="http://tempuri.org/IService/ByServerDeleteTaskChainResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerDeleteTaskChainAsync(System.Guid gTaskChainID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerDeleteTaskChainAsync(System.Guid gTaskChainID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerRollBackNode", ReplyAction="http://tempuri.org/IService/ByServerRollBackNodeResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerRollBackNode(System.Guid gNodeID);
+        OperationInfo ByServerRollBackNode(System.Guid gNodeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerRollBackNode", ReplyAction="http://tempuri.org/IService/ByServerRollBackNodeResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerRollBackNodeAsync(System.Guid gNodeID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerRollBackNodeAsync(System.Guid gNodeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerUpdateTaskExecutor", ReplyAction="http://tempuri.org/IService/ByServerUpdateTaskExecutorResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerUpdateTaskExecutor(System.Guid[] listTaskIDs, int nExecutorID, int nExecutePositionID);
+        OperationInfo ByServerUpdateTaskExecutor(System.Guid[] listTaskIDs, int nExecutorID, int nExecutePositionID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerUpdateTaskExecutor", ReplyAction="http://tempuri.org/IService/ByServerUpdateTaskExecutorResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerUpdateTaskExecutorAsync(System.Guid[] listTaskIDs, int nExecutorID, int nExecutePositionID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerUpdateTaskExecutorAsync(System.Guid[] listTaskIDs, int nExecutorID, int nExecutePositionID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualUpdateDeadline", ReplyAction="http://tempuri.org/IService/ByServerManualUpdateDeadlineResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerManualUpdateDeadline(System.Guid gCodeDeadlineID, string sRelatedObjectType, int nRelatedObjectID);
+        OperationInfo ByServerManualUpdateDeadline(System.Guid gCodeDeadlineID, string sRelatedObjectType, int nRelatedObjectID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualUpdateDeadline", ReplyAction="http://tempuri.org/IService/ByServerManualUpdateDeadlineResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualUpdateDeadlineAsync(System.Guid gCodeDeadlineID, string sRelatedObjectType, int nRelatedObjectID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerManualUpdateDeadlineAsync(System.Guid gCodeDeadlineID, string sRelatedObjectType, int nRelatedObjectID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerAutoUpdateDeadlineByCodeBaseDate", ReplyAction="http://tempuri.org/IService/ByServerAutoUpdateDeadlineByCodeBaseDateResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerAutoUpdateDeadlineByCodeBaseDate(int nCodeBaseDateID, string sRelatedObjectType, int nRelatedObjectID);
+        OperationInfo ByServerAutoUpdateDeadlineByCodeBaseDate(int nCodeBaseDateID, string sRelatedObjectType, int nRelatedObjectID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerAutoUpdateDeadlineByCodeBaseDate", ReplyAction="http://tempuri.org/IService/ByServerAutoUpdateDeadlineByCodeBaseDateResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerAutoUpdateDeadlineByCodeBaseDateAsync(int nCodeBaseDateID, string sRelatedObjectType, int nRelatedObjectID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerAutoUpdateDeadlineByCodeBaseDateAsync(int nCodeBaseDateID, string sRelatedObjectType, int nRelatedObjectID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerAutoUpdateRelatedInfo", ReplyAction="http://tempuri.org/IService/ByServerAutoUpdateRelatedInfoResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerAutoUpdateRelatedInfo(string sRelatedObjectType, int nRelatedObjectID);
+        OperationInfo ByServerAutoUpdateRelatedInfo(string sRelatedObjectType, int nRelatedObjectID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerAutoUpdateRelatedInfo", ReplyAction="http://tempuri.org/IService/ByServerAutoUpdateRelatedInfoResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerAutoUpdateRelatedInfoAsync(string sRelatedObjectType, int nRelatedObjectID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerAutoUpdateRelatedInfoAsync(string sRelatedObjectType, int nRelatedObjectID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateClient", ReplyAction="http://tempuri.org/IService/InsertOrUpdateClientResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateClient(string sClientID);
+        UpdateInfo InsertOrUpdateClient(string sClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateClient", ReplyAction="http://tempuri.org/IService/InsertOrUpdateClientResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateClientAsync(string sClientID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateClientAsync(string sClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateBaseCase", ReplyAction="http://tempuri.org/IService/InsertOrUpdateBaseCaseResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateBaseCase(string sCaseID);
+        UpdateInfo InsertOrUpdateBaseCase(string sCaseID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateBaseCase", ReplyAction="http://tempuri.org/IService/InsertOrUpdateBaseCaseResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateBaseCaseAsync(string sCaseID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateBaseCaseAsync(string sCaseID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdatePatentCase", ReplyAction="http://tempuri.org/IService/InsertOrUpdatePatentCaseResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdatePatentCase(string sPatentID);
+        UpdateInfo InsertOrUpdatePatentCase(string sPatentID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdatePatentCase", ReplyAction="http://tempuri.org/IService/InsertOrUpdatePatentCaseResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdatePatentCaseAsync(string sPatentID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdatePatentCaseAsync(string sPatentID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateTrademarkCase", ReplyAction="http://tempuri.org/IService/InsertOrUpdateTrademarkCaseResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateTrademarkCase(string sTrademarkID);
+        UpdateInfo InsertOrUpdateTrademarkCase(string sTrademarkID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateTrademarkCase", ReplyAction="http://tempuri.org/IService/InsertOrUpdateTrademarkCaseResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateTrademarkCaseAsync(string sTrademarkID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateTrademarkCaseAsync(string sTrademarkID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateFee", ReplyAction="http://tempuri.org/IService/InsertOrUpdateFeeResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateFee(string sFeeID);
+        UpdateInfo InsertOrUpdateFee(string sFeeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateFee", ReplyAction="http://tempuri.org/IService/InsertOrUpdateFeeResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateFeeAsync(string sFeeID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateFeeAsync(string sFeeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateMainFiles", ReplyAction="http://tempuri.org/IService/InsertOrUpdateMainFilesResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateMainFiles(string sFileID);
+        UpdateInfo InsertOrUpdateMainFiles(string sFileID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateMainFiles", ReplyAction="http://tempuri.org/IService/InsertOrUpdateMainFilesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateMainFilesAsync(string sFileID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateMainFilesAsync(string sFileID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateMonitor", ReplyAction="http://tempuri.org/IService/InsertOrUpdateMonitorResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateMonitor(string sMonitorID);
+        UpdateInfo InsertOrUpdateMonitor(string sMonitorID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateMonitor", ReplyAction="http://tempuri.org/IService/InsertOrUpdateMonitorResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateMonitorAsync(string sMonitorID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateMonitorAsync(string sMonitorID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateTask", ReplyAction="http://tempuri.org/IService/InsertOrUpdateTaskResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateTask(string sTaskID);
+        UpdateInfo InsertOrUpdateTask(string sTaskID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateTask", ReplyAction="http://tempuri.org/IService/InsertOrUpdateTaskResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateTaskAsync(string sTaskID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateTaskAsync(string sTaskID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateTimeSheet", ReplyAction="http://tempuri.org/IService/InsertOrUpdateTimeSheetResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateTimeSheet(string sTimesheetID);
+        UpdateInfo InsertOrUpdateTimeSheet(string sTimesheetID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateTimeSheet", ReplyAction="http://tempuri.org/IService/InsertOrUpdateTimeSheetResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateTimeSheetAsync(string sTimesheetID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateTimeSheetAsync(string sTimesheetID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateBill", ReplyAction="http://tempuri.org/IService/InsertOrUpdateBillResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateBill(string sBillID);
+        UpdateInfo InsertOrUpdateBill(string sBillID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateBill", ReplyAction="http://tempuri.org/IService/InsertOrUpdateBillResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateBillAsync(string sBillID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateBillAsync(string sBillID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateEmployeeName", ReplyAction="http://tempuri.org/IService/InsertOrUpdateEmployeeNameResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateEmployeeName(string sEmployeeID);
+        UpdateInfo InsertOrUpdateEmployeeName(string sEmployeeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateEmployeeName", ReplyAction="http://tempuri.org/IService/InsertOrUpdateEmployeeNameResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateEmployeeNameAsync(string sEmployeeID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateEmployeeNameAsync(string sEmployeeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateEmail", ReplyAction="http://tempuri.org/IService/InsertOrUpdateEmailResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateEmail(string sEmailID);
+        UpdateInfo InsertOrUpdateEmail(string sEmailID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateEmail", ReplyAction="http://tempuri.org/IService/InsertOrUpdateEmailResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateEmailAsync(string sEmailID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateEmailAsync(string sEmailID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateExpense", ReplyAction="http://tempuri.org/IService/InsertOrUpdateExpenseResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateExpense(string sExpenseID);
+        UpdateInfo InsertOrUpdateExpense(string sExpenseID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateExpense", ReplyAction="http://tempuri.org/IService/InsertOrUpdateExpenseResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateExpenseAsync(string sExpenseID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateExpenseAsync(string sExpenseID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateProcess", ReplyAction="http://tempuri.org/IService/InsertOrUpdateProcessResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateProcess(string sProcessID);
+        UpdateInfo InsertOrUpdateProcess(string sProcessID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateProcess", ReplyAction="http://tempuri.org/IService/InsertOrUpdateProcessResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateProcessAsync(string sProcessID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateProcessAsync(string sProcessID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateIntroducer", ReplyAction="http://tempuri.org/IService/InsertOrUpdateIntroducerResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateIntroducer(string sIntroducerID);
+        UpdateInfo InsertOrUpdateIntroducer(string sIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateIntroducer", ReplyAction="http://tempuri.org/IService/InsertOrUpdateIntroducerResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateIntroducerAsync(string sIntroducerID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateIntroducerAsync(string sIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateApplicant", ReplyAction="http://tempuri.org/IService/InsertOrUpdateApplicantResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateApplicant(string sAppID);
+        UpdateInfo InsertOrUpdateApplicant(string sAppID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateApplicant", ReplyAction="http://tempuri.org/IService/InsertOrUpdateApplicantResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateApplicantAsync(string sAppID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateApplicantAsync(string sAppID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateAgency", ReplyAction="http://tempuri.org/IService/InsertOrUpdateAgencyResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateAgency(string nAgencyID);
+        UpdateInfo InsertOrUpdateAgency(string nAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/InsertOrUpdateAgency", ReplyAction="http://tempuri.org/IService/InsertOrUpdateAgencyResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateAgencyAsync(string nAgencyID);
+        System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateAgencyAsync(string nAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateClientPatentCaseCount", ReplyAction="http://tempuri.org/IService/UpdateClientPatentCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateClientPatentCaseCount(string nOldClientID, string nNewClientID);
+        UpdateInfo UpdateClientPatentCaseCount(string nOldClientID, string nNewClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateClientPatentCaseCount", ReplyAction="http://tempuri.org/IService/UpdateClientPatentCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateClientPatentCaseCountAsync(string nOldClientID, string nNewClientID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateClientPatentCaseCountAsync(string nOldClientID, string nNewClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateClientTMCaseCount", ReplyAction="http://tempuri.org/IService/UpdateClientTMCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateClientTMCaseCount(string nOldClientID, string nNewClientID);
+        UpdateInfo UpdateClientTMCaseCount(string nOldClientID, string nNewClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateClientTMCaseCount", ReplyAction="http://tempuri.org/IService/UpdateClientTMCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateClientTMCaseCountAsync(string nOldClientID, string nNewClientID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateClientTMCaseCountAsync(string nOldClientID, string nNewClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateClientCopyRightCaseCount", ReplyAction="http://tempuri.org/IService/UpdateClientCopyRightCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateClientCopyRightCaseCount(string nOldClientID, string nNewClientID);
+        UpdateInfo UpdateClientCopyRightCaseCount(string nOldClientID, string nNewClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateClientCopyRightCaseCount", ReplyAction="http://tempuri.org/IService/UpdateClientCopyRightCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateClientCopyRightCaseCountAsync(string nOldClientID, string nNewClientID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateClientCopyRightCaseCountAsync(string nOldClientID, string nNewClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateClientDomainCaseCount", ReplyAction="http://tempuri.org/IService/UpdateClientDomainCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateClientDomainCaseCount(string nOldClientID, string nNewClientID);
+        UpdateInfo UpdateClientDomainCaseCount(string nOldClientID, string nNewClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateClientDomainCaseCount", ReplyAction="http://tempuri.org/IService/UpdateClientDomainCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateClientDomainCaseCountAsync(string nOldClientID, string nNewClientID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateClientDomainCaseCountAsync(string nOldClientID, string nNewClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateClientOtherCaseCount", ReplyAction="http://tempuri.org/IService/UpdateClientOtherCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateClientOtherCaseCount(string nOldClientID, string nNewClientID);
+        UpdateInfo UpdateClientOtherCaseCount(string nOldClientID, string nNewClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateClientOtherCaseCount", ReplyAction="http://tempuri.org/IService/UpdateClientOtherCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateClientOtherCaseCountAsync(string nOldClientID, string nNewClientID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateClientOtherCaseCountAsync(string nOldClientID, string nNewClientID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateIntroducerPatentCaseCount", ReplyAction="http://tempuri.org/IService/UpdateIntroducerPatentCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateIntroducerPatentCaseCount(string nOldIntroducerID, string nNewIntroducerID);
+        UpdateInfo UpdateIntroducerPatentCaseCount(string nOldIntroducerID, string nNewIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateIntroducerPatentCaseCount", ReplyAction="http://tempuri.org/IService/UpdateIntroducerPatentCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateIntroducerPatentCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateIntroducerPatentCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateIntroducerTMCaseCount", ReplyAction="http://tempuri.org/IService/UpdateIntroducerTMCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateIntroducerTMCaseCount(string nOldIntroducerID, string nNewIntroducerID);
+        UpdateInfo UpdateIntroducerTMCaseCount(string nOldIntroducerID, string nNewIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateIntroducerTMCaseCount", ReplyAction="http://tempuri.org/IService/UpdateIntroducerTMCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateIntroducerTMCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateIntroducerTMCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateIntroducerCopyRightCaseCount", ReplyAction="http://tempuri.org/IService/UpdateIntroducerCopyRightCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateIntroducerCopyRightCaseCount(string nOldIntroducerID, string nNewIntroducerID);
+        UpdateInfo UpdateIntroducerCopyRightCaseCount(string nOldIntroducerID, string nNewIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateIntroducerCopyRightCaseCount", ReplyAction="http://tempuri.org/IService/UpdateIntroducerCopyRightCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateIntroducerCopyRightCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateIntroducerCopyRightCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateIntroducerDomainCaseCount", ReplyAction="http://tempuri.org/IService/UpdateIntroducerDomainCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateIntroducerDomainCaseCount(string nOldIntroducerID, string nNewIntroducerID);
+        UpdateInfo UpdateIntroducerDomainCaseCount(string nOldIntroducerID, string nNewIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateIntroducerDomainCaseCount", ReplyAction="http://tempuri.org/IService/UpdateIntroducerDomainCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateIntroducerDomainCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateIntroducerDomainCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateIntroducerOtherCaseCount", ReplyAction="http://tempuri.org/IService/UpdateIntroducerOtherCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateIntroducerOtherCaseCount(string nOldIntroducerID, string nNewIntroducerID);
+        UpdateInfo UpdateIntroducerOtherCaseCount(string nOldIntroducerID, string nNewIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateIntroducerOtherCaseCount", ReplyAction="http://tempuri.org/IService/UpdateIntroducerOtherCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateIntroducerOtherCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateIntroducerOtherCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencyToPatentCaseCount", ReplyAction="http://tempuri.org/IService/UpdateAgencyToPatentCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencyToPatentCaseCount(string nOldAgencyID, string nNewAgencyID);
+        UpdateInfo UpdateAgencyToPatentCaseCount(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencyToPatentCaseCount", ReplyAction="http://tempuri.org/IService/UpdateAgencyToPatentCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencyToPatentCaseCountAsync(string nOldAgencyID, string nNewAgencyID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateAgencyToPatentCaseCountAsync(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencyToTMCaseCount", ReplyAction="http://tempuri.org/IService/UpdateAgencyToTMCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencyToTMCaseCount(string nOldAgencyID, string nNewAgencyID);
+        UpdateInfo UpdateAgencyToTMCaseCount(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencyToTMCaseCount", ReplyAction="http://tempuri.org/IService/UpdateAgencyToTMCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencyToTMCaseCountAsync(string nOldAgencyID, string nNewAgencyID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateAgencyToTMCaseCountAsync(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencyToCopyRightCaseCount", ReplyAction="http://tempuri.org/IService/UpdateAgencyToCopyRightCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencyToCopyRightCaseCount(string nOldAgencyID, string nNewAgencyID);
+        UpdateInfo UpdateAgencyToCopyRightCaseCount(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencyToCopyRightCaseCount", ReplyAction="http://tempuri.org/IService/UpdateAgencyToCopyRightCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencyToCopyRightCaseCountAsync(string nOldAgencyID, string nNewAgencyID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateAgencyToCopyRightCaseCountAsync(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencyToDomainCaseCount", ReplyAction="http://tempuri.org/IService/UpdateAgencyToDomainCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencyToDomainCaseCount(string nOldAgencyID, string nNewAgencyID);
+        UpdateInfo UpdateAgencyToDomainCaseCount(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencyToDomainCaseCount", ReplyAction="http://tempuri.org/IService/UpdateAgencyToDomainCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencyToDomainCaseCountAsync(string nOldAgencyID, string nNewAgencyID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateAgencyToDomainCaseCountAsync(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencyToOtherCaseCount", ReplyAction="http://tempuri.org/IService/UpdateAgencyToOtherCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencyToOtherCaseCount(string nOldAgencyID, string nNewAgencyID);
+        UpdateInfo UpdateAgencyToOtherCaseCount(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencyToOtherCaseCount", ReplyAction="http://tempuri.org/IService/UpdateAgencyToOtherCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencyToOtherCaseCountAsync(string nOldAgencyID, string nNewAgencyID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateAgencyToOtherCaseCountAsync(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantPatentCaseCount", ReplyAction="http://tempuri.org/IService/UpdateApplicantPatentCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantPatentCaseCount(string[] nOldApplicantID, string[] nNewApplicantID);
+        UpdateInfo UpdateApplicantPatentCaseCount(string[] nOldApplicantID, string[] nNewApplicantID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantPatentCaseCount", ReplyAction="http://tempuri.org/IService/UpdateApplicantPatentCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantPatentCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantPatentCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantTMCaseCount", ReplyAction="http://tempuri.org/IService/UpdateApplicantTMCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantTMCaseCount(string[] nOldApplicantID, string[] nNewApplicantID);
+        UpdateInfo UpdateApplicantTMCaseCount(string[] nOldApplicantID, string[] nNewApplicantID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantTMCaseCount", ReplyAction="http://tempuri.org/IService/UpdateApplicantTMCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantTMCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantTMCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantCopyRightCaseCount", ReplyAction="http://tempuri.org/IService/UpdateApplicantCopyRightCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantCopyRightCaseCount(string[] nOldApplicantID, string[] nNewApplicantID);
+        UpdateInfo UpdateApplicantCopyRightCaseCount(string[] nOldApplicantID, string[] nNewApplicantID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantCopyRightCaseCount", ReplyAction="http://tempuri.org/IService/UpdateApplicantCopyRightCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantCopyRightCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantCopyRightCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantDomainCaseCount", ReplyAction="http://tempuri.org/IService/UpdateApplicantDomainCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantDomainCaseCount(string[] nOldApplicantID, string[] nNewApplicantID);
+        UpdateInfo UpdateApplicantDomainCaseCount(string[] nOldApplicantID, string[] nNewApplicantID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantDomainCaseCount", ReplyAction="http://tempuri.org/IService/UpdateApplicantDomainCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantDomainCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantDomainCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantOtherCaseCount", ReplyAction="http://tempuri.org/IService/UpdateApplicantOtherCaseCountResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantOtherCaseCount(string[] nOldApplicantID, string[] nNewApplicantID);
+        UpdateInfo UpdateApplicantOtherCaseCount(string[] nOldApplicantID, string[] nNewApplicantID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantOtherCaseCount", ReplyAction="http://tempuri.org/IService/UpdateApplicantOtherCaseCountResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantOtherCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantOtherCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantFirstOrLastDate", ReplyAction="http://tempuri.org/IService/UpdateApplicantFirstOrLastDateResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantFirstOrLastDate(string[] nOldAppID, string[] nNewAppID);
+        UpdateInfo UpdateApplicantFirstOrLastDate(string[] nOldAppID, string[] nNewAppID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateApplicantFirstOrLastDate", ReplyAction="http://tempuri.org/IService/UpdateApplicantFirstOrLastDateResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantFirstOrLastDateAsync(string[] nOldAppID, string[] nNewAppID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantFirstOrLastDateAsync(string[] nOldAppID, string[] nNewAppID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencytFirstOrLastDate", ReplyAction="http://tempuri.org/IService/UpdateAgencytFirstOrLastDateResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencytFirstOrLastDate(string nOldAgencyID, string nNewAgencyID);
+        UpdateInfo UpdateAgencytFirstOrLastDate(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAgencytFirstOrLastDate", ReplyAction="http://tempuri.org/IService/UpdateAgencytFirstOrLastDateResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencytFirstOrLastDateAsync(string nOldAgencyID, string nNewAgencyID);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateAgencytFirstOrLastDateAsync(string nOldAgencyID, string nNewAgencyID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAllCaseCustomFiled", ReplyAction="http://tempuri.org/IService/UpdateAllCaseCustomFiledResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateAllCaseCustomFiled(string type);
+        UpdateInfo UpdateAllCaseCustomFiled(string type);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateAllCaseCustomFiled", ReplyAction="http://tempuri.org/IService/UpdateAllCaseCustomFiledResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAllCaseCustomFiledAsync(string type);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateAllCaseCustomFiledAsync(string type);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateCaseCustomFiled", ReplyAction="http://tempuri.org/IService/UpdateCaseCustomFiledResponse")]
-        TaskFlowTest.IPSPServices.UpdateInfo UpdateCaseCustomFiled(int caseId);
+        UpdateInfo UpdateCaseCustomFiled(int caseId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateCaseCustomFiled", ReplyAction="http://tempuri.org/IService/UpdateCaseCustomFiledResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateCaseCustomFiledAsync(int caseId);
+        System.Threading.Tasks.Task<UpdateInfo> UpdateCaseCustomFiledAsync(int caseId);
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IService/UpdateMyTaskReadState")]
         void UpdateMyTaskReadState(System.Guid gTaskId, string readState);
@@ -18417,393 +18416,393 @@ namespace TaskFlowTest.IPSPServices {
         System.Threading.Tasks.Task<bool> FileExistsAsync(string sTargetPath);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetBillProcedureXmlFile", ReplyAction="http://tempuri.org/IService/GetBillProcedureXmlFileResponse")]
-        TaskFlowTest.IPSPServices.GetBillProcedureXmlFileResponse GetBillProcedureXmlFile(TaskFlowTest.IPSPServices.GetBillProcedureXmlFileRequest request);
+        GetBillProcedureXmlFileResponse GetBillProcedureXmlFile(GetBillProcedureXmlFileRequest request);
         
         // CODEGEN: 正在生成消息协定，应为该操作具有多个返回值。
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetBillProcedureXmlFile", ReplyAction="http://tempuri.org/IService/GetBillProcedureXmlFileResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.GetBillProcedureXmlFileResponse> GetBillProcedureXmlFileAsync(TaskFlowTest.IPSPServices.GetBillProcedureXmlFileRequest request);
+        System.Threading.Tasks.Task<GetBillProcedureXmlFileResponse> GetBillProcedureXmlFileAsync(GetBillProcedureXmlFileRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerAutoGenerateImmediatelyReminds", ReplyAction="http://tempuri.org/IService/ByServerAutoGenerateImmediatelyRemindsResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerAutoGenerateImmediatelyReminds(string sReminderTriggerType, string sReminderTriggerID, string sImmediatelyRemindType);
+        OperationInfo ByServerAutoGenerateImmediatelyReminds(string sReminderTriggerType, string sReminderTriggerID, string sImmediatelyRemindType);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerAutoGenerateImmediatelyReminds", ReplyAction="http://tempuri.org/IService/ByServerAutoGenerateImmediatelyRemindsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerAutoGenerateImmediatelyRemindsAsync(string sReminderTriggerType, string sReminderTriggerID, string sImmediatelyRemindType);
+        System.Threading.Tasks.Task<OperationInfo> ByServerAutoGenerateImmediatelyRemindsAsync(string sReminderTriggerType, string sReminderTriggerID, string sImmediatelyRemindType);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerAutoGenerateTimeReminds", ReplyAction="http://tempuri.org/IService/ByServerAutoGenerateTimeRemindsResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerAutoGenerateTimeReminds(string sReminderTriggerType, string sReminderTriggerID);
+        OperationInfo ByServerAutoGenerateTimeReminds(string sReminderTriggerType, string sReminderTriggerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerAutoGenerateTimeReminds", ReplyAction="http://tempuri.org/IService/ByServerAutoGenerateTimeRemindsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerAutoGenerateTimeRemindsAsync(string sReminderTriggerType, string sReminderTriggerID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerAutoGenerateTimeRemindsAsync(string sReminderTriggerType, string sReminderTriggerID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualGenerateImmediatelyRemindsForCameFileDi" +
             "stribute", ReplyAction="http://tempuri.org/IService/ByServerManualGenerateImmediatelyRemindsForCameFileDi" +
             "stributeResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerManualGenerateImmediatelyRemindsForCameFileDistribute(int nFileID, int[] listNewDistributerIDs);
+        OperationInfo ByServerManualGenerateImmediatelyRemindsForCameFileDistribute(int nFileID, int[] listNewDistributerIDs);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualGenerateImmediatelyRemindsForCameFileDi" +
             "stribute", ReplyAction="http://tempuri.org/IService/ByServerManualGenerateImmediatelyRemindsForCameFileDi" +
             "stributeResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualGenerateImmediatelyRemindsForCameFileDistributeAsync(int nFileID, int[] listNewDistributerIDs);
+        System.Threading.Tasks.Task<OperationInfo> ByServerManualGenerateImmediatelyRemindsForCameFileDistributeAsync(int nFileID, int[] listNewDistributerIDs);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetBasicCases", ReplyAction="http://tempuri.org/IService/GetBasicCasesResponse")]
-        TaskFlowTest.IPSPServices.BasicCaseData[] GetBasicCases(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        BasicCaseData[] GetBasicCases(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetBasicCases", ReplyAction="http://tempuri.org/IService/GetBasicCasesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.BasicCaseData[]> GetBasicCasesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<BasicCaseData[]> GetBasicCasesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserBasicCases", ReplyAction="http://tempuri.org/IService/GetUserBasicCasesResponse")]
-        TaskFlowTest.IPSPServices.BasicCaseData[] GetUserBasicCases(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        BasicCaseData[] GetUserBasicCases(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserBasicCases", ReplyAction="http://tempuri.org/IService/GetUserBasicCasesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.BasicCaseData[]> GetUserBasicCasesAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<BasicCaseData[]> GetUserBasicCasesAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetPatents", ReplyAction="http://tempuri.org/IService/GetPatentsResponse")]
-        TaskFlowTest.IPSPServices.PatentData[] GetPatents(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        PatentData[] GetPatents(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetPatents", ReplyAction="http://tempuri.org/IService/GetPatentsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.PatentData[]> GetPatentsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<PatentData[]> GetPatentsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserPatents", ReplyAction="http://tempuri.org/IService/GetUserPatentsResponse")]
-        TaskFlowTest.IPSPServices.PatentData[] GetUserPatents(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        PatentData[] GetUserPatents(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserPatents", ReplyAction="http://tempuri.org/IService/GetUserPatentsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.PatentData[]> GetUserPatentsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<PatentData[]> GetUserPatentsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTrademarks", ReplyAction="http://tempuri.org/IService/GetTrademarksResponse")]
-        TaskFlowTest.IPSPServices.TrademarkData[] GetTrademarks(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        TrademarkData[] GetTrademarks(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTrademarks", ReplyAction="http://tempuri.org/IService/GetTrademarksResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TrademarkData[]> GetTrademarksAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<TrademarkData[]> GetTrademarksAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserTrademarks", ReplyAction="http://tempuri.org/IService/GetUserTrademarksResponse")]
-        TaskFlowTest.IPSPServices.TrademarkData[] GetUserTrademarks(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        TrademarkData[] GetUserTrademarks(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserTrademarks", ReplyAction="http://tempuri.org/IService/GetUserTrademarksResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TrademarkData[]> GetUserTrademarksAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<TrademarkData[]> GetUserTrademarksAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetDomains", ReplyAction="http://tempuri.org/IService/GetDomainsResponse")]
-        TaskFlowTest.IPSPServices.DomainData[] GetDomains(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        DomainData[] GetDomains(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetDomains", ReplyAction="http://tempuri.org/IService/GetDomainsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.DomainData[]> GetDomainsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<DomainData[]> GetDomainsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserDomains", ReplyAction="http://tempuri.org/IService/GetUserDomainsResponse")]
-        TaskFlowTest.IPSPServices.DomainData[] GetUserDomains(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        DomainData[] GetUserDomains(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserDomains", ReplyAction="http://tempuri.org/IService/GetUserDomainsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.DomainData[]> GetUserDomainsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<DomainData[]> GetUserDomainsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetCopyRights", ReplyAction="http://tempuri.org/IService/GetCopyRightsResponse")]
-        TaskFlowTest.IPSPServices.CopyRightData[] GetCopyRights(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        CopyRightData[] GetCopyRights(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetCopyRights", ReplyAction="http://tempuri.org/IService/GetCopyRightsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.CopyRightData[]> GetCopyRightsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<CopyRightData[]> GetCopyRightsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserCopyRights", ReplyAction="http://tempuri.org/IService/GetUserCopyRightsResponse")]
-        TaskFlowTest.IPSPServices.CopyRightData[] GetUserCopyRights(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        CopyRightData[] GetUserCopyRights(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserCopyRights", ReplyAction="http://tempuri.org/IService/GetUserCopyRightsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.CopyRightData[]> GetUserCopyRightsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<CopyRightData[]> GetUserCopyRightsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetOtherCases", ReplyAction="http://tempuri.org/IService/GetOtherCasesResponse")]
-        TaskFlowTest.IPSPServices.OtherCaseData[] GetOtherCases(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        OtherCaseData[] GetOtherCases(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetOtherCases", ReplyAction="http://tempuri.org/IService/GetOtherCasesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OtherCaseData[]> GetOtherCasesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<OtherCaseData[]> GetOtherCasesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserOtherCases", ReplyAction="http://tempuri.org/IService/GetUserOtherCasesResponse")]
-        TaskFlowTest.IPSPServices.OtherCaseData[] GetUserOtherCases(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        OtherCaseData[] GetUserOtherCases(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserOtherCases", ReplyAction="http://tempuri.org/IService/GetUserOtherCasesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OtherCaseData[]> GetUserOtherCasesAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<OtherCaseData[]> GetUserOtherCasesAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetClients", ReplyAction="http://tempuri.org/IService/GetClientsResponse")]
-        TaskFlowTest.IPSPServices.ClientData[] GetClients(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        ClientData[] GetClients(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetClients", ReplyAction="http://tempuri.org/IService/GetClientsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ClientData[]> GetClientsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<ClientData[]> GetClientsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserClients", ReplyAction="http://tempuri.org/IService/GetUserClientsResponse")]
-        TaskFlowTest.IPSPServices.ClientData[] GetUserClients(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        ClientData[] GetUserClients(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserClients", ReplyAction="http://tempuri.org/IService/GetUserClientsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ClientData[]> GetUserClientsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<ClientData[]> GetUserClientsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetAgencys", ReplyAction="http://tempuri.org/IService/GetAgencysResponse")]
-        TaskFlowTest.IPSPServices.AgencyData[] GetAgencys(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        AgencyData[] GetAgencys(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetAgencys", ReplyAction="http://tempuri.org/IService/GetAgencysResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.AgencyData[]> GetAgencysAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<AgencyData[]> GetAgencysAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserAgencys", ReplyAction="http://tempuri.org/IService/GetUserAgencysResponse")]
-        TaskFlowTest.IPSPServices.AgencyData[] GetUserAgencys(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        AgencyData[] GetUserAgencys(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserAgencys", ReplyAction="http://tempuri.org/IService/GetUserAgencysResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.AgencyData[]> GetUserAgencysAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<AgencyData[]> GetUserAgencysAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetIntroducers", ReplyAction="http://tempuri.org/IService/GetIntroducersResponse")]
-        TaskFlowTest.IPSPServices.IntroducerData[] GetIntroducers(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        IntroducerData[] GetIntroducers(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetIntroducers", ReplyAction="http://tempuri.org/IService/GetIntroducersResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.IntroducerData[]> GetIntroducersAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<IntroducerData[]> GetIntroducersAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserIntroducers", ReplyAction="http://tempuri.org/IService/GetUserIntroducersResponse")]
-        TaskFlowTest.IPSPServices.IntroducerData[] GetUserIntroducers(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        IntroducerData[] GetUserIntroducers(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserIntroducers", ReplyAction="http://tempuri.org/IService/GetUserIntroducersResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.IntroducerData[]> GetUserIntroducersAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<IntroducerData[]> GetUserIntroducersAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetApplicants", ReplyAction="http://tempuri.org/IService/GetApplicantsResponse")]
-        TaskFlowTest.IPSPServices.ApplicantData[] GetApplicants(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        ApplicantData[] GetApplicants(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetApplicants", ReplyAction="http://tempuri.org/IService/GetApplicantsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ApplicantData[]> GetApplicantsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<ApplicantData[]> GetApplicantsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserApplicants", ReplyAction="http://tempuri.org/IService/GetUserApplicantsResponse")]
-        TaskFlowTest.IPSPServices.ApplicantData[] GetUserApplicants(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        ApplicantData[] GetUserApplicants(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserApplicants", ReplyAction="http://tempuri.org/IService/GetUserApplicantsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ApplicantData[]> GetUserApplicantsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<ApplicantData[]> GetUserApplicantsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetOutFiles", ReplyAction="http://tempuri.org/IService/GetOutFilesResponse")]
-        TaskFlowTest.IPSPServices.OutFileData[] GetOutFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        OutFileData[] GetOutFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetOutFiles", ReplyAction="http://tempuri.org/IService/GetOutFilesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OutFileData[]> GetOutFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<OutFileData[]> GetOutFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserOutFiles", ReplyAction="http://tempuri.org/IService/GetUserOutFilesResponse")]
-        TaskFlowTest.IPSPServices.OutFileData[] GetUserOutFiles(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        OutFileData[] GetUserOutFiles(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserOutFiles", ReplyAction="http://tempuri.org/IService/GetUserOutFilesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OutFileData[]> GetUserOutFilesAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<OutFileData[]> GetUserOutFilesAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetInFiles", ReplyAction="http://tempuri.org/IService/GetInFilesResponse")]
-        TaskFlowTest.IPSPServices.InFileData[] GetInFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        InFileData[] GetInFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetInFiles", ReplyAction="http://tempuri.org/IService/GetInFilesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.InFileData[]> GetInFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<InFileData[]> GetInFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserInFiles", ReplyAction="http://tempuri.org/IService/GetUserInFilesResponse")]
-        TaskFlowTest.IPSPServices.InFileData[] GetUserInFiles(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        InFileData[] GetUserInFiles(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserInFiles", ReplyAction="http://tempuri.org/IService/GetUserInFilesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.InFileData[]> GetUserInFilesAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<InFileData[]> GetUserInFilesAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetOtherFiles", ReplyAction="http://tempuri.org/IService/GetOtherFilesResponse")]
-        TaskFlowTest.IPSPServices.OtherFileData[] GetOtherFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        OtherFileData[] GetOtherFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetOtherFiles", ReplyAction="http://tempuri.org/IService/GetOtherFilesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OtherFileData[]> GetOtherFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<OtherFileData[]> GetOtherFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserOtherFiles", ReplyAction="http://tempuri.org/IService/GetUserOtherFilesResponse")]
-        TaskFlowTest.IPSPServices.OtherFileData[] GetUserOtherFiles(string userID, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        OtherFileData[] GetUserOtherFiles(string userID, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserOtherFiles", ReplyAction="http://tempuri.org/IService/GetUserOtherFilesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OtherFileData[]> GetUserOtherFilesAsync(string userID, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<OtherFileData[]> GetUserOtherFilesAsync(string userID, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetEmails", ReplyAction="http://tempuri.org/IService/GetEmailsResponse")]
-        TaskFlowTest.IPSPServices.EmailData[] GetEmails(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        EmailData[] GetEmails(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetEmails", ReplyAction="http://tempuri.org/IService/GetEmailsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.EmailData[]> GetEmailsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<EmailData[]> GetEmailsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserEmails", ReplyAction="http://tempuri.org/IService/GetUserEmailsResponse")]
-        TaskFlowTest.IPSPServices.EmailData[] GetUserEmails(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        EmailData[] GetUserEmails(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserEmails", ReplyAction="http://tempuri.org/IService/GetUserEmailsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.EmailData[]> GetUserEmailsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<EmailData[]> GetUserEmailsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTasks", ReplyAction="http://tempuri.org/IService/GetTasksResponse")]
-        TaskFlowTest.IPSPServices.TaskData[] GetTasks(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        TaskData[] GetTasks(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTasks", ReplyAction="http://tempuri.org/IService/GetTasksResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TaskData[]> GetTasksAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<TaskData[]> GetTasksAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserTasks", ReplyAction="http://tempuri.org/IService/GetUserTasksResponse")]
-        TaskFlowTest.IPSPServices.TaskData[] GetUserTasks(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        TaskData[] GetUserTasks(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserTasks", ReplyAction="http://tempuri.org/IService/GetUserTasksResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TaskData[]> GetUserTasksAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<TaskData[]> GetUserTasksAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTaskChains", ReplyAction="http://tempuri.org/IService/GetTaskChainsResponse")]
-        TaskFlowTest.IPSPServices.TaskChainData[] GetTaskChains(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        TaskChainData[] GetTaskChains(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTaskChains", ReplyAction="http://tempuri.org/IService/GetTaskChainsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TaskChainData[]> GetTaskChainsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<TaskChainData[]> GetTaskChainsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserTaskChains", ReplyAction="http://tempuri.org/IService/GetUserTaskChainsResponse")]
-        TaskFlowTest.IPSPServices.TaskChainData[] GetUserTaskChains(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        TaskChainData[] GetUserTaskChains(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserTaskChains", ReplyAction="http://tempuri.org/IService/GetUserTaskChainsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TaskChainData[]> GetUserTaskChainsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<TaskChainData[]> GetUserTaskChainsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetReminds", ReplyAction="http://tempuri.org/IService/GetRemindsResponse")]
-        TaskFlowTest.IPSPServices.RemindData[] GetReminds(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        RemindData[] GetReminds(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetReminds", ReplyAction="http://tempuri.org/IService/GetRemindsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.RemindData[]> GetRemindsAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<RemindData[]> GetRemindsAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserReminds", ReplyAction="http://tempuri.org/IService/GetUserRemindsResponse")]
-        TaskFlowTest.IPSPServices.RemindData[] GetUserReminds(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        RemindData[] GetUserReminds(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserReminds", ReplyAction="http://tempuri.org/IService/GetUserRemindsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.RemindData[]> GetUserRemindsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<RemindData[]> GetUserRemindsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetRemindRecords", ReplyAction="http://tempuri.org/IService/GetRemindRecordsResponse")]
-        TaskFlowTest.IPSPServices.RemindRecordData[] GetRemindRecords(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        RemindRecordData[] GetRemindRecords(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetRemindRecords", ReplyAction="http://tempuri.org/IService/GetRemindRecordsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.RemindRecordData[]> GetRemindRecordsAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<RemindRecordData[]> GetRemindRecordsAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserRemindRecords", ReplyAction="http://tempuri.org/IService/GetUserRemindRecordsResponse")]
-        TaskFlowTest.IPSPServices.RemindRecordData[] GetUserRemindRecords(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        RemindRecordData[] GetUserRemindRecords(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserRemindRecords", ReplyAction="http://tempuri.org/IService/GetUserRemindRecordsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.RemindRecordData[]> GetUserRemindRecordsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<RemindRecordData[]> GetUserRemindRecordsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetDeadlines", ReplyAction="http://tempuri.org/IService/GetDeadlinesResponse")]
-        TaskFlowTest.IPSPServices.DeadlineData[] GetDeadlines(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        DeadlineData[] GetDeadlines(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetDeadlines", ReplyAction="http://tempuri.org/IService/GetDeadlinesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.DeadlineData[]> GetDeadlinesAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<DeadlineData[]> GetDeadlinesAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetFees", ReplyAction="http://tempuri.org/IService/GetFeesResponse")]
-        TaskFlowTest.IPSPServices.FeeData[] GetFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        FeeData[] GetFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetFees", ReplyAction="http://tempuri.org/IService/GetFeesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.FeeData[]> GetFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<FeeData[]> GetFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserFees", ReplyAction="http://tempuri.org/IService/GetUserFeesResponse")]
-        TaskFlowTest.IPSPServices.FeeData[] GetUserFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        FeeData[] GetUserFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserFees", ReplyAction="http://tempuri.org/IService/GetUserFeesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.FeeData[]> GetUserFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<FeeData[]> GetUserFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetChargingFees", ReplyAction="http://tempuri.org/IService/GetChargingFeesResponse")]
-        TaskFlowTest.IPSPServices.ChargingFeeData[] GetChargingFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        ChargingFeeData[] GetChargingFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetChargingFees", ReplyAction="http://tempuri.org/IService/GetChargingFeesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ChargingFeeData[]> GetChargingFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<ChargingFeeData[]> GetChargingFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserChargingFees", ReplyAction="http://tempuri.org/IService/GetUserChargingFeesResponse")]
-        TaskFlowTest.IPSPServices.ChargingFeeData[] GetUserChargingFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        ChargingFeeData[] GetUserChargingFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserChargingFees", ReplyAction="http://tempuri.org/IService/GetUserChargingFeesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ChargingFeeData[]> GetUserChargingFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<ChargingFeeData[]> GetUserChargingFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetAnnualFees", ReplyAction="http://tempuri.org/IService/GetAnnualFeesResponse")]
-        TaskFlowTest.IPSPServices.AnnualFeeData[] GetAnnualFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        AnnualFeeData[] GetAnnualFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetAnnualFees", ReplyAction="http://tempuri.org/IService/GetAnnualFeesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.AnnualFeeData[]> GetAnnualFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<AnnualFeeData[]> GetAnnualFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserAnnualFees", ReplyAction="http://tempuri.org/IService/GetUserAnnualFeesResponse")]
-        TaskFlowTest.IPSPServices.AnnualFeeData[] GetUserAnnualFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        AnnualFeeData[] GetUserAnnualFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserAnnualFees", ReplyAction="http://tempuri.org/IService/GetUserAnnualFeesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.AnnualFeeData[]> GetUserAnnualFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<AnnualFeeData[]> GetUserAnnualFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetDomainNameRenewal", ReplyAction="http://tempuri.org/IService/GetDomainNameRenewalResponse")]
-        TaskFlowTest.IPSPServices.DomainNameRenewalData[] GetDomainNameRenewal(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        DomainNameRenewalData[] GetDomainNameRenewal(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetDomainNameRenewal", ReplyAction="http://tempuri.org/IService/GetDomainNameRenewalResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.DomainNameRenewalData[]> GetDomainNameRenewalAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<DomainNameRenewalData[]> GetDomainNameRenewalAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserDomainNameRenewal", ReplyAction="http://tempuri.org/IService/GetUserDomainNameRenewalResponse")]
-        TaskFlowTest.IPSPServices.DomainNameRenewalData[] GetUserDomainNameRenewal(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        DomainNameRenewalData[] GetUserDomainNameRenewal(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserDomainNameRenewal", ReplyAction="http://tempuri.org/IService/GetUserDomainNameRenewalResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.DomainNameRenewalData[]> GetUserDomainNameRenewalAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<DomainNameRenewalData[]> GetUserDomainNameRenewalAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTrademarkRenewal", ReplyAction="http://tempuri.org/IService/GetTrademarkRenewalResponse")]
-        TaskFlowTest.IPSPServices.TrademarkRenewalData[] GetTrademarkRenewal(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        TrademarkRenewalData[] GetTrademarkRenewal(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTrademarkRenewal", ReplyAction="http://tempuri.org/IService/GetTrademarkRenewalResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TrademarkRenewalData[]> GetTrademarkRenewalAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<TrademarkRenewalData[]> GetTrademarkRenewalAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserTrademarkRenewal", ReplyAction="http://tempuri.org/IService/GetUserTrademarkRenewalResponse")]
-        TaskFlowTest.IPSPServices.TrademarkRenewalData[] GetUserTrademarkRenewal(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        TrademarkRenewalData[] GetUserTrademarkRenewal(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserTrademarkRenewal", ReplyAction="http://tempuri.org/IService/GetUserTrademarkRenewalResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TrademarkRenewalData[]> GetUserTrademarkRenewalAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<TrademarkRenewalData[]> GetUserTrademarkRenewalAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetABillHedges", ReplyAction="http://tempuri.org/IService/GetABillHedgesResponse")]
-        TaskFlowTest.IPSPServices.ABillHedgeData[] GetABillHedges(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        ABillHedgeData[] GetABillHedges(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetABillHedges", ReplyAction="http://tempuri.org/IService/GetABillHedgesResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ABillHedgeData[]> GetABillHedgesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<ABillHedgeData[]> GetABillHedgesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetABillPayments", ReplyAction="http://tempuri.org/IService/GetABillPaymentsResponse")]
-        TaskFlowTest.IPSPServices.ABillPaymentData[] GetABillPayments(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        ABillPaymentData[] GetABillPayments(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetABillPayments", ReplyAction="http://tempuri.org/IService/GetABillPaymentsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ABillPaymentData[]> GetABillPaymentsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<ABillPaymentData[]> GetABillPaymentsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetBills", ReplyAction="http://tempuri.org/IService/GetBillsResponse")]
-        TaskFlowTest.IPSPServices.BillData[] GetBills(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        BillData[] GetBills(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetBills", ReplyAction="http://tempuri.org/IService/GetBillsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.BillData[]> GetBillsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<BillData[]> GetBillsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTimeSheets", ReplyAction="http://tempuri.org/IService/GetTimeSheetsResponse")]
-        TaskFlowTest.IPSPServices.TimeSheetData[] GetTimeSheets(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        TimeSheetData[] GetTimeSheets(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTimeSheets", ReplyAction="http://tempuri.org/IService/GetTimeSheetsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TimeSheetData[]> GetTimeSheetsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<TimeSheetData[]> GetTimeSheetsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserTimeSheets", ReplyAction="http://tempuri.org/IService/GetUserTimeSheetsResponse")]
-        TaskFlowTest.IPSPServices.TimeSheetData[] GetUserTimeSheets(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        TimeSheetData[] GetUserTimeSheets(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserTimeSheets", ReplyAction="http://tempuri.org/IService/GetUserTimeSheetsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TimeSheetData[]> GetUserTimeSheetsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<TimeSheetData[]> GetUserTimeSheetsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetMonitors", ReplyAction="http://tempuri.org/IService/GetMonitorsResponse")]
-        TaskFlowTest.IPSPServices.MonitorData[] GetMonitors(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        MonitorData[] GetMonitors(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetMonitors", ReplyAction="http://tempuri.org/IService/GetMonitorsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.MonitorData[]> GetMonitorsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<MonitorData[]> GetMonitorsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserMonitors", ReplyAction="http://tempuri.org/IService/GetUserMonitorsResponse")]
-        TaskFlowTest.IPSPServices.MonitorData[] GetUserMonitors(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        MonitorData[] GetUserMonitors(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserMonitors", ReplyAction="http://tempuri.org/IService/GetUserMonitorsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.MonitorData[]> GetUserMonitorsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<MonitorData[]> GetUserMonitorsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetWorkItems", ReplyAction="http://tempuri.org/IService/GetWorkItemsResponse")]
-        TaskFlowTest.IPSPServices.WorkItemData[] GetWorkItems(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        WorkItemData[] GetWorkItems(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetWorkItems", ReplyAction="http://tempuri.org/IService/GetWorkItemsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.WorkItemData[]> GetWorkItemsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<WorkItemData[]> GetWorkItemsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserWorkItems", ReplyAction="http://tempuri.org/IService/GetUserWorkItemsResponse")]
-        TaskFlowTest.IPSPServices.WorkItemData[] GetUserWorkItems(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        WorkItemData[] GetUserWorkItems(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserWorkItems", ReplyAction="http://tempuri.org/IService/GetUserWorkItemsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.WorkItemData[]> GetUserWorkItemsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<WorkItemData[]> GetUserWorkItemsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetCameMoney", ReplyAction="http://tempuri.org/IService/GetCameMoneyResponse")]
-        TaskFlowTest.IPSPServices.CameMoneyData[] GetCameMoney(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        CameMoneyData[] GetCameMoney(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetCameMoney", ReplyAction="http://tempuri.org/IService/GetCameMoneyResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.CameMoneyData[]> GetCameMoneyAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<CameMoneyData[]> GetCameMoneyAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserCameMoney", ReplyAction="http://tempuri.org/IService/GetUserCameMoneyResponse")]
-        TaskFlowTest.IPSPServices.CameMoneyData[] GetUserCameMoney(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        CameMoneyData[] GetUserCameMoney(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserCameMoney", ReplyAction="http://tempuri.org/IService/GetUserCameMoneyResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.CameMoneyData[]> GetUserCameMoneyAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<CameMoneyData[]> GetUserCameMoneyAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetArchiveData", ReplyAction="http://tempuri.org/IService/GetArchiveDataResponse")]
-        TaskFlowTest.IPSPServices.ArchiveData[] GetArchiveData(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        ArchiveData[] GetArchiveData(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetArchiveData", ReplyAction="http://tempuri.org/IService/GetArchiveDataResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ArchiveData[]> GetArchiveDataAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<ArchiveData[]> GetArchiveDataAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserArchiveData", ReplyAction="http://tempuri.org/IService/GetUserArchiveDataResponse")]
-        TaskFlowTest.IPSPServices.ArchiveData[] GetUserArchiveData(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        ArchiveData[] GetUserArchiveData(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetUserArchiveData", ReplyAction="http://tempuri.org/IService/GetUserArchiveDataResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ArchiveData[]> GetUserArchiveDataAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
+        System.Threading.Tasks.Task<ArchiveData[]> GetUserArchiveDataAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetData", ReplyAction="http://tempuri.org/IService/GetDataResponse")]
         string GetData(string sData);
@@ -18842,10 +18841,10 @@ namespace TaskFlowTest.IPSPServices {
         System.Threading.Tasks.Task<string> GetUpgradeConfigInfoAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/RequestLifeCycle", ReplyAction="http://tempuri.org/IService/RequestLifeCycleResponse")]
-        TaskFlowTest.IPSPServices.LifeCycleInfo RequestLifeCycle(int nEmployeeID);
+        LifeCycleInfo RequestLifeCycle(int nEmployeeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/RequestLifeCycle", ReplyAction="http://tempuri.org/IService/RequestLifeCycleResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.LifeCycleInfo> RequestLifeCycleAsync(int nEmployeeID);
+        System.Threading.Tasks.Task<LifeCycleInfo> RequestLifeCycleAsync(int nEmployeeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetTrademarkGoodsPatternCN", ReplyAction="http://tempuri.org/IService/GetTrademarkGoodsPatternCNResponse")]
         string GetTrademarkGoodsPatternCN();
@@ -18860,386 +18859,386 @@ namespace TaskFlowTest.IPSPServices {
         System.Threading.Tasks.Task<string> GetTrademarkGoodsPatternENAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerUpdateTaskFlowConfig", ReplyAction="http://tempuri.org/IService/ByServerUpdateTaskFlowConfigResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerUpdateTaskFlowConfig();
+        OperationInfo ByServerUpdateTaskFlowConfig();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerUpdateTaskFlowConfig", ReplyAction="http://tempuri.org/IService/ByServerUpdateTaskFlowConfigResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerUpdateTaskFlowConfigAsync();
+        System.Threading.Tasks.Task<OperationInfo> ByServerUpdateTaskFlowConfigAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerAutoGenerateTopTaskChains", ReplyAction="http://tempuri.org/IService/ByServerAutoGenerateTopTaskChainsResponse")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OperationInfo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.UpdateInfo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.LifeCycleInfo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OperationInfo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(UpdateInfo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(LifeCycleInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(System.Guid[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(string[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(int[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BasicCaseData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BasicCaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.PatentData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.PatentData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CopyRightData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CopyRightData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherCaseData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherCaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ClientData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ClientData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AgencyData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AgencyData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.IntroducerData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.IntroducerData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ApplicantData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ApplicantData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OutFileData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OutFileData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.InFileData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.InFileData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherFileData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherFileData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.EmailData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.EmailData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskChainData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskChainData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindRecordData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindRecordData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DeadlineData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DeadlineData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.FeeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.FeeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ChargingFeeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ChargingFeeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AnnualFeeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AnnualFeeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainNameRenewalData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainNameRenewalData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkRenewalData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkRenewalData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillHedgeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillHedgeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillPaymentData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillPaymentData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BillData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BillData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TimeSheetData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TimeSheetData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.MonitorData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.MonitorData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.WorkItemData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.WorkItemData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CameMoneyData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CameMoneyData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ArchiveData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ArchiveData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BasicCaseBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.PatentBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CopyRightBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherCaseBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ClientBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AgencyBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.IntroducerBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ApplicantBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OutFileBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.InFileBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherFileBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.EmailBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskChainBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindRecordBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DeadlineBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.FeeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ChargingFeeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AnnualFeeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainNameRenewalBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkRenewalBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillHedgeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillPaymentBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BillBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TimeSheetBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.MonitorBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.WorkItemBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CameMoneyBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ArchiveBaseData))]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerAutoGenerateTopTaskChains(string sTriggerType, string sTriggerObjectFullName, object objTriggerObjectKey, bool bCanRepeat);
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BasicCaseData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BasicCaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PatentData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PatentData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CopyRightData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CopyRightData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherCaseData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherCaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgencyData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgencyData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(IntroducerData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(IntroducerData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApplicantData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApplicantData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OutFileData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OutFileData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(InFileData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(InFileData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherFileData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherFileData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(EmailData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(EmailData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskChainData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskChainData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindRecordData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindRecordData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeadlineData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeadlineData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FeeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FeeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ChargingFeeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ChargingFeeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnnualFeeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnnualFeeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainNameRenewalData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainNameRenewalData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkRenewalData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkRenewalData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillHedgeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillHedgeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillPaymentData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillPaymentData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BillData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BillData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TimeSheetData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TimeSheetData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MonitorData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MonitorData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkItemData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkItemData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CameMoneyData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CameMoneyData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ArchiveData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ArchiveData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BasicCaseBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PatentBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CopyRightBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherCaseBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgencyBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(IntroducerBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApplicantBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OutFileBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(InFileBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherFileBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(EmailBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskChainBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindRecordBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeadlineBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FeeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ChargingFeeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnnualFeeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainNameRenewalBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkRenewalBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillHedgeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillPaymentBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BillBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TimeSheetBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MonitorBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkItemBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CameMoneyBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ArchiveBaseData))]
+        OperationInfo ByServerAutoGenerateTopTaskChains(string sTriggerType, string sTriggerObjectFullName, object objTriggerObjectKey, bool bCanRepeat);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerAutoGenerateTopTaskChains", ReplyAction="http://tempuri.org/IService/ByServerAutoGenerateTopTaskChainsResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerAutoGenerateTopTaskChainsAsync(string sTriggerType, string sTriggerObjectFullName, object objTriggerObjectKey, bool bCanRepeat);
+        System.Threading.Tasks.Task<OperationInfo> ByServerAutoGenerateTopTaskChainsAsync(string sTriggerType, string sTriggerObjectFullName, object objTriggerObjectKey, bool bCanRepeat);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualGenerateTopTaskChain", ReplyAction="http://tempuri.org/IService/ByServerManualGenerateTopTaskChainResponse")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OperationInfo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.UpdateInfo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.LifeCycleInfo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OperationInfo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(UpdateInfo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(LifeCycleInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(System.Guid[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(string[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(int[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BasicCaseData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BasicCaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.PatentData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.PatentData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CopyRightData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CopyRightData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherCaseData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherCaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ClientData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ClientData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AgencyData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AgencyData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.IntroducerData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.IntroducerData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ApplicantData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ApplicantData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OutFileData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OutFileData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.InFileData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.InFileData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherFileData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherFileData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.EmailData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.EmailData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskChainData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskChainData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindRecordData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindRecordData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DeadlineData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DeadlineData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.FeeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.FeeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ChargingFeeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ChargingFeeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AnnualFeeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AnnualFeeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainNameRenewalData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainNameRenewalData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkRenewalData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkRenewalData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillHedgeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillHedgeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillPaymentData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillPaymentData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BillData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BillData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TimeSheetData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TimeSheetData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.MonitorData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.MonitorData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.WorkItemData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.WorkItemData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CameMoneyData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CameMoneyData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ArchiveData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ArchiveData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BasicCaseBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.PatentBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CopyRightBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherCaseBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ClientBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AgencyBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.IntroducerBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ApplicantBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OutFileBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.InFileBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherFileBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.EmailBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskChainBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindRecordBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DeadlineBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.FeeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ChargingFeeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AnnualFeeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainNameRenewalBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkRenewalBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillHedgeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillPaymentBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BillBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TimeSheetBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.MonitorBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.WorkItemBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CameMoneyBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ArchiveBaseData))]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerManualGenerateTopTaskChain(System.Guid gTaskChainID, string sRelatedObjectFullName, object objRelatedObjectKey, bool bCanRepeat);
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BasicCaseData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BasicCaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PatentData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PatentData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CopyRightData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CopyRightData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherCaseData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherCaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgencyData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgencyData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(IntroducerData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(IntroducerData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApplicantData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApplicantData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OutFileData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OutFileData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(InFileData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(InFileData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherFileData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherFileData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(EmailData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(EmailData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskChainData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskChainData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindRecordData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindRecordData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeadlineData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeadlineData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FeeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FeeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ChargingFeeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ChargingFeeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnnualFeeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnnualFeeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainNameRenewalData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainNameRenewalData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkRenewalData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkRenewalData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillHedgeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillHedgeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillPaymentData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillPaymentData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BillData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BillData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TimeSheetData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TimeSheetData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MonitorData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MonitorData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkItemData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkItemData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CameMoneyData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CameMoneyData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ArchiveData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ArchiveData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BasicCaseBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PatentBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CopyRightBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherCaseBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgencyBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(IntroducerBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApplicantBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OutFileBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(InFileBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherFileBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(EmailBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskChainBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindRecordBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeadlineBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FeeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ChargingFeeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnnualFeeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainNameRenewalBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkRenewalBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillHedgeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillPaymentBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BillBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TimeSheetBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MonitorBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkItemBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CameMoneyBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ArchiveBaseData))]
+        OperationInfo ByServerManualGenerateTopTaskChain(System.Guid gTaskChainID, string sRelatedObjectFullName, object objRelatedObjectKey, bool bCanRepeat);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualGenerateTopTaskChain", ReplyAction="http://tempuri.org/IService/ByServerManualGenerateTopTaskChainResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualGenerateTopTaskChainAsync(System.Guid gTaskChainID, string sRelatedObjectFullName, object objRelatedObjectKey, bool bCanRepeat);
+        System.Threading.Tasks.Task<OperationInfo> ByServerManualGenerateTopTaskChainAsync(System.Guid gTaskChainID, string sRelatedObjectFullName, object objRelatedObjectKey, bool bCanRepeat);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerIsObjectExistsSpecifiedTaskChain", ReplyAction="http://tempuri.org/IService/ByServerIsObjectExistsSpecifiedTaskChainResponse")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OperationInfo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.UpdateInfo))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.LifeCycleInfo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OperationInfo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(UpdateInfo))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(LifeCycleInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(System.Guid[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(string[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(int[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BasicCaseData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BasicCaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.PatentData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.PatentData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CopyRightData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CopyRightData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherCaseData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherCaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ClientData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ClientData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AgencyData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AgencyData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.IntroducerData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.IntroducerData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ApplicantData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ApplicantData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OutFileData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OutFileData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.InFileData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.InFileData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherFileData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherFileData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.EmailData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.EmailData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskChainData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskChainData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindRecordData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindRecordData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DeadlineData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DeadlineData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.FeeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.FeeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ChargingFeeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ChargingFeeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AnnualFeeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AnnualFeeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainNameRenewalData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainNameRenewalData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkRenewalData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkRenewalData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillHedgeData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillHedgeData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillPaymentData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillPaymentData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BillData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BillData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TimeSheetData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TimeSheetData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.MonitorData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.MonitorData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.WorkItemData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.WorkItemData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CameMoneyData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CameMoneyData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ArchiveData[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ArchiveData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BasicCaseBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.PatentBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CopyRightBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherCaseBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ClientBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AgencyBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.IntroducerBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ApplicantBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OutFileBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.InFileBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.OtherFileBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.EmailBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TaskChainBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.RemindRecordBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DeadlineBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.FeeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ChargingFeeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.AnnualFeeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.DomainNameRenewalBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TrademarkRenewalBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillHedgeBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ABillPaymentBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.BillBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.TimeSheetBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.MonitorBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.WorkItemBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.CameMoneyBaseData))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskFlowTest.IPSPServices.ArchiveBaseData))]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerIsObjectExistsSpecifiedTaskChain(string sObjectFullName, object objObjectKey, System.Guid gTaskChainID);
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BasicCaseData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BasicCaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PatentData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PatentData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CopyRightData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CopyRightData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherCaseData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherCaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgencyData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgencyData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(IntroducerData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(IntroducerData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApplicantData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApplicantData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OutFileData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OutFileData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(InFileData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(InFileData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherFileData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherFileData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(EmailData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(EmailData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskChainData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskChainData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindRecordData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindRecordData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeadlineData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeadlineData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FeeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FeeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ChargingFeeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ChargingFeeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnnualFeeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnnualFeeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainNameRenewalData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainNameRenewalData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkRenewalData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkRenewalData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillHedgeData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillHedgeData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillPaymentData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillPaymentData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BillData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BillData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TimeSheetData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TimeSheetData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MonitorData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MonitorData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkItemData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkItemData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CameMoneyData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CameMoneyData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ArchiveData[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ArchiveData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BasicCaseBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PatentBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CopyRightBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherCaseBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AgencyBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(IntroducerBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApplicantBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OutFileBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(InFileBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(OtherFileBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(EmailBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TaskChainBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RemindRecordBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeadlineBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FeeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ChargingFeeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AnnualFeeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DomainNameRenewalBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TrademarkRenewalBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillHedgeBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ABillPaymentBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BillBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TimeSheetBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(MonitorBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(WorkItemBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CameMoneyBaseData))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ArchiveBaseData))]
+        OperationInfo ByServerIsObjectExistsSpecifiedTaskChain(string sObjectFullName, object objObjectKey, System.Guid gTaskChainID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerIsObjectExistsSpecifiedTaskChain", ReplyAction="http://tempuri.org/IService/ByServerIsObjectExistsSpecifiedTaskChainResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerIsObjectExistsSpecifiedTaskChainAsync(string sObjectFullName, object objObjectKey, System.Guid gTaskChainID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerIsObjectExistsSpecifiedTaskChainAsync(string sObjectFullName, object objObjectKey, System.Guid gTaskChainID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualGenerateTaskNode", ReplyAction="http://tempuri.org/IService/ByServerManualGenerateTaskNodeResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerManualGenerateTaskNode(System.Guid gTaskChainID, System.Guid gCodeNodeTaskID, int nCreatorID);
+        OperationInfo ByServerManualGenerateTaskNode(System.Guid gTaskChainID, System.Guid gCodeNodeTaskID, int nCreatorID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualGenerateTaskNode", ReplyAction="http://tempuri.org/IService/ByServerManualGenerateTaskNodeResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualGenerateTaskNodeAsync(System.Guid gTaskChainID, System.Guid gCodeNodeTaskID, int nCreatorID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerManualGenerateTaskNodeAsync(System.Guid gTaskChainID, System.Guid gCodeNodeTaskID, int nCreatorID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualCreateTaskNodeWithoutCode", ReplyAction="http://tempuri.org/IService/ByServerManualCreateTaskNodeWithoutCodeResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerManualCreateTaskNodeWithoutCode(System.Guid gTaskChainID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays);
+        OperationInfo ByServerManualCreateTaskNodeWithoutCode(System.Guid gTaskChainID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualCreateTaskNodeWithoutCode", ReplyAction="http://tempuri.org/IService/ByServerManualCreateTaskNodeWithoutCodeResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualCreateTaskNodeWithoutCodeAsync(System.Guid gTaskChainID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays);
+        System.Threading.Tasks.Task<OperationInfo> ByServerManualCreateTaskNodeWithoutCodeAsync(System.Guid gTaskChainID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualCreateTaskNodeInNewTaskChainWithoutCode" +
             "", ReplyAction="http://tempuri.org/IService/ByServerManualCreateTaskNodeInNewTaskChainWithoutCode" +
             "Response")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerManualCreateTaskNodeInNewTaskChainWithoutCode(string sTaskChainName, string sRelatedObjectType, int nRelatedObjectID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays);
+        OperationInfo ByServerManualCreateTaskNodeInNewTaskChainWithoutCode(string sTaskChainName, string sRelatedObjectType, int nRelatedObjectID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerManualCreateTaskNodeInNewTaskChainWithoutCode" +
             "", ReplyAction="http://tempuri.org/IService/ByServerManualCreateTaskNodeInNewTaskChainWithoutCode" +
             "Response")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualCreateTaskNodeInNewTaskChainWithoutCodeAsync(string sTaskChainName, string sRelatedObjectType, int nRelatedObjectID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays);
+        System.Threading.Tasks.Task<OperationInfo> ByServerManualCreateTaskNodeInNewTaskChainWithoutCodeAsync(string sTaskChainName, string sRelatedObjectType, int nRelatedObjectID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerFinishTaskNode", ReplyAction="http://tempuri.org/IService/ByServerFinishTaskNodeResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerFinishTaskNode(System.Guid gTaskNodeID, int nFinisherID);
+        OperationInfo ByServerFinishTaskNode(System.Guid gTaskNodeID, int nFinisherID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerFinishTaskNode", ReplyAction="http://tempuri.org/IService/ByServerFinishTaskNodeResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerFinishTaskNodeAsync(System.Guid gTaskNodeID, int nFinisherID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerFinishTaskNodeAsync(System.Guid gTaskNodeID, int nFinisherID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerCloseNode", ReplyAction="http://tempuri.org/IService/ByServerCloseNodeResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerCloseNode(System.Guid gNodeID);
+        OperationInfo ByServerCloseNode(System.Guid gNodeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerCloseNode", ReplyAction="http://tempuri.org/IService/ByServerCloseNodeResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerCloseNodeAsync(System.Guid gNodeID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerCloseNodeAsync(System.Guid gNodeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerCloseTaskChain", ReplyAction="http://tempuri.org/IService/ByServerCloseTaskChainResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerCloseTaskChain(System.Guid gTaskChainID);
+        OperationInfo ByServerCloseTaskChain(System.Guid gTaskChainID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerCloseTaskChain", ReplyAction="http://tempuri.org/IService/ByServerCloseTaskChainResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerCloseTaskChainAsync(System.Guid gTaskChainID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerCloseTaskChainAsync(System.Guid gTaskChainID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerReopenNode", ReplyAction="http://tempuri.org/IService/ByServerReopenNodeResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerReopenNode(System.Guid gNodeID);
+        OperationInfo ByServerReopenNode(System.Guid gNodeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerReopenNode", ReplyAction="http://tempuri.org/IService/ByServerReopenNodeResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerReopenNodeAsync(System.Guid gNodeID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerReopenNodeAsync(System.Guid gNodeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerDeleteNode", ReplyAction="http://tempuri.org/IService/ByServerDeleteNodeResponse")]
-        TaskFlowTest.IPSPServices.OperationInfo ByServerDeleteNode(System.Guid gNodeID);
+        OperationInfo ByServerDeleteNode(System.Guid gNodeID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ByServerDeleteNode", ReplyAction="http://tempuri.org/IService/ByServerDeleteNodeResponse")]
-        System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerDeleteNodeAsync(System.Guid gNodeID);
+        System.Threading.Tasks.Task<OperationInfo> ByServerDeleteNodeAsync(System.Guid gNodeID);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -19287,12 +19286,12 @@ namespace TaskFlowTest.IPSPServices {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServiceChannel : TaskFlowTest.IPSPServices.IService, System.ServiceModel.IClientChannel {
+    public interface IServiceChannel : IService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServiceClient : System.ServiceModel.ClientBase<TaskFlowTest.IPSPServices.IService>, TaskFlowTest.IPSPServices.IService {
+    public partial class ServiceClient : System.ServiceModel.ClientBase<IService>, IService {
         
         public ServiceClient() {
         }
@@ -19313,379 +19312,379 @@ namespace TaskFlowTest.IPSPServices {
                 base(binding, remoteAddress) {
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerDeleteTaskChain(System.Guid gTaskChainID) {
+        public OperationInfo ByServerDeleteTaskChain(System.Guid gTaskChainID) {
             return base.Channel.ByServerDeleteTaskChain(gTaskChainID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerDeleteTaskChainAsync(System.Guid gTaskChainID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerDeleteTaskChainAsync(System.Guid gTaskChainID) {
             return base.Channel.ByServerDeleteTaskChainAsync(gTaskChainID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerRollBackNode(System.Guid gNodeID) {
+        public OperationInfo ByServerRollBackNode(System.Guid gNodeID) {
             return base.Channel.ByServerRollBackNode(gNodeID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerRollBackNodeAsync(System.Guid gNodeID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerRollBackNodeAsync(System.Guid gNodeID) {
             return base.Channel.ByServerRollBackNodeAsync(gNodeID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerUpdateTaskExecutor(System.Guid[] listTaskIDs, int nExecutorID, int nExecutePositionID) {
+        public OperationInfo ByServerUpdateTaskExecutor(System.Guid[] listTaskIDs, int nExecutorID, int nExecutePositionID) {
             return base.Channel.ByServerUpdateTaskExecutor(listTaskIDs, nExecutorID, nExecutePositionID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerUpdateTaskExecutorAsync(System.Guid[] listTaskIDs, int nExecutorID, int nExecutePositionID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerUpdateTaskExecutorAsync(System.Guid[] listTaskIDs, int nExecutorID, int nExecutePositionID) {
             return base.Channel.ByServerUpdateTaskExecutorAsync(listTaskIDs, nExecutorID, nExecutePositionID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerManualUpdateDeadline(System.Guid gCodeDeadlineID, string sRelatedObjectType, int nRelatedObjectID) {
+        public OperationInfo ByServerManualUpdateDeadline(System.Guid gCodeDeadlineID, string sRelatedObjectType, int nRelatedObjectID) {
             return base.Channel.ByServerManualUpdateDeadline(gCodeDeadlineID, sRelatedObjectType, nRelatedObjectID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualUpdateDeadlineAsync(System.Guid gCodeDeadlineID, string sRelatedObjectType, int nRelatedObjectID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerManualUpdateDeadlineAsync(System.Guid gCodeDeadlineID, string sRelatedObjectType, int nRelatedObjectID) {
             return base.Channel.ByServerManualUpdateDeadlineAsync(gCodeDeadlineID, sRelatedObjectType, nRelatedObjectID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerAutoUpdateDeadlineByCodeBaseDate(int nCodeBaseDateID, string sRelatedObjectType, int nRelatedObjectID) {
+        public OperationInfo ByServerAutoUpdateDeadlineByCodeBaseDate(int nCodeBaseDateID, string sRelatedObjectType, int nRelatedObjectID) {
             return base.Channel.ByServerAutoUpdateDeadlineByCodeBaseDate(nCodeBaseDateID, sRelatedObjectType, nRelatedObjectID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerAutoUpdateDeadlineByCodeBaseDateAsync(int nCodeBaseDateID, string sRelatedObjectType, int nRelatedObjectID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerAutoUpdateDeadlineByCodeBaseDateAsync(int nCodeBaseDateID, string sRelatedObjectType, int nRelatedObjectID) {
             return base.Channel.ByServerAutoUpdateDeadlineByCodeBaseDateAsync(nCodeBaseDateID, sRelatedObjectType, nRelatedObjectID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerAutoUpdateRelatedInfo(string sRelatedObjectType, int nRelatedObjectID) {
+        public OperationInfo ByServerAutoUpdateRelatedInfo(string sRelatedObjectType, int nRelatedObjectID) {
             return base.Channel.ByServerAutoUpdateRelatedInfo(sRelatedObjectType, nRelatedObjectID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerAutoUpdateRelatedInfoAsync(string sRelatedObjectType, int nRelatedObjectID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerAutoUpdateRelatedInfoAsync(string sRelatedObjectType, int nRelatedObjectID) {
             return base.Channel.ByServerAutoUpdateRelatedInfoAsync(sRelatedObjectType, nRelatedObjectID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateClient(string sClientID) {
+        public UpdateInfo InsertOrUpdateClient(string sClientID) {
             return base.Channel.InsertOrUpdateClient(sClientID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateClientAsync(string sClientID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateClientAsync(string sClientID) {
             return base.Channel.InsertOrUpdateClientAsync(sClientID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateBaseCase(string sCaseID) {
+        public UpdateInfo InsertOrUpdateBaseCase(string sCaseID) {
             return base.Channel.InsertOrUpdateBaseCase(sCaseID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateBaseCaseAsync(string sCaseID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateBaseCaseAsync(string sCaseID) {
             return base.Channel.InsertOrUpdateBaseCaseAsync(sCaseID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdatePatentCase(string sPatentID) {
+        public UpdateInfo InsertOrUpdatePatentCase(string sPatentID) {
             return base.Channel.InsertOrUpdatePatentCase(sPatentID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdatePatentCaseAsync(string sPatentID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdatePatentCaseAsync(string sPatentID) {
             return base.Channel.InsertOrUpdatePatentCaseAsync(sPatentID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateTrademarkCase(string sTrademarkID) {
+        public UpdateInfo InsertOrUpdateTrademarkCase(string sTrademarkID) {
             return base.Channel.InsertOrUpdateTrademarkCase(sTrademarkID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateTrademarkCaseAsync(string sTrademarkID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateTrademarkCaseAsync(string sTrademarkID) {
             return base.Channel.InsertOrUpdateTrademarkCaseAsync(sTrademarkID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateFee(string sFeeID) {
+        public UpdateInfo InsertOrUpdateFee(string sFeeID) {
             return base.Channel.InsertOrUpdateFee(sFeeID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateFeeAsync(string sFeeID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateFeeAsync(string sFeeID) {
             return base.Channel.InsertOrUpdateFeeAsync(sFeeID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateMainFiles(string sFileID) {
+        public UpdateInfo InsertOrUpdateMainFiles(string sFileID) {
             return base.Channel.InsertOrUpdateMainFiles(sFileID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateMainFilesAsync(string sFileID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateMainFilesAsync(string sFileID) {
             return base.Channel.InsertOrUpdateMainFilesAsync(sFileID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateMonitor(string sMonitorID) {
+        public UpdateInfo InsertOrUpdateMonitor(string sMonitorID) {
             return base.Channel.InsertOrUpdateMonitor(sMonitorID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateMonitorAsync(string sMonitorID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateMonitorAsync(string sMonitorID) {
             return base.Channel.InsertOrUpdateMonitorAsync(sMonitorID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateTask(string sTaskID) {
+        public UpdateInfo InsertOrUpdateTask(string sTaskID) {
             return base.Channel.InsertOrUpdateTask(sTaskID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateTaskAsync(string sTaskID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateTaskAsync(string sTaskID) {
             return base.Channel.InsertOrUpdateTaskAsync(sTaskID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateTimeSheet(string sTimesheetID) {
+        public UpdateInfo InsertOrUpdateTimeSheet(string sTimesheetID) {
             return base.Channel.InsertOrUpdateTimeSheet(sTimesheetID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateTimeSheetAsync(string sTimesheetID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateTimeSheetAsync(string sTimesheetID) {
             return base.Channel.InsertOrUpdateTimeSheetAsync(sTimesheetID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateBill(string sBillID) {
+        public UpdateInfo InsertOrUpdateBill(string sBillID) {
             return base.Channel.InsertOrUpdateBill(sBillID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateBillAsync(string sBillID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateBillAsync(string sBillID) {
             return base.Channel.InsertOrUpdateBillAsync(sBillID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateEmployeeName(string sEmployeeID) {
+        public UpdateInfo InsertOrUpdateEmployeeName(string sEmployeeID) {
             return base.Channel.InsertOrUpdateEmployeeName(sEmployeeID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateEmployeeNameAsync(string sEmployeeID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateEmployeeNameAsync(string sEmployeeID) {
             return base.Channel.InsertOrUpdateEmployeeNameAsync(sEmployeeID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateEmail(string sEmailID) {
+        public UpdateInfo InsertOrUpdateEmail(string sEmailID) {
             return base.Channel.InsertOrUpdateEmail(sEmailID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateEmailAsync(string sEmailID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateEmailAsync(string sEmailID) {
             return base.Channel.InsertOrUpdateEmailAsync(sEmailID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateExpense(string sExpenseID) {
+        public UpdateInfo InsertOrUpdateExpense(string sExpenseID) {
             return base.Channel.InsertOrUpdateExpense(sExpenseID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateExpenseAsync(string sExpenseID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateExpenseAsync(string sExpenseID) {
             return base.Channel.InsertOrUpdateExpenseAsync(sExpenseID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateProcess(string sProcessID) {
+        public UpdateInfo InsertOrUpdateProcess(string sProcessID) {
             return base.Channel.InsertOrUpdateProcess(sProcessID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateProcessAsync(string sProcessID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateProcessAsync(string sProcessID) {
             return base.Channel.InsertOrUpdateProcessAsync(sProcessID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateIntroducer(string sIntroducerID) {
+        public UpdateInfo InsertOrUpdateIntroducer(string sIntroducerID) {
             return base.Channel.InsertOrUpdateIntroducer(sIntroducerID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateIntroducerAsync(string sIntroducerID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateIntroducerAsync(string sIntroducerID) {
             return base.Channel.InsertOrUpdateIntroducerAsync(sIntroducerID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateApplicant(string sAppID) {
+        public UpdateInfo InsertOrUpdateApplicant(string sAppID) {
             return base.Channel.InsertOrUpdateApplicant(sAppID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateApplicantAsync(string sAppID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateApplicantAsync(string sAppID) {
             return base.Channel.InsertOrUpdateApplicantAsync(sAppID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo InsertOrUpdateAgency(string nAgencyID) {
+        public UpdateInfo InsertOrUpdateAgency(string nAgencyID) {
             return base.Channel.InsertOrUpdateAgency(nAgencyID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> InsertOrUpdateAgencyAsync(string nAgencyID) {
+        public System.Threading.Tasks.Task<UpdateInfo> InsertOrUpdateAgencyAsync(string nAgencyID) {
             return base.Channel.InsertOrUpdateAgencyAsync(nAgencyID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateClientPatentCaseCount(string nOldClientID, string nNewClientID) {
+        public UpdateInfo UpdateClientPatentCaseCount(string nOldClientID, string nNewClientID) {
             return base.Channel.UpdateClientPatentCaseCount(nOldClientID, nNewClientID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateClientPatentCaseCountAsync(string nOldClientID, string nNewClientID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateClientPatentCaseCountAsync(string nOldClientID, string nNewClientID) {
             return base.Channel.UpdateClientPatentCaseCountAsync(nOldClientID, nNewClientID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateClientTMCaseCount(string nOldClientID, string nNewClientID) {
+        public UpdateInfo UpdateClientTMCaseCount(string nOldClientID, string nNewClientID) {
             return base.Channel.UpdateClientTMCaseCount(nOldClientID, nNewClientID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateClientTMCaseCountAsync(string nOldClientID, string nNewClientID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateClientTMCaseCountAsync(string nOldClientID, string nNewClientID) {
             return base.Channel.UpdateClientTMCaseCountAsync(nOldClientID, nNewClientID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateClientCopyRightCaseCount(string nOldClientID, string nNewClientID) {
+        public UpdateInfo UpdateClientCopyRightCaseCount(string nOldClientID, string nNewClientID) {
             return base.Channel.UpdateClientCopyRightCaseCount(nOldClientID, nNewClientID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateClientCopyRightCaseCountAsync(string nOldClientID, string nNewClientID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateClientCopyRightCaseCountAsync(string nOldClientID, string nNewClientID) {
             return base.Channel.UpdateClientCopyRightCaseCountAsync(nOldClientID, nNewClientID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateClientDomainCaseCount(string nOldClientID, string nNewClientID) {
+        public UpdateInfo UpdateClientDomainCaseCount(string nOldClientID, string nNewClientID) {
             return base.Channel.UpdateClientDomainCaseCount(nOldClientID, nNewClientID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateClientDomainCaseCountAsync(string nOldClientID, string nNewClientID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateClientDomainCaseCountAsync(string nOldClientID, string nNewClientID) {
             return base.Channel.UpdateClientDomainCaseCountAsync(nOldClientID, nNewClientID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateClientOtherCaseCount(string nOldClientID, string nNewClientID) {
+        public UpdateInfo UpdateClientOtherCaseCount(string nOldClientID, string nNewClientID) {
             return base.Channel.UpdateClientOtherCaseCount(nOldClientID, nNewClientID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateClientOtherCaseCountAsync(string nOldClientID, string nNewClientID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateClientOtherCaseCountAsync(string nOldClientID, string nNewClientID) {
             return base.Channel.UpdateClientOtherCaseCountAsync(nOldClientID, nNewClientID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateIntroducerPatentCaseCount(string nOldIntroducerID, string nNewIntroducerID) {
+        public UpdateInfo UpdateIntroducerPatentCaseCount(string nOldIntroducerID, string nNewIntroducerID) {
             return base.Channel.UpdateIntroducerPatentCaseCount(nOldIntroducerID, nNewIntroducerID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateIntroducerPatentCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateIntroducerPatentCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID) {
             return base.Channel.UpdateIntroducerPatentCaseCountAsync(nOldIntroducerID, nNewIntroducerID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateIntroducerTMCaseCount(string nOldIntroducerID, string nNewIntroducerID) {
+        public UpdateInfo UpdateIntroducerTMCaseCount(string nOldIntroducerID, string nNewIntroducerID) {
             return base.Channel.UpdateIntroducerTMCaseCount(nOldIntroducerID, nNewIntroducerID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateIntroducerTMCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateIntroducerTMCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID) {
             return base.Channel.UpdateIntroducerTMCaseCountAsync(nOldIntroducerID, nNewIntroducerID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateIntroducerCopyRightCaseCount(string nOldIntroducerID, string nNewIntroducerID) {
+        public UpdateInfo UpdateIntroducerCopyRightCaseCount(string nOldIntroducerID, string nNewIntroducerID) {
             return base.Channel.UpdateIntroducerCopyRightCaseCount(nOldIntroducerID, nNewIntroducerID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateIntroducerCopyRightCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateIntroducerCopyRightCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID) {
             return base.Channel.UpdateIntroducerCopyRightCaseCountAsync(nOldIntroducerID, nNewIntroducerID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateIntroducerDomainCaseCount(string nOldIntroducerID, string nNewIntroducerID) {
+        public UpdateInfo UpdateIntroducerDomainCaseCount(string nOldIntroducerID, string nNewIntroducerID) {
             return base.Channel.UpdateIntroducerDomainCaseCount(nOldIntroducerID, nNewIntroducerID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateIntroducerDomainCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateIntroducerDomainCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID) {
             return base.Channel.UpdateIntroducerDomainCaseCountAsync(nOldIntroducerID, nNewIntroducerID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateIntroducerOtherCaseCount(string nOldIntroducerID, string nNewIntroducerID) {
+        public UpdateInfo UpdateIntroducerOtherCaseCount(string nOldIntroducerID, string nNewIntroducerID) {
             return base.Channel.UpdateIntroducerOtherCaseCount(nOldIntroducerID, nNewIntroducerID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateIntroducerOtherCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateIntroducerOtherCaseCountAsync(string nOldIntroducerID, string nNewIntroducerID) {
             return base.Channel.UpdateIntroducerOtherCaseCountAsync(nOldIntroducerID, nNewIntroducerID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencyToPatentCaseCount(string nOldAgencyID, string nNewAgencyID) {
+        public UpdateInfo UpdateAgencyToPatentCaseCount(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencyToPatentCaseCount(nOldAgencyID, nNewAgencyID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencyToPatentCaseCountAsync(string nOldAgencyID, string nNewAgencyID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateAgencyToPatentCaseCountAsync(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencyToPatentCaseCountAsync(nOldAgencyID, nNewAgencyID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencyToTMCaseCount(string nOldAgencyID, string nNewAgencyID) {
+        public UpdateInfo UpdateAgencyToTMCaseCount(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencyToTMCaseCount(nOldAgencyID, nNewAgencyID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencyToTMCaseCountAsync(string nOldAgencyID, string nNewAgencyID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateAgencyToTMCaseCountAsync(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencyToTMCaseCountAsync(nOldAgencyID, nNewAgencyID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencyToCopyRightCaseCount(string nOldAgencyID, string nNewAgencyID) {
+        public UpdateInfo UpdateAgencyToCopyRightCaseCount(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencyToCopyRightCaseCount(nOldAgencyID, nNewAgencyID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencyToCopyRightCaseCountAsync(string nOldAgencyID, string nNewAgencyID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateAgencyToCopyRightCaseCountAsync(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencyToCopyRightCaseCountAsync(nOldAgencyID, nNewAgencyID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencyToDomainCaseCount(string nOldAgencyID, string nNewAgencyID) {
+        public UpdateInfo UpdateAgencyToDomainCaseCount(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencyToDomainCaseCount(nOldAgencyID, nNewAgencyID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencyToDomainCaseCountAsync(string nOldAgencyID, string nNewAgencyID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateAgencyToDomainCaseCountAsync(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencyToDomainCaseCountAsync(nOldAgencyID, nNewAgencyID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencyToOtherCaseCount(string nOldAgencyID, string nNewAgencyID) {
+        public UpdateInfo UpdateAgencyToOtherCaseCount(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencyToOtherCaseCount(nOldAgencyID, nNewAgencyID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencyToOtherCaseCountAsync(string nOldAgencyID, string nNewAgencyID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateAgencyToOtherCaseCountAsync(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencyToOtherCaseCountAsync(nOldAgencyID, nNewAgencyID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantPatentCaseCount(string[] nOldApplicantID, string[] nNewApplicantID) {
+        public UpdateInfo UpdateApplicantPatentCaseCount(string[] nOldApplicantID, string[] nNewApplicantID) {
             return base.Channel.UpdateApplicantPatentCaseCount(nOldApplicantID, nNewApplicantID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantPatentCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantPatentCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID) {
             return base.Channel.UpdateApplicantPatentCaseCountAsync(nOldApplicantID, nNewApplicantID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantTMCaseCount(string[] nOldApplicantID, string[] nNewApplicantID) {
+        public UpdateInfo UpdateApplicantTMCaseCount(string[] nOldApplicantID, string[] nNewApplicantID) {
             return base.Channel.UpdateApplicantTMCaseCount(nOldApplicantID, nNewApplicantID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantTMCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantTMCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID) {
             return base.Channel.UpdateApplicantTMCaseCountAsync(nOldApplicantID, nNewApplicantID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantCopyRightCaseCount(string[] nOldApplicantID, string[] nNewApplicantID) {
+        public UpdateInfo UpdateApplicantCopyRightCaseCount(string[] nOldApplicantID, string[] nNewApplicantID) {
             return base.Channel.UpdateApplicantCopyRightCaseCount(nOldApplicantID, nNewApplicantID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantCopyRightCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantCopyRightCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID) {
             return base.Channel.UpdateApplicantCopyRightCaseCountAsync(nOldApplicantID, nNewApplicantID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantDomainCaseCount(string[] nOldApplicantID, string[] nNewApplicantID) {
+        public UpdateInfo UpdateApplicantDomainCaseCount(string[] nOldApplicantID, string[] nNewApplicantID) {
             return base.Channel.UpdateApplicantDomainCaseCount(nOldApplicantID, nNewApplicantID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantDomainCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantDomainCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID) {
             return base.Channel.UpdateApplicantDomainCaseCountAsync(nOldApplicantID, nNewApplicantID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantOtherCaseCount(string[] nOldApplicantID, string[] nNewApplicantID) {
+        public UpdateInfo UpdateApplicantOtherCaseCount(string[] nOldApplicantID, string[] nNewApplicantID) {
             return base.Channel.UpdateApplicantOtherCaseCount(nOldApplicantID, nNewApplicantID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantOtherCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantOtherCaseCountAsync(string[] nOldApplicantID, string[] nNewApplicantID) {
             return base.Channel.UpdateApplicantOtherCaseCountAsync(nOldApplicantID, nNewApplicantID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateApplicantFirstOrLastDate(string[] nOldAppID, string[] nNewAppID) {
+        public UpdateInfo UpdateApplicantFirstOrLastDate(string[] nOldAppID, string[] nNewAppID) {
             return base.Channel.UpdateApplicantFirstOrLastDate(nOldAppID, nNewAppID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateApplicantFirstOrLastDateAsync(string[] nOldAppID, string[] nNewAppID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateApplicantFirstOrLastDateAsync(string[] nOldAppID, string[] nNewAppID) {
             return base.Channel.UpdateApplicantFirstOrLastDateAsync(nOldAppID, nNewAppID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateAgencytFirstOrLastDate(string nOldAgencyID, string nNewAgencyID) {
+        public UpdateInfo UpdateAgencytFirstOrLastDate(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencytFirstOrLastDate(nOldAgencyID, nNewAgencyID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAgencytFirstOrLastDateAsync(string nOldAgencyID, string nNewAgencyID) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateAgencytFirstOrLastDateAsync(string nOldAgencyID, string nNewAgencyID) {
             return base.Channel.UpdateAgencytFirstOrLastDateAsync(nOldAgencyID, nNewAgencyID);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateAllCaseCustomFiled(string type) {
+        public UpdateInfo UpdateAllCaseCustomFiled(string type) {
             return base.Channel.UpdateAllCaseCustomFiled(type);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateAllCaseCustomFiledAsync(string type) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateAllCaseCustomFiledAsync(string type) {
             return base.Channel.UpdateAllCaseCustomFiledAsync(type);
         }
         
-        public TaskFlowTest.IPSPServices.UpdateInfo UpdateCaseCustomFiled(int caseId) {
+        public UpdateInfo UpdateCaseCustomFiled(int caseId) {
             return base.Channel.UpdateCaseCustomFiled(caseId);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.UpdateInfo> UpdateCaseCustomFiledAsync(int caseId) {
+        public System.Threading.Tasks.Task<UpdateInfo> UpdateCaseCustomFiledAsync(int caseId) {
             return base.Channel.UpdateCaseCustomFiledAsync(caseId);
         }
         
@@ -19730,525 +19729,525 @@ namespace TaskFlowTest.IPSPServices {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TaskFlowTest.IPSPServices.GetBillProcedureXmlFileResponse TaskFlowTest.IPSPServices.IService.GetBillProcedureXmlFile(TaskFlowTest.IPSPServices.GetBillProcedureXmlFileRequest request) {
+        GetBillProcedureXmlFileResponse IService.GetBillProcedureXmlFile(GetBillProcedureXmlFileRequest request) {
             return base.Channel.GetBillProcedureXmlFile(request);
         }
         
         public byte[] GetBillProcedureXmlFile(int billId, int billTemplateId, ref string templateFilePath) {
-            TaskFlowTest.IPSPServices.GetBillProcedureXmlFileRequest inValue = new TaskFlowTest.IPSPServices.GetBillProcedureXmlFileRequest();
+            GetBillProcedureXmlFileRequest inValue = new GetBillProcedureXmlFileRequest();
             inValue.billId = billId;
             inValue.billTemplateId = billTemplateId;
             inValue.templateFilePath = templateFilePath;
-            TaskFlowTest.IPSPServices.GetBillProcedureXmlFileResponse retVal = ((TaskFlowTest.IPSPServices.IService)(this)).GetBillProcedureXmlFile(inValue);
+            GetBillProcedureXmlFileResponse retVal = ((IService)(this)).GetBillProcedureXmlFile(inValue);
             templateFilePath = retVal.templateFilePath;
             return retVal.GetBillProcedureXmlFileResult;
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.GetBillProcedureXmlFileResponse> GetBillProcedureXmlFileAsync(TaskFlowTest.IPSPServices.GetBillProcedureXmlFileRequest request) {
+        public System.Threading.Tasks.Task<GetBillProcedureXmlFileResponse> GetBillProcedureXmlFileAsync(GetBillProcedureXmlFileRequest request) {
             return base.Channel.GetBillProcedureXmlFileAsync(request);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerAutoGenerateImmediatelyReminds(string sReminderTriggerType, string sReminderTriggerID, string sImmediatelyRemindType) {
+        public OperationInfo ByServerAutoGenerateImmediatelyReminds(string sReminderTriggerType, string sReminderTriggerID, string sImmediatelyRemindType) {
             return base.Channel.ByServerAutoGenerateImmediatelyReminds(sReminderTriggerType, sReminderTriggerID, sImmediatelyRemindType);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerAutoGenerateImmediatelyRemindsAsync(string sReminderTriggerType, string sReminderTriggerID, string sImmediatelyRemindType) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerAutoGenerateImmediatelyRemindsAsync(string sReminderTriggerType, string sReminderTriggerID, string sImmediatelyRemindType) {
             return base.Channel.ByServerAutoGenerateImmediatelyRemindsAsync(sReminderTriggerType, sReminderTriggerID, sImmediatelyRemindType);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerAutoGenerateTimeReminds(string sReminderTriggerType, string sReminderTriggerID) {
+        public OperationInfo ByServerAutoGenerateTimeReminds(string sReminderTriggerType, string sReminderTriggerID) {
             return base.Channel.ByServerAutoGenerateTimeReminds(sReminderTriggerType, sReminderTriggerID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerAutoGenerateTimeRemindsAsync(string sReminderTriggerType, string sReminderTriggerID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerAutoGenerateTimeRemindsAsync(string sReminderTriggerType, string sReminderTriggerID) {
             return base.Channel.ByServerAutoGenerateTimeRemindsAsync(sReminderTriggerType, sReminderTriggerID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerManualGenerateImmediatelyRemindsForCameFileDistribute(int nFileID, int[] listNewDistributerIDs) {
+        public OperationInfo ByServerManualGenerateImmediatelyRemindsForCameFileDistribute(int nFileID, int[] listNewDistributerIDs) {
             return base.Channel.ByServerManualGenerateImmediatelyRemindsForCameFileDistribute(nFileID, listNewDistributerIDs);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualGenerateImmediatelyRemindsForCameFileDistributeAsync(int nFileID, int[] listNewDistributerIDs) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerManualGenerateImmediatelyRemindsForCameFileDistributeAsync(int nFileID, int[] listNewDistributerIDs) {
             return base.Channel.ByServerManualGenerateImmediatelyRemindsForCameFileDistributeAsync(nFileID, listNewDistributerIDs);
         }
         
-        public TaskFlowTest.IPSPServices.BasicCaseData[] GetBasicCases(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public BasicCaseData[] GetBasicCases(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetBasicCases(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.BasicCaseData[]> GetBasicCasesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<BasicCaseData[]> GetBasicCasesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetBasicCasesAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.BasicCaseData[] GetUserBasicCases(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public BasicCaseData[] GetUserBasicCases(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserBasicCases(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.BasicCaseData[]> GetUserBasicCasesAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<BasicCaseData[]> GetUserBasicCasesAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserBasicCasesAsync(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.PatentData[] GetPatents(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public PatentData[] GetPatents(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetPatents(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.PatentData[]> GetPatentsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<PatentData[]> GetPatentsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetPatentsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.PatentData[] GetUserPatents(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public PatentData[] GetUserPatents(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserPatents(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.PatentData[]> GetUserPatentsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<PatentData[]> GetUserPatentsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserPatentsAsync(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.TrademarkData[] GetTrademarks(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public TrademarkData[] GetTrademarks(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetTrademarks(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TrademarkData[]> GetTrademarksAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<TrademarkData[]> GetTrademarksAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetTrademarksAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.TrademarkData[] GetUserTrademarks(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public TrademarkData[] GetUserTrademarks(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserTrademarks(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TrademarkData[]> GetUserTrademarksAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<TrademarkData[]> GetUserTrademarksAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserTrademarksAsync(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.DomainData[] GetDomains(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public DomainData[] GetDomains(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetDomains(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.DomainData[]> GetDomainsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<DomainData[]> GetDomainsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetDomainsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.DomainData[] GetUserDomains(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public DomainData[] GetUserDomains(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserDomains(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.DomainData[]> GetUserDomainsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<DomainData[]> GetUserDomainsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserDomainsAsync(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.CopyRightData[] GetCopyRights(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public CopyRightData[] GetCopyRights(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetCopyRights(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.CopyRightData[]> GetCopyRightsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<CopyRightData[]> GetCopyRightsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetCopyRightsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.CopyRightData[] GetUserCopyRights(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public CopyRightData[] GetUserCopyRights(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserCopyRights(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.CopyRightData[]> GetUserCopyRightsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<CopyRightData[]> GetUserCopyRightsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserCopyRightsAsync(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.OtherCaseData[] GetOtherCases(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public OtherCaseData[] GetOtherCases(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetOtherCases(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OtherCaseData[]> GetOtherCasesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<OtherCaseData[]> GetOtherCasesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetOtherCasesAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.OtherCaseData[] GetUserOtherCases(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public OtherCaseData[] GetUserOtherCases(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserOtherCases(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OtherCaseData[]> GetUserOtherCasesAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<OtherCaseData[]> GetUserOtherCasesAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserOtherCasesAsync(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.ClientData[] GetClients(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public ClientData[] GetClients(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetClients(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ClientData[]> GetClientsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<ClientData[]> GetClientsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetClientsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.ClientData[] GetUserClients(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public ClientData[] GetUserClients(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserClients(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ClientData[]> GetUserClientsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<ClientData[]> GetUserClientsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserClientsAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.AgencyData[] GetAgencys(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public AgencyData[] GetAgencys(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetAgencys(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.AgencyData[]> GetAgencysAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<AgencyData[]> GetAgencysAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetAgencysAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.AgencyData[] GetUserAgencys(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public AgencyData[] GetUserAgencys(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserAgencys(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.AgencyData[]> GetUserAgencysAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<AgencyData[]> GetUserAgencysAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserAgencysAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.IntroducerData[] GetIntroducers(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public IntroducerData[] GetIntroducers(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetIntroducers(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.IntroducerData[]> GetIntroducersAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<IntroducerData[]> GetIntroducersAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetIntroducersAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.IntroducerData[] GetUserIntroducers(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public IntroducerData[] GetUserIntroducers(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserIntroducers(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.IntroducerData[]> GetUserIntroducersAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<IntroducerData[]> GetUserIntroducersAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserIntroducersAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.ApplicantData[] GetApplicants(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public ApplicantData[] GetApplicants(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetApplicants(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ApplicantData[]> GetApplicantsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<ApplicantData[]> GetApplicantsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetApplicantsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.ApplicantData[] GetUserApplicants(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public ApplicantData[] GetUserApplicants(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserApplicants(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ApplicantData[]> GetUserApplicantsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<ApplicantData[]> GetUserApplicantsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserApplicantsAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.OutFileData[] GetOutFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public OutFileData[] GetOutFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetOutFiles(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OutFileData[]> GetOutFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<OutFileData[]> GetOutFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetOutFilesAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.OutFileData[] GetUserOutFiles(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public OutFileData[] GetUserOutFiles(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserOutFiles(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OutFileData[]> GetUserOutFilesAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<OutFileData[]> GetUserOutFilesAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserOutFilesAsync(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.InFileData[] GetInFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public InFileData[] GetInFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetInFiles(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.InFileData[]> GetInFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<InFileData[]> GetInFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetInFilesAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.InFileData[] GetUserInFiles(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public InFileData[] GetUserInFiles(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserInFiles(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.InFileData[]> GetUserInFilesAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<InFileData[]> GetUserInFilesAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserInFilesAsync(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.OtherFileData[] GetOtherFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public OtherFileData[] GetOtherFiles(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetOtherFiles(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OtherFileData[]> GetOtherFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<OtherFileData[]> GetOtherFilesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetOtherFilesAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.OtherFileData[] GetUserOtherFiles(string userID, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public OtherFileData[] GetUserOtherFiles(string userID, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserOtherFiles(userID, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OtherFileData[]> GetUserOtherFilesAsync(string userID, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<OtherFileData[]> GetUserOtherFilesAsync(string userID, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserOtherFilesAsync(userID, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.EmailData[] GetEmails(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public EmailData[] GetEmails(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetEmails(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.EmailData[]> GetEmailsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<EmailData[]> GetEmailsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetEmailsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.EmailData[] GetUserEmails(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public EmailData[] GetUserEmails(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserEmails(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.EmailData[]> GetUserEmailsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<EmailData[]> GetUserEmailsAsync(string userID, string sMyBagFlag, string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserEmailsAsync(userID, sMyBagFlag, sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.TaskData[] GetTasks(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public TaskData[] GetTasks(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetTasks(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TaskData[]> GetTasksAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<TaskData[]> GetTasksAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetTasksAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.TaskData[] GetUserTasks(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public TaskData[] GetUserTasks(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserTasks(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TaskData[]> GetUserTasksAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<TaskData[]> GetUserTasksAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserTasksAsync(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.TaskChainData[] GetTaskChains(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public TaskChainData[] GetTaskChains(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetTaskChains(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TaskChainData[]> GetTaskChainsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<TaskChainData[]> GetTaskChainsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetTaskChainsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.TaskChainData[] GetUserTaskChains(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public TaskChainData[] GetUserTaskChains(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserTaskChains(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TaskChainData[]> GetUserTaskChainsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<TaskChainData[]> GetUserTaskChainsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserTaskChainsAsync(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.RemindData[] GetReminds(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public RemindData[] GetReminds(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetReminds(sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.RemindData[]> GetRemindsAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<RemindData[]> GetRemindsAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetRemindsAsync(sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.RemindData[] GetUserReminds(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public RemindData[] GetUserReminds(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserReminds(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.RemindData[]> GetUserRemindsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<RemindData[]> GetUserRemindsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserRemindsAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.RemindRecordData[] GetRemindRecords(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public RemindRecordData[] GetRemindRecords(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetRemindRecords(sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.RemindRecordData[]> GetRemindRecordsAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<RemindRecordData[]> GetRemindRecordsAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetRemindRecordsAsync(sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.RemindRecordData[] GetUserRemindRecords(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public RemindRecordData[] GetUserRemindRecords(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserRemindRecords(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.RemindRecordData[]> GetUserRemindRecordsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<RemindRecordData[]> GetUserRemindRecordsAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserRemindRecordsAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.DeadlineData[] GetDeadlines(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public DeadlineData[] GetDeadlines(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetDeadlines(sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.DeadlineData[]> GetDeadlinesAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<DeadlineData[]> GetDeadlinesAsync(string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetDeadlinesAsync(sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.FeeData[] GetFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public FeeData[] GetFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetFees(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.FeeData[]> GetFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<FeeData[]> GetFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetFeesAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.FeeData[] GetUserFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public FeeData[] GetUserFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserFees(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.FeeData[]> GetUserFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<FeeData[]> GetUserFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserFeesAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.ChargingFeeData[] GetChargingFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public ChargingFeeData[] GetChargingFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetChargingFees(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ChargingFeeData[]> GetChargingFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<ChargingFeeData[]> GetChargingFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetChargingFeesAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.ChargingFeeData[] GetUserChargingFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public ChargingFeeData[] GetUserChargingFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserChargingFees(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ChargingFeeData[]> GetUserChargingFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<ChargingFeeData[]> GetUserChargingFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserChargingFeesAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.AnnualFeeData[] GetAnnualFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public AnnualFeeData[] GetAnnualFees(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetAnnualFees(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.AnnualFeeData[]> GetAnnualFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<AnnualFeeData[]> GetAnnualFeesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetAnnualFeesAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.AnnualFeeData[] GetUserAnnualFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public AnnualFeeData[] GetUserAnnualFees(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserAnnualFees(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.AnnualFeeData[]> GetUserAnnualFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<AnnualFeeData[]> GetUserAnnualFeesAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserAnnualFeesAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.DomainNameRenewalData[] GetDomainNameRenewal(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public DomainNameRenewalData[] GetDomainNameRenewal(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetDomainNameRenewal(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.DomainNameRenewalData[]> GetDomainNameRenewalAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<DomainNameRenewalData[]> GetDomainNameRenewalAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetDomainNameRenewalAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.DomainNameRenewalData[] GetUserDomainNameRenewal(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public DomainNameRenewalData[] GetUserDomainNameRenewal(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserDomainNameRenewal(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.DomainNameRenewalData[]> GetUserDomainNameRenewalAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<DomainNameRenewalData[]> GetUserDomainNameRenewalAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserDomainNameRenewalAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.TrademarkRenewalData[] GetTrademarkRenewal(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public TrademarkRenewalData[] GetTrademarkRenewal(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetTrademarkRenewal(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TrademarkRenewalData[]> GetTrademarkRenewalAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<TrademarkRenewalData[]> GetTrademarkRenewalAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetTrademarkRenewalAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.TrademarkRenewalData[] GetUserTrademarkRenewal(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public TrademarkRenewalData[] GetUserTrademarkRenewal(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserTrademarkRenewal(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TrademarkRenewalData[]> GetUserTrademarkRenewalAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<TrademarkRenewalData[]> GetUserTrademarkRenewalAsync(string userID, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserTrademarkRenewalAsync(userID, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.ABillHedgeData[] GetABillHedges(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public ABillHedgeData[] GetABillHedges(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetABillHedges(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ABillHedgeData[]> GetABillHedgesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<ABillHedgeData[]> GetABillHedgesAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetABillHedgesAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.ABillPaymentData[] GetABillPayments(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public ABillPaymentData[] GetABillPayments(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetABillPayments(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ABillPaymentData[]> GetABillPaymentsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<ABillPaymentData[]> GetABillPaymentsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetABillPaymentsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.BillData[] GetBills(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public BillData[] GetBills(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetBills(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.BillData[]> GetBillsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<BillData[]> GetBillsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetBillsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.TimeSheetData[] GetTimeSheets(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public TimeSheetData[] GetTimeSheets(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetTimeSheets(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TimeSheetData[]> GetTimeSheetsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<TimeSheetData[]> GetTimeSheetsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetTimeSheetsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.TimeSheetData[] GetUserTimeSheets(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public TimeSheetData[] GetUserTimeSheets(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserTimeSheets(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.TimeSheetData[]> GetUserTimeSheetsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<TimeSheetData[]> GetUserTimeSheetsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserTimeSheetsAsync(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.MonitorData[] GetMonitors(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public MonitorData[] GetMonitors(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetMonitors(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.MonitorData[]> GetMonitorsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<MonitorData[]> GetMonitorsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetMonitorsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.MonitorData[] GetUserMonitors(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public MonitorData[] GetUserMonitors(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserMonitors(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.MonitorData[]> GetUserMonitorsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<MonitorData[]> GetUserMonitorsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserMonitorsAsync(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.WorkItemData[] GetWorkItems(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public WorkItemData[] GetWorkItems(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetWorkItems(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.WorkItemData[]> GetWorkItemsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<WorkItemData[]> GetWorkItemsAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetWorkItemsAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.WorkItemData[] GetUserWorkItems(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public WorkItemData[] GetUserWorkItems(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserWorkItems(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.WorkItemData[]> GetUserWorkItemsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<WorkItemData[]> GetUserWorkItemsAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserWorkItemsAsync(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.CameMoneyData[] GetCameMoney(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public CameMoneyData[] GetCameMoney(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetCameMoney(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.CameMoneyData[]> GetCameMoneyAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<CameMoneyData[]> GetCameMoneyAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetCameMoneyAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.CameMoneyData[] GetUserCameMoney(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public CameMoneyData[] GetUserCameMoney(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserCameMoney(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.CameMoneyData[]> GetUserCameMoneyAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<CameMoneyData[]> GetUserCameMoneyAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserCameMoneyAsync(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.ArchiveData[] GetArchiveData(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public ArchiveData[] GetArchiveData(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetArchiveData(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ArchiveData[]> GetArchiveDataAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<ArchiveData[]> GetArchiveDataAsync(string sCondition, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetArchiveDataAsync(sCondition, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public TaskFlowTest.IPSPServices.ArchiveData[] GetUserArchiveData(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public ArchiveData[] GetUserArchiveData(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserArchiveData(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.ArchiveData[]> GetUserArchiveDataAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
+        public System.Threading.Tasks.Task<ArchiveData[]> GetUserArchiveDataAsync(string userID, string sMyBagFlag, string sCondtion, string sOrderBy, string sField, bool bOnlyGetTopCount) {
             return base.Channel.GetUserArchiveDataAsync(userID, sMyBagFlag, sCondtion, sOrderBy, sField, bOnlyGetTopCount);
         }
         
@@ -20300,11 +20299,11 @@ namespace TaskFlowTest.IPSPServices {
             return base.Channel.GetUpgradeConfigInfoAsync();
         }
         
-        public TaskFlowTest.IPSPServices.LifeCycleInfo RequestLifeCycle(int nEmployeeID) {
+        public LifeCycleInfo RequestLifeCycle(int nEmployeeID) {
             return base.Channel.RequestLifeCycle(nEmployeeID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.LifeCycleInfo> RequestLifeCycleAsync(int nEmployeeID) {
+        public System.Threading.Tasks.Task<LifeCycleInfo> RequestLifeCycleAsync(int nEmployeeID) {
             return base.Channel.RequestLifeCycleAsync(nEmployeeID);
         }
         
@@ -20324,99 +20323,99 @@ namespace TaskFlowTest.IPSPServices {
             return base.Channel.GetTrademarkGoodsPatternENAsync();
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerUpdateTaskFlowConfig() {
+        public OperationInfo ByServerUpdateTaskFlowConfig() {
             return base.Channel.ByServerUpdateTaskFlowConfig();
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerUpdateTaskFlowConfigAsync() {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerUpdateTaskFlowConfigAsync() {
             return base.Channel.ByServerUpdateTaskFlowConfigAsync();
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerAutoGenerateTopTaskChains(string sTriggerType, string sTriggerObjectFullName, object objTriggerObjectKey, bool bCanRepeat) {
+        public OperationInfo ByServerAutoGenerateTopTaskChains(string sTriggerType, string sTriggerObjectFullName, object objTriggerObjectKey, bool bCanRepeat) {
             return base.Channel.ByServerAutoGenerateTopTaskChains(sTriggerType, sTriggerObjectFullName, objTriggerObjectKey, bCanRepeat);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerAutoGenerateTopTaskChainsAsync(string sTriggerType, string sTriggerObjectFullName, object objTriggerObjectKey, bool bCanRepeat) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerAutoGenerateTopTaskChainsAsync(string sTriggerType, string sTriggerObjectFullName, object objTriggerObjectKey, bool bCanRepeat) {
             return base.Channel.ByServerAutoGenerateTopTaskChainsAsync(sTriggerType, sTriggerObjectFullName, objTriggerObjectKey, bCanRepeat);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerManualGenerateTopTaskChain(System.Guid gTaskChainID, string sRelatedObjectFullName, object objRelatedObjectKey, bool bCanRepeat) {
+        public OperationInfo ByServerManualGenerateTopTaskChain(System.Guid gTaskChainID, string sRelatedObjectFullName, object objRelatedObjectKey, bool bCanRepeat) {
             return base.Channel.ByServerManualGenerateTopTaskChain(gTaskChainID, sRelatedObjectFullName, objRelatedObjectKey, bCanRepeat);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualGenerateTopTaskChainAsync(System.Guid gTaskChainID, string sRelatedObjectFullName, object objRelatedObjectKey, bool bCanRepeat) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerManualGenerateTopTaskChainAsync(System.Guid gTaskChainID, string sRelatedObjectFullName, object objRelatedObjectKey, bool bCanRepeat) {
             return base.Channel.ByServerManualGenerateTopTaskChainAsync(gTaskChainID, sRelatedObjectFullName, objRelatedObjectKey, bCanRepeat);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerIsObjectExistsSpecifiedTaskChain(string sObjectFullName, object objObjectKey, System.Guid gTaskChainID) {
+        public OperationInfo ByServerIsObjectExistsSpecifiedTaskChain(string sObjectFullName, object objObjectKey, System.Guid gTaskChainID) {
             return base.Channel.ByServerIsObjectExistsSpecifiedTaskChain(sObjectFullName, objObjectKey, gTaskChainID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerIsObjectExistsSpecifiedTaskChainAsync(string sObjectFullName, object objObjectKey, System.Guid gTaskChainID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerIsObjectExistsSpecifiedTaskChainAsync(string sObjectFullName, object objObjectKey, System.Guid gTaskChainID) {
             return base.Channel.ByServerIsObjectExistsSpecifiedTaskChainAsync(sObjectFullName, objObjectKey, gTaskChainID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerManualGenerateTaskNode(System.Guid gTaskChainID, System.Guid gCodeNodeTaskID, int nCreatorID) {
+        public OperationInfo ByServerManualGenerateTaskNode(System.Guid gTaskChainID, System.Guid gCodeNodeTaskID, int nCreatorID) {
             return base.Channel.ByServerManualGenerateTaskNode(gTaskChainID, gCodeNodeTaskID, nCreatorID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualGenerateTaskNodeAsync(System.Guid gTaskChainID, System.Guid gCodeNodeTaskID, int nCreatorID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerManualGenerateTaskNodeAsync(System.Guid gTaskChainID, System.Guid gCodeNodeTaskID, int nCreatorID) {
             return base.Channel.ByServerManualGenerateTaskNodeAsync(gTaskChainID, gCodeNodeTaskID, nCreatorID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerManualCreateTaskNodeWithoutCode(System.Guid gTaskChainID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays) {
+        public OperationInfo ByServerManualCreateTaskNodeWithoutCode(System.Guid gTaskChainID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays) {
             return base.Channel.ByServerManualCreateTaskNodeWithoutCode(gTaskChainID, sTaskName, nCreatorID, sTaskCyclePara, dtTaskCycleBaseDate, nAdvanceDays);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualCreateTaskNodeWithoutCodeAsync(System.Guid gTaskChainID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerManualCreateTaskNodeWithoutCodeAsync(System.Guid gTaskChainID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays) {
             return base.Channel.ByServerManualCreateTaskNodeWithoutCodeAsync(gTaskChainID, sTaskName, nCreatorID, sTaskCyclePara, dtTaskCycleBaseDate, nAdvanceDays);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerManualCreateTaskNodeInNewTaskChainWithoutCode(string sTaskChainName, string sRelatedObjectType, int nRelatedObjectID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays) {
+        public OperationInfo ByServerManualCreateTaskNodeInNewTaskChainWithoutCode(string sTaskChainName, string sRelatedObjectType, int nRelatedObjectID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays) {
             return base.Channel.ByServerManualCreateTaskNodeInNewTaskChainWithoutCode(sTaskChainName, sRelatedObjectType, nRelatedObjectID, sTaskName, nCreatorID, sTaskCyclePara, dtTaskCycleBaseDate, nAdvanceDays);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerManualCreateTaskNodeInNewTaskChainWithoutCodeAsync(string sTaskChainName, string sRelatedObjectType, int nRelatedObjectID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerManualCreateTaskNodeInNewTaskChainWithoutCodeAsync(string sTaskChainName, string sRelatedObjectType, int nRelatedObjectID, string sTaskName, int nCreatorID, string sTaskCyclePara, System.DateTime dtTaskCycleBaseDate, int nAdvanceDays) {
             return base.Channel.ByServerManualCreateTaskNodeInNewTaskChainWithoutCodeAsync(sTaskChainName, sRelatedObjectType, nRelatedObjectID, sTaskName, nCreatorID, sTaskCyclePara, dtTaskCycleBaseDate, nAdvanceDays);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerFinishTaskNode(System.Guid gTaskNodeID, int nFinisherID) {
+        public OperationInfo ByServerFinishTaskNode(System.Guid gTaskNodeID, int nFinisherID) {
             return base.Channel.ByServerFinishTaskNode(gTaskNodeID, nFinisherID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerFinishTaskNodeAsync(System.Guid gTaskNodeID, int nFinisherID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerFinishTaskNodeAsync(System.Guid gTaskNodeID, int nFinisherID) {
             return base.Channel.ByServerFinishTaskNodeAsync(gTaskNodeID, nFinisherID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerCloseNode(System.Guid gNodeID) {
+        public OperationInfo ByServerCloseNode(System.Guid gNodeID) {
             return base.Channel.ByServerCloseNode(gNodeID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerCloseNodeAsync(System.Guid gNodeID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerCloseNodeAsync(System.Guid gNodeID) {
             return base.Channel.ByServerCloseNodeAsync(gNodeID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerCloseTaskChain(System.Guid gTaskChainID) {
+        public OperationInfo ByServerCloseTaskChain(System.Guid gTaskChainID) {
             return base.Channel.ByServerCloseTaskChain(gTaskChainID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerCloseTaskChainAsync(System.Guid gTaskChainID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerCloseTaskChainAsync(System.Guid gTaskChainID) {
             return base.Channel.ByServerCloseTaskChainAsync(gTaskChainID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerReopenNode(System.Guid gNodeID) {
+        public OperationInfo ByServerReopenNode(System.Guid gNodeID) {
             return base.Channel.ByServerReopenNode(gNodeID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerReopenNodeAsync(System.Guid gNodeID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerReopenNodeAsync(System.Guid gNodeID) {
             return base.Channel.ByServerReopenNodeAsync(gNodeID);
         }
         
-        public TaskFlowTest.IPSPServices.OperationInfo ByServerDeleteNode(System.Guid gNodeID) {
+        public OperationInfo ByServerDeleteNode(System.Guid gNodeID) {
             return base.Channel.ByServerDeleteNode(gNodeID);
         }
         
-        public System.Threading.Tasks.Task<TaskFlowTest.IPSPServices.OperationInfo> ByServerDeleteNodeAsync(System.Guid gNodeID) {
+        public System.Threading.Tasks.Task<OperationInfo> ByServerDeleteNodeAsync(System.Guid gNodeID) {
             return base.Channel.ByServerDeleteNodeAsync(gNodeID);
         }
     }

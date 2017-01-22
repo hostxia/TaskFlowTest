@@ -21,6 +21,7 @@ namespace TaskFlowTest
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             XpoDefault.DataLayer = XpoDefault.GetDataLayer(ConfigurationManager.ConnectionStrings["Connection"].ConnectionString, AutoCreateOption.None);
+            DevExpress.Data.CurrencyDataController.DisableThreadingProblemsDetection = true;
             Application.Run(new XFrmMain());
         }
     }
