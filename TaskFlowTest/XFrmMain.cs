@@ -71,6 +71,7 @@ namespace TaskFlowTest
         private void xsbTest_Click(object sender, EventArgs e)
         {
             layoutControlGroup3.Enabled = layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = false;
+            xsbTest.Enabled = xsbExport.Enabled = false;
             Cursor.Current = Cursors.WaitCursor;
             Task.Run(() =>
             {
@@ -99,6 +100,7 @@ namespace TaskFlowTest
                 Invoke(new Action(() =>
                 {
                     layoutControlGroup3.Enabled = layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = true;
+                    xsbTest.Enabled = xsbExport.Enabled = true;
                     Cursor.Current = Cursors.Default;
                 }));
             });

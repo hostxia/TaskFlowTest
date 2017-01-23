@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DataEntities.Config;
 using DataEntities.TaskFlowConfig;
 using DataEntities.TaskFlowData;
 using DevExpress.Data.Filtering;
@@ -339,6 +340,7 @@ namespace TaskFlowTest
 
         private void FinishTask(string sTaskChainNum)
         {
+            var nUserId = UnitOfWork.FindObject<CodeEmployee>(CriteriaOperator.Parse("s_UserName = ?", "administrator")).n_ID;
             var gTaskChainId = Guid.Parse(UnitOfWork.ExecuteScalar($"select g_id from tf_taskchain where n_num = '{sTaskChainNum}'").ToString());
             var taskChain = UnitOfWork.GetObjectByKey<TFTaskChain>(gTaskChainId);
             if (taskChain == null)
@@ -357,16 +359,18 @@ namespace TaskFlowTest
                 {
                     AddTaskCheckParameter(task);
                     var tfNode = task.GetTheBelongNode();
-                    var operationInfo = ServiceClient.ByServerFinishTaskNode(tfNode.g_ID, 131);
-                    if (operationInfo.bOperationResult)
+                    var operationInfo = ServiceClient.ByServerFinishTaskNode(tfNode.g_ID, nUserId);
+                    if (!operationInfo.bOperationResult)
                     {
-                        if (!string.IsNullOrEmpty(operationInfo.sOperationReturnObject))
-                        {
-                            TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationReturnObject}", sTaskChainNum, task.n_Num.ToString());
-                            return;
-                        }
+                        var sCondtion = CalUtility.ConvertToCondition(tfNode.GetTheCodeNode().GetTheOwnCodeTask().s_FinishCondition);
+                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationMessage}；完成任务条件：{sCondtion}", sTaskChainNum, task.n_Num.ToString());
+                        return;
                     }
-                    TestResultInfoSet.AddInfo($"任务完成！", sTaskChainNum, task.n_Num.ToString());
+                    else
+                    {
+                        TestResultInfoSet.AddInfo($"任务完成！完成信息：{operationInfo.sOperationReturnObject}", sTaskChainNum, task.n_Num.ToString());
+                    }
+
                 }
                 listTasks = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListNodes()
                         .Select(n => n.GetTheOwnTask())
