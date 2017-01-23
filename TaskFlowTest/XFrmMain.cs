@@ -15,9 +15,10 @@ namespace TaskFlowTest
 {
     public partial class XFrmMain : XtraForm
     {
+        private BasicCase _basicCase;
         private List<dynamic> _listDynamicCameFileOfficials;
         private List<dynamic> _listDynamicTaskChains;
-        private BasicCase _basicCase;
+        private TaskFlowTestHelper _taskFlowTestHelper;
 
         public XFrmMain()
         {
@@ -26,11 +27,13 @@ namespace TaskFlowTest
 
         private void XFrmMain_Load(object sender, EventArgs e)
         {
-            InitLoad();
+            _taskFlowTestHelper = new TaskFlowTestHelper(new TestResultInfoSet());
         }
 
         private void InitLoad()
         {
+            xgridResult.DataSource = _taskFlowTestHelper.TestResultInfoSet;
+
             xlueRelatedObjectType.Properties.DataSource = ComboxStruct.RelatedObjectType;
             xlueRelatedObjectType.Properties.DisplayMember = "DisplayMember";
             xlueRelatedObjectType.Properties.ValueMember = "DisplayValue";
@@ -42,7 +45,7 @@ namespace TaskFlowTest
 
             _listDynamicTaskChains = new List<dynamic>();
             new XPQuery<TFCodeTaskChain>(new UnitOfWork()).Where(
-                    w => w.s_State == "E" && w.s_TriggerType.Contains("Manual"))
+                    w => w.s_TriggerType.Contains("Manual"))
                 .Select(c => new { c.g_ID, c.s_Code, c.s_Name, c.n_TaskChainTypeID })
                 .ToList()
                 .ForEach(f =>
@@ -67,22 +70,36 @@ namespace TaskFlowTest
 
         private void xsbTest_Click(object sender, EventArgs e)
         {
-            xsbTest.Enabled = false;
-            xsbExport.Enabled = false;
+            layoutControlGroup3.Enabled = layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = false;
+            Cursor.Current = Cursors.WaitCursor;
             Task.Run(() =>
             {
-                var taskFlowTestHelper = new TaskFlowTestHelper(new TestResultInfoSet());
-                Invoke(new Action(() => { xgridResult.DataSource = taskFlowTestHelper.TestResultInfoSet; }));
                 if (xchkCondition.Checked)
-                    taskFlowTestHelper.TestCondition();
-                //if (xchkSimulation.Checked)
-                //taskFlowTestHelper.GenerateTaskChain();
+                    _taskFlowTestHelper.TestCondition();
+                if (xchkSimulation.Checked)
+                {
+                    var sObjTypeName = string.Empty;
+                    var sRelatedObjectId = "0";
+                    if (xlueRelatedObjectType.EditValue.ToString() == TaskFlowEnum.RelatedObjectType.Case.ToString())
+                    {
+                        sObjTypeName = typeof(BasicCase).FullName;
+                        sRelatedObjectId = _basicCase.n_CaseID.ToString();
+                    }
+                    else if (xlueRelatedObjectType.EditValue.ToString() ==
+                             TaskFlowEnum.RelatedObjectType.CameFileOfficial.ToString())
+                    {
+                        sObjTypeName = typeof(BasicCase).FullName;
+                        sRelatedObjectId = xslueCameFileOfficial.EditValue.ToString();
+                    }
+
+                    _taskFlowTestHelper.ExecuteTaskChain(Guid.Parse(xslueTaskChainCode.EditValue.ToString()), sObjTypeName, sRelatedObjectId);
+                }
             }).ContinueWith(t =>
             {
                 Invoke(new Action(() =>
                 {
-                    xsbTest.Enabled = true;
-                    xsbExport.Enabled = true;
+                    layoutControlGroup3.Enabled = layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = true;
+                    Cursor.Current = Cursors.Default;
                 }));
             });
         }
@@ -106,9 +123,8 @@ namespace TaskFlowTest
 
         private void xbeCase_ButtonClick(object sender, ButtonPressedEventArgs e)
         {
-            var theUow = new UnitOfWork();
             var idList = new List<int>();
-            var frm = new XFrmSearchCase(theUow, idList, false);
+            var frm = new XFrmSearchCase(_taskFlowTestHelper.UnitOfWork, idList, false, _taskFlowTestHelper.ServiceClient);
             if (frm.ShowDialog() != DialogResult.OK) return;
             if (frm.Cases.Count <= 0)
             {
@@ -130,7 +146,7 @@ namespace TaskFlowTest
                 _listDynamicCameFileOfficials = new List<dynamic>();
                 string sSqlQueryOfficialCameFile =
                     $"SELECT T_MainFiles.n_FileID,T_MainFiles.s_Name,TCase_Base.s_CaseSerial FROM dbo.T_MainFiles LEFT JOIN dbo.T_FileInCase ON dbo.T_MainFiles.n_FileID = dbo.T_FileInCase.n_FileID LEFT JOIN dbo.TCase_Base ON dbo.T_FileInCase.n_CaseID = dbo.TCase_Base.n_CaseID WHERE s_IOType = 'I' AND s_ClientGov = 'O' AND TCase_Base.s_CaseSerial = '{frm.Cases[0].s_CaseSerial}'";
-                var dataOfficialCameFile = theUow.ExecuteQuery(sSqlQueryOfficialCameFile);
+                var dataOfficialCameFile = _taskFlowTestHelper.UnitOfWork.ExecuteQuery(sSqlQueryOfficialCameFile);
                 foreach (var row in dataOfficialCameFile.ResultSet[0].Rows)
                 {
                     if (row.Values[0] == null || row.Values[1] == null) continue;
@@ -140,6 +156,22 @@ namespace TaskFlowTest
                     _listDynamicCameFileOfficials.Add(expando);
                 }
                 xslueCameFileOfficial.Properties.DataSource = _listDynamicCameFileOfficials;
+            }
+        }
+
+        private void xsbTestConnection_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (_taskFlowTestHelper.TestAndInitConnection(xteIPSAddress.Text.Trim() + ":1989"))
+                {
+                    InitLoad();
+                    XtraMessageBox.Show(this, "连接成功！");
+                }
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(this, ex.Message + "\r\n" + ex.Source + "\r\n" + ex.StackTrace);
             }
         }
     }

@@ -21,11 +21,11 @@ namespace TaskFlowTest
         private readonly ServiceClient _serviceClient;
         private readonly UnitOfWork _theUow;
 
-        public XFrmSearchCase(UnitOfWork uow, List<int> idList, bool bMultiSelected)
+        public XFrmSearchCase(UnitOfWork uow, List<int> idList, bool bMultiSelected,ServiceClient serviceClient)
         {
             InitializeComponent();
             Cases = new List<BasicCase>();
-            _serviceClient = new ServiceClient();
+            _serviceClient = serviceClient;
             InitControls();
 
             _theUow = uow;
