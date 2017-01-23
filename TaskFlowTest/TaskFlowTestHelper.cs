@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -202,7 +203,7 @@ namespace TaskFlowTest
                         AddCustomCondition(operationInfo.sOperationReturnObject, conditionGroup);
                         listTaskChainNum.Add(operationInfo.sOperationReturnObject);
                         TestResultInfoSet.AddInfo(
-                            $"任务链创建成功！任务链编号：{operationInfo.sOperationReturnObject}；分支条件：{string.Join("; ", conditionGroup.Select(g => g.Key + ":" + g.Value).ToList())}",
+                            $"任务链创建成功！任务链：({operationInfo.sOperationReturnObject})；分支条件：{string.Join("; ", conditionGroup.Select(g => g.Key + ":" + g.Value).ToList())}",
                             operationInfo.sOperationReturnObject);
                     }
                 }
@@ -294,14 +295,13 @@ namespace TaskFlowTest
                 unitOfWork.FindObject<TFNode>(CriteriaOperator.Parse("g_TaskChainGuid = ? AND s_CodeNodeCode = ?",
                     checkTask.GetTheTaskChain().g_ID, checkActionInTask.s_ParamIn)).GetTheOwnTask();
             if (submitTask == null) return;
-            var taskParameters = submitTask.GetListTaskParameters(Enums.TaskParameterType.TaskCheck.ToString());
             var taskCheck = new TFTaskCheck(unitOfWork)
             {
                 g_ID = Guid.NewGuid(),
                 g_TaskID = submitTask.g_ID,
-                n_Sequence = submitTask.GetListItselfTaskChecks().Max(c => c.n_Sequence) + 1,
+                n_Sequence = submitTask.GetListOthersTaskChecks().Max(c => c.n_Sequence) == null ? 1 : submitTask.GetListOthersTaskChecks().Max(c => c.n_Sequence) + 1,
                 g_CheckTaskID = checkTask.g_ID,
-                s_CheckReselt = taskParameters.Any() ? "Y" : "N"
+                s_CheckReselt = submitTask.GetListOthersTaskChecks().Any() ? "Y" : "N"
             };
 
             var taskParameter = new TFTaskParameter(unitOfWork)
@@ -348,29 +348,55 @@ namespace TaskFlowTest
                 TestResultInfoSet.AddError("未找到任务链！", sTaskChainNum);
                 return;
             }
+            var htCreatedTaskNums = new Hashtable();
             var listTasks =
                 taskChain.GetListNodes()
                     .Select(n => n.GetTheOwnTask())
                     .Where(t => t != null && (t.s_State == "P" || t.s_State == "O"))
                     .ToList();
+            listTasks.Select(t => t.n_Num).ToList().ForEach(t =>
+              {
+                  if (htCreatedTaskNums.ContainsKey(t))
+                  {
+                      htCreatedTaskNums[t] = Convert.ToInt32(htCreatedTaskNums[t]) + 1;
+                  }
+                  else
+                  {
+                      htCreatedTaskNums.Add(t, 1);
+                  }
+              });
             while (listTasks.Count > 0)
             {
                 foreach (var task in listTasks)
                 {
-                    AddTaskCheckParameter(task);
-                    var tfNode = task.GetTheBelongNode();
-                    var operationInfo = ServiceClient.ByServerFinishTaskNode(tfNode.g_ID, nUserId);
-                    if (!operationInfo.bOperationResult)
+                    if (htCreatedTaskNums.ContainsKey(task.n_Num))
                     {
-                        var sCondtion = CalUtility.ConvertToCondition(tfNode.GetTheCodeNode().GetTheOwnCodeTask().s_FinishCondition);
-                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationMessage}；完成任务条件：{sCondtion}", sTaskChainNum, task.n_Num.ToString());
-                        return;
+                        htCreatedTaskNums[task.n_Num] = Convert.ToInt32(htCreatedTaskNums[task.n_Num]) + 1;
                     }
                     else
                     {
-                        TestResultInfoSet.AddInfo($"任务完成！完成信息：{operationInfo.sOperationReturnObject}", sTaskChainNum, task.n_Num.ToString());
+                        htCreatedTaskNums.Add(task.n_Num, 1);
                     }
-
+                    if (Convert.ToInt32(htCreatedTaskNums[task.n_Num]) >= 5)
+                    {
+                        TestResultInfoSet.AddError($"完成任务失败！原因：该任务被重复打开了{htCreatedTaskNums[task.n_Num]}次", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
+                        return;
+                    }
+                    AddTaskCheckParameter(task);
+                    var tfNode = task.GetTheBelongNode();
+                    var operationInfo = ServiceClient.ByServerFinishTaskNode(tfNode.g_ID, nUserId);
+                    var sCondtion = CalUtility.ConvertToCondition(tfNode.GetTheCodeNode().GetTheOwnCodeTask().s_FinishCondition);
+                    if (!operationInfo.bOperationResult)
+                    {
+                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationMessage}；完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
+                        return;
+                    }
+                    if (!string.IsNullOrEmpty(operationInfo.sOperationReturnObject.Replace("\"", "").Trim()))
+                    {
+                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationReturnObject}；完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
+                        return;
+                    }
+                    TestResultInfoSet.AddInfo($"任务完成！", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
                 }
                 listTasks = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListNodes()
                         .Select(n => n.GetTheOwnTask())
