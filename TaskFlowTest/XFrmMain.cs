@@ -70,9 +70,11 @@ namespace TaskFlowTest
 
         private void xsbTest_Click(object sender, EventArgs e)
         {
-            layoutControlGroup3.Enabled = layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = false;
+            layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = false;
             xsbTest.Enabled = xsbExport.Enabled = false;
             Cursor.Current = Cursors.WaitCursor;
+            if (xchkClearInfo.Checked)
+                _taskFlowTestHelper.TestResultInfoSet.Clear();
             Task.Run(() =>
             {
                 if (xchkCondition.Checked)
@@ -99,7 +101,7 @@ namespace TaskFlowTest
             {
                 Invoke(new Action(() =>
                 {
-                    layoutControlGroup3.Enabled = layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = true;
+                    layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = true;
                     xsbTest.Enabled = xsbExport.Enabled = true;
                     Cursor.Current = Cursors.Default;
                 }));
