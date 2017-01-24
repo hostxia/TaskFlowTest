@@ -373,6 +373,12 @@ namespace TaskFlowTest
             {
                 foreach (var task in listTasks)
                 {
+                    var sEndDateString = task.dt_EndDate <= new DateTime(1900, 1, 1) ? string.Empty : task.dt_EndDate.ToShortDateString();
+                    var executor = listEmployee.FirstOrDefault(e => e.n_ID == task.n_ExecutorID);
+                    var sExecutor = executor == null ? string.Empty : executor.s_Name;
+                    var team = listTeam.FirstOrDefault(t => t.n_ID == task.n_ExecutePositionID);
+                    var sTeam = team == null ? string.Empty : team.s_Name;
+
                     if (htCreatedTaskNums.ContainsKey(task.n_Num))
                     {
                         htCreatedTaskNums[task.n_Num] = Convert.ToInt32(htCreatedTaskNums[task.n_Num]) + 1;
@@ -383,7 +389,7 @@ namespace TaskFlowTest
                     }
                     if (Convert.ToInt32(htCreatedTaskNums[task.n_Num]) >= 5)
                     {
-                        TestResultInfoSet.AddError($"完成任务失败！原因：该任务被重复打开了{htCreatedTaskNums[task.n_Num]}次", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
+                        TestResultInfoSet.AddError($"完成任务失败！原因：该任务被重复打开了{htCreatedTaskNums[task.n_Num]}次", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                         return;
                     }
                     AddTaskCheckParameter(task);
@@ -392,19 +398,14 @@ namespace TaskFlowTest
                     var sCondtion = CalUtility.ConvertToCondition(tfNode.GetTheCodeNode().GetTheOwnCodeTask().s_FinishCondition);
                     if (!operationInfo.bOperationResult)
                     {
-                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationMessage} 完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
+                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationMessage} 完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                         return;
                     }
                     if (!string.IsNullOrEmpty(operationInfo.sOperationReturnObject.Replace("\"", "").Trim()))
                     {
-                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationReturnObject} 完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
+                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationReturnObject} 完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                         return;
                     }
-                    var sEndDateString = task.dt_EndDate <= new DateTime(1900, 1, 1) ? string.Empty : task.dt_EndDate.ToShortDateString();
-                    var executor = listEmployee.FirstOrDefault(e => e.n_ID == task.n_ExecutorID);
-                    var sExecutor = executor == null ? string.Empty : executor.s_Name;
-                    var team = listTeam.FirstOrDefault(t => t.n_ID == task.n_ExecutePositionID);
-                    var sTeam = team == null ? string.Empty : team.s_Name;
                     TestResultInfoSet.AddInfo($"任务完成！", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                 }
                 listTasks = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListNodes()
