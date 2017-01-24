@@ -342,7 +342,9 @@ namespace TaskFlowTest
 
         private void FinishTask(string sTaskChainNum)
         {
-            var nUserId = UnitOfWork.FindObject<CodeEmployee>(CriteriaOperator.Parse("s_UserName = ?", "administrator")).n_ID;
+            var listEmployee = UnitOfWork.Query<CodeEmployee>().Select(e => new { e.n_ID, e.s_Name, e.s_UserName });
+            var listTeam = UnitOfWork.Query<CodeTeam>().Select(t => new { t.n_ID, t.s_Name });
+            var nUserId = listEmployee.First(e => e.s_UserName != null && e.s_UserName.ToLower() == "administrator").n_ID;
             var gTaskChainId = Guid.Parse(UnitOfWork.ExecuteScalar($"select g_id from tf_taskchain where n_num = '{sTaskChainNum}'").ToString());
             var taskChain = UnitOfWork.GetObjectByKey<TFTaskChain>(gTaskChainId);
             if (taskChain == null)
@@ -390,15 +392,20 @@ namespace TaskFlowTest
                     var sCondtion = CalUtility.ConvertToCondition(tfNode.GetTheCodeNode().GetTheOwnCodeTask().s_FinishCondition);
                     if (!operationInfo.bOperationResult)
                     {
-                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationMessage}；完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
+                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationMessage} 完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
                         return;
                     }
                     if (!string.IsNullOrEmpty(operationInfo.sOperationReturnObject.Replace("\"", "").Trim()))
                     {
-                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationReturnObject}；完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
+                        TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationReturnObject} 完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
                         return;
                     }
-                    TestResultInfoSet.AddInfo($"任务完成！", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}");
+                    var sEndDateString = task.dt_EndDate <= new DateTime(1900, 1, 1) ? string.Empty : task.dt_EndDate.ToShortDateString();
+                    var executor = listEmployee.FirstOrDefault(e => e.n_ID == task.n_ExecutorID);
+                    var sExecutor = executor == null ? string.Empty : executor.s_Name;
+                    var team = listTeam.FirstOrDefault(t => t.n_ID == task.n_ExecutePositionID);
+                    var sTeam = team == null ? string.Empty : team.s_Name;
+                    TestResultInfoSet.AddInfo($"任务完成！", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                 }
                 listTasks = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListNodes()
                         .Select(n => n.GetTheOwnTask())
