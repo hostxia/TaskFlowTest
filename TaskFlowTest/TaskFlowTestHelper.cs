@@ -52,6 +52,7 @@ namespace TaskFlowTest
             }
         }
 
+        #region 检查条件合法性
         private bool CheckCondition(string sExpression)
         {
             var bResult = true;
@@ -88,7 +89,7 @@ namespace TaskFlowTest
                     {
                         var codeTaskChain = n.GetTheCodeTaskChain();
                         TestResultInfoSet.AddError(sErrorInfo,
-                            codeTaskChain == null ? string.Empty : codeTaskChain.s_Code, n.s_Code);
+                            codeTaskChain == null ? string.Empty : codeTaskChain.s_Code, n.s_Code, n.s_PreCondition);
                     }
                 }
             });
@@ -115,7 +116,7 @@ namespace TaskFlowTest
                         var codeTaskChain = t.GetTheCodeTaskChain();
                         TestResultInfoSet.AddError(sErrorInfo,
                             codeTaskChain == null ? string.Empty : codeTaskChain.s_Code,
-                            codeNode == null ? string.Empty : codeNode.s_Code);
+                            codeNode == null ? string.Empty : codeNode.s_Code, t.s_FinishCondition);
                     }
                 }
             });
@@ -165,12 +166,13 @@ namespace TaskFlowTest
 
                             var sTaskNo = $"{sNodeCodeFrom} ----> {sNodeCodeTo}";
                             TestResultInfoSet.AddError(sErrorInfo,
-                                codeTaskChain == null ? string.Empty : codeTaskChain.s_Code, sTaskNo);
+                                codeTaskChain == null ? string.Empty : codeTaskChain.s_Code, sTaskNo, nr.s_Condition);
                         }
                     }
                 });
             TestResultInfoSet.AddInfo("3. 完成检查：流向条件是否合法。");
         }
+        #endregion
 
         #region 模拟流程
 
@@ -265,7 +267,7 @@ namespace TaskFlowTest
             var codeTaskChain = UnitOfWork.GetObjectByKey<TFCodeTaskChain>(gCodeTaskChainId);
 
             foreach (var t in codeTaskChain.GetlistCodeTasks())
-                foreach (var aik in t.GetListCodeActionInCodeTasks().Where(aik => aik.n_CodeActionID == 25).ToList())
+                foreach (var aik in t.GetListCodeActionInCodeTasks().Where(aik => aik.n_CodeActionID == 25).ToList())//TODO Hardcode
                     if (!htCustomCondition.Any(lk => lk.Select(k => k.Key).Contains(aik.s_ParamIn)))
                     {
                         var listKeyValuePair = new List<KeyValuePair<string, string>>();
