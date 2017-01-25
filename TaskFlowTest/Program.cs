@@ -20,7 +20,6 @@ namespace TaskFlowTest
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            DevExpress.Data.CurrencyDataController.DisableThreadingProblemsDetection = true;
             Application.Run(new XFrmMain());
         }
     }

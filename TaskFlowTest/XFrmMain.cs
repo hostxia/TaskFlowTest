@@ -27,7 +27,7 @@ namespace TaskFlowTest
 
         private void XFrmMain_Load(object sender, EventArgs e)
         {
-            _taskFlowTestHelper = new TaskFlowTestHelper(new TestResultInfoSet());
+            _taskFlowTestHelper = new TaskFlowTestHelper(new TestResultInfoSet(xgridResult));
         }
 
         private void InitLoad()
@@ -94,7 +94,6 @@ namespace TaskFlowTest
                         sObjTypeName = typeof(BasicCase).FullName;
                         sRelatedObjectId = xslueCameFileOfficial.EditValue.ToString();
                     }
-
                     _taskFlowTestHelper.ExecuteTaskChain(Guid.Parse(xslueTaskChainCode.EditValue.ToString()), sObjTypeName, sRelatedObjectId);
                 }
             }).ContinueWith(t =>

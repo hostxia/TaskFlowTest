@@ -1,10 +1,10 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Windows.Forms;
+using System.Collections.Generic;
+using DevExpress.XtraGrid;
 
 namespace TaskFlowTest
 {
-    public class TestResultInfo
+    public struct TestResultInfo
     {
         public DateTime CreateTime { get; set; }
         public InfoType InfoType { get; set; }
@@ -22,8 +22,16 @@ namespace TaskFlowTest
         Error
     }
 
-    public class TestResultInfoSet : BindingList<TestResultInfo>
+    public class TestResultInfoSet : List<TestResultInfo>
     {
+        private readonly GridControl _gridControl;
+
+        public TestResultInfoSet(GridControl gridControl)
+        {
+            _gridControl = gridControl;
+            _gridControl.Invoke(new Action(() => { _gridControl.DataSource = this; }));
+        }
+
         public TestResultInfoSet Add(InfoType infoType, string sContent, string sTaskChainNo = null,
             string sTaskNo = null, string sNote = null, DateTime dtCreateTime = new DateTime())
         {
@@ -36,7 +44,7 @@ namespace TaskFlowTest
                 TaskNo = sTaskNo,
                 Note = sNote
             });
-            Application.DoEvents();
+            _gridControl.Invoke(new Action(() => { _gridControl.RefreshDataSource(); }));
             return this;
         }
 
