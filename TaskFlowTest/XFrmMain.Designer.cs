@@ -328,6 +328,7 @@
             this.xgvResult.OptionsBehavior.Editable = false;
             this.xgvResult.OptionsSelection.MultiSelect = true;
             this.xgvResult.OptionsView.ColumnAutoWidth = false;
+            this.xgvResult.OptionsView.ShowAutoFilterRow = true;
             this.xgvResult.OptionsView.ShowFooter = true;
             // 
             // gridColumn5
