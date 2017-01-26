@@ -380,6 +380,7 @@
             this.gridColumn2.Caption = "任务链";
             this.gridColumn2.FieldName = "TaskChainNo";
             this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 3;
             this.gridColumn2.Width = 133;
@@ -389,6 +390,7 @@
             this.gridColumn3.Caption = "任务";
             this.gridColumn3.FieldName = "TaskNo";
             this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 4;
             this.gridColumn3.Width = 229;
@@ -398,6 +400,7 @@
             this.gridColumn4.Caption = "消息";
             this.gridColumn4.FieldName = "Content";
             this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 2;
             this.gridColumn4.Width = 316;
@@ -407,6 +410,7 @@
             this.gridColumn8.Caption = "相关信息";
             this.gridColumn8.FieldName = "Note";
             this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 5;
             this.gridColumn8.Width = 241;
