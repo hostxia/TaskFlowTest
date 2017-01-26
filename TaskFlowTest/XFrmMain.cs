@@ -77,6 +77,7 @@ namespace TaskFlowTest
                 _taskFlowTestHelper.TestResultInfoSet.Clear();
             Task.Run(() =>
             {
+                _taskFlowTestHelper.TestAndInitConnection(xteIPSAddress.Text.Trim());
                 if (xchkCondition.Checked)
                     _taskFlowTestHelper.TestCondition();
                 if (xchkSimulation.Checked)
@@ -127,7 +128,7 @@ namespace TaskFlowTest
         private void xbeCase_ButtonClick(object sender, ButtonPressedEventArgs e)
         {
             var idList = new List<int>();
-            var frm = new XFrmSearchCase(_taskFlowTestHelper.UnitOfWork, idList, false, _taskFlowTestHelper.ServiceClient);
+            var frm = new XFrmSearchCase(_taskFlowTestHelper.UnitOfWork, idList, false, xteIPSAddress.Text.Trim());
             if (frm.ShowDialog() != DialogResult.OK) return;
             if (frm.Cases.Count <= 0)
             {
@@ -166,7 +167,7 @@ namespace TaskFlowTest
         {
             try
             {
-                if (_taskFlowTestHelper.TestAndInitConnection(xteIPSAddress.Text.Trim() + ":1989"))
+                if (_taskFlowTestHelper.TestAndInitConnection(xteIPSAddress.Text.Trim()))
                 {
                     InitLoad();
                     XtraMessageBox.Show(this, "连接成功！");

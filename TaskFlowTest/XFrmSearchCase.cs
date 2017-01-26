@@ -18,14 +18,15 @@ namespace TaskFlowTest
     public partial class XFrmSearchCase : XtraForm
     {
         private readonly List<int> _idList;
-        private readonly ServiceClient _serviceClient;
         private readonly UnitOfWork _theUow;
+        private ServiceClient _serviceClient;
+        private readonly string _sIp;
 
-        public XFrmSearchCase(UnitOfWork uow, List<int> idList, bool bMultiSelected,ServiceClient serviceClient)
+        public XFrmSearchCase(UnitOfWork uow, List<int> idList, bool bMultiSelected, string sIp)
         {
             InitializeComponent();
             Cases = new List<BasicCase>();
-            _serviceClient = serviceClient;
+            _sIp = sIp;
             InitControls();
 
             _theUow = uow;
@@ -52,6 +53,7 @@ namespace TaskFlowTest
 
         private void xbtPatentSearch_Click(object sender, EventArgs e)
         {
+            _serviceClient = TaskFlowTestHelper.CreateServcie(_sIp);
             var xpCases = SearchPatentCases(_theUow, _idList, xtePCaseSerial.Text.Trim(), xtePClientSerial.Text.Trim(),
                 xtePCaseName.Text.Trim(), xtePAppNo.Text.Trim(), xtePClientCode.Text.Trim());
             xgridPatentCase.DataSource = xpCases;
@@ -60,6 +62,7 @@ namespace TaskFlowTest
 
         private void xbtTrademarkSearch_Click(object sender, EventArgs e)
         {
+            _serviceClient = TaskFlowTestHelper.CreateServcie(_sIp);
             var xpCases = SearchTrademarkCases(_theUow, _idList, xteTCaseSerial.Text, xteTClientSerial.Text,
                 xteTCaseName.Text, xteTAppNo.Text, xteTClientName.Text);
             xgridTrademarkCase.DataSource = xpCases;
@@ -68,6 +71,7 @@ namespace TaskFlowTest
 
         private void xbtCopyrightSearch_Click(object sender, EventArgs e)
         {
+            _serviceClient = TaskFlowTestHelper.CreateServcie(_sIp);
             var xpCases = SearchCopyrightCases(_theUow, _idList, xteCCaseSerial.Text, xteCClientSerial.Text,
                 xteCCaseName.Text, xteCClientName.Text);
             xgridCopyrightCase.DataSource = xpCases;
@@ -76,6 +80,7 @@ namespace TaskFlowTest
 
         private void xbtDomainNameSearch_Click(object sender, EventArgs e)
         {
+            _serviceClient = TaskFlowTestHelper.CreateServcie(_sIp);
             var xpCases = SearchDomainNameCases(_theUow, _idList, xteDCaseSerial.Text, xteDClientSerial.Text,
                 xteDCaseName.Text, xteDClientName.Text);
             xgridDomainNameCase.DataSource = xpCases;
@@ -84,6 +89,7 @@ namespace TaskFlowTest
 
         private void xbtOtherCaseSearch_Click(object sender, EventArgs e)
         {
+            _serviceClient = TaskFlowTestHelper.CreateServcie(_sIp);
             var xpCases = SearchOtherCases(_theUow, _idList, xteOCaseSerial.Text, xteOClientSerial.Text,
                 xteOCaseName.Text, xteOClientName.Text);
             xgridOtherCase.DataSource = xpCases;

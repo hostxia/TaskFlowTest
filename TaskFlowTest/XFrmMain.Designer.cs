@@ -394,7 +394,7 @@
             // 
             // gridColumn4
             // 
-            this.gridColumn4.Caption = "信息";
+            this.gridColumn4.Caption = "消息";
             this.gridColumn4.FieldName = "Content";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
@@ -403,7 +403,7 @@
             // 
             // gridColumn8
             // 
-            this.gridColumn8.Caption = "备注";
+            this.gridColumn8.Caption = "相关信息";
             this.gridColumn8.FieldName = "Note";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;

@@ -28,28 +28,30 @@ namespace TaskFlowTest
 
         public ServiceClient ServiceClient { get; private set; }
 
-        public bool TestAndInitConnection(string sIpAndPort)
+        public bool TestAndInitConnection(string sIp)
         {
             try
             {
-                var sAddress = new StringBuilder();
-                sAddress.Append("net.tcp://");
-                sAddress.Append(sIpAndPort);
-                sAddress.Append("/IPSService");
-                ServiceClient = new ServiceClient("NetTcpBinding_IService", sAddress.ToString());
+                ServiceClient = CreateServcie(sIp);
                 var bSuccess = ServiceClient.ConnectSuccess();
-                if (bSuccess)
-                {
-                    XpoDefault.DataLayer = XpoDefault.GetDataLayer(ServiceClient.GetConnectionString(),
-                        AutoCreateOption.SchemaAlreadyExists);
-                    UnitOfWork = new UnitOfWork(XpoDefault.DataLayer);
-                }
-                return bSuccess;
+                if (!bSuccess) return false;
+                XpoDefault.DataLayer = XpoDefault.GetDataLayer(ServiceClient.GetConnectionString(), AutoCreateOption.None);
+                UnitOfWork = new UnitOfWork(XpoDefault.DataLayer);
+                return true;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+        }
+
+        public static ServiceClient CreateServcie(string sIp)
+        {
+            var sAddress = new StringBuilder();
+            sAddress.Append("net.tcp://");
+            sAddress.Append(sIp + ":1989");
+            sAddress.Append("/IPSService");
+            return new ServiceClient("NetTcpBinding_IService", sAddress.ToString());
         }
 
         #region 检查条件合法性
@@ -406,7 +408,23 @@ namespace TaskFlowTest
                         TestResultInfoSet.AddError($"完成任务失败！原因：{operationInfo.sOperationReturnObject} 完成条件：{sCondtion}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                         return;
                     }
-                    TestResultInfoSet.AddInfo($"任务完成！", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
+                    var sInfo = string.Empty;
+                    if (string.IsNullOrEmpty(sExecutor) && string.IsNullOrEmpty(sTeam))
+                    {
+                        sInfo += " 该任务没有执行人。";
+                    }
+                    if (string.IsNullOrEmpty(sEndDateString))
+                    {
+                        sInfo += "该任务没有结束日期。";
+                    }
+                    if (sInfo != string.Empty)
+                    {
+                        TestResultInfoSet.AddWarning($"任务完成！{sInfo}", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
+                    }
+                    else
+                    {
+                        TestResultInfoSet.AddInfo("任务完成！", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
+                    }
                 }
                 listTasks = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListNodes()
                         .Select(n => n.GetTheOwnTask())
