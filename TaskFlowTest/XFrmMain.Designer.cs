@@ -635,6 +635,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(905, 566);
             this.Controls.Add(this.layoutControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "XFrmMain";
             this.Text = "任务链测试工具";
             this.Load += new System.EventHandler(this.XFrmMain_Load);
