@@ -266,23 +266,31 @@ namespace TaskFlowTest
         private void CodeTaskRecursion(Guid gCodeTaskChainId,
             ref List<List<KeyValuePair<string, string>>> htCustomCondition)
         {
-            var codeTaskChain = UnitOfWork.GetObjectByKey<TFCodeTaskChain>(gCodeTaskChainId);
+            try
+            {
+                var codeTaskChain = UnitOfWork.GetObjectByKey<TFCodeTaskChain>(gCodeTaskChainId);
 
-            foreach (var t in codeTaskChain.GetlistCodeTasks())
-                foreach (var aik in t.GetListCodeActionInCodeTasks().Where(aik => aik.n_CodeActionID == 25).ToList())//TODO Hardcode
-                    if (!htCustomCondition.Any(lk => lk.Select(k => k.Key).Contains(aik.s_ParamIn)))
-                    {
-                        var listKeyValuePair = new List<KeyValuePair<string, string>>();
-                        foreach (
-                            var value in
-                            UnitOfWork.FindObject<TFCodeCustomCondition>(CriteriaOperator.Parse("s_Code = ?", aik.s_ParamIn))
-                                .s_Values.Split(',')
-                                .ToList())
-                            listKeyValuePair.Add(new KeyValuePair<string, string>(aik.s_ParamIn, value));
-                        htCustomCondition.Add(listKeyValuePair);
-                    }
-            foreach (var c in codeTaskChain.GetListCodeTaskChains())
-                CodeTaskRecursion(c.g_ID, ref htCustomCondition);
+                foreach (var t in codeTaskChain.GetlistCodeTasks())
+                    foreach (var aik in t.GetListCodeActionInCodeTasks().Where(aik => aik.n_CodeActionID == 25).ToList())//TODO Hardcode
+                        if (!htCustomCondition.Any(lk => lk.Select(k => k.Key).Contains(aik.s_ParamIn)))
+                        {
+                            var listKeyValuePair = new List<KeyValuePair<string, string>>();
+                            foreach (
+                                var value in
+                                UnitOfWork.FindObject<TFCodeCustomCondition>(CriteriaOperator.Parse("s_Code = ?", aik.s_ParamIn))
+                                    .s_Values.Split(',')
+                                    .ToList())
+                                listKeyValuePair.Add(new KeyValuePair<string, string>(aik.s_ParamIn, value));
+                            htCustomCondition.Add(listKeyValuePair);
+                        }
+                foreach (var c in codeTaskChain.GetListCodeTaskChains())
+                    CodeTaskRecursion(c.g_ID, ref htCustomCondition);
+            }
+            catch (Exception e)
+            {
+                TestResultInfoSet.AddError("无法组织任务链自定义条件分支！请检查任务上自定义条件输入参数是否正确。");
+                throw;
+            }
         }
 
         private void AddTaskCheckParameter(TFTask checkTask)
