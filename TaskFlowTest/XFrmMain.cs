@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataEntities.Case;
+using DataEntities.Element.Files;
 using DataEntities.TaskFlowConfig;
 using DevExpress.Xpo;
 using DevExpress.XtraEditors;
@@ -92,7 +93,7 @@ namespace TaskFlowTest
                     else if (xlueRelatedObjectType.EditValue.ToString() ==
                              TaskFlowEnum.RelatedObjectType.CameFileOfficial.ToString())
                     {
-                        sObjTypeName = typeof(BasicCase).FullName;
+                        sObjTypeName = typeof(InFile).FullName;
                         sRelatedObjectId = xslueCameFileOfficial.EditValue.ToString();
                     }
                     _taskFlowTestHelper.ExecuteTaskChain(Guid.Parse(xslueTaskChainCode.EditValue.ToString()), sObjTypeName, sRelatedObjectId);
