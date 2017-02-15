@@ -191,7 +191,7 @@ namespace TaskFlowTest
             TestResultInfoSet.AddInfo($"2. 完成：组织任务链所有分支条件流程。共有{result.Count}条分支");
 
             TestResultInfoSet.AddInfo("3. 开始：创建所有分支组合的任务链集合......");
-            var listTaskChainNum = new List<string>();
+            var listTaskChainNum = new Hashtable();
             if (result.Count > 0)
             {
                 foreach (var conditionGroup in result)
@@ -205,7 +205,7 @@ namespace TaskFlowTest
                     else
                     {
                         AddCustomCondition(operationInfo.sOperationReturnObject, conditionGroup);
-                        listTaskChainNum.Add(operationInfo.sOperationReturnObject);
+                        listTaskChainNum.Add(operationInfo.sOperationReturnObject, conditionGroup);
                         TestResultInfoSet.AddInfo(
                             $"任务链创建成功！任务链：({operationInfo.sOperationReturnObject})；分支条件：{string.Join("; ", conditionGroup.Select(g => g.Key + ":" + g.Value).ToList())}",
                             operationInfo.sOperationReturnObject);
@@ -222,15 +222,15 @@ namespace TaskFlowTest
                 }
                 else
                 {
-                    listTaskChainNum.Add(operationInfo.sOperationReturnObject);
+                    listTaskChainNum.Add(operationInfo.sOperationReturnObject, null);
                     TestResultInfoSet.AddInfo($"任务链创建成功！任务链编号：{operationInfo.sOperationReturnObject}", operationInfo.sOperationReturnObject);
                 }
             }
             TestResultInfoSet.AddInfo("3. 完成：创建所有分支组合的任务链集合。");
 
             TestResultInfoSet.AddInfo("4. 开始：逐一完成任务......");
-            foreach (var sTaskChainNum in listTaskChainNum)
-                FinishTask(sTaskChainNum);
+            foreach (DictionaryEntry sTaskChainNum in listTaskChainNum)
+                FinishTask((string)sTaskChainNum.Key, (List<KeyValuePair<string, string>>)sTaskChainNum.Value);
             TestResultInfoSet.AddInfo("4. 完成：逐一完成任务。");
         }
 
@@ -350,7 +350,7 @@ namespace TaskFlowTest
             unitOfWork.CommitChanges();
         }
 
-        private void FinishTask(string sTaskChainNum)
+        private void FinishTask(string sTaskChainNum, List<KeyValuePair<string, string>> listCondition)
         {
             var listEmployee = UnitOfWork.Query<CodeEmployee>().Select(e => new { e.n_ID, e.s_Name, e.s_UserName });
             var listTeam = UnitOfWork.Query<CodeTeam>().Select(t => new { t.n_ID, t.s_Name });
@@ -383,6 +383,7 @@ namespace TaskFlowTest
             {
                 foreach (var task in listTasks)
                 {
+                    var unFinishTaskChains = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains();
                     var sEndDateString = task.dt_EndDate <= new DateTime(1900, 1, 1) ? string.Empty : task.dt_EndDate.ToShortDateString();
                     var executor = listEmployee.FirstOrDefault(e => e.n_ID == task.n_ExecutorID);
                     var sExecutor = executor == null ? string.Empty : executor.s_Name;
@@ -433,7 +434,11 @@ namespace TaskFlowTest
                     {
                         TestResultInfoSet.AddInfo("任务完成！", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                     }
+                    var finishTaskChains = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains();
+                    var newCreatedTaskChains = finishTaskChains.Where(f => !unFinishTaskChains.Exists(u => u.g_ID == f.g_ID)).ToList();
+                    newCreatedTaskChains.ForEach(c => AddCustomCondition(c.n_Num.ToString(), listCondition));
                 }
+
                 listTasks = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains().SelectMany(c => c.GetListNodes())
                         .Select(n => n.GetTheOwnTask())
                         .Where(t => t != null && (t.s_State == "P" || t.s_State == "O"))
