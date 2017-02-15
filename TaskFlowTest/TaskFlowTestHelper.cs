@@ -434,7 +434,7 @@ namespace TaskFlowTest
                         TestResultInfoSet.AddInfo("任务完成！", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                     }
                 }
-                listTasks = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListNodes()
+                listTasks = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains().SelectMany(c => c.GetListNodes())
                         .Select(n => n.GetTheOwnTask())
                         .Where(t => t != null && (t.s_State == "P" || t.s_State == "O"))
                         .ToList();
