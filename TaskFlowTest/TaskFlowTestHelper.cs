@@ -363,8 +363,14 @@ namespace TaskFlowTest
                 return;
             }
             var htCreatedTaskNums = new Hashtable();
+            var unFinishTaskChains = new List<TFTaskChain>();
+            unFinishTaskChains.Add(taskChain);
+            var finishTaskChains = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains();
+            var newCreatedTaskChains = finishTaskChains.Where(f => !unFinishTaskChains.Exists(u => u.g_ID == f.g_ID)).ToList();
+            newCreatedTaskChains.ForEach(c => AddCustomCondition(c.n_Num.ToString(), listCondition));
+
             var listTasks =
-                taskChain.GetListNodes()
+                taskChain.GetListClusterTaskChains().SelectMany(c => c.GetListNodes())
                     .Select(n => n.GetTheOwnTask())
                     .Where(t => t != null && (t.s_State == "P" || t.s_State == "O"))
                     .ToList();
@@ -383,7 +389,7 @@ namespace TaskFlowTest
             {
                 foreach (var task in listTasks)
                 {
-                    var unFinishTaskChains = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains();
+                    unFinishTaskChains = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains();
                     var sEndDateString = task.dt_EndDate <= new DateTime(1900, 1, 1) ? string.Empty : task.dt_EndDate.ToShortDateString();
                     var executor = listEmployee.FirstOrDefault(e => e.n_ID == task.n_ExecutorID);
                     var sExecutor = executor == null ? string.Empty : executor.s_Name;
@@ -398,7 +404,7 @@ namespace TaskFlowTest
                     {
                         htCreatedTaskNums.Add(task.n_Num, 1);
                     }
-                    if (Convert.ToInt32(htCreatedTaskNums[task.n_Num]) >= 5)
+                    if (Convert.ToInt32(htCreatedTaskNums[task.n_Num]) >= 3)
                     {
                         TestResultInfoSet.AddWarning($"完成任务失败！原因：该任务被重复打开了{htCreatedTaskNums[task.n_Num]}次", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                         return;
@@ -434,8 +440,8 @@ namespace TaskFlowTest
                     {
                         TestResultInfoSet.AddInfo("任务完成！", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                     }
-                    var finishTaskChains = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains();
-                    var newCreatedTaskChains = finishTaskChains.Where(f => !unFinishTaskChains.Exists(u => u.g_ID == f.g_ID)).ToList();
+                    finishTaskChains = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains();
+                    newCreatedTaskChains = finishTaskChains.Where(f => !unFinishTaskChains.Exists(u => u.g_ID == f.g_ID)).ToList();
                     newCreatedTaskChains.ForEach(c => AddCustomCondition(c.n_Num.ToString(), listCondition));
                 }
 
