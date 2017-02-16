@@ -331,6 +331,7 @@ namespace TaskFlowTest
 
         private void AddCustomCondition(string sNum, List<KeyValuePair<string, string>> listCondition)
         {
+            if (listCondition == null) return;
             var gTaskChainId = Guid.Parse(UnitOfWork.ExecuteScalar($"select g_id from tf_taskchain where n_num = '{sNum}'").ToString());
             var taskChain = UnitOfWork.GetObjectByKey<TFTaskChain>(gTaskChainId);
             var unitOfWork = (UnitOfWork)taskChain.Session;
