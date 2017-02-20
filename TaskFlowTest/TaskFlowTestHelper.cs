@@ -405,7 +405,7 @@ namespace TaskFlowTest
                     {
                         htCreatedTaskNums.Add(task.n_Num, 1);
                     }
-                    if (Convert.ToInt32(htCreatedTaskNums[task.n_Num]) >= 3)
+                    if (Convert.ToInt32(htCreatedTaskNums[task.n_Num]) >= 2)
                     {
                         TestResultInfoSet.AddWarning($"完成任务失败！原因：该任务被重复打开了{htCreatedTaskNums[task.n_Num]}次", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                         return;
