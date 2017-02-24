@@ -7,6 +7,7 @@ using DataEntities.Config;
 using DataEntities.TaskFlowConfig;
 using DataEntities.TaskFlowData;
 using DevExpress.Data.Filtering;
+using DevExpress.Images;
 using DevExpress.Xpo;
 using DevExpress.Xpo.DB;
 using TaskFlowTest.CalculateMethod;
@@ -272,17 +273,23 @@ namespace TaskFlowTest
 
                 foreach (var t in codeTaskChain.GetlistCodeTasks())
                     foreach (var aik in t.GetListCodeActionInCodeTasks().Where(aik => aik.n_CodeActionID == 25).ToList())//TODO Hardcode
-                        if (!htCustomCondition.Any(lk => lk.Select(k => k.Key).Contains(aik.s_ParamIn)))
+                    {
+                        if (string.IsNullOrWhiteSpace(aik.s_ParamIn)) continue;
+                        foreach (var sConditionCode in aik.s_ParamIn.Split(',').Where(s => !string.IsNullOrWhiteSpace(s)).ToList())
                         {
-                            var listKeyValuePair = new List<KeyValuePair<string, string>>();
-                            foreach (
-                                var value in
-                                UnitOfWork.FindObject<TFCodeCustomCondition>(CriteriaOperator.Parse("s_Code = ?", aik.s_ParamIn))
-                                    .s_Values.Split(',')
-                                    .ToList())
-                                listKeyValuePair.Add(new KeyValuePair<string, string>(aik.s_ParamIn, value));
-                            htCustomCondition.Add(listKeyValuePair);
+                            if (!htCustomCondition.Any(lk => lk.Select(k => k.Key).Contains(sConditionCode)))
+                            {
+                                var listKeyValuePair = new List<KeyValuePair<string, string>>();
+                                foreach (
+                                    var value in
+                                    UnitOfWork.FindObject<TFCodeCustomCondition>(CriteriaOperator.Parse("s_Code = ?", sConditionCode))
+                                        .s_Values.Split(',')
+                                        .ToList())
+                                    listKeyValuePair.Add(new KeyValuePair<string, string>(sConditionCode, value));
+                                htCustomCondition.Add(listKeyValuePair);
+                            }
                         }
+                    }
                 foreach (var c in codeTaskChain.GetListCodeTaskChains())
                     CodeTaskRecursion(c.g_ID, ref htCustomCondition);
             }
@@ -371,7 +378,7 @@ namespace TaskFlowTest
             newCreatedTaskChains.ForEach(c => AddCustomCondition(c.n_Num.ToString(), listCondition));
 
             var listTasks =
-                taskChain.GetListClusterTaskChains().SelectMany(c => c.GetListNodes())
+                taskChain.GetListClusterTaskChains().SelectMany(c => c.GetListNodes()).Where(n => n.s_Mode != "P")
                     .Select(n => n.GetTheOwnTask())
                     .Where(t => t != null && (t.s_State == "P" || t.s_State == "O"))
                     .ToList();
@@ -381,10 +388,10 @@ namespace TaskFlowTest
                   {
                       htCreatedTaskNums[t] = Convert.ToInt32(htCreatedTaskNums[t]) + 1;
                   }
-                  else
-                  {
-                      htCreatedTaskNums.Add(t, 1);
-                  }
+                  //else
+                  //{
+                  //    htCreatedTaskNums.Add(t, 1);
+                  //}
               });
             while (listTasks.Count > 0)
             {
@@ -446,7 +453,7 @@ namespace TaskFlowTest
                     newCreatedTaskChains.ForEach(c => AddCustomCondition(c.n_Num.ToString(), listCondition));
                 }
 
-                listTasks = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains().SelectMany(c => c.GetListNodes())
+                listTasks = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains().SelectMany(c => c.GetListNodes()).Where(n => n.s_Mode != "P")
                         .Select(n => n.GetTheOwnTask())
                         .Where(t => t != null && (t.s_State == "P" || t.s_State == "O"))
                         .ToList();
