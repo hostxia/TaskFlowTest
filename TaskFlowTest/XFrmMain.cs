@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataEntities.Case;
@@ -20,6 +21,7 @@ namespace TaskFlowTest
         private List<dynamic> _listDynamicCameFileOfficials;
         private List<dynamic> _listDynamicTaskChains;
         private TaskFlowTestHelper _taskFlowTestHelper;
+        private CancellationTokenSource _cancellationTokenSource;
 
         public XFrmMain()
         {
@@ -28,7 +30,8 @@ namespace TaskFlowTest
 
         private void XFrmMain_Load(object sender, EventArgs e)
         {
-            _taskFlowTestHelper = new TaskFlowTestHelper(new TestResultInfoSet(xgridResult));
+            _cancellationTokenSource = new CancellationTokenSource();
+            _taskFlowTestHelper = new TaskFlowTestHelper(new TestResultInfoSet(xgridResult), _cancellationTokenSource);
         }
 
         private void InitLoad()
@@ -98,15 +101,15 @@ namespace TaskFlowTest
                     }
                     _taskFlowTestHelper.ExecuteTaskChain(Guid.Parse(xslueTaskChainCode.EditValue.ToString()), sObjTypeName, sRelatedObjectId);
                 }
-            }).ContinueWith(t =>
-            {
-                Invoke(new Action(() =>
-                {
-                    layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = true;
-                    xsbTest.Enabled = xsbExport.Enabled = true;
-                    Cursor.Current = Cursors.Default;
-                }));
-            });
+            }, _cancellationTokenSource.Token).ContinueWith(t =>
+             {
+                 Invoke(new Action(() =>
+                     {
+                         layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = true;
+                         xsbTest.Enabled = xsbExport.Enabled = true;
+                         Cursor.Current = Cursors.Default;
+                     }));
+             }, _cancellationTokenSource.Token);
         }
 
         private void xsbExport_Click(object sender, EventArgs e)
@@ -178,6 +181,11 @@ namespace TaskFlowTest
             {
                 XtraMessageBox.Show(this, ex.Message + "\r\n" + ex.Source + "\r\n" + ex.StackTrace);
             }
+        }
+
+        private void XFrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _cancellationTokenSource.Cancel();
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using DataEntities.Config;
 using DataEntities.TaskFlowConfig;
 using DataEntities.TaskFlowData;
@@ -18,7 +19,8 @@ namespace TaskFlowTest
 {
     public class TaskFlowTestHelper
     {
-        public TaskFlowTestHelper(TestResultInfoSet testResultInfo)
+        private CancellationTokenSource _cancellationTokenSource;
+        public TaskFlowTestHelper(TestResultInfoSet testResultInfo, CancellationTokenSource cancellationTokenSource)
         {
             TestResultInfoSet = testResultInfo;
         }
@@ -197,6 +199,7 @@ namespace TaskFlowTest
             {
                 foreach (var conditionGroup in result)
                 {
+                    if (_cancellationTokenSource.Token.IsCancellationRequested) continue;
                     var operationInfo = ServiceClient.ByServerManualGenerateTopTaskChain(gCodeTaskChainGuid,
                         sRelatedObjectTypeName, Convert.ToInt32(sRelatedObjectId), true);
                     if (!operationInfo.bOperationResult)
@@ -397,6 +400,8 @@ namespace TaskFlowTest
             {
                 foreach (var task in listTasks)
                 {
+                    if (_cancellationTokenSource.Token.IsCancellationRequested)
+                        return;
                     unFinishTaskChains = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains();
                     var sEndDateString = task.dt_EndDate <= new DateTime(1900, 1, 1) ? string.Empty : task.dt_EndDate.ToShortDateString();
                     var executor = listEmployee.FirstOrDefault(e => e.n_ID == task.n_ExecutorID);
