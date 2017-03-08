@@ -21,8 +21,8 @@ namespace TaskFlowTest
         private List<dynamic> _listDynamicCameFileOfficials;
         private List<dynamic> _listDynamicTaskChains;
         private TaskFlowTestHelper _taskFlowTestHelper;
-        private CancellationTokenSource _cancellationTokenSource;
-
+        private TestResultInfoSet _testResultInfoSet;
+        private Thread _thread;
         public XFrmMain()
         {
             InitializeComponent();
@@ -30,8 +30,8 @@ namespace TaskFlowTest
 
         private void XFrmMain_Load(object sender, EventArgs e)
         {
-            _cancellationTokenSource = new CancellationTokenSource();
-            _taskFlowTestHelper = new TaskFlowTestHelper(new TestResultInfoSet(xgridResult), _cancellationTokenSource);
+            _testResultInfoSet = new TestResultInfoSet(xgridResult);
+            SetControlEnabled(true);
         }
 
         private void InitLoad()
@@ -72,15 +72,25 @@ namespace TaskFlowTest
             xlueRelatedObjectType.EditValue = TaskFlowEnum.RelatedObjectType.Case.ToString();
         }
 
+        private void SetControlEnabled(bool bEnabled)
+        {
+            if (!bEnabled && xchkClearInfo.Checked)
+                _taskFlowTestHelper.TestResultInfoSet.Clear();
+            layoutControlGroup2.Enabled = bEnabled;
+            layoutControlGroup5.Enabled = bEnabled;
+            xsbExport.Enabled = bEnabled;
+            xchkClearInfo.Enabled = bEnabled;
+            xsbTest.Enabled = bEnabled;
+            xsbCancel.Enabled = !bEnabled;
+        }
+
         private void xsbTest_Click(object sender, EventArgs e)
         {
-            layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = false;
-            xsbTest.Enabled = xsbExport.Enabled = false;
             Cursor.Current = Cursors.WaitCursor;
-            if (xchkClearInfo.Checked)
-                _taskFlowTestHelper.TestResultInfoSet.Clear();
-            Task.Run(() =>
+            SetControlEnabled(false);
+            _thread = new Thread(() =>
             {
+                _taskFlowTestHelper = new TaskFlowTestHelper(_testResultInfoSet);
                 _taskFlowTestHelper.TestAndInitConnection(xteIPSAddress.Text.Trim());
                 if (xchkCondition.Checked)
                     _taskFlowTestHelper.TestCondition();
@@ -100,16 +110,10 @@ namespace TaskFlowTest
                         sRelatedObjectId = xslueCameFileOfficial.EditValue.ToString();
                     }
                     _taskFlowTestHelper.ExecuteTaskChain(Guid.Parse(xslueTaskChainCode.EditValue.ToString()), sObjTypeName, sRelatedObjectId);
+                    Invoke(new Action(() => { SetControlEnabled(true); }));
                 }
-            }, _cancellationTokenSource.Token).ContinueWith(t =>
-             {
-                 Invoke(new Action(() =>
-                     {
-                         layoutControlGroup2.Enabled = layoutControlGroup5.Enabled = true;
-                         xsbTest.Enabled = xsbExport.Enabled = true;
-                         Cursor.Current = Cursors.Default;
-                     }));
-             }, _cancellationTokenSource.Token);
+            });
+            _thread.Start();
         }
 
         private void xsbExport_Click(object sender, EventArgs e)
@@ -131,6 +135,7 @@ namespace TaskFlowTest
 
         private void xbeCase_ButtonClick(object sender, ButtonPressedEventArgs e)
         {
+            if (_taskFlowTestHelper == null) return;
             var idList = new List<int>();
             var frm = new XFrmSearchCase(_taskFlowTestHelper.UnitOfWork, idList, false, xteIPSAddress.Text.Trim());
             if (frm.ShowDialog() != DialogResult.OK) return;
@@ -171,6 +176,7 @@ namespace TaskFlowTest
         {
             try
             {
+                _taskFlowTestHelper = new TaskFlowTestHelper(_testResultInfoSet);
                 if (_taskFlowTestHelper.TestAndInitConnection(xteIPSAddress.Text.Trim()))
                 {
                     InitLoad();
@@ -183,9 +189,11 @@ namespace TaskFlowTest
             }
         }
 
-        private void XFrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        private void xsbCancel_Click(object sender, EventArgs e)
         {
-            _cancellationTokenSource.Cancel();
+            if (XtraMessageBox.Show("是否停止测试？", "停止测试", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
+            _thread.Abort();
+            SetControlEnabled(true);
         }
     }
 }

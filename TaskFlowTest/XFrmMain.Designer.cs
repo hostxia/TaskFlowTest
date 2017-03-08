@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XFrmMain));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.xsbCancel = new DevExpress.XtraEditors.SimpleButton();
             this.xchkClearInfo = new DevExpress.XtraEditors.CheckEdit();
             this.xsbTestConnection = new DevExpress.XtraEditors.SimpleButton();
             this.xteIPSAddress = new DevExpress.XtraEditors.TextEdit();
@@ -61,20 +62,21 @@
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -95,24 +97,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.xsbCancel);
             this.layoutControl1.Controls.Add(this.xchkClearInfo);
             this.layoutControl1.Controls.Add(this.xsbTestConnection);
             this.layoutControl1.Controls.Add(this.xteIPSAddress);
@@ -129,23 +133,33 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(905, 566);
+            this.layoutControl1.Size = new System.Drawing.Size(743, 515);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // xsbCancel
+            // 
+            this.xsbCancel.Location = new System.Drawing.Point(635, 197);
+            this.xsbCancel.Name = "xsbCancel";
+            this.xsbCancel.Size = new System.Drawing.Size(96, 22);
+            this.xsbCancel.StyleController = this.layoutControl1;
+            this.xsbCancel.TabIndex = 18;
+            this.xsbCancel.Text = "停止执行";
+            this.xsbCancel.Click += new System.EventHandler(this.xsbCancel_Click);
             // 
             // xchkClearInfo
             // 
             this.xchkClearInfo.EditValue = true;
-            this.xchkClearInfo.Location = new System.Drawing.Point(24, 184);
+            this.xchkClearInfo.Location = new System.Drawing.Point(24, 469);
             this.xchkClearInfo.Name = "xchkClearInfo";
             this.xchkClearInfo.Properties.Caption = "执行前清空历史结果";
-            this.xchkClearInfo.Size = new System.Drawing.Size(163, 19);
+            this.xchkClearInfo.Size = new System.Drawing.Size(595, 19);
             this.xchkClearInfo.StyleController = this.layoutControl1;
             this.xchkClearInfo.TabIndex = 1;
             // 
             // xsbTestConnection
             // 
-            this.xsbTestConnection.Location = new System.Drawing.Point(785, 44);
+            this.xsbTestConnection.Location = new System.Drawing.Point(623, 44);
             this.xsbTestConnection.Name = "xsbTestConnection";
             this.xsbTestConnection.Size = new System.Drawing.Size(96, 22);
             this.xsbTestConnection.StyleController = this.layoutControl1;
@@ -157,19 +171,19 @@
             // 
             this.xteIPSAddress.Location = new System.Drawing.Point(87, 44);
             this.xteIPSAddress.Name = "xteIPSAddress";
-            this.xteIPSAddress.Size = new System.Drawing.Size(694, 20);
+            this.xteIPSAddress.Size = new System.Drawing.Size(532, 20);
             this.xteIPSAddress.StyleController = this.layoutControl1;
             this.xteIPSAddress.TabIndex = 16;
             // 
             // xslueCameFileOfficial
             // 
-            this.xslueCameFileOfficial.Location = new System.Drawing.Point(517, 160);
+            this.xslueCameFileOfficial.Location = new System.Drawing.Point(437, 161);
             this.xslueCameFileOfficial.Name = "xslueCameFileOfficial";
             this.xslueCameFileOfficial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.xslueCameFileOfficial.Properties.NullText = " ";
             this.xslueCameFileOfficial.Properties.View = this.gridView1;
-            this.xslueCameFileOfficial.Size = new System.Drawing.Size(148, 20);
+            this.xslueCameFileOfficial.Size = new System.Drawing.Size(282, 20);
             this.xslueCameFileOfficial.StyleController = this.layoutControl1;
             this.xslueCameFileOfficial.TabIndex = 15;
             // 
@@ -203,13 +217,13 @@
             // 
             // xslueTaskChainCode
             // 
-            this.xslueTaskChainCode.Location = new System.Drawing.Point(732, 160);
+            this.xslueTaskChainCode.Location = new System.Drawing.Point(87, 137);
             this.xslueTaskChainCode.Name = "xslueTaskChainCode";
             this.xslueTaskChainCode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.xslueTaskChainCode.Properties.NullText = " ";
             this.xslueTaskChainCode.Properties.View = this.searchLookUpEdit1View;
-            this.xslueTaskChainCode.Size = new System.Drawing.Size(149, 20);
+            this.xslueTaskChainCode.Size = new System.Drawing.Size(283, 20);
             this.xslueTaskChainCode.StyleController = this.layoutControl1;
             this.xslueTaskChainCode.TabIndex = 14;
             // 
@@ -241,19 +255,19 @@
             // 
             // xlueRelatedObjectType
             // 
-            this.xlueRelatedObjectType.Location = new System.Drawing.Point(87, 160);
+            this.xlueRelatedObjectType.Location = new System.Drawing.Point(437, 137);
             this.xlueRelatedObjectType.Name = "xlueRelatedObjectType";
             this.xlueRelatedObjectType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.xlueRelatedObjectType.Properties.NullText = " ";
-            this.xlueRelatedObjectType.Size = new System.Drawing.Size(148, 20);
+            this.xlueRelatedObjectType.Size = new System.Drawing.Size(282, 20);
             this.xlueRelatedObjectType.StyleController = this.layoutControl1;
             this.xlueRelatedObjectType.TabIndex = 12;
             this.xlueRelatedObjectType.EditValueChanged += new System.EventHandler(this.xlueRelatedObjectType_EditValueChanged);
             // 
             // xsbExport
             // 
-            this.xsbExport.Location = new System.Drawing.Point(785, 184);
+            this.xsbExport.Location = new System.Drawing.Point(623, 469);
             this.xsbExport.Name = "xsbExport";
             this.xsbExport.Size = new System.Drawing.Size(96, 22);
             this.xsbExport.StyleController = this.layoutControl1;
@@ -263,19 +277,19 @@
             // 
             // xbeCase
             // 
-            this.xbeCase.Location = new System.Drawing.Point(302, 160);
+            this.xbeCase.Location = new System.Drawing.Point(87, 161);
             this.xbeCase.Name = "xbeCase";
             this.xbeCase.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.xbeCase.Properties.ReadOnly = true;
-            this.xbeCase.Size = new System.Drawing.Size(148, 20);
+            this.xbeCase.Size = new System.Drawing.Size(283, 20);
             this.xbeCase.StyleController = this.layoutControl1;
             this.xbeCase.TabIndex = 10;
             this.xbeCase.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.xbeCase_ButtonClick);
             // 
             // xsbTest
             // 
-            this.xsbTest.Location = new System.Drawing.Point(685, 184);
+            this.xsbTest.Location = new System.Drawing.Point(535, 197);
             this.xsbTest.Name = "xsbTest";
             this.xsbTest.Size = new System.Drawing.Size(96, 22);
             this.xsbTest.StyleController = this.layoutControl1;
@@ -285,10 +299,10 @@
             // 
             // xchkSimulation
             // 
-            this.xchkSimulation.Location = new System.Drawing.Point(24, 137);
+            this.xchkSimulation.Location = new System.Drawing.Point(373, 114);
             this.xchkSimulation.Name = "xchkSimulation";
             this.xchkSimulation.Properties.Caption = "模拟执行流程";
-            this.xchkSimulation.Size = new System.Drawing.Size(857, 19);
+            this.xchkSimulation.Size = new System.Drawing.Size(346, 19);
             this.xchkSimulation.StyleController = this.layoutControl1;
             this.xchkSimulation.TabIndex = 6;
             // 
@@ -297,19 +311,19 @@
             this.xchkCondition.Location = new System.Drawing.Point(24, 114);
             this.xchkCondition.Name = "xchkCondition";
             this.xchkCondition.Properties.Caption = "检查条件合法性";
-            this.xchkCondition.Size = new System.Drawing.Size(857, 19);
+            this.xchkCondition.Size = new System.Drawing.Size(345, 19);
             this.xchkCondition.StyleController = this.layoutControl1;
             this.xchkCondition.TabIndex = 5;
             // 
             // xgridResult
             // 
             this.xgridResult.Cursor = System.Windows.Forms.Cursors.Default;
-            this.xgridResult.Location = new System.Drawing.Point(24, 254);
+            this.xgridResult.Location = new System.Drawing.Point(24, 255);
             this.xgridResult.MainView = this.xgvResult;
             this.xgridResult.Name = "xgridResult";
             this.xgridResult.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.riicbInfoType});
-            this.xgridResult.Size = new System.Drawing.Size(857, 288);
+            this.xgridResult.Size = new System.Drawing.Size(695, 210);
             this.xgridResult.TabIndex = 1;
             this.xgridResult.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.xgvResult});
@@ -423,10 +437,13 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup4,
             this.layoutControlGroup5,
-            this.layoutControlGroup2});
+            this.layoutControlGroup2,
+            this.layoutControlItem7,
+            this.emptySpaceItem2,
+            this.layoutControlItem13});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(905, 566);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(743, 515);
             this.layoutControlGroup1.Text = "Root";
             this.layoutControlGroup1.TextVisible = false;
             // 
@@ -434,10 +451,12 @@
             // 
             this.layoutControlGroup4.CustomizationFormText = "结果";
             this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1});
-            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 210);
+            this.layoutControlItem1,
+            this.layoutControlItem3,
+            this.layoutControlItem8});
+            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 211);
             this.layoutControlGroup4.Name = "layoutControlGroup4";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(885, 336);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(723, 284);
             this.layoutControlGroup4.Text = "测试结果";
             // 
             // layoutControlItem1
@@ -446,11 +465,38 @@
             this.layoutControlItem1.CustomizationFormText = "执行结果：";
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(861, 292);
+            this.layoutControlItem1.Size = new System.Drawing.Size(699, 214);
             this.layoutControlItem1.Text = "执行结果：";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextToControlDistance = 0;
             this.layoutControlItem1.TextVisible = false;
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.xchkClearInfo;
+            this.layoutControlItem3.CustomizationFormText = "layoutControlItem3";
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 214);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(599, 26);
+            this.layoutControlItem3.Text = "layoutControlItem3";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextToControlDistance = 0;
+            this.layoutControlItem3.TextVisible = false;
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.xsbExport;
+            this.layoutControlItem8.CustomizationFormText = "layoutControlItem8";
+            this.layoutControlItem8.Location = new System.Drawing.Point(599, 214);
+            this.layoutControlItem8.MaxSize = new System.Drawing.Size(100, 26);
+            this.layoutControlItem8.MinSize = new System.Drawing.Size(100, 26);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(100, 26);
+            this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem8.Text = "layoutControlItem8";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem8.TextToControlDistance = 0;
+            this.layoutControlItem8.TextVisible = false;
             // 
             // layoutControlGroup5
             // 
@@ -460,7 +506,7 @@
             this.layoutControlItem12});
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup5.Name = "layoutControlGroup5";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(885, 70);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(723, 70);
             this.layoutControlGroup5.Text = "服务端连接";
             // 
             // layoutControlItem10
@@ -469,7 +515,7 @@
             this.layoutControlItem10.CustomizationFormText = "连接地址：";
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(761, 26);
+            this.layoutControlItem10.Size = new System.Drawing.Size(599, 26);
             this.layoutControlItem10.Text = "连接地址：";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(60, 14);
             // 
@@ -477,7 +523,7 @@
             // 
             this.layoutControlItem12.Control = this.xsbTestConnection;
             this.layoutControlItem12.CustomizationFormText = "layoutControlItem12";
-            this.layoutControlItem12.Location = new System.Drawing.Point(761, 0);
+            this.layoutControlItem12.Location = new System.Drawing.Point(599, 0);
             this.layoutControlItem12.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem12.MinSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem12.Name = "layoutControlItem12";
@@ -492,48 +538,86 @@
             // 
             this.layoutControlGroup2.CustomizationFormText = "测试设置";
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.emptySpaceItem1,
-            this.layoutControlItem3,
-            this.layoutControlItem7,
-            this.layoutControlItem8,
             this.layoutControlItem4,
-            this.layoutControlItem6,
-            this.layoutControlItem5,
             this.layoutControlItem11,
+            this.layoutControlItem2,
+            this.layoutControlItem6,
             this.layoutControlItem9,
-            this.layoutControlItem2});
+            this.layoutControlItem5});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 70);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(885, 140);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(723, 115);
             this.layoutControlGroup2.Text = "测试设置";
             // 
-            // emptySpaceItem1
+            // layoutControlItem4
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.CustomizationFormText = "emptySpaceItem1";
-            this.emptySpaceItem1.Location = new System.Drawing.Point(167, 70);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(494, 26);
-            this.emptySpaceItem1.Text = "emptySpaceItem1";
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.Control = this.xchkCondition;
+            this.layoutControlItem4.CustomizationFormText = "layoutControlItem4";
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(349, 23);
+            this.layoutControlItem4.Text = "layoutControlItem4";
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.TextToControlDistance = 0;
+            this.layoutControlItem4.TextVisible = false;
             // 
-            // layoutControlItem3
+            // layoutControlItem5
             // 
-            this.layoutControlItem3.Control = this.xchkClearInfo;
-            this.layoutControlItem3.CustomizationFormText = "layoutControlItem3";
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 70);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(167, 26);
-            this.layoutControlItem3.Text = "layoutControlItem3";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextToControlDistance = 0;
-            this.layoutControlItem3.TextVisible = false;
+            this.layoutControlItem5.Control = this.xchkSimulation;
+            this.layoutControlItem5.CustomizationFormText = "layoutControlItem5";
+            this.layoutControlItem5.Location = new System.Drawing.Point(349, 0);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(350, 23);
+            this.layoutControlItem5.Text = "layoutControlItem5";
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem5.TextToControlDistance = 0;
+            this.layoutControlItem5.TextVisible = false;
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.Control = this.xslueCameFileOfficial;
+            this.layoutControlItem11.CustomizationFormText = "来文：";
+            this.layoutControlItem11.Location = new System.Drawing.Point(350, 47);
+            this.layoutControlItem11.Name = "layoutControlItem11";
+            this.layoutControlItem11.Size = new System.Drawing.Size(349, 24);
+            this.layoutControlItem11.Text = "来文：";
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(60, 14);
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.xslueTaskChainCode;
+            this.layoutControlItem2.CustomizationFormText = "任务链：";
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 23);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(350, 24);
+            this.layoutControlItem2.Text = "任务链：";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(60, 14);
+            // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.Control = this.xlueRelatedObjectType;
+            this.layoutControlItem6.CustomizationFormText = "关联对象：";
+            this.layoutControlItem6.Location = new System.Drawing.Point(350, 23);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(349, 24);
+            this.layoutControlItem6.Text = "关联对象：";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(60, 14);
+            // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.Control = this.xbeCase;
+            this.layoutControlItem9.CustomizationFormText = "选择案件：";
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 47);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(350, 24);
+            this.layoutControlItem9.Text = "案件：";
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(60, 14);
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.xsbTest;
             this.layoutControlItem7.CustomizationFormText = "layoutControlItem7";
-            this.layoutControlItem7.Location = new System.Drawing.Point(661, 70);
+            this.layoutControlItem7.Location = new System.Drawing.Point(523, 185);
             this.layoutControlItem7.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem7.MinSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem7.Name = "layoutControlItem7";
@@ -544,84 +628,30 @@
             this.layoutControlItem7.TextToControlDistance = 0;
             this.layoutControlItem7.TextVisible = false;
             // 
-            // layoutControlItem8
+            // emptySpaceItem2
             // 
-            this.layoutControlItem8.Control = this.xsbExport;
-            this.layoutControlItem8.CustomizationFormText = "layoutControlItem8";
-            this.layoutControlItem8.Location = new System.Drawing.Point(761, 70);
-            this.layoutControlItem8.MaxSize = new System.Drawing.Size(100, 26);
-            this.layoutControlItem8.MinSize = new System.Drawing.Size(100, 26);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(100, 26);
-            this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem8.Text = "layoutControlItem8";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem8.TextToControlDistance = 0;
-            this.layoutControlItem8.TextVisible = false;
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.CustomizationFormText = "emptySpaceItem2";
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 185);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(523, 26);
+            this.emptySpaceItem2.Text = "emptySpaceItem2";
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // layoutControlItem4
+            // layoutControlItem13
             // 
-            this.layoutControlItem4.Control = this.xchkCondition;
-            this.layoutControlItem4.CustomizationFormText = "layoutControlItem4";
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(861, 23);
-            this.layoutControlItem4.Text = "layoutControlItem4";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem4.TextToControlDistance = 0;
-            this.layoutControlItem4.TextVisible = false;
-            // 
-            // layoutControlItem6
-            // 
-            this.layoutControlItem6.Control = this.xlueRelatedObjectType;
-            this.layoutControlItem6.CustomizationFormText = "关联对象：";
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 46);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(215, 24);
-            this.layoutControlItem6.Text = "关联对象：";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(60, 14);
-            // 
-            // layoutControlItem5
-            // 
-            this.layoutControlItem5.Control = this.xchkSimulation;
-            this.layoutControlItem5.CustomizationFormText = "layoutControlItem5";
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 23);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(861, 23);
-            this.layoutControlItem5.Text = "layoutControlItem5";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem5.TextToControlDistance = 0;
-            this.layoutControlItem5.TextVisible = false;
-            // 
-            // layoutControlItem11
-            // 
-            this.layoutControlItem11.Control = this.xslueCameFileOfficial;
-            this.layoutControlItem11.CustomizationFormText = "来文：";
-            this.layoutControlItem11.Location = new System.Drawing.Point(430, 46);
-            this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(215, 24);
-            this.layoutControlItem11.Text = "来文：";
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(60, 14);
-            // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.xbeCase;
-            this.layoutControlItem9.CustomizationFormText = "选择案件：";
-            this.layoutControlItem9.Location = new System.Drawing.Point(215, 46);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(215, 24);
-            this.layoutControlItem9.Text = "案件：";
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(60, 14);
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.xslueTaskChainCode;
-            this.layoutControlItem2.CustomizationFormText = "任务链：";
-            this.layoutControlItem2.Location = new System.Drawing.Point(645, 46);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(216, 24);
-            this.layoutControlItem2.Text = "任务链：";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(60, 14);
+            this.layoutControlItem13.Control = this.xsbCancel;
+            this.layoutControlItem13.CustomizationFormText = "layoutControlItem13";
+            this.layoutControlItem13.Location = new System.Drawing.Point(623, 185);
+            this.layoutControlItem13.MaxSize = new System.Drawing.Size(100, 26);
+            this.layoutControlItem13.MinSize = new System.Drawing.Size(100, 26);
+            this.layoutControlItem13.Name = "layoutControlItem13";
+            this.layoutControlItem13.Size = new System.Drawing.Size(100, 26);
+            this.layoutControlItem13.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem13.Text = "layoutControlItem13";
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem13.TextToControlDistance = 0;
+            this.layoutControlItem13.TextVisible = false;
             // 
             // saveFileDialog
             // 
@@ -633,12 +663,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 566);
+            this.ClientSize = new System.Drawing.Size(743, 515);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "XFrmMain";
             this.Text = "任务链测试工具";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.XFrmMain_FormClosed);
             this.Load += new System.EventHandler(this.XFrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
@@ -659,20 +688,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -711,7 +741,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraEditors.CheckEdit xchkClearInfo;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
@@ -725,5 +754,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
+        private DevExpress.XtraEditors.SimpleButton xsbCancel;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
     }
 }

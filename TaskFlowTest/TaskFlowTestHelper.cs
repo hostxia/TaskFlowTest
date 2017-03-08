@@ -19,8 +19,7 @@ namespace TaskFlowTest
 {
     public class TaskFlowTestHelper
     {
-        private CancellationTokenSource _cancellationTokenSource;
-        public TaskFlowTestHelper(TestResultInfoSet testResultInfo, CancellationTokenSource cancellationTokenSource)
+        public TaskFlowTestHelper(TestResultInfoSet testResultInfo)
         {
             TestResultInfoSet = testResultInfo;
         }
@@ -76,12 +75,12 @@ namespace TaskFlowTest
         public void TestCondition()
         {
             TestResultInfoSet.AddInfo("1. 开始检查：任务预产生条件是否合法......");
-            UnitOfWork.Query<TFCodeNode>().Where(n => !string.IsNullOrEmpty(n.s_PreCondition)).ToList().ForEach(n =>
+            foreach (var n in UnitOfWork.Query<TFCodeNode>().Where(n => !string.IsNullOrEmpty(n.s_PreCondition)).ToList())
             {
                 var sErrorInfo = string.Empty;
                 try
                 {
-                    if (CheckCondition(n.s_PreCondition)) return;
+                    if (CheckCondition(n.s_PreCondition)) continue;
                     sErrorInfo = $"任务预产生条件不合法！表达式：{CalUtility.ConvertToCondition(n.s_PreCondition)}";
                 }
                 catch (Exception e)
@@ -97,16 +96,16 @@ namespace TaskFlowTest
                             codeTaskChain == null ? string.Empty : codeTaskChain.s_Code, n.s_Code, n.s_PreCondition);
                     }
                 }
-            });
+            }
             TestResultInfoSet.AddInfo("1. 完成检查：任务预产生条件是否合法。");
 
             TestResultInfoSet.AddInfo("2. 开始检查：任务完成条件是否合法......");
-            UnitOfWork.Query<TFCodeTask>().Where(t => !string.IsNullOrEmpty(t.s_FinishCondition)).ToList().ForEach(t =>
+            foreach (var t in UnitOfWork.Query<TFCodeTask>().Where(t => !string.IsNullOrEmpty(t.s_FinishCondition)).ToList())
             {
                 var sErrorInfo = string.Empty;
                 try
                 {
-                    if (CheckCondition(t.s_FinishCondition)) return;
+                    if (CheckCondition(t.s_FinishCondition)) continue;
                     sErrorInfo = $"任务完成条件不合法！表达式：{CalUtility.ConvertToCondition(t.s_FinishCondition)}";
                 }
                 catch (Exception e)
@@ -124,57 +123,54 @@ namespace TaskFlowTest
                             codeNode == null ? string.Empty : codeNode.s_Code, t.s_FinishCondition);
                     }
                 }
-            });
+            }
             TestResultInfoSet.AddInfo("2. 完成检查：任务完成条件是否合法。");
 
             TestResultInfoSet.AddInfo("3. 开始检查：流向条件是否合法......");
-            UnitOfWork.Query<TFCodeNodeRelation>()
-                .Where(nr => !string.IsNullOrEmpty(nr.s_Condition))
-                .ToList()
-                .ForEach(nr =>
+            foreach (var nr in UnitOfWork.Query<TFCodeNodeRelation>().Where(nr => !string.IsNullOrEmpty(nr.s_Condition)).ToList())
+            {
+                var sErrorInfo = string.Empty;
+                try
                 {
-                    var sErrorInfo = string.Empty;
-                    try
+                    if (CheckCondition(nr.s_Condition)) continue;
+                    sErrorInfo = $"流向条件不合法！表达式：{CalUtility.ConvertToCondition(nr.s_Condition)}";
+                }
+                catch (Exception e)
+                {
+                    sErrorInfo = e.Message + "\r\n" + e.Source + "\r\n" + e.StackTrace;
+                }
+                finally
+                {
+                    if (!string.IsNullOrEmpty(sErrorInfo))
                     {
-                        if (CheckCondition(nr.s_Condition)) return;
-                        sErrorInfo = $"流向条件不合法！表达式：{CalUtility.ConvertToCondition(nr.s_Condition)}";
-                    }
-                    catch (Exception e)
-                    {
-                        sErrorInfo = e.Message + "\r\n" + e.Source + "\r\n" + e.StackTrace;
-                    }
-                    finally
-                    {
-                        if (!string.IsNullOrEmpty(sErrorInfo))
+                        var codeNodeFrom = nr.GetTheCodeNodeFrom();
+                        var codeNodeTo = nr.GetTheCodeNodeTo();
+                        TFCodeTaskChain codeTaskChain = null;
+                        if (codeNodeFrom != null)
+                            codeTaskChain = codeNodeFrom.GetTheCodeTaskChain();
+                        if (codeNodeTo != null && codeTaskChain == null)
+                            codeTaskChain = codeNodeTo.GetTheCodeTaskChain();
+                        var sNodeCodeFrom = string.Empty;
+                        if (codeNodeFrom != null)
                         {
-                            var codeNodeFrom = nr.GetTheCodeNodeFrom();
-                            var codeNodeTo = nr.GetTheCodeNodeTo();
-                            TFCodeTaskChain codeTaskChain = null;
-                            if (codeNodeFrom != null)
-                                codeTaskChain = codeNodeFrom.GetTheCodeTaskChain();
-                            if (codeNodeTo != null && codeTaskChain == null)
-                                codeTaskChain = codeNodeTo.GetTheCodeTaskChain();
-                            var sNodeCodeFrom = string.Empty;
-                            if (codeNodeFrom != null)
-                            {
-                                sNodeCodeFrom = codeNodeFrom.s_Code;
-                                if (codeNodeFrom.s_Type == Enums.NodeType.S.ToString())
-                                    sNodeCodeFrom = "开始";
-                            }
-                            var sNodeCodeTo = string.Empty;
-                            if (codeNodeTo != null)
-                            {
-                                sNodeCodeTo = codeNodeTo.s_Code;
-                                if (codeNodeTo.s_Type == Enums.NodeType.E.ToString())
-                                    sNodeCodeTo = "截止";
-                            }
-
-                            var sTaskNo = $"{sNodeCodeFrom} ----> {sNodeCodeTo}";
-                            TestResultInfoSet.AddError(sErrorInfo,
-                                codeTaskChain == null ? string.Empty : codeTaskChain.s_Code, sTaskNo, nr.s_Condition);
+                            sNodeCodeFrom = codeNodeFrom.s_Code;
+                            if (codeNodeFrom.s_Type == Enums.NodeType.S.ToString())
+                                sNodeCodeFrom = "开始";
                         }
+                        var sNodeCodeTo = string.Empty;
+                        if (codeNodeTo != null)
+                        {
+                            sNodeCodeTo = codeNodeTo.s_Code;
+                            if (codeNodeTo.s_Type == Enums.NodeType.E.ToString())
+                                sNodeCodeTo = "截止";
+                        }
+
+                        var sTaskNo = $"{sNodeCodeFrom} ----> {sNodeCodeTo}";
+                        TestResultInfoSet.AddError(sErrorInfo,
+                            codeTaskChain == null ? string.Empty : codeTaskChain.s_Code, sTaskNo, nr.s_Condition);
                     }
-                });
+                }
+            }
             TestResultInfoSet.AddInfo("3. 完成检查：流向条件是否合法。");
         }
         #endregion
@@ -199,7 +195,6 @@ namespace TaskFlowTest
             {
                 foreach (var conditionGroup in result)
                 {
-                    if (_cancellationTokenSource.Token.IsCancellationRequested) continue;
                     var operationInfo = ServiceClient.ByServerManualGenerateTopTaskChain(gCodeTaskChainGuid,
                         sRelatedObjectTypeName, Convert.ToInt32(sRelatedObjectId), true);
                     if (!operationInfo.bOperationResult)
@@ -234,7 +229,9 @@ namespace TaskFlowTest
 
             TestResultInfoSet.AddInfo("4. 开始：逐一完成任务......");
             foreach (DictionaryEntry sTaskChainNum in listTaskChainNum)
+            {
                 FinishTask((string)sTaskChainNum.Key, (List<KeyValuePair<string, string>>)sTaskChainNum.Value);
+            }
             TestResultInfoSet.AddInfo("4. 完成：逐一完成任务。");
         }
 
@@ -385,23 +382,10 @@ namespace TaskFlowTest
                     .Select(n => n.GetTheOwnTask())
                     .Where(t => t != null && (t.s_State == "P" || t.s_State == "O"))
                     .ToList();
-            listTasks.Select(t => t.n_Num).ToList().ForEach(t =>
-              {
-                  if (htCreatedTaskNums.ContainsKey(t))
-                  {
-                      htCreatedTaskNums[t] = Convert.ToInt32(htCreatedTaskNums[t]) + 1;
-                  }
-                  //else
-                  //{
-                  //    htCreatedTaskNums.Add(t, 1);
-                  //}
-              });
             while (listTasks.Count > 0)
             {
                 foreach (var task in listTasks)
                 {
-                    if (_cancellationTokenSource.Token.IsCancellationRequested)
-                        return;
                     unFinishTaskChains = new UnitOfWork().GetObjectByKey<TFTaskChain>(taskChain.g_ID).GetListClusterTaskChains();
                     var sEndDateString = task.dt_EndDate <= new DateTime(1900, 1, 1) ? string.Empty : task.dt_EndDate.ToShortDateString();
                     var executor = listEmployee.FirstOrDefault(e => e.n_ID == task.n_ExecutorID);
@@ -417,7 +401,7 @@ namespace TaskFlowTest
                     {
                         htCreatedTaskNums.Add(task.n_Num, 1);
                     }
-                    if (Convert.ToInt32(htCreatedTaskNums[task.n_Num]) >= 2)
+                    if (Convert.ToInt32(htCreatedTaskNums[task.n_Num]) >= 3)
                     {
                         TestResultInfoSet.AddWarning($"完成任务失败！原因：该任务被重复打开了{htCreatedTaskNums[task.n_Num]}次", $"({sTaskChainNum}){taskChain.s_Name}", $"({task.n_Num}){task.s_Name}", $"结束日期：{sEndDateString} 执行人：{sExecutor} 执行岗位：{sTeam}");
                         return;
