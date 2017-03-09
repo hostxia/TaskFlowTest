@@ -110,8 +110,8 @@ namespace TaskFlowTest
                         sRelatedObjectId = xslueCameFileOfficial.EditValue.ToString();
                     }
                     _taskFlowTestHelper.ExecuteTaskChain(Guid.Parse(xslueTaskChainCode.EditValue.ToString()), sObjTypeName, sRelatedObjectId);
-                    Invoke(new Action(() => { SetControlEnabled(true); }));
                 }
+                Invoke(new Action(() => { SetControlEnabled(true); }));
             });
             _thread.Start();
         }
