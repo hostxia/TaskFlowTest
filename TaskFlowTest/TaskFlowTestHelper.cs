@@ -310,9 +310,17 @@ namespace TaskFlowTest
             var checkActionInTask =
                 checkTask.GetListCodeActionInTasks().FirstOrDefault(e => e.n_CodeActionID == codeCheckAction.n_ID);
             if (checkActionInTask == null) return;
-            var submitTask =
-                unitOfWork.FindObject<TFNode>(CriteriaOperator.Parse("g_TaskChainGuid = ? AND s_CodeNodeCode = ?",
-                    checkTask.GetTheTaskChain().g_ID, checkActionInTask.s_ParamIn)).GetTheOwnTask();
+            TFTask submitTask = null;
+            try
+            {
+                submitTask =
+    unitOfWork.FindObject<TFNode>(CriteriaOperator.Parse("g_TaskChainGuid = ? AND s_CodeNodeCode = ?",
+        checkTask.GetTheTaskChain().g_ID, checkActionInTask.s_ParamIn)).GetTheOwnTask();
+            }
+            catch (Exception e)
+            {
+                TestResultInfoSet.AddError($"未找到指定的待审任务：{checkActionInTask.s_ParamIn}", string.Empty, string.Empty, e.ToString());
+            }
             if (submitTask == null) return;
             var taskCheck = new TFTaskCheck(unitOfWork)
             {
